@@ -6,7 +6,10 @@ if pause_state = pausestate.none
 	{
 		var x_diff = (following.x - x)
 		var y_diff = (following.y - y)
-		x += (x_diff + (32 * -following.facing)) / 10
+		x += (x_diff + (32 * -obj_player.facing)) / 10
 		y += y_diff / 10
+		
+		if keys < keynumb
+			instance_destroy()
 	}
 }

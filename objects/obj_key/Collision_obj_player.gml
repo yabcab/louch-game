@@ -1,6 +1,7 @@
-if collected = 0
+if !collected
 {
 	collected = 1
 	following = other.id
 	keys++
+	keynumb = keys
 }

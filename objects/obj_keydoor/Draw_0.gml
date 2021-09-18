@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_keydooricon,image_index,x + (image_xscale * 16), y +(image_yscale * 16),1,1,0,c_white,1)
+draw_self()
