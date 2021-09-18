@@ -1,43 +1,43 @@
-if obj_player.state = playerstate.boost
+if other.state = playerstate.boost
 {
 	instance_destroy()
 	var h = hspeed
 	var s = spr_dead
-		with instance_create_depth(x,y,obj_player.depth + 1,obj_eatenapple)
+		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
 		{
 			sprite_index = s
 			vspeed = random_range(-5,-7)
-			hspeed = obj_player.hspeed + h
+			hspeed = other.hspeed + h
 			effect = 1
 			rot_speed = 15
 		}
 	
-	audio_play_sound(sfx_bonk,1,0)
+	audio_play_sound(sfx_hitwall3,1,0)
 }
-else if obj_player.state != playerstate.dying && obj_player.inv = 0
+else if other.state != playerstate.dying && other.inv = 0
 {
-	if obj_player.state != playerstate.boost && obj_player.state != playerstate.hurt
+	if other.state != playerstate.boost && other.state != playerstate.hurt
 	{
-		obj_player.inv = 1
-		obj_player.alarm[1] = 150
-		obj_player.state = playerstate.hurt
-		obj_player.hp -= 1
-		obj_player.vspeed = -7
-		obj_player.hspeed = 4 * -(obj_player.facing)
+		other.inv = 1
+		other.alarm[1] = 150
+		other.state = playerstate.hurt
+		other.hp -= 1
+		other.vspeed = -7
+		other.hspeed = 4 * -(other.facing)
 		if !audio_is_playing(sound)
 			sound = audio_play_sound(sfx_pain,1,0)
 		
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
-		instance_create_depth(obj_player.x,obj_player.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
 			
-		if obj_player.hp < 1
-			with obj_player {
+		if other.hp < 1
+			with other {
 				state = playerstate.dying
 				hspeed = random_range(10,15) * (facing * -1)
 				vspeed = random_range(-13,-18)

@@ -4,4 +4,6 @@ if keyboard_check(vk_up) && instance_place(x,y+1,obj_solid) && state != playerst
 	state = playerstate.none
 	fade = 1
 	speed = 0
+	spawn = other.spawn
+	targetroom = other.targetroom
 }

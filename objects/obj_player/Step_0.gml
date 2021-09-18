@@ -35,9 +35,8 @@ if fade = 1
 	fade_amount += 0.05
 	if fade_amount > 1
 	{
-		room_goto(instance_nearest(x,y,obj_door).targetroom)
+		room_goto(targetroom)
 		fade = 2
-		spawn = instance_nearest(x,y,obj_door).spawn
 	}
 }
 else if fade = 2

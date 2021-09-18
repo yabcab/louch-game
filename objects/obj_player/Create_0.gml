@@ -34,6 +34,7 @@ invtime = 0
 started_pause = 0
 pause = 0
 combo = 0
+targetroom = 0
 
 facing = 1
 xs = 1

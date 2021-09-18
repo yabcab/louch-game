@@ -1,1 +1,1 @@
-obj_player.facing = image_xscale
+other.facing = image_xscale

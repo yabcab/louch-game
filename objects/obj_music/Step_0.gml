@@ -24,6 +24,7 @@ else
 	audio_sound_pitch(mu,1)
 	audio_sound_pitch(mu_secret,1)
 	audio_sound_pitch(mu_timetrial,1 + escapeoffset)
+	audio_sound_pitch(mu_escapesecret,1 + escapeoffset)
 }
 if !audio_is_playing(mu)
 {
@@ -35,11 +36,23 @@ if !audio_is_playing(mu_secret)
 
 if is_trial
 {
-	if !audio_is_playing(mu_timetrial)
-		audio_play_sound(mu_timetrial,1,1)
+	if !audio_is_playing(mu_timetrial) && !audio_is_playing(mu_escapesecret)
+	{
+		audio_play_sound(mu_escapesecret,1,0)
+		audio_play_sound(mu_timetrial,1,0)
+	}
 	audio_sound_gain(mu,0,0)
 	audio_sound_gain(mu_secret,0,0)
-	audio_sound_gain(mu_timetrial,0.2,0)
+	if is_secret
+	{
+		audio_sound_gain(mu_timetrial,0,0)
+		audio_sound_gain(mu_escapesecret,0.2,0)
+	}
+	else
+	{
+		audio_sound_gain(mu_timetrial,0.2,0)
+		audio_sound_gain(mu_escapesecret,0,0)
+	}
 }
 else
 if is_secret
