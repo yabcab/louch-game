@@ -1,0 +1,1 @@
+draw_text_transformed_color(670 - string_width(levelname),650 + downoff,levelname,2,2,0,c_black,c_black,c_black,c_black,1)

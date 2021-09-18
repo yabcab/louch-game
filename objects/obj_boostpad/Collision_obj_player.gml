@@ -1,0 +1,1 @@
+obj_player.facing = image_xscale

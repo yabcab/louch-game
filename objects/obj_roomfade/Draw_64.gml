@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,0,0,0,100,100,0,c_black,fade_amount)

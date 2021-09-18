@@ -1,0 +1,1 @@
+scr_enemy_death(0)

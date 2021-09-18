@@ -1,0 +1,1 @@
+levelname = "Inconvenient zig-zag with no shortcut"

@@ -1,0 +1,10 @@
+if distance_to_object(obj_player) < 3
+{
+	if keys > 0
+	{
+		instance_destroy()
+		keys -= 1
+		obj_player.dashing = 0
+		obj_player.dash_charge = 1
+	}
+}
