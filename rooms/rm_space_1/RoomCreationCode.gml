@@ -1,2 +1,2 @@
-obj_music.mu = mu_beach
+obj_music.mu = mu_space
 is_secret = 0
