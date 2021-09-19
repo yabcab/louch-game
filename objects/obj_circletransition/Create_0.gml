@@ -19,5 +19,5 @@ circle_1_col = make_color_rgb(66,134,255)
 circle_2_col = make_color_rgb(6,84,224)
 circle_3_col = make_color_rgb(0,63,177)
 
-targetroom = rm_levelcomplete
+targetroom = rm_hub1
 pause_state = pausestate.playerpause

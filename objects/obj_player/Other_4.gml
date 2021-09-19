@@ -18,4 +18,10 @@ if spawn = 3 && instance_exists(obj_spawn_c)
 
 state = statesave
 if state = -1
-	state = idlestate
+	if idlestate != -1
+		state = idlestate
+	else
+	{
+		state = 0
+		idlestate = 0
+	}

@@ -10,6 +10,5 @@ with other
 	{
 		instance_create_depth(x,y,1,obj_circletransition)
 		state = playerstate.none
-		idlestate = playerstate.none
 	}
 }

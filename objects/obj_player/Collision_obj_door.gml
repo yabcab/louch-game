@@ -1,4 +1,4 @@
-if keyboard_check(vk_up) && instance_place(x,y+1,obj_solid) && state != playerstate.dying
+if keyboard_check(vk_up) && instance_place(x,y+1,obj_solid) && state != playerstate.dying && state = idlestate
 {
 	statesave = state
 	state = playerstate.none
