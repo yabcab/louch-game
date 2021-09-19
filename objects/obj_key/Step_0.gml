@@ -1,4 +1,4 @@
-if pause_state = pausestate.none
+if pause_state != pausestate.playerpause
 {
 	_time++
 	yoff = sin(_time / 10) * 3

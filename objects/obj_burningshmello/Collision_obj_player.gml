@@ -7,7 +7,7 @@ if other.state = playerstate.boost
 		{
 			sprite_index = s
 			vspeed = random_range(-5,-7)
-			hspeed = other.hspeed + h
+			hspeed = obj_player.hspeed + h
 			effect = 1
 			rot_speed = 15
 		}

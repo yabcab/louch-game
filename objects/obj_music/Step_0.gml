@@ -18,6 +18,7 @@ if obj_shaders.drunk
 	audio_sound_pitch(mu,audio_pitchchange)
 	audio_sound_pitch(mu_secret,audio_pitchchange)
 	audio_sound_pitch(mu_timetrial,audio_pitchchange + escapeoffset)
+	audio_sound_pitch(mu_escapesecret,audio_pitchchange + escapeoffset)
 }
 else
 {
