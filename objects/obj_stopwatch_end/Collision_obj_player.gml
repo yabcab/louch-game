@@ -1,0 +1,2 @@
+if instance_exists(obj_freezetimer)
+	instance_destroy(obj_freezetimer)

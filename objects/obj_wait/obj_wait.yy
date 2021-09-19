@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite1",
-    "path": "sprites/Sprite1/Sprite1.yy",
+    "name": "spr_levelcomplete_bg",
+    "path": "sprites/spr_levelcomplete_bg/spr_levelcomplete_bg.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_keydoor",
-    "path": "sprites/spr_keydoor/spr_keydoor.yy",
+    "name": "spr_roomreset",
+    "path": "sprites/spr_roomreset/spr_roomreset.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
     "path": "folders/Objects/geometry/solid.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_freezetimewall",
+  "name": "obj_unfreezetimewall",
   "tags": [],
   "resourceType": "GMObject",
 }

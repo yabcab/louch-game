@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "geometry",
-    "path": "folders/Objects/geometry.yy",
+    "name": "solid",
+    "path": "folders/Objects/geometry/solid.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform",

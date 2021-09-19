@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_keydoor",
-    "path": "sprites/spr_keydoor/spr_keydoor.yy",
+    "name": "spr_portal_base",
+    "path": "sprites/spr_portal_base/spr_portal_base.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,18 +21,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "solid",
-    "path": "folders/Objects/geometry/solid.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_freezetimewall",
+  "name": "obj_stopwatch_end",
   "tags": [],
   "resourceType": "GMObject",
 }

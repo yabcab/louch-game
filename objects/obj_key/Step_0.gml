@@ -4,6 +4,8 @@ if pause_state != pausestate.playerpause
 	yoff = sin(_time / 10) * 3
 	if collected
 	{
+		if !instance_exists(following)
+			following = obj_player
 		var x_diff = (following.x - x)
 		var y_diff = (following.y - y)
 		x += (x_diff + (32 * -obj_player.facing)) / 10
