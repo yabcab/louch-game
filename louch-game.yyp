@@ -95,6 +95,7 @@
     {"id":{"name":"draw_text_with_wave","path":"scripts/draw_text_with_wave/draw_text_with_wave.yy",},"order":2,},
     {"id":{"name":"spr_portal_swirl","path":"sprites/spr_portal_swirl/spr_portal_swirl.yy",},"order":17,},
     {"id":{"name":"obj_keydoor","path":"objects/obj_keydoor/obj_keydoor.yy",},"order":1,},
+    {"id":{"name":"rm_space_3","path":"rooms/rm_space_3/rm_space_3.yy",},"order":3,},
     {"id":{"name":"spr_gonk_dead","path":"sprites/spr_gonk_dead/spr_gonk_dead.yy",},"order":3,},
     {"id":{"name":"spr_playerLS_airjumpend","path":"sprites/spr_playerLS_airjumpend/spr_playerLS_airjumpend.yy",},"order":10,},
     {"id":{"name":"obj_console","path":"objects/obj_console/obj_console.yy",},"order":2,},
@@ -431,6 +432,7 @@
     {"roomId":{"name":"rm_jungle_secret4","path":"rooms/rm_jungle_secret4/rm_jungle_secret4.yy",},},
     {"roomId":{"name":"rm_space_2","path":"rooms/rm_space_2/rm_space_2.yy",},},
     {"roomId":{"name":"rm_space_secret1","path":"rooms/rm_space_secret1/rm_space_secret1.yy",},},
+    {"roomId":{"name":"rm_space_3","path":"rooms/rm_space_3/rm_space_3.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
