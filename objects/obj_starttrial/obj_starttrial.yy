@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "edit ur emotions",
-    "path": "folders/Objects/edit ur emotions.yy",
+    "path": "folders/Objects/old/edit ur emotions.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_starttrial",
