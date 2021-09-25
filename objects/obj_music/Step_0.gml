@@ -15,17 +15,17 @@ if obj_shaders.drunk
 {
 	audio_pitchchange_time += 0.015
 	audio_pitchchange = (sin(audio_pitchchange_time) / 3) + 1
-	audio_sound_pitch(mu,audio_pitchchange)
-	audio_sound_pitch(mu_secret,audio_pitchchange)
-	audio_sound_pitch(mu_timetrial,audio_pitchchange + escapeoffset)
-	audio_sound_pitch(mu_escapesecret,audio_pitchchange + escapeoffset)
+	audio_sound_pitch(mu,audio_pitchchange + pitch_offset)
+	audio_sound_pitch(mu_secret,audio_pitchchange + pitch_offset)
+	audio_sound_pitch(mu_timetrial,audio_pitchchange + escapeoffset + pitch_offset)
+	audio_sound_pitch(mu_escapesecret,audio_pitchchange + escapeoffset + pitch_offset)
 }
 else
 {
-	audio_sound_pitch(mu,1)
-	audio_sound_pitch(mu_secret,1)
-	audio_sound_pitch(mu_timetrial,1 + escapeoffset)
-	audio_sound_pitch(mu_escapesecret,1 + escapeoffset)
+	audio_sound_pitch(mu,1 + pitch_offset)
+	audio_sound_pitch(mu_secret,1 + pitch_offset)
+	audio_sound_pitch(mu_timetrial,1 + escapeoffset + pitch_offset)
+	audio_sound_pitch(mu_escapesecret,1 + escapeoffset + pitch_offset)
 }
 if !audio_is_playing(mu)
 {

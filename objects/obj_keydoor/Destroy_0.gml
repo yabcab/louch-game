@@ -19,3 +19,5 @@ if !silent
 
 	audio_play_sound(sfx_wallbreak,1,0)
 }
+
+ds_list_set(destroy_list,id,1)
