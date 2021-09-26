@@ -172,6 +172,7 @@
     {"id":{"name":"obj_explosionparticle","path":"objects/obj_explosionparticle/obj_explosionparticle.yy",},"order":22,},
     {"id":{"name":"obj_circletransition","path":"objects/obj_circletransition/obj_circletransition.yy",},"order":2,},
     {"id":{"name":"spr_playerLS_bjumpstart2","path":"sprites/spr_playerLS_bjumpstart2/spr_playerLS_bjumpstart2.yy",},"order":14,},
+    {"id":{"name":"rm_space_4","path":"rooms/rm_space_4/rm_space_4.yy",},"order":4,},
     {"id":{"name":"all_the_funcs","path":"scripts/all_the_funcs/all_the_funcs.yy",},"order":6,},
     {"id":{"name":"rm_testroom_secret2","path":"rooms/rm_testroom_secret2/rm_testroom_secret2.yy",},"order":4,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":14,},
@@ -438,6 +439,7 @@
     {"roomId":{"name":"rm_space_2","path":"rooms/rm_space_2/rm_space_2.yy",},},
     {"roomId":{"name":"rm_space_secret1","path":"rooms/rm_space_secret1/rm_space_secret1.yy",},},
     {"roomId":{"name":"rm_space_3","path":"rooms/rm_space_3/rm_space_3.yy",},},
+    {"roomId":{"name":"rm_space_4","path":"rooms/rm_space_4/rm_space_4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -64,7 +64,7 @@ if y > room_height
 	room_restart()
 	audio_play_sound(sfx_fallout,1,0)
 	deaths += 1
-	state = idlestate
+	statesave = idlestate
 }
 
 switch state { // normal
