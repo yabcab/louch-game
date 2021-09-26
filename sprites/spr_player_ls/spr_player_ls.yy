@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player LS",
-    "path": "folders/Sprites/player LS.yy",
+    "name": "placeholder and old",
+    "path": "folders/Sprites/placeholder and old.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_ls",

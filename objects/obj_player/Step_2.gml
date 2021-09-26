@@ -14,3 +14,8 @@ if pause_state = pausestate.playerpause
 else
 	if started_pause
 		pause_player_end()
+		
+if campaign = 1
+	sprite_index = spr_player
+if campaign = 2
+	sprite_index = spr_player_ls
