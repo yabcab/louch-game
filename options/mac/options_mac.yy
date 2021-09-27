@@ -1,5 +1,5 @@
 {
-  "option_mac_display_name": "Bogus Game PLUS",
+  "option_mac_display_name": "LouchGame - the alpha version!!",
   "option_mac_app_id": "com.company.game",
   "option_mac_version": "1.0.0.0",
   "option_mac_output_dir": "~/gamemakerstudio2",
