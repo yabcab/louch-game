@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_chocopop_walk",
-    "path": "sprites/spr_chocopop_walk/spr_chocopop_walk.yy",
+    "name": "spr_popsicle_idle",
+    "path": "sprites/spr_popsicle_idle/spr_popsicle_idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,17 +26,16 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_dash_hitbox","path":"objects/obj_dash_hitbox/obj_dash_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy",
-    "path": "folders/Objects/enemy.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_chocopop",
+  "name": "obj_popsicle",
   "tags": [],
   "resourceType": "GMObject",
 }

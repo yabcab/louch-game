@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_chocopop_walk",
-    "path": "sprites/spr_chocopop_walk/spr_chocopop_walk.yy",
+    "name": "spr_feesh_swim",
+    "path": "sprites/spr_feesh_swim/spr_feesh_swim.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,7 +36,7 @@
     "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_chocopop",
+  "name": "obj_spacefeesh",
   "tags": [],
   "resourceType": "GMObject",
 }
