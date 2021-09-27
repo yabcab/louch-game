@@ -9,6 +9,7 @@ if !instance_place(other.x,other.y + 5,obj_solid) && other.vspeed > 2
 	} */
 	if state = 0
 	{
+		do_hitstun(3)
 		state = 1
 		vspeed = -3
 	

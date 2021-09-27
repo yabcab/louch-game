@@ -10,4 +10,6 @@ var s = spr_dead
 		rot_speed = 15
 	}
 	
-audio_play_sound(sfx_hitwall3,1,0)
+audio_play_sound(sfx_schlap,1,0)
+do_hitstun(5)
+instance_create_depth(mean(x,obj_player.x),mean(y,obj_player.y),depth - 1,obj_hitstuneffect)

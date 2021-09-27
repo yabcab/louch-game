@@ -41,5 +41,10 @@ function pause_player_end() {
 #endregion
 
 #region misc - if you need it it's here
+function do_hitstun(length)
+{
+	with instance_create_depth(0,0,0,obj_hitstun)
+		alarm[0] = length
+}
 
 #endregion

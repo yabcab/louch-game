@@ -59,13 +59,6 @@ if instance_exists(obj_timer)
 		instance_destroy()
 }
 
-if y > room_height
-{
-	room_restart()
-	audio_play_sound(sfx_fallout,1,0)
-	deaths += 1
-	statesave = idlestate
-}
 
 switch state { // normal
 	case playerstate.idle:

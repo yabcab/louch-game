@@ -25,3 +25,6 @@ if state = -1
 		state = 0
 		idlestate = 0
 	}
+	
+checkpoint_x = x
+checkpoint_y = y

@@ -35,6 +35,8 @@ started_pause = 0
 pause = 0
 combo = 0
 targetroom = 0
+checkpoint_x = x
+checkpoint_y = y
 
 facing = 1
 xs = 1

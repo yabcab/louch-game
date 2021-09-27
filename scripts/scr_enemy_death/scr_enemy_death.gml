@@ -14,11 +14,13 @@ if other.state = playerstate.boost
 		}
 	
 	audio_play_sound(sfx_hitwall3,1,0)
+	do_hitstun(5)
 }
 else if other.state != playerstate.dying
 {
 	if !instance_place(other.x,other.y + 5,obj_solid) && other.vspeed > 2
 	{
+		do_hitstun(3)
 		var s = spr_dead
 		instance_destroy()
 		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
