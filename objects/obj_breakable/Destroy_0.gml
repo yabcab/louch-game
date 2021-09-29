@@ -15,7 +15,7 @@ if layer_exists(lay_id)
 if !silent
 {
 	for (crumbs = 0; crumbs < (image_xscale * image_yscale * 3); crumbs++)
-		instance_create_depth(x + random_range(0,image_xscale * 32),y + random_range(0,image_yscale * 32),depth,obj_wallcrumbs)
+		instance_create_depth(x + random_range(0,image_xscale * 32),y + random_range(0,image_yscale * 32),-5,obj_wallcrumbs)
 
 	audio_play_sound(sfx_wallbreak,1,0)
 }

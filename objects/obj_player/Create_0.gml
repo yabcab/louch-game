@@ -37,6 +37,7 @@ combo = 0
 targetroom = 0
 checkpoint_x = x
 checkpoint_y = y
+trailspawntime = 0
 
 facing = 1
 xs = 1

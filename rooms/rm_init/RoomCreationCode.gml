@@ -12,6 +12,7 @@ globalvar is_secret; is_secret = 0
 globalvar is_trial; is_trial = 0
 globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
+globalvar level; level = 0
 
 globalvar use_dash; use_dash = 0
 globalvar use_gp; use_gp = 0

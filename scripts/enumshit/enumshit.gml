@@ -25,4 +25,11 @@ enum pausestate {
 	nonplayerpause
 }
 
+enum level_id {
+	none = 0,
+	grass,
+	jungle,
+	space,
+}
+
 }

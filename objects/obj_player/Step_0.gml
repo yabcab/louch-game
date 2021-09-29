@@ -376,8 +376,16 @@ switch state { // normal
 			jumps = 1
 			
 		instance_create_depth(x + (40 * facing),y,-1,obj_dash_hitbox)
-		if !instance_place(x,y,obj_trail)
-			instance_create_depth(x,y,depth + 1,obj_trail)
+		trailspawntime++
+		if trailspawntime > 5
+		{
+			trailspawntime = 0
+			with instance_create_depth(x,y,depth + 1,obj_trail)
+			{
+				image_alpha = 1
+				flash = 1
+			}
+		}
 		
 		// taunt
 		if keyboard_check_pressed(ord("C"))
