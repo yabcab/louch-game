@@ -4,7 +4,7 @@
     "path": "sprites/spr_platform/spr_platform.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

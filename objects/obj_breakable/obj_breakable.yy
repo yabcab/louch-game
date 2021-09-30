@@ -4,7 +4,7 @@
     "path": "sprites/spr_breakable/spr_breakable.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

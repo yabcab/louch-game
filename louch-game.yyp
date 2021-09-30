@@ -97,6 +97,7 @@
     {"id":{"name":"sfx_thud","path":"sounds/sfx_thud/sfx_thud.yy",},"order":22,},
     {"id":{"name":"draw_text_with_wave","path":"scripts/draw_text_with_wave/draw_text_with_wave.yy",},"order":2,},
     {"id":{"name":"spr_portal_swirl","path":"sprites/spr_portal_swirl/spr_portal_swirl.yy",},"order":18,},
+    {"id":{"name":"rm_space_7","path":"rooms/rm_space_7/rm_space_7.yy",},"order":7,},
     {"id":{"name":"obj_keydoor","path":"objects/obj_keydoor/obj_keydoor.yy",},"order":1,},
     {"id":{"name":"rm_space_3","path":"rooms/rm_space_3/rm_space_3.yy",},"order":3,},
     {"id":{"name":"spr_gonk_dead","path":"sprites/spr_gonk_dead/spr_gonk_dead.yy",},"order":3,},
@@ -458,6 +459,7 @@
     {"roomId":{"name":"rm_space_4","path":"rooms/rm_space_4/rm_space_4.yy",},},
     {"roomId":{"name":"rm_space_5","path":"rooms/rm_space_5/rm_space_5.yy",},},
     {"roomId":{"name":"rm_space_6","path":"rooms/rm_space_6/rm_space_6.yy",},},
+    {"roomId":{"name":"rm_space_7","path":"rooms/rm_space_7/rm_space_7.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -510,7 +512,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "louch-game",
