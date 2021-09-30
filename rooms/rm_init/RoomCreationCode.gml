@@ -1,4 +1,4 @@
-
+audio_stop_sound(mu_disclaimer)
 draw_set_font(fnt_text)
 
 globalvar campaign; campaign = 0
