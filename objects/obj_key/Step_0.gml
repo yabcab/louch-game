@@ -12,6 +12,13 @@ if pause_state != pausestate.playerpause
 		y += y_diff / 10
 		
 		if keys < keynumb
+		{
 			instance_destroy()
+			with instance_create_depth(x,y,-5,obj_eatenapple)
+			{
+				sprite_index = spr_key
+				rot_speed = 5
+			}
+		}
 	}
 }
