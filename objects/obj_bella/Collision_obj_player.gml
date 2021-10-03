@@ -1,4 +1,4 @@
-if other.vspeed > 2
+if other.vspeed > 0.5 && y + 5 > other.y
 {
 	/*if state = 1 && wait > 25
 	{
