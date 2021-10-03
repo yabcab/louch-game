@@ -365,8 +365,8 @@ switch state { // normal
 			trailspawntime = 0
 			with instance_create_depth(x,y,depth + 1,obj_trail)
 			{
-				image_alpha = 1
-				flash = 1
+				image_alpha = 0.5
+				flash = 0
 			}
 		}
 		

@@ -1,4 +1,4 @@
-if !instance_place(other.x,other.y + 5,obj_solid) && other.vspeed > 2
+if other.vspeed > 2
 {
 	/*if state = 1 && wait > 25
 	{

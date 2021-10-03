@@ -18,7 +18,7 @@ if other.state = playerstate.boost
 }
 else if other.state != playerstate.dying
 {
-	if !instance_place(other.x,other.y + 5,obj_solid) && other.vspeed > 2
+	if other.vspeed > 2
 	{
 		do_hitstun(3)
 		var s = spr_dead
