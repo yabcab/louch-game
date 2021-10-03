@@ -961,10 +961,16 @@ switch state { // normal
 		if keyboard_check_pressed(ord("X")) && dash_charge = 1
 		{
 			if keyboard_check(vk_right)
-				hspeed = 9
+				if hspeed < 7
+					hspeed = 7
+				else
+					hspeed += 3
 			else
 			if keyboard_check(vk_left)
-				hspeed = -9
+				if hspeed > -7
+					hspeed = -7
+				else
+					hspeed += -3
 			else
 			hspeed = 0
 			
