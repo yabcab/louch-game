@@ -48,3 +48,17 @@ function do_hitstun(length)
 }
 
 #endregion
+
+#region player - you get the point
+
+function player_taunt()
+{
+	audio_play_sound(sfx_taunt,1,0)
+	hspeedsave = hspeed
+	vspeedsave = vspeed
+	statesave = state
+	state = playerstate.taunt
+	sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
+}
+
+#endregion

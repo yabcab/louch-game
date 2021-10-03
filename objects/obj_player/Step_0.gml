@@ -1,16 +1,16 @@
-if keyboard_check_pressed(vk_escape)
-{
-	if pause_state = pausestate.none
-	{
-		pause_state = pausestate.playerpause
-		pause = 1
-	}
-	else
-	{
-		pause_state = pausestate.none
-		pause = 0
-	}
-}
+//if keyboard_check_pressed(vk_escape)
+//{
+//	if pause_state = pausestate.none
+//	{
+//		pause_state = pausestate.playerpause
+//		pause = 1
+//	}
+//	else
+//	{
+//		pause_state = pausestate.none
+//		pause = 0
+//	}
+//}
 
 if inv
 {
@@ -230,15 +230,7 @@ switch state { // normal
 			if hspeed > 0
 				facing = 1
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 	}
 	break;
 	
@@ -303,16 +295,7 @@ switch state { // normal
 				facing = -1
 			if hspeed > 0
 				facing = 1
-				
-		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-		}
+	
 	}
 	break;
 	
@@ -388,15 +371,7 @@ switch state { // normal
 		}
 		
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 		
 	}
 	break;
@@ -412,6 +387,8 @@ switch state { // normal
 		sprite_index = spr_playerLS_pain
 		
 		hurttime += 1
+		
+		taunt_qualify = 0
 	}
 	break;
 	
@@ -426,6 +403,7 @@ switch state { // normal
 			vspeed = vspeedsave
 			wait = 0
 		}
+		taunt_qualify = 0
 	}
 	break;
 		
@@ -595,15 +573,7 @@ switch state { // normal
 			if hspeed > 0
 				facing = 1
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 	}
 	break;
 	
@@ -773,15 +743,7 @@ switch state { // normal
 			if hspeed > 0
 				facing = 1
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 	}
 	break;
 	
@@ -805,15 +767,7 @@ switch state { // normal
 		}
 		
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 	}
 	break;
 	
@@ -828,15 +782,7 @@ switch state { // normal
 			instance_create_depth(x,y,depth + 1,obj_trail)
 		
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 		
 		if keyboard_check(ord("Z"))
 		{
@@ -862,6 +808,8 @@ switch state { // normal
 			
 		if instance_place(x,y+1,obj_solid)
 			state = idlestate
+			
+		taunt_qualify = 0
 	}
 	break;
 	
@@ -892,6 +840,8 @@ switch state { // normal
 		}
 		
 		sprite_index = spr_playerLS_pain
+		
+		taunt_qualify = 0
 	}
 	break;
 	
@@ -1055,15 +1005,7 @@ switch state { // normal
 			if hspeed > 0
 				facing = 1
 		// taunt
-		if keyboard_check_pressed(ord("C"))
-		{
-			hspeedsave = hspeed
-			vspeedsave = vspeed
-			statesave = state
-			state = playerstate.taunt
-			sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
-			audio_play_sound(sfx_taunt,1,0)
-		}
+		taunt_qualify = 1
 	}
 	break;
 	
@@ -1077,7 +1019,12 @@ switch state { // normal
 		hspeed = 0
 		xs = 1 - abs(vspeed / 50)
 		ys = 1 + abs(vspeed / 50)
+		
+		taunt_qualify = 0
 	}
 	break;
 	
 }
+
+if taunt_qualify && keyboard_check_pressed(ord("C"))
+	player_taunt()

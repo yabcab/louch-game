@@ -1,7 +1,7 @@
 if pause_state = pausestate.none
 {
 	vspeed += 0.15
-	image_angle += rot_speed
+	image_angle += rot_speed * rot_dir
 
 	if y > room_height
 		instance_destroy()

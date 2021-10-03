@@ -1,3 +1,5 @@
+debug = 0
+
 depth = -2
 y += 32
 x += 32
@@ -16,7 +18,6 @@ beginfall = 0
 beginfall_start = 0
 begingp = 0
 enddash = 0
-debug = 1
 playername = "bitch"
 jumps = 0
 diving = 0
@@ -38,6 +39,7 @@ targetroom = 0
 checkpoint_x = x
 checkpoint_y = y
 trailspawntime = 0
+taunt_qualify = 0
 
 facing = 1
 xs = 1
