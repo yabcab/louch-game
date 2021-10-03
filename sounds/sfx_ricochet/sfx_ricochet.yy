@@ -13,8 +13,8 @@
   "soundFile": "sfx_ricochet.mp3",
   "duration": 1.272,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_ricochet",

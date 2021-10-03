@@ -13,8 +13,8 @@
   "soundFile": "sfx_gonkhit.mp3",
   "duration": 1.776327,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_gonkhit",

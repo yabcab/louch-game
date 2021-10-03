@@ -13,8 +13,8 @@
   "soundFile": "sfx_hitwall3.mp3",
   "duration": 1.008,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_hitwall3",

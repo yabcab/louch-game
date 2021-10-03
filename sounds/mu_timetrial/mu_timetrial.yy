@@ -13,8 +13,8 @@
   "soundFile": "mu_timetrial.mp3",
   "duration": 210.599182,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mu_timetrial",

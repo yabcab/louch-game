@@ -13,8 +13,8 @@
   "soundFile": "sfx_pain.wav",
   "duration": 0.249796,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_pain",

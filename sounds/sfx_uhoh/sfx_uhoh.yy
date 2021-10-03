@@ -13,8 +13,8 @@
   "soundFile": "sfx_uhoh.mp3",
   "duration": 0.705306,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_uhoh",

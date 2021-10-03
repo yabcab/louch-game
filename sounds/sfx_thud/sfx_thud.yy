@@ -13,8 +13,8 @@
   "soundFile": "sfx_thud.mp3",
   "duration": 2.873469,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_thud",

@@ -13,8 +13,8 @@
   "soundFile": "sfx_tele.wav",
   "duration": 0.49966,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_tele",

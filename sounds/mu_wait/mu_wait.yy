@@ -13,8 +13,8 @@
   "soundFile": "mu_wait.mp3",
   "duration": 43.3371429,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mu_wait",

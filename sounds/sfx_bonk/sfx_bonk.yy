@@ -13,8 +13,8 @@
   "soundFile": "sfx_bonk.mp3",
   "duration": 0.576,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_bonk",

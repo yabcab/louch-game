@@ -13,8 +13,8 @@
   "soundFile": "mu_escapesecret.mp3",
   "duration": 212.625122,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mu_escapesecret",

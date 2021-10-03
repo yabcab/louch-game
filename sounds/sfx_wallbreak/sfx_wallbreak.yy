@@ -13,8 +13,8 @@
   "soundFile": "sfx_wallbreak.wav",
   "duration": 0.391837,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_wallbreak",

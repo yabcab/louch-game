@@ -13,8 +13,8 @@
   "soundFile": "sfx_airjump.mp3",
   "duration": 0.36,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_airjump",

@@ -13,8 +13,8 @@
   "soundFile": "mu_c3area1.mp3",
   "duration": 142.628571,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mu_c3area1",
