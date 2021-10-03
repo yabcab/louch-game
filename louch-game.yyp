@@ -277,7 +277,7 @@
     {"id":{"name":"obj_freezetimewall","path":"objects/obj_freezetimewall/obj_freezetimewall.yy",},"order":2,},
     {"id":{"name":"obj_roomname","path":"objects/obj_roomname/obj_roomname.yy",},"order":7,},
     {"id":{"name":"obj_enemyturn","path":"objects/obj_enemyturn/obj_enemyturn.yy",},"order":7,},
-    {"id":{"name":"spr_wait","path":"sprites/spr_wait/spr_wait.yy",},"order":12,},
+    {"id":{"name":"spr_ralseichuffingafatdart","path":"sprites/spr_ralseichuffingafatdart/spr_ralseichuffingafatdart.yy",},"order":12,},
     {"id":{"name":"ts_leveltiles","path":"tilesets/ts_leveltiles/ts_leveltiles.yy",},"order":0,},
     {"id":{"name":"bg_secret2","path":"sprites/bg_secret2/bg_secret2.yy",},"order":5,},
     {"id":{"name":"rm_tutorial_2","path":"rooms/rm_tutorial_2/rm_tutorial_2.yy",},"order":1,},

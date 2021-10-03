@@ -20,6 +20,8 @@ if other.vspeed > 0.5 && y + 5 > other.y
 		
 		other.beginjump = 1
 		other.image_index = 0
+		other.justhitenemy = 1
+		other.alarm[0] = 5
 	
 		var snd = audio_play_sound(sfx_bonk,1,0)
 		audio_sound_pitch(snd,1 + (other.combo / 10))

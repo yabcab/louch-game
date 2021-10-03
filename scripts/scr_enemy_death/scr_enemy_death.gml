@@ -36,6 +36,8 @@ else if other.state != playerstate.dying
 		
 		other.beginjump = 1
 		other.image_index = 0
+		other.justhitenemy = 1
+		other.alarm[0] = 5
 	
 		var snd = audio_play_sound(sfx_bonk,1,0)
 		audio_sound_pitch(snd,1 + (other.combo / 10))
@@ -43,7 +45,7 @@ else if other.state != playerstate.dying
 	}
 	else if hurt && !other.inv
 	{
-		if other.state != playerstate.boost && other.state != playerstate.hurt
+		if other.state != playerstate.boost && other.state != playerstate.hurt && !other.justhitenemy
 		{
 			other.inv = 1
 			other.alarm[1] = 150
