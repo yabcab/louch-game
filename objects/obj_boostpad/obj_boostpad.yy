@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_boostpad",
+    "path": "sprites/spr_boostpad/spr_boostpad.yy",
   },
   "solid": false,
   "visible": true,
