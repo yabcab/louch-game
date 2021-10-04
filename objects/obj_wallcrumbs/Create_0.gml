@@ -2,7 +2,11 @@ var secret = is_secret
 
 if secret
 {
-	sprite_index = spr_wallparticles_secret
+	switch level {
+		case level_id.grass: { sprite_index = spr_wallparticles_secret } break;	
+		case level_id.jungle: { sprite_index = spr_wallparticles_secret_jungle } break;
+		case level_id.space: { sprite_index = spr_wallparticles_secret_space } break;
+	}
 }
 else
 {

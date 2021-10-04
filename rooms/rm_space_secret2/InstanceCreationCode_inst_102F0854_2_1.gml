@@ -1,4 +1,4 @@
-sprite_index = bg_secret1
+sprite_index = bg_secret1_space
 x_intensity = 0.4
 y_intensity = 0.4
 size = 0.25
