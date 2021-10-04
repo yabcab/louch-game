@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_airjump",
-    "path": "sprites/spr_airjump/spr_airjump.yy",
+    "name": "spr_shroom1",
+    "path": "sprites/spr_shroom1/spr_shroom1.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,6 +22,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

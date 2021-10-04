@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "stopwatch",
-    "path": "folders/Sprites/stopwatch.yy",
+    "path": "folders/Sprites/levelspecific/stopwatch.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_stopwatch_hand1",
