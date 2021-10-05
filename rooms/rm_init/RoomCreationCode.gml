@@ -16,7 +16,7 @@ globalvar level; level = 0
 
 globalvar use_dash; use_dash = 0
 globalvar use_gp; use_gp = 0
-campaign = 0
+campaign = 3
 playerspr = spr_player_ls
 globalvar destroy_list;
 destroy_list = ds_list_create()
