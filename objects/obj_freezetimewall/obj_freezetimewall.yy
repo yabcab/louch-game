@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_keydoor",
-    "path": "sprites/spr_keydoor/spr_keydoor.yy",
+    "name": "spr_stars1",
+    "path": "sprites/spr_stars1/spr_stars1.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,6 +24,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

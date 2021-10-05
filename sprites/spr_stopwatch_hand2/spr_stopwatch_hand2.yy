@@ -2,15 +2,15 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 25,
-  "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_left": 29,
+  "bbox_right": 33,
+  "bbox_top": 20,
+  "bbox_bottom": 32,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6e841f2a-592b-4171-93f3-c64de4066ea2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e841f2a-592b-4171-93f3-c64de4066ea2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"LayerId":{"name":"1c5d3004-3f80-4ffd-8fc9-8963c17a6cdf","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_stopwatch_hand2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","name":"6e841f2a-592b-4171-93f3-c64de4066ea2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d48c2c38-397a-4376-aa0f-5a9201162c4b","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d48c2c38-397a-4376-aa0f-5a9201162c4b","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"LayerId":{"name":"04eef382-095a-4d47-bd91-23414f17b6e3","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_stopwatch_hand2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","name":"d48c2c38-397a-4376-aa0f-5a9201162c4b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_stopwatch_hand2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},
@@ -41,8 +41,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ffb02ade-ede1-42d8-bf08-f2eb5ca340bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e841f2a-592b-4171-93f3-c64de4066ea2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+            {"id":"387c41f7-8af2-483c-9cd1-e79b9d2fca94","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d48c2c38-397a-4376-aa0f-5a9201162c4b","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 32,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stopwatch_hand2","path":"sprites/spr_stopwatch_hand2/spr_stopwatch_hand2.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1c5d3004-3f80-4ffd-8fc9-8963c17a6cdf","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"04eef382-095a-4d47-bd91-23414f17b6e3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
