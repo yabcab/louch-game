@@ -22,3 +22,15 @@ if campaign = 1
 	sprite_index = spr_player
 if campaign = 2
 	sprite_index = spr_player_ls
+	
+if jump_charged
+{
+	with instance_create_depth(x + random_range(-16,16),y + random_range(32,48),depth - 1,obj_explosionparticle)
+	{
+		sprite_index = spr_highjumppart
+		speed = 2
+		anim_end = 1
+	}
+	if vspeed > 0
+		jump_charged = 0
+}

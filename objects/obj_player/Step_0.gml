@@ -48,11 +48,6 @@ else if fade = 2
 else
 	fade_amount = 0
 
-if jumpcharge > 15
-	image_blend = c_blue
-else
-	image_blend = c_white
-
 if instance_exists(obj_timer)
 {
 	if !obj_timer.minutes && !obj_timer.seconds	
@@ -69,7 +64,16 @@ switch state { // normal
 			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
 			{
 				if hspeed = 0
-					sprite_index = spr_playerLS_still
+					if jumpcharge > 0
+						if jumpcharge_starting
+							sprite_index = spr_playerLS_chargejumpstart
+						else
+							if jumpcharge > 15
+								sprite_index = spr_playerLS_chargejumpready
+							else
+								sprite_index = spr_playerLS_chargejump
+					else
+						sprite_index = spr_playerLS_still
 				else
 					sprite_index = spr_playerLS_walk
 				
@@ -113,6 +117,11 @@ switch state { // normal
 		// walkin
 		if keyboard_check(vk_up) && !dashing && (instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope))
 		{
+			if jumpcharge < 1
+			{
+				jumpcharge_starting = 1
+				image_index = 0
+			}
 			jumpcharge += 1
 			hspeed = 0
 		}
@@ -136,6 +145,7 @@ switch state { // normal
 			{
 				vspeed = -13
 				jumpcharge = 0
+				jump_charged = 1
 			}
 			else
 				vspeed = -9
