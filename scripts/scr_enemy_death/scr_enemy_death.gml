@@ -30,7 +30,10 @@ else if other.state != playerstate.dying
 		}
 	
 		if keyboard_check(ord("Z"))
+		{
 			other.vspeed = -9
+			other.jumping = 1
+		}
 		else
 			other.vspeed = -6
 		

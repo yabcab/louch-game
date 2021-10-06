@@ -34,3 +34,5 @@ if jump_charged
 	if vspeed > 0
 		jump_charged = 0
 }
+if vspeed > 0
+	jumping = 0

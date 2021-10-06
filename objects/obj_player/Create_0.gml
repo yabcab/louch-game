@@ -5,6 +5,7 @@ y += 32
 x += 32
 alarm[0] = 30
 
+jumping = 0
 fade = 0
 fade_amount = 0
 state = playerstate.idle

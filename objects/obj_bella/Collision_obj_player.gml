@@ -14,7 +14,10 @@ if other.vspeed > 0.5 && y + 5 > other.y
 		vspeed = -3
 	
 		if keyboard_check(ord("Z"))
+		{
 			other.vspeed = -9
+			other.jumping = 1
+		}
 		else
 			other.vspeed = -6
 		

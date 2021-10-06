@@ -154,43 +154,14 @@ switch state { // normal
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
+			jumping = 1
 			image_index = 0
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		if jumping && !keyboard_check(ord("Z"))
 		{
-			audio_play_sound(sfx_airjump,1,0)
-			
-			if keyboard_check(vk_up)
-				vspeed = -11
-			else
-				vspeed = -9
-			
-			dash_charge = 1
-			beginjump = 1
-			image_index = 0
+			vspeed = 0
+			jumping = 0
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
-		{
-			audio_play_sound(sfx_airjump,1,0)
-			
-			var inst = instance_place(x,y,obj_rightdraft)
-			if inst.image_xscale > 0
-			{
-				hspeed = 11
-				vspeed = -4
-			}
-			else
-			{
-				hspeed = -11
-				vspeed = -4
-			}
-			
-			dash_charge = 1
-			dashing = 1
-			beginjump = 1
-			image_index = 0
-		}
-		
 				
 		// dashin
 		//if keyboard_check_pressed(ord("X")) && dash_charge = 1
@@ -360,7 +331,13 @@ switch state { // normal
 				
 			beginjump = 1
 			image_index = 0
+			jumping = 1
 			jumps -= 1
+		}
+		if jumping && !keyboard_check(ord("Z"))
+		{
+			vspeed = 0
+			jumping = 0
 		}
 		
 		if instance_place(x + hspeed,y,obj_solid)
@@ -930,40 +907,12 @@ switch state { // normal
 				
 			beginjump = 1
 			image_index = 0
+			jumping = 1
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		if jumping && !keyboard_check(ord("Z"))
 		{
-			audio_play_sound(sfx_airjump,1,0)
-			
-			if keyboard_check(vk_up)
-				vspeed = -11
-			else
-				vspeed = -9
-			
-			dash_charge = 1
-			beginjump = 1
-			image_index = 0
-		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
-		{
-			audio_play_sound(sfx_airjump,1,0)
-			
-			var inst = instance_place(x,y,obj_rightdraft)
-			if inst.image_xscale > 0
-			{
-				hspeed = 11
-				vspeed = -4
-			}
-			else
-			{
-				hspeed = -11
-				vspeed = -4
-			}
-			
-			dash_charge = 1
-			dashing = 1
-			beginjump = 1
-			image_index = 0
+			vspeed = 0
+			jumping = 0
 		}
 		
 				
