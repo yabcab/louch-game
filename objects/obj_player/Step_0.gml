@@ -159,7 +159,7 @@ switch state { // normal
 		}
 		if jumping && !keyboard_check(ord("Z"))
 		{
-			vspeed = 0
+			vspeed = -3
 			jumping = 0
 		}
 				
@@ -336,7 +336,7 @@ switch state { // normal
 		}
 		if jumping && !keyboard_check(ord("Z"))
 		{
-			vspeed = 0
+			vspeed = -3
 			jumping = 0
 		}
 		
@@ -911,7 +911,7 @@ switch state { // normal
 		}
 		if jumping && !keyboard_check(ord("Z"))
 		{
-			vspeed = 0
+			vspeed = -3
 			jumping = 0
 		}
 		
