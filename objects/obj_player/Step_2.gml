@@ -34,5 +34,5 @@ if jump_charged
 	if vspeed > 0
 		jump_charged = 0
 }
-if vspeed > -3
+if vspeed > -3 && state != playerstate.taunt
 	jumping = 0

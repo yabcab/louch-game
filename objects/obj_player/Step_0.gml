@@ -381,6 +381,11 @@ switch state { // normal
 	
 	case playerstate.taunt: // taunt
 	{
+		if jumping && !keyboard_check(ord("Z"))
+		{
+			vspeedsave = -3
+			jumping = 0
+		}
 		speed = 0
 		wait += 1
 		if wait > 15
