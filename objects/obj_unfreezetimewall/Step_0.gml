@@ -1,6 +1,6 @@
 if instance_exists(obj_player)
 {
-	if pause_state = pausestate.nonplayerpause
+	if pause_state = pausestate.nonplayerpause && pause_state != pausestate.playerpause
 	{
 		image_alpha = 1
 		if !instance_exists(obj) && !instance_place(x,y,obj_player)
@@ -13,7 +13,7 @@ if instance_exists(obj_player)
 			}
 		}
 	}
-	else
+	else if pause_state != pausestate.playerpause
 	{
 		image_alpha = 0.4
 		instance_destroy(obj)

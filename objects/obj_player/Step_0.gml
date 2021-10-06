@@ -862,10 +862,10 @@ switch state { // normal
 		{
 			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
 			{
-				if hspeed = 0
-					sprite_index = spr_playerLS_still
+				if abs(hspeed) < 0.25
+					sprite_index = spr_playerLS_high_idle
 				else
-					sprite_index = spr_playerLS_walk
+					sprite_index = spr_playerLS_high_walk
 				
 				beginfall = 1
 				beginfall_start = 1
@@ -877,12 +877,12 @@ switch state { // normal
 					if enddash
 						sprite_index = spr_playerLS_airjumpend
 					else
-						sprite_index = spr_playerLS_jumpstart
+						sprite_index = spr_playerLS_high_jumpstart
 					beginfall = 0
 				}
 				else
 					if beginfall = 0
-						sprite_index = spr_playerLS_jumpair
+						sprite_index = spr_playerLS_high_jump
 					else
 					{
 						sprite_index = spr_playerLS_beginfall
