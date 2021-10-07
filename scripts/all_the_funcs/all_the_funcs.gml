@@ -58,7 +58,7 @@ function player_taunt()
 	vspeedsave = vspeed
 	statesave = state
 	state = playerstate.taunt
-	sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5)
+	sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5,spr_playerLS_taunt6,spr_playerLS_taunt7,spr_playerLS_taunt8)
 }
 
 #endregion

@@ -141,7 +141,7 @@ switch state { // normal
 		// jumpin
 		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
 		{
-			if keyboard_check(vk_up) && jumpcharge > 15
+			if keyboard_check(vk_up) && jumpcharge > 30
 			{
 				vspeed = -13
 				jumpcharge = 0
@@ -381,11 +381,11 @@ switch state { // normal
 	
 	case playerstate.taunt: // taunt
 	{
-		if jumping && !keyboard_check(ord("Z"))
-		{
-			vspeedsave = -3
-			jumping = 0
-		}
+		//if jumping && !keyboard_check(ord("Z"))
+		//{
+		//	vspeedsave = -3
+		//	jumping = 0
+		//}
 		speed = 0
 		wait += 1
 		if wait > 15
@@ -787,6 +787,8 @@ switch state { // normal
 	
 	case playerstate.water_jump:
 	{
+		sprite_index = spr_playerLS_pain
+		
 		if keyboard_check(vk_right)
 			hspeed = 3
 		else 
@@ -867,7 +869,7 @@ switch state { // normal
 						sprite_index = spr_playerLS_high_jump
 					else
 					{
-						sprite_index = spr_playerLS_beginfall
+						sprite_index = spr_playerLS_high_ledgefall
 						if beginfall_start
 						{
 							image_index = 0
@@ -946,12 +948,21 @@ switch state { // normal
 		}
 		
 		// dash end
-		if keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)
+		if (keyboard_check_pressed(vk_left) && facing = 1) || (keyboard_check_pressed(vk_right) && facing = -1)
 			dashing = 0
 		
 		// dash hitbox
 		if dashing = 1
 		{
+			with instance_create_depth(x,y,depth + 1,obj_trail)
+			{
+				image_speed = 0
+				startfade = 1
+				sprite_index = other.sprite_index
+				image_index = other.image_index
+				image_xscale = other.xs * other.facing
+				image_angle = other.image_angle
+			}
 			if hspeed < 0
 				instance_create_depth(x - 35,y,depth,obj_dash_hitbox)
 			else if hspeed > 0
