@@ -29,6 +29,7 @@ if other.vspeed > 0.5 && y + 5 > other.y
 		var snd = audio_play_sound(sfx_bonk,1,0)
 		audio_sound_pitch(snd,1 + (other.combo / 10))
 		other.combo += 1
+		ds_list_set(destroy_list,id,1)
 	}
 }
 else if other.state != 11 && other.inv = 0

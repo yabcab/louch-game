@@ -46,6 +46,7 @@ else if other.state != playerstate.dying
 		audio_sound_pitch(snd,1 + (other.combo / 10))
 		other.combo += 1
 		score += 20 * other.combo
+		ds_list_set(destroy_list,id,1)
 	}
 	else if hurt && !other.inv
 	{

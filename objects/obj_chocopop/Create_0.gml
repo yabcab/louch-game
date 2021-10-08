@@ -8,3 +8,6 @@ started_pause = 0
 facing = 0
 chargetime = 0
 lunge = 0
+
+if ds_list_find_value(destroy_list,id) = 1
+	instance_destroy()
