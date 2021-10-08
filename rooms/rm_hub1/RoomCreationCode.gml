@@ -9,3 +9,5 @@ if instance_exists(obj_freezetimer)
 	
 ds_list_destroy(destroy_list)
 destroy_list = ds_list_create()
+
+score = 0

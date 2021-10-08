@@ -45,6 +45,7 @@ else if other.state != playerstate.dying
 		var snd = audio_play_sound(sfx_bonk,1,0)
 		audio_sound_pitch(snd,1 + (other.combo / 10))
 		other.combo += 1
+		score += 20 * other.combo
 	}
 	else if hurt && !other.inv
 	{

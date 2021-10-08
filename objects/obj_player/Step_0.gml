@@ -1,3 +1,5 @@
+
+
 //if keyboard_check_pressed(vk_escape)
 //{
 //	if pause_state = pausestate.none

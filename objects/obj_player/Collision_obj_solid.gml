@@ -41,6 +41,7 @@ if (instance_place(x+hspeed,y+vspeed,obj_solid))
 {
 	hspeed=0;
 }
+
 // dash
 if instance_place(x,y+3,obj_solid)
 {

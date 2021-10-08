@@ -45,18 +45,18 @@ if !instance_place(x,y+1,obj_slope)
 	}
 }
 vspeed = 0
-while instance_place(x, y, obj_slope)
+while place_meeting(x, y + 0.1, obj_slope)
 {
 	y -= 0.1
 }
-while instance_place(x, y + abs(hspeed) + 1, obj_slope) && !instance_place(x, y + 1, obj_slope)
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 0.1, obj_slope)
 {
 	y += 0.1
 }
 if instance_place(x + hspeed,y,obj_solid)
 {
-	var inst = instance_place(x + hspeed,y,obj_solid)
-	y = inst.y - 32
+	var inst = instance_place(x + hspeed,y + 1,obj_solid)
+	y = inst.y - 33
 }
 
 // dash

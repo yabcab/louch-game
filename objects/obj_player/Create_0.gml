@@ -4,6 +4,8 @@ depth = -2
 y += 32
 x += 32
 alarm[0] = 30
+hsp = 0
+vsp = 0
 
 jumping = 0
 fade = 0
