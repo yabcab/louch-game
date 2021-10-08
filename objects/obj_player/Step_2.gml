@@ -22,6 +22,8 @@ if campaign = 1
 	sprite_index = spr_player
 if campaign = 2
 	sprite_index = spr_player_ls
+if campaign = 4
+	sprite_index = spr_bogus
 	
 if jump_charged
 {

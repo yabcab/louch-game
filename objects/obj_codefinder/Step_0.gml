@@ -32,6 +32,12 @@ if string_pos("louchester",str) > 0
 	keyboard_string = ""
 }
 
+if string_pos("nolardass",str) > 0
+{
+	campaign = 4
+	keyboard_string = ""
+}
+
 if string_pos("lookatme",str) > 0
 {
 	if instance_exists(obj_player)
