@@ -1,10 +1,18 @@
+while place_meeting(x + hspeed, y + 0.1, obj_slope)
+{
+	y -= 0.1
+}
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
+{
+	y += 0.1
+}
 switch state {
 	case 0: 
 	{
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if instance_place(x + hspeed,y,obj_solid)
+		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid))
 		{
 			hspeed = -hspeed
 			xs = -xs
@@ -54,7 +62,3 @@ else
 	if started_pause
 		pause_player_end()
 		
-while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
-{
-	y += 0.1
-}

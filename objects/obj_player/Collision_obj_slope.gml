@@ -59,7 +59,7 @@ if instance_place(x,y+3,obj_slope)
 if !instance_place(x,y-1,obj_slope)
 	dashing = 0
 	
-if state = playerstate.hurt && (instance_place(x,y+1,obj_slope) || instance_place(x+1,y,obj_slope) || instance_place(x-1,y,obj_slope)) && hurttime > 10
+if state = playerstate.hurt && hurttime > 10
 {
 	state = idlestate
 	hurttime = 0

@@ -1,3 +1,12 @@
+while place_meeting(x + hspeed, y + 0.1, obj_slope)
+{
+	y -= 0.1
+}
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
+{
+	y += 0.1
+}
+
 switch state {
 	case 0: 
 	{
@@ -24,7 +33,3 @@ else
 	if started_pause
 		pause_player_end()
 		
-while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
-{
-	y += 0.1
-}

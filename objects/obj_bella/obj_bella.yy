@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_bella_idle",
+    "path": "sprites/spr_bella_idle/spr_bella_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

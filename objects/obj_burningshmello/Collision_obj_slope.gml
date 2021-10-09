@@ -19,7 +19,7 @@ if !instance_place(x,y+1,obj_slope)
 		hspeed=0;
 	}
 }
-while place_meeting(x, y + 0.1, obj_slope)
+while place_meeting(x + hspeed, y + 0.1, obj_slope)
 {
 	y -= 0.1
 }

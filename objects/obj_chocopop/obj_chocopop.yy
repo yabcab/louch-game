@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_chocopop_walk",
+    "path": "sprites/spr_chocopop_walk/spr_chocopop_walk.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
