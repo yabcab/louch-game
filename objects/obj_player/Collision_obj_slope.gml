@@ -23,7 +23,7 @@ if state = playerstate.dying
 			vspeed *= -1
 	}
 }
-
+vspeed = 0
 if !instance_place(x,y+1,obj_slope)
 {
 	if (instance_place(x+hspeed,y,obj_solid))
@@ -44,20 +44,11 @@ if !instance_place(x,y+1,obj_slope)
 		hspeed=0;
 	}
 }
-vspeed = 0
 while place_meeting(x, y + 0.1, obj_slope)
 {
 	y -= 0.1
 }
-while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 0.1, obj_slope)
-{
-	y += 0.1
-}
-if instance_place(x + hspeed,y,obj_solid)
-{
-	var inst = instance_place(x + hspeed,y + 1,obj_solid)
-	y = inst.y - 33
-}
+
 
 // dash
 if instance_place(x,y+3,obj_slope)

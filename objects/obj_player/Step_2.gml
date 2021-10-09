@@ -38,3 +38,8 @@ if jump_charged
 }
 if vspeed > -3 && state != playerstate.taunt && !justhitenemy
 	jumping = 0
+
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
+{
+	y += 0.1
+}

@@ -343,8 +343,14 @@ switch state { // normal
 		}
 		
 		if instance_place(x + hspeed,y,obj_solid)
-			state = idlestate
-		if instance_place(x,y + 5,obj_solid)
+		{
+			if instance_place(x + hspeed,y - 12,obj_solid)
+				state = idlestate
+			else
+				while instance_place(x + hspeed,y - 8,obj_solid)
+					y -= 1
+		}
+		if instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)
 			jumps = 1
 			
 		instance_create_depth(x + (40 * facing),y,-1,obj_dash_hitbox)
@@ -901,7 +907,7 @@ switch state { // normal
 				hspeed = lerp(hspeed,0,0.025)
 			
 		// jumpin
-		if keyboard_check_pressed(ord("Z")) && instance_place(x,y + 5,obj_solid) // ground
+		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
 		{
 			if keyboard_check(vk_up) && jumpcharge > 15
 			{

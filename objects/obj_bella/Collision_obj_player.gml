@@ -1,4 +1,4 @@
-if other.vspeed > 0.5 && y + 5 > other.y
+if other.vspeed > 0.5 && y - 5 < other.y && !instance_place(other.x,other.y + 1,obj_slope)
 {
 	/*if state = 1 && wait > 25
 	{

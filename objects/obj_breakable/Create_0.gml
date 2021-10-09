@@ -1,3 +1,6 @@
+if !layer_exists(layer_get_id("Tiles_2"))
+	visible = 1
+
 numb = 0
 silent = 0
 

@@ -18,7 +18,7 @@ if other.state = playerstate.boost
 }
 else if other.state != playerstate.dying
 {
-	if other.vspeed > 0.5 && y + 5 > other.y
+	if other.vspeed > 0.5 && y + 5 > other.y && !(instance_place(other.x,other.y + abs(other.hspeed) + 1,obj_slope) || instance_place(other.x,other.y + 1,obj_solid))
 	{
 		do_hitstun(3)
 		var s = spr_dead

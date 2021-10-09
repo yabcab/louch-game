@@ -10,7 +10,7 @@ switch state {
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if instance_place(x + hspeed,y,obj_solid) || instance_place(x + hspeed,y,obj_enemyturn)
+		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid)) || instance_place(x + hspeed,y,obj_enemyturn)
 		{
 			hspeed = -hspeed
 			xs = -xs
@@ -76,3 +76,8 @@ if pause_state != pausestate.none
 else
 	if started_pause
 		pause_player_end()
+		
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope)
+{
+	y += 0.1
+}

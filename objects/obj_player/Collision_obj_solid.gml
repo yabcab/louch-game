@@ -23,13 +23,16 @@ if state = playerstate.dying
 			vspeed *= -1
 	}
 }
-
+if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12,obj_solid)
+{
+	while instance_place(x + hspeed,y + vspeed,obj_solid)
+		y -= 1
+}
 if (instance_place(x+hspeed,y,obj_solid))
 {
 	if (hspeed<=0){move_contact_solid(180,abs(hspeed));}
 	if (hspeed>0){move_contact_solid(0,abs(hspeed));}
-	if !instance_place(x,y+1,obj_slope)
-		hspeed=0;
+	hspeed=0;
 }
 if (instance_place(x,y+vspeed,obj_solid))
 {
@@ -43,7 +46,7 @@ if (instance_place(x+hspeed,y+vspeed,obj_solid))
 }
 
 // dash
-if instance_place(x,y+3,obj_solid)
+if instance_place(x + hspeed,y + 1,obj_solid) && !instance_place(x + hspeed,y - 12,obj_solid)
 {
 	dash_charge = 1
 	pounding = 0

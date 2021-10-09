@@ -1,7 +1,7 @@
 switch state {
 	case 0: 
 	{	
-		if instance_place(x + hspeed,y,obj_solid)
+		if instance_place(x + hspeed,y,obj_solid) || instance_place(x + hspeed,y,obj_slope)
 			hspeed = -hspeed
 
 		if hspeed != 0
@@ -20,3 +20,4 @@ if pause_state != pausestate.none
 else
 	if started_pause
 		pause_player_end()
+		
