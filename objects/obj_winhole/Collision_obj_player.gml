@@ -18,4 +18,11 @@ if set = 0
 	alarm[1] = 1
 	set = 1
 	alarm[0] = 100
+	obj_shaders.drunk = 0
+	if instance_exists(obj_timer)
+		instance_destroy(obj_timer)
+	other.taunt_qualify = 0
+	other.idlestate = 0
+	other.statesave = 0
+	other.sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5,spr_playerLS_taunt6,spr_playerLS_taunt7)
 }

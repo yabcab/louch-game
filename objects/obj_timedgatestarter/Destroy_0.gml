@@ -1,6 +1,5 @@
 if set
 {
-	audio_play_sound(sfx_explosion,1,0)
 	var i;
 	for (i = 0; i < 100; i++)
 	{

@@ -18,6 +18,9 @@ else if other.state != playerstate.dying && other.inv = 0
 {
 	if other.state != playerstate.boost && other.state != playerstate.hurt
 	{
+		score -= 100
+		if score < 0
+			score = 0
 		other.inv = 1
 		other.alarm[1] = 150
 		other.state = playerstate.hurt
