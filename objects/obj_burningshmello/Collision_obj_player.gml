@@ -22,6 +22,7 @@ else if other.state != playerstate.dying && other.inv = 0
 		if score < 0
 			score = 0
 		other.inv = 1
+		other.wait = 0
 		other.alarm[1] = 150
 		other.state = playerstate.hurt
 		other.hp -= 1

@@ -60,6 +60,7 @@ else if other.state != playerstate.dying
 			other.state = playerstate.hurt
 			other.hp -= 1
 			other.vspeed = -7
+			other.wait = 0
 			other.hspeed = 4 * -(other.facing)
 			other.combo = 0
 			if !audio_is_playing(sound)

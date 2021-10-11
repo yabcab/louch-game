@@ -396,7 +396,7 @@ switch state { // normal
 		//}
 		speed = 0
 		wait += 1
-		if wait > 15
+		if wait > 15 && statesave != playerstate.taunt
 		{
 			state = statesave
 			hspeed = hspeedsave

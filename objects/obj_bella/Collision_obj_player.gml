@@ -40,6 +40,7 @@ else if other.state != 11 && other.inv = 0
 		other.inv = 1
 		other.alarm[1] = 150
 		other.state = 4
+		other.wait = 0
 		other.hp -= 1
 		other.vspeed = -7
 		other.hspeed = 4 * -(other.facing)
