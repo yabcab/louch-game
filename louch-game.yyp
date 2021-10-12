@@ -179,6 +179,7 @@
     {"id":{"name":"spr_levelcomplete_bg","path":"sprites/spr_levelcomplete_bg/spr_levelcomplete_bg.yy",},"order":12,},
     {"id":{"name":"obj_normalmaker","path":"objects/obj_normalmaker/obj_normalmaker.yy",},"order":17,},
     {"id":{"name":"spr_playerLS_high_jump","path":"sprites/spr_playerLS_high_jump/spr_playerLS_high_jump.yy",},"order":33,},
+    {"id":{"name":"obj_camerashake","path":"objects/obj_camerashake/obj_camerashake.yy",},"order":6,},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},"order":6,},
     {"id":{"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"order":34,},
     {"id":{"name":"sfx_hitwall1","path":"sounds/sfx_hitwall1/sfx_hitwall1.yy",},"order":17,},
@@ -582,7 +583,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "louch-game",

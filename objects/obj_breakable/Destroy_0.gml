@@ -18,6 +18,8 @@ if !silent
 		instance_create_depth(x + random_range(0,image_xscale * 32),y + random_range(0,image_yscale * 32),-5,obj_wallcrumbs)
 
 	audio_play_sound(sfx_wallbreak,1,0)
+	
+	do_camerashake(0,3,15)
 }
 
 ds_list_set(destroy_list,id,1)

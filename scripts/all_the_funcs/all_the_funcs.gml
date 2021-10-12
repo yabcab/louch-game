@@ -47,6 +47,16 @@ function do_hitstun(length)
 		alarm[0] = length
 }
 
+function do_camerashake(x_int,y_int,__time)
+{
+	with instance_create_depth(x,y,depth,obj_camerashake)
+	{
+		x_intensity = x_int
+		y_intensity = y_int
+		max_time = __time
+	}
+}
+
 #endregion
 
 #region player - you get the point
