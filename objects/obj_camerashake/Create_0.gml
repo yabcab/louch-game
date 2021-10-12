@@ -7,3 +7,6 @@ max_time = 15
 _time = 0
 cam = view_camera[0]
 following = camera_get_view_target(cam)
+if following = obj_camerashake
+	following = obj_player
+following_new = id
