@@ -33,13 +33,13 @@ if !instance_place(x,y+1,obj_slope)
 		if !instance_place(x,y+1,obj_slope)
 			hspeed=0;
 	}
-	if (instance_place(x,y+vspeed,obj_solid))
+	if (instance_place(x,y+vspeed,obj_slope))
 	{
 		if (vspeed<=0){move_contact_solid(90,abs(vspeed));}
 		if (vspeed>0){move_contact_solid(270,abs(vspeed));}
 		vspeed=0;
 	}
-	if (instance_place(x+hspeed,y+vspeed,obj_solid))
+	if (instance_place(x+hspeed,y+vspeed,obj_slope))
 	{
 		hspeed=0;
 	}
