@@ -42,7 +42,7 @@ switch state {
 			}
 		}
 		else
-			hspeed = lerp(hspeed,5 * -xs,0.05)
+			hspeed = lerp(hspeed,5 * xs,0.05)
 
 		hspeed = clamp(hspeed,-5,5)
 		

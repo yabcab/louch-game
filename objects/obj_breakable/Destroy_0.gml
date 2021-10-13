@@ -6,11 +6,9 @@ var i_2;
 var crumbs;
 
 if layer_exists(lay_id)
-{
 	for (i = 0; i < image_xscale * 32; i++)
 		for (i_2 = 0; i_2 < image_yscale * 32; i_2++)
 			tilemap_set_at_pixel(t_id,0,x + i,y + i_2)
-}
 
 if !silent
 {

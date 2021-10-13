@@ -1,10 +1,15 @@
 if y > room_height
 {
-	x = checkpoint_x
-	y = checkpoint_y - 1
-	audio_play_sound(sfx_fallout,1,0)
-	deaths += 1
-	state = idlestate
+	if state = playerstate.dying
+		instance_destroy()
+	else
+	{
+		x = checkpoint_x
+		y = checkpoint_y - 1
+		audio_play_sound(sfx_fallout,1,0)
+		deaths += 1
+		state = idlestate
+	}
 }
 
 if pause_state = pausestate.playerpause

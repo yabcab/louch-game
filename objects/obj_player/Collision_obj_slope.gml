@@ -23,15 +23,12 @@ if state = playerstate.dying
 			vspeed *= -1
 	}
 }
-vspeed = 0
-if !instance_place(x,y+1,obj_slope)
+
+if (instance_place(x,y+vspeed,obj_slope))
 {
-	if (instance_place(x,y+vspeed,obj_slope))
-	{
-		if (vspeed<=0){move_contact_solid(90,abs(vspeed));}
-		if (vspeed>0){move_contact_solid(270,abs(vspeed));}
-		vspeed=0;
-	}
+	if (vspeed<=0){move_contact_solid(90,abs(vspeed));}
+	if (vspeed>0){move_contact_solid(270,abs(vspeed));}
+	vspeed=0;
 }
 while place_meeting(x + hspeed, y, obj_slope)
 {
