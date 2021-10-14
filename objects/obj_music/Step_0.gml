@@ -59,7 +59,7 @@ else
 if is_secret
 {
 	audio_sound_gain(mu,0,0)
-	audio_sound_gain(mu_secret,0.2,0)
+	audio_sound_gain(mu_secret,0.4,0)
 	audio_sound_gain(mu_timetrial,0,0)
 }
 else

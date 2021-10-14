@@ -1,0 +1,1 @@
+recently_entered_room = 0

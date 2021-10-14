@@ -1,1 +1,1 @@
-room_goto(rm_init)
+room_goto(room_togo)

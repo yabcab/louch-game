@@ -13,6 +13,10 @@
 //		pause = 0
 //	}
 //}
+if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 1,obj_slope)
+	onground = 1
+else
+	onground = 0
 
 if inv
 {
@@ -63,7 +67,7 @@ switch state { // normal
 		//louchester anims
 		if campaign = 3
 		{
-			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
+			if onground
 			{
 				if hspeed = 0
 					if jumpcharge > 0
@@ -159,7 +163,7 @@ switch state { // normal
 			jumping = 1
 			image_index = 0
 		}
-		if jumping && !keyboard_check(ord("Z"))
+		if jumping && !keyboard_check(ord("Z")) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0
@@ -336,7 +340,7 @@ switch state { // normal
 			jumping = 1
 			jumps -= 1
 		}
-		if jumping && !keyboard_check(ord("Z"))
+		if jumping && !keyboard_check(ord("Z")) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0
@@ -808,7 +812,7 @@ switch state { // normal
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if instance_place(x,y+1,obj_solid)
+		if instance_place(x,y+1,obj_solid) || instance_place(x,y+1,obj_slope)
 			state = idlestate
 			
 		taunt_qualify = 0
@@ -924,7 +928,7 @@ switch state { // normal
 			image_index = 0
 			jumping = 1
 		}
-		if jumping && !keyboard_check(ord("Z"))
+		if jumping && !keyboard_check(ord("Z")) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0

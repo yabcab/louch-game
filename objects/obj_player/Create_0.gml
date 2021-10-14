@@ -7,6 +7,9 @@ alarm[0] = 30
 hsp = 0
 vsp = 0
 
+use_varjump = 1
+recently_entered_room = 0
+onground = 0
 jumping = 0
 fade = 0
 fade_amount = 0
