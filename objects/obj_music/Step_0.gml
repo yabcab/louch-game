@@ -51,7 +51,7 @@ if is_trial
 	}
 	else
 	{
-		audio_sound_gain(mu_timetrial,0.2,0)
+		audio_sound_gain(mu_timetrial,1,0)
 		audio_sound_gain(mu_escapesecret,0,0)
 	}
 }
