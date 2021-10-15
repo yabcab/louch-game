@@ -1,4 +1,5 @@
 audio_stop_sound(mu_disclaimer)
+pal_swap_init_system(shd_pal_swapper)
 draw_set_font(fnt_text)
 
 globalvar campaign; campaign = 0
