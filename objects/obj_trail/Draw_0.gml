@@ -1,3 +1,4 @@
-pal_swap_set(spr_playerpalette,1,0)
+var shd = shader_current()
+pal_swap_set(spr_playerpalette,0,0)
 draw_self()
-shader_reset()
+shader_set(shd)
