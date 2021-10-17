@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_timetrial.mp3",
-  "duration": 115.905312,
+  "duration": 121.835129,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

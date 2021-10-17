@@ -1017,6 +1017,26 @@ switch state { // normal
 	}
 	break;
 	
+	case playerstate.lava_hurt:
+	{
+		sprite_index = spr_playerLS_pain
+		
+		if keyboard_check(vk_right)
+			hspeed = 5
+		else 
+		if keyboard_check(vk_left)
+			hspeed = -5
+		else
+			hspeed = 0
+			
+		if vspeed < 15
+			vspeed += 0.3
+			
+		if instance_place(x,y+1,obj_solid) || instance_place(x,y+1,obj_slope)
+			state = idlestate
+			
+		taunt_qualify = 0
+	}
 }
 
 if taunt_qualify && keyboard_check_pressed(ord("C"))

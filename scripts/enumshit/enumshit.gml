@@ -17,6 +17,7 @@ function enumshit(){
 		dying,
 		high,
 		level_end,
+		lava_hurt,
 	}
 
 enum pausestate {
