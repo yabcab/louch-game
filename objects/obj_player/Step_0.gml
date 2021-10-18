@@ -1037,6 +1037,14 @@ switch state { // normal
 			
 		taunt_qualify = 0
 	}
+	break;
+	
+	case playerstate.cart:
+	{
+		x = bound_obj.x
+		y = bound_obj.y
+	}
+	break;
 }
 
 if taunt_qualify && keyboard_check_pressed(ord("C"))

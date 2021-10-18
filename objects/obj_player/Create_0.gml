@@ -49,6 +49,7 @@ checkpoint_y = y
 trailspawntime = 0
 taunt_qualify = 0
 justhitenemy = 0
+bound_obj = noone
 
 facing = 1
 xs = 1
