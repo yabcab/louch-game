@@ -3,7 +3,7 @@
     "name": "spr_explosion",
     "path": "sprites/spr_explosion/spr_explosion.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
