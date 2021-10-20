@@ -1,3 +1,21 @@
+if keyboard_check_pressed(vk_escape)
+{
+	if pause_state != pausestate.playerpause
+	{
+		previous_pause = pause_state
+		pause_state = pausestate.playerpause
+	}
+	else
+	{
+		pause_state = previous_pause
+		if pause_state = pausestate.playerpause && !instance_exists(obj_hitstun)
+			if instance_exists(obj_freezetimer)
+				pause_state = pausestate.nonplayerpause
+			else
+				pause_state = pausestate.none
+	}
+}
+
 if y > room_height
 {
 	if state = playerstate.dying

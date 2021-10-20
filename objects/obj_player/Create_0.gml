@@ -50,6 +50,7 @@ trailspawntime = 0
 taunt_qualify = 0
 justhitenemy = 0
 bound_obj = noone
+previous_pause = 0
 
 facing = 1
 xs = 1
