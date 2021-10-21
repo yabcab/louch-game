@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_area2.mp3",
-  "duration": 134.405,
+  "duration": 134.4,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

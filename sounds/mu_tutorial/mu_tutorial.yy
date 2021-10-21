@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_tutorial.mp3",
-  "duration": 144.148666,
+  "duration": 144.143677,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

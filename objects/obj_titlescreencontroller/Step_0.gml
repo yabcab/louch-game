@@ -32,8 +32,8 @@ if disp_state = 0
 if disp_state = 1
 {
 	if selector_targetheight < 75
-		selector_targetheight = 600
-	if selector_targetheight > 600
+		selector_targetheight = 575
+	if selector_targetheight > 575
 		selector_targetheight = 75
 	
 	if selector_targetheight = 75 && keyboard_check_pressed(cont_jump)
