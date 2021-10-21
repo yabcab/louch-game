@@ -47,6 +47,11 @@ if campaign = 2
 	sprite_index = spr_player_ls
 if campaign = 4
 	sprite_index = spr_bogus
+if campaign = 5
+	if state = playerstate.taunt
+		sprite_index = spr_coolcate
+	else
+		sprite_index = spr_cate
 	
 if jump_charged
 {

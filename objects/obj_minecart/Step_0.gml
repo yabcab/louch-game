@@ -1,11 +1,11 @@
 if active
 {
-	if keyboard_check_pressed(ord("Z")) && (instance_place(x,y+5,obj_cartrail) || instance_place(x,y+5,obj_cartrailslope))
+	if keyboard_check_pressed(cont_jump) && (instance_place(x,y+5,obj_cartrail) || instance_place(x,y+5,obj_cartrailslope))
 	{
 		vspeed = -9
 		jumping = 1
 	}
-	if jumping && !keyboard_check(ord("Z")) && obj_player.use_varjump
+	if jumping && !keyboard_check(cont_jump) && obj_player.use_varjump
 	{
 		vspeed = -3
 		jumping = 0

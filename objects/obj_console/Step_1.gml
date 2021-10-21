@@ -114,7 +114,7 @@ if (display_frame > 0) { // I'm open
 					#region // full right 
 					cursor_at = text_old_length
 					#endregion
-				} else if ((keyboard_check(vk_control) and keyboard_check(vk_left))) {
+				} else if ((keyboard_check(vk_control) and keyboard_check(cont_left))) {
 					#region // left until delimiter
 					
 					var old_cursor_at = cursor_at
@@ -147,7 +147,7 @@ if (display_frame > 0) { // I'm open
 						}
 					}
 					#endregion
-				} else if ((keyboard_check(vk_control) and keyboard_check(vk_right))) {
+				} else if ((keyboard_check(vk_control) and keyboard_check(cont_right))) {
 					#region // right until delimiter
 					
 					var old_cursor_at = cursor_at
@@ -180,7 +180,7 @@ if (display_frame > 0) { // I'm open
 						}
 					}
 					#endregion
-				} else if ((keyboard_check(vk_lshift) and keyboard_check(vk_left)) or (keyboard_check(vk_rshift) and keyboard_check(vk_left))) {
+				} else if ((keyboard_check(vk_lshift) and keyboard_check(cont_left)) or (keyboard_check(vk_rshift) and keyboard_check(cont_left))) {
 					#region // selecting text with shift+arrow
 						if (cursor_at == text_old_length) { // we are at the right most side
 							mouse_selection_start = text_old_length-1
@@ -198,7 +198,7 @@ if (display_frame > 0) { // I'm open
 							}
 						}
 					#endregion
-				} else if (keyboard_check(vk_lshift) and keyboard_check(vk_right) or (keyboard_check(vk_lshift) and keyboard_check(vk_right))) {
+				} else if (keyboard_check(vk_lshift) and keyboard_check(cont_right) or (keyboard_check(vk_lshift) and keyboard_check(cont_right))) {
 					#region // selecting text with shift+arrow
 						if (cursor_at == 0) { // we are at the left most side
 							mouse_selection_start = 0
@@ -214,7 +214,7 @@ if (display_frame > 0) { // I'm open
 							}
 						}
 					#endregion
-				} else if (keyboard_check(vk_left)) {
+				} else if (keyboard_check(cont_left)) {
 					#region // cursor left 
 					cursor_at --
 					cursor_at = clamp(cursor_at,0,text_old_length)
@@ -222,7 +222,7 @@ if (display_frame > 0) { // I'm open
 					mouse_selection_end = 0 // reset mouse selection
 					mouse_selection_start = 0
 					#endregion
-				} else if (keyboard_check(vk_right)) {
+				} else if (keyboard_check(cont_right)) {
 					#region // cursor right 
 					cursor_at ++
 					cursor_at = clamp(cursor_at,0,text_old_length)
@@ -230,7 +230,7 @@ if (display_frame > 0) { // I'm open
 					mouse_selection_end = 0 // reset mouse selection
 					mouse_selection_start = 0
 					#endregion
-				} else if (keyboard_check(vk_up)) {
+				} else if (keyboard_check(cont_up)) {
 					#region // focus up 
 					if (focus >= 0) { // can only go up at this stage
 						#region in history 
@@ -292,7 +292,7 @@ if (display_frame > 0) { // I'm open
 						#endregion
 					}
 					#endregion
-				} else if (keyboard_check(vk_down)) {
+				} else if (keyboard_check(cont_down)) {
 					#region // focus down  
 						if (focus > 0) { // in history 
 							focus --

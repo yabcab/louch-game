@@ -7,8 +7,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audio_mu",
+    "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_c3area1.mp3",
   "duration": 142.628571,

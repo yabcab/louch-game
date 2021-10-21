@@ -3,6 +3,7 @@ var str = keyboard_string
 if string_pos("catsing",str) > 0
 {
 	obj_music.mu = mu_thatcatecansing
+	campaign = 5
 	keyboard_string = ""
 }
 

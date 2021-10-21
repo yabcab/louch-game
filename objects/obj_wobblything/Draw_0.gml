@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_halloweenbuckey,0,x,y,image_xscale - variation_x,image_yscale + variation_y,0,c_white,1)

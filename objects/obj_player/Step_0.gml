@@ -121,7 +121,7 @@ switch state { // normal
 		
 		
 		// walkin
-		if keyboard_check(vk_up) && !dashing && (instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope))
+		if keyboard_check(cont_up) && !dashing && (instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope))
 		{
 			if jumpcharge < 1
 			{
@@ -134,10 +134,10 @@ switch state { // normal
 		else
 		{
 			jumpcharge = 0
-			if keyboard_check(vk_right) && !dashing
+			if keyboard_check(cont_right) && !dashing
 				hspeed = 4
 			else 
-			if keyboard_check(vk_left) && !dashing
+			if keyboard_check(cont_left) && !dashing
 				hspeed = -4
 			else
 				if !dashing
@@ -145,9 +145,9 @@ switch state { // normal
 		}
 			
 		// jumpin
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
 		{
-			if keyboard_check(vk_up) && jumpcharge > 30
+			if keyboard_check(cont_up) && jumpcharge > 30
 			{
 				vspeed = -13
 				jumpcharge = 0
@@ -163,19 +163,19 @@ switch state { // normal
 			jumping = 1
 			image_index = 0
 		}
-		if jumping && !keyboard_check(ord("Z")) && use_varjump
+		if jumping && !keyboard_check(cont_jump) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0
 		}
 				
 		// dashin
-		//if keyboard_check_pressed(ord("X")) && dash_charge = 1
+		//if keyboard_check_pressed(cont_attack) && dash_charge = 1
 		//{
-		//	if keyboard_check(vk_right)
+		//	if keyboard_check(cont_right)
 		//		hspeed = 9
 		//	else
-		//	if keyboard_check(vk_left)
+		//	if keyboard_check(cont_left)
 		//		hspeed = -9
 		//	else
 		//	hspeed = 0
@@ -188,7 +188,7 @@ switch state { // normal
 		//}
 		
 		// dash end
-		if keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)
+		if keyboard_check_pressed(cont_left) || keyboard_check_pressed(cont_right)
 			dashing = 0
 		
 		// dash hitbox
@@ -204,7 +204,7 @@ switch state { // normal
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !(instance_place(x,y+5,obj_solid) || instance_place(x,y + 5,obj_slope)) && keyboard_check_pressed(vk_down)
+		if use_gp && !pounding && !(instance_place(x,y+5,obj_solid) || instance_place(x,y + 5,obj_slope)) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -254,10 +254,10 @@ switch state { // normal
 		else
 			vspeed = -0.5
 		
-		if keyboard_check(vk_left)
+		if keyboard_check(cont_left)
 			hspeed = -2.5
 		else
-		if keyboard_check(vk_right)
+		if keyboard_check(cont_right)
 			hspeed = 2.5
 		else
 		hspeed = 0
@@ -270,7 +270,7 @@ switch state { // normal
 		if instance_place(x,y,obj_airjump)
 		{
 			state = playerstate.idle
-			if keyboard_check(vk_up)
+			if keyboard_check(cont_up)
 				vspeed = -11
 			else
 				vspeed = -9
@@ -318,7 +318,7 @@ switch state { // normal
 		// velocity
 		if vspeed < 15
 			vspeed += 0.3
-		if keyboard_check(vk_down)
+		if keyboard_check(cont_down)
 		{
 			vspeed = 10
 			diving = 1
@@ -328,7 +328,7 @@ switch state { // normal
 		
 		hspeed = 7 * facing
 		
-		if keyboard_check_pressed(ord("Z")) && ((instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) || jumps > 0) // ground
+		if keyboard_check_pressed(cont_jump) && ((instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) || jumps > 0) // ground
 		{
 			vspeed = -9
 				
@@ -340,7 +340,7 @@ switch state { // normal
 			jumping = 1
 			jumps -= 1
 		}
-		if jumping && !keyboard_check(ord("Z")) && use_varjump
+		if jumping && !keyboard_check(cont_jump) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0
@@ -393,7 +393,7 @@ switch state { // normal
 	
 	case playerstate.taunt: // taunt
 	{
-		//if jumping && !keyboard_check(ord("Z"))
+		//if jumping && !keyboard_check(cont_jump)
 		//{
 		//	vspeedsave = -3
 		//	jumping = 0
@@ -461,19 +461,19 @@ switch state { // normal
 		
 		
 		// walkin
-		if keyboard_check(vk_right) && !dashing
+		if keyboard_check(cont_right) && !dashing
 			hspeed = 3
 		else 
-		if keyboard_check(vk_left) && !dashing
+		if keyboard_check(cont_left) && !dashing
 			hspeed = -3
 		else
 			if !dashing
 				hspeed = 0
 			
 		// jumpin
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
 		{
-			if keyboard_check(vk_up)
+			if keyboard_check(cont_up)
 				vspeed = -13
 			else
 				vspeed = -10
@@ -484,11 +484,11 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 		}
-		/*if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		/*if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
-			if keyboard_check(vk_up)
+			if keyboard_check(cont_up)
 				vspeed = -11
 			else
 				vspeed = -9
@@ -497,7 +497,7 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
@@ -521,19 +521,19 @@ switch state { // normal
 		
 				
 		// dashin
-		if keyboard_check_pressed(ord("X")) && dash_charge = 1 && use_dash > 0
+		if keyboard_check_pressed(cont_attack) && dash_charge = 1 && use_dash > 0
 		{
-			if keyboard_check(vk_right)
+			if keyboard_check(cont_right)
 				hspeed = 9
 			else
-			if keyboard_check(vk_left)
+			if keyboard_check(cont_left)
 				hspeed = -9
 			else
 			hspeed = 0
 			
 			if use_dash > 1
 			{
-				if keyboard_check(vk_up)
+				if keyboard_check(cont_up)
 					vspeed = -9
 				else
 				vspeed = -3
@@ -548,7 +548,7 @@ switch state { // normal
 		}
 		
 		// dash end
-		if keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)
+		if keyboard_check_pressed(cont_left) || keyboard_check_pressed(cont_right)
 			dashing = 0
 		
 		// dash hitbox
@@ -564,7 +564,7 @@ switch state { // normal
 		}
 		
 		// ground pound
-		if !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(vk_down)
+		if !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -631,19 +631,19 @@ switch state { // normal
 		
 		
 		// walkin
-		if keyboard_check(vk_right) && !dashing
+		if keyboard_check(cont_right) && !dashing
 			hspeed = 6
 		else 
-		if keyboard_check(vk_left) && !dashing
+		if keyboard_check(cont_left) && !dashing
 			hspeed = -6
 		else
 			if !dashing
 				hspeed = 0
 			
 		// jumpin
-		if keyboard_check_pressed(ord("Z")) && instance_place(x,y + 5,obj_solid) // ground
+		if keyboard_check_pressed(cont_jump) && instance_place(x,y + 5,obj_solid) // ground
 		{
-			if keyboard_check(vk_up)
+			if keyboard_check(cont_up)
 				vspeed = -9
 			else
 				vspeed = -7
@@ -654,11 +654,11 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
-			if keyboard_check(vk_up)
+			if keyboard_check(cont_up)
 				vspeed = -11
 			else
 				vspeed = -9
@@ -667,7 +667,7 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 		}
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
@@ -691,19 +691,19 @@ switch state { // normal
 		
 				
 		// dashin
-		if keyboard_check_pressed(ord("X")) && dash_charge = 1 && use_dash > 0
+		if keyboard_check_pressed(cont_attack) && dash_charge = 1 && use_dash > 0
 		{
-			if keyboard_check(vk_right)
+			if keyboard_check(cont_right)
 				hspeed = 9
 			else
-			if keyboard_check(vk_left)
+			if keyboard_check(cont_left)
 				hspeed = -9
 			else
 			hspeed = 0
 			
 			if use_dash > 1
 			{
-				if keyboard_check(vk_up)
+				if keyboard_check(cont_up)
 					vspeed = -9
 				else
 				vspeed = -3
@@ -718,7 +718,7 @@ switch state { // normal
 		}
 		
 		// dash end
-		if keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)
+		if keyboard_check_pressed(cont_left) || keyboard_check_pressed(cont_right)
 			dashing = 0
 		
 		// dash hitbox
@@ -734,7 +734,7 @@ switch state { // normal
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(vk_down)
+		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -755,16 +755,16 @@ switch state { // normal
 	{
 		if vspeed != 1
 			vspeed = lerp(vspeed,1,0.1)
-		if keyboard_check(vk_right) && !dashing
+		if keyboard_check(cont_right) && !dashing
 			hspeed = 5
 		else 
-		if keyboard_check(vk_left) && !dashing
+		if keyboard_check(cont_left) && !dashing
 			hspeed = -5
 		else
 			if !dashing
 				hspeed = 0
 		
-		if keyboard_check(ord("Z"))
+		if keyboard_check(cont_jump)
 		{
 			state = idlestate
 			vspeed = -5
@@ -788,7 +788,7 @@ switch state { // normal
 		// taunt
 		taunt_qualify = 1
 		
-		if keyboard_check(ord("Z"))
+		if keyboard_check(cont_jump)
 		{
 			state = idlestate
 			vspeed = -5
@@ -801,10 +801,10 @@ switch state { // normal
 	{
 		sprite_index = spr_playerLS_pain
 		
-		if keyboard_check(vk_right)
+		if keyboard_check(cont_right)
 			hspeed = 3
 		else 
-		if keyboard_check(vk_left)
+		if keyboard_check(cont_left)
 			hspeed = -3
 		else
 			hspeed = 0
@@ -901,19 +901,19 @@ switch state { // normal
 		
 		
 		// walkin
-		if keyboard_check(vk_right) && !dashing
+		if keyboard_check(cont_right) && !dashing
 			hspeed = lerp(hspeed,6,0.05)
 		else 
-		if keyboard_check(vk_left) && !dashing
+		if keyboard_check(cont_left) && !dashing
 			hspeed = lerp(hspeed,-6,0.05)
 		else
 			if !dashing
 				hspeed = lerp(hspeed,0,0.025)
 			
 		// jumpin
-		if keyboard_check_pressed(ord("Z")) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if keyboard_check_pressed(cont_jump) && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
 		{
-			if keyboard_check(vk_up) && jumpcharge > 15
+			if keyboard_check(cont_up) && jumpcharge > 15
 			{
 				vspeed = -13
 				jumpcharge = 0
@@ -928,7 +928,7 @@ switch state { // normal
 			image_index = 0
 			jumping = 1
 		}
-		if jumping && !keyboard_check(ord("Z")) && use_varjump
+		if jumping && !keyboard_check(cont_jump) && use_varjump
 		{
 			vspeed = -3
 			jumping = 0
@@ -936,15 +936,15 @@ switch state { // normal
 		
 				
 		//dashin
-		if keyboard_check_pressed(ord("X")) && dash_charge = 1
+		if keyboard_check_pressed(cont_attack) && dash_charge = 1
 		{
-			if keyboard_check(vk_right)
+			if keyboard_check(cont_right)
 				if hspeed < 8
 					hspeed = 9
 				else
 					hspeed += 1.5
 			else
-			if keyboard_check(vk_left)
+			if keyboard_check(cont_left)
 				if hspeed > -8
 					hspeed = -9
 				else
@@ -960,7 +960,7 @@ switch state { // normal
 		}
 		
 		// dash end
-		if (keyboard_check_pressed(vk_left) && facing = 1) || (keyboard_check_pressed(vk_right) && facing = -1)
+		if (keyboard_check_pressed(cont_left) && facing = 1) || (keyboard_check_pressed(cont_right) && facing = -1)
 			dashing = 0
 		
 		// dash hitbox
@@ -985,7 +985,7 @@ switch state { // normal
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(vk_down)
+		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -1021,10 +1021,10 @@ switch state { // normal
 	{
 		sprite_index = spr_playerLS_pain
 		
-		if keyboard_check(vk_right)
+		if keyboard_check(cont_right)
 			hspeed = 5
 		else 
-		if keyboard_check(vk_left)
+		if keyboard_check(cont_left)
 			hspeed = -5
 		else
 			hspeed = 0

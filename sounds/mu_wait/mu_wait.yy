@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audio_mu",
+    "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_wait.mp3",
   "duration": 43.3371429,

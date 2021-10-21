@@ -13,7 +13,7 @@ if other.vspeed > 0.5 && y + 5 > other.y && !(instance_place(other.x,other.y + a
 		state = 1
 		vspeed = -3
 	
-		if keyboard_check(ord("Z"))
+		if keyboard_check(cont_jump)
 		{
 			other.vspeed = -9
 			other.jumping = 1

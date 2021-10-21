@@ -1,7 +1,7 @@
-if keyboard_check(vk_down)
+if keyboard_check(cont_down)
 	vspeed = 4
 else
-if keyboard_check(vk_up)
+if keyboard_check(cont_up)
 	vspeed = -4
 else
 vspeed = -0.3

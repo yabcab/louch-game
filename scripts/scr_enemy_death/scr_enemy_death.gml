@@ -29,7 +29,7 @@ else if other.state != playerstate.dying
 			vspeed = random_range(-3,-5)
 		}
 	
-		if keyboard_check(ord("Z"))
+		if keyboard_check(cont_jump)
 		{
 			other.vspeed = -9
 			other.jumping = 1
