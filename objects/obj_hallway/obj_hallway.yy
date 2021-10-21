@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_rightdraft",
-    "path": "sprites/spr_rightdraft/spr_rightdraft.yy",
+    "name": "spr_hallway",
+    "path": "sprites/spr_hallway/spr_hallway.yy",
   },
   "solid": false,
   "visible": true,

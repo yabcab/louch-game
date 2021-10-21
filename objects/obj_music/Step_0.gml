@@ -47,7 +47,7 @@ if is_trial
 	if is_secret
 	{
 		audio_sound_gain(mu_timetrial,0,0)
-		audio_sound_gain(mu_escapesecret,0.2,0)
+		audio_sound_gain(mu_escapesecret,mu_vol,0)
 	}
 	else
 	{
@@ -59,13 +59,13 @@ else
 if is_secret
 {
 	audio_sound_gain(mu,0,0)
-	audio_sound_gain(mu_secret,0.4,0)
+	audio_sound_gain(mu_secret,mu_vol,0)
 	audio_sound_gain(mu_timetrial,0,0)
 }
 else
 {
 	audio_stop_sound(mu_timetrial)
-	audio_sound_gain(mu,0.2,0)
+	audio_sound_gain(mu,mu_vol,0)
 	audio_sound_gain(mu_secret,0,0)
 	audio_sound_gain(mu_timetrial,0,0)
 }

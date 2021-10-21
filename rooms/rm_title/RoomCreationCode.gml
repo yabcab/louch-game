@@ -5,4 +5,4 @@ if instance_exists(obj_timer)
 if instance_exists(obj_freezetimer)
 	instance_destroy(obj_freezetimer)
 	
-obj_music.mu = mu_thatcatecansing
+obj_music.mu = mu_title

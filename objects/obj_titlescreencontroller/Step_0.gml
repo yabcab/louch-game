@@ -47,32 +47,32 @@ if disp_state = 1
 	if selector_targetheight = 200
 	{
 		if keyboard_check(cont_left)
-			if sfxvol > 0
-				sfxvol -= 0.01
+			if sfx_vol > 0
+				sfx_vol -= 0.01
 			else
-				sfxvol = 0
+				sfx_vol = 0
 		if keyboard_check(cont_right)
-			if sfxvol < 1
-				sfxvol += 0.01
+			if sfx_vol < 1
+				sfx_vol += 0.01
 			else
-				sfxvol = 1
-		ini_write_real("settings","sfx_vol",sfxvol)
-		audio_group_set_gain(audio_sfx,sfxvol,0)
+				sfx_vol = 1
+		ini_write_real("settings","sfx_vol",sfx_vol)
+		audio_group_set_gain(audio_sfx,sfx_vol,0)
 	}
 	if selector_targetheight = 325
 	{
 		if keyboard_check(cont_left)
-			if muvol > 0
-				muvol -= 0.01
+			if mu_vol > 0
+				mu_vol -= 0.01
 			else
-				muvol = 0
+				mu_vol = 0
 		if keyboard_check(cont_right)
-			if muvol < 1
-				muvol += 0.01
+			if mu_vol < 1
+				mu_vol += 0.01
 			else
-				muvol = 1
-		ini_write_real("settings","mu_vol",muvol)
-		audio_group_set_gain(audio_mu,muvol,0)
+				mu_vol = 1
+		ini_write_real("settings","mu_vol",mu_vol)
+		audio_group_set_gain(audio_mu,mu_vol,0)
 		audio_stop_sound(mu_secret)
 	}
 	if selector_targetheight = 450 && keyboard_check_pressed(cont_jump)

@@ -18,7 +18,7 @@ if spawn = 3 && instance_exists(obj_spawn_c)
 
 state = statesave
 if state = -1
-	if idlestate != -1
+	if idlestate != -1 && idlestate != playerstate.taunt
 		state = idlestate
 	else
 	{
