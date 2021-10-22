@@ -1,6 +1,6 @@
 {
   "compression": 1,
-  "volume": 0.2,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_escapesecret.mp3",
-  "duration": 212.625122,
+  "duration": 127.791031,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
