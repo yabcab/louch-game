@@ -1,6 +1,6 @@
 {
   "compression": 1,
-  "volume": 0.1,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_c3area1.mp3",
-  "duration": 142.628571,
+  "duration": 264.437561,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
