@@ -40,7 +40,7 @@ else if other.state != playerstate.dying && other.inv = 0
 		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
 		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
 			
-		if other.hp < 1
+		if other.hp <= 0
 			with other {
 				state = playerstate.dying
 				hspeed = random_range(10,15) * (facing * -1)

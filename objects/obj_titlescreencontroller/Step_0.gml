@@ -16,18 +16,30 @@ if disp_state = 0
 	if selector_targetheight > 600
 		selector_targetheight = 350
 	
-	if selector_targetheight = 350 && keyboard_check_pressed(cont_jump)
-		room_goto(rm_hub1)
-	if selector_targetheight = 475 && keyboard_check_pressed(cont_jump)
+	if selector_targetheight = 350
 	{
-		selector_target_x = 125
-		disp_state = 1
-		selector_targetheight = 75
-		display_logo = 0
-		keyboard_clear(cont_jump)
+		if keyboard_check_pressed(cont_jump)
+			room_goto(rm_hub1)
+		selector_target_x = 430
 	}
-	if selector_targetheight = 600 && keyboard_check_pressed(cont_jump)
-		game_end()
+	if selector_targetheight = 475
+	{
+		if keyboard_check_pressed(cont_jump)
+		{
+			selector_target_x = 125
+			disp_state = 1
+			selector_targetheight = 75
+			display_logo = 0
+			keyboard_clear(cont_jump)
+		}
+		selector_target_x = 280
+	}
+	if selector_targetheight = 600
+	{
+		if keyboard_check_pressed(cont_jump)
+			game_end()
+		selector_target_x = 430
+	}
 }
 if disp_state = 1
 {
@@ -105,10 +117,11 @@ if disp_state = 2
 				case 3: { ini_write_real("settings","bind_down",keyboard_key) } break;
 				case 4: { ini_write_real("settings","bind_jump",keyboard_key) } break;
 				case 5: { ini_write_real("settings","bind_attack",keyboard_key) } break;
+				case 6: { ini_write_real("settings","bind_taunt",keyboard_key) } break;
 			}
 			keyboard_clear(keyboard_key)
 			bind_pos++
-			if bind_pos > 5
+			if bind_pos > 6
 			{
 				disp_state = 1
 				selector_target_x = 125

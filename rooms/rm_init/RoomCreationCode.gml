@@ -14,6 +14,7 @@ globalvar is_trial; is_trial = 0
 globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
 globalvar level; level = 0
+globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"01234567890",0,0)
 
 ini_open("savedata.lmao")
 globalvar cont_left; cont_left = ini_read_real("settings","bind_left",vk_left)
@@ -22,6 +23,7 @@ globalvar cont_up; cont_up = ini_read_real("settings","bind_up",vk_up)
 globalvar cont_down; cont_down = ini_read_real("settings","bind_down",vk_down)
 globalvar cont_jump; cont_jump = ini_read_real("settings","bind_jump",ord("Z"))
 globalvar cont_attack; cont_attack = ini_read_real("settings","bind_attack",ord("X"))
+globalvar cont_taunt; cont_taunt = ini_read_real("settings","bind_taunt",ord("C"))
 ini_close()
 
 globalvar use_dash; use_dash = 0

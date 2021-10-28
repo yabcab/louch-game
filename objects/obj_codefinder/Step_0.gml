@@ -37,6 +37,7 @@ if string_pos("nolardass",str) > 0
 {
 	campaign = 4
 	keyboard_string = ""
+	obj_music.mu = mu_nolard
 }
 
 if string_pos("lookatme",str) > 0

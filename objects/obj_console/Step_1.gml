@@ -64,7 +64,7 @@ if (display_frame > 0) { // I'm open
 					text = string_insert(clipboard_get_text(),text,cursor_at+1)
 					cursor_at += string_length(clipboard_get_text())
 					#endregion
-				} else if (keyboard_check(vk_control) and keyboard_check(ord("C"))) {
+				} else if (keyboard_check(vk_control) and keyboard_check(cont_taunt)) {
 					#region // check for copying things 
 					clipboard_set_text(string_copy(text,mouse_selection_start+1,mouse_selection_end-mouse_selection_start))
 					#endregion

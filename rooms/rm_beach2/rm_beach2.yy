@@ -518,8 +518,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "beach",
-    "path": "folders/Rooms/main/beach.yy",
+    "name": "beach (old)",
+    "path": "folders/Rooms/main/beach (old).yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_beach2",

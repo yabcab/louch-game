@@ -1047,5 +1047,5 @@ switch state { // normal
 	break;
 }
 
-if taunt_qualify && keyboard_check_pressed(ord("C"))
+if taunt_qualify && keyboard_check_pressed(cont_taunt)
 	player_taunt()
