@@ -294,6 +294,7 @@
     {"id":{"name":"obj_physicsdrop","path":"objects/obj_physicsdrop/obj_physicsdrop.yy",},"order":19,},
     {"id":{"name":"rm_area2_8","path":"rooms/rm_area2_8/rm_area2_8.yy",},"order":7,},
     {"id":{"name":"spr_spacetiles","path":"sprites/spr_spacetiles/spr_spacetiles.yy",},"order":6,},
+    {"id":{"name":"obj_enemywallhitter","path":"objects/obj_enemywallhitter/obj_enemywallhitter.yy",},"order":41,},
     {"id":{"name":"rm_area2_5","path":"rooms/rm_area2_5/rm_area2_5.yy",},"order":4,},
     {"id":{"name":"mu_finish","path":"sounds/mu_finish/mu_finish.yy",},"order":7,},
     {"id":{"name":"spr_jungle_tiles","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},"order":2,},
@@ -639,7 +640,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.583",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "louch-game",

@@ -17,4 +17,5 @@ if debug
 	draw_text(800,10,"player coord: " + string(x) + "," + string(y) + "; cam coord: " + string(cx) + "," + string(cy))
 	draw_text(800,25,"player state: " + string(state) + "; player idlestate: " + string(idlestate) + "; player statesave: " + string(statesave))
 	draw_text(800,40,"roomname: " + room_get_name(room) + " [" + string(room) + "]")
+	draw_text(800,55,"player hsp: " + string(hspeed) + "; player vsp: " + string(vspeed))
 }
