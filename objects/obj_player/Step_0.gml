@@ -1,5 +1,5 @@
-if mouse_check_button_pressed(mb_left) || (mouse_check_button(mb_left) && keyboard_check(vk_shift))
-	instance_create_depth(random_range(x - 200,x + 200),y - 360,-1,obj_enemywallhitter)
+//if mouse_check_button_pressed(mb_left) || (mouse_check_button(mb_left) && keyboard_check(vk_shift))
+//	instance_create_depth(random_range(x - 200,x + 200),y - 360,-1,obj_enemywallhitter)
 
 //if keyboard_check_pressed(vk_escape)
 //{

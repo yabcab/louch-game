@@ -33,4 +33,11 @@ playerspr = spr_player_ls
 globalvar destroy_list;
 destroy_list = ds_list_create()
 
+globalvar bpm_map; bpm_map = []
+bpm_map[mu_c3area1] = 145
+bpm_map[mu_hub] = 100
+bpm_map[mu_secret] = 120
+bpm_map[mu_timetrial] = 160
+bpm_map[mu_escapesecret] = 160
+
 room_goto(rm_title)

@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_jungle.mp3",
-  "duration": 256.182861,
+  "duration": 178.390213,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

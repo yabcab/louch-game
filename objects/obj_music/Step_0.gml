@@ -29,11 +29,15 @@ else
 }
 if !audio_is_playing(mu)
 {
-	audio_stop_all()
-	audio_play_sound(mu,1,1)
+	audio_stop_sound(playing_mu)
+	playing_mu = audio_play_sound(mu,1,0)
+	obj_metronome.note_dtime = 0
 }
 if !audio_is_playing(mu_secret)
-	audio_play_sound(mu_secret,1,1)
+{
+	audio_play_sound(mu_secret,1,0)
+	obj_metronome.s_note_dtime = 0
+}
 
 if is_trial
 {
@@ -41,6 +45,7 @@ if is_trial
 	{
 		audio_play_sound(mu_escapesecret,1,0)
 		audio_play_sound(mu_timetrial,1,0)
+		obj_metronome.t_note_dtime = 0
 	}
 	audio_sound_gain(mu,0,0)
 	audio_sound_gain(mu_secret,0,0)
@@ -48,11 +53,13 @@ if is_trial
 	{
 		audio_sound_gain(mu_timetrial,0,0)
 		audio_sound_gain(mu_escapesecret,mu_vol,0)
+		metronome_set(bpm_map[mu_timetrial],mu_timetrial)
 	}
 	else
 	{
-		audio_sound_gain(mu_timetrial,1,0)
+		audio_sound_gain(mu_timetrial,mu_vol,0)
 		audio_sound_gain(mu_escapesecret,0,0)
+		metronome_set(bpm_map[mu_escapesecret],mu_escapesecret)
 	}
 }
 else
@@ -61,6 +68,7 @@ if is_secret
 	audio_sound_gain(mu,0,0)
 	audio_sound_gain(mu_secret,mu_vol,0)
 	audio_sound_gain(mu_timetrial,0,0)
+	metronome_set(bpm_map[mu_secret],mu_secret)
 }
 else
 {
@@ -68,4 +76,5 @@ else
 	audio_sound_gain(mu,mu_vol,0)
 	audio_sound_gain(mu_secret,0,0)
 	audio_sound_gain(mu_timetrial,0,0)
+	metronome_set(bpm_map[mu],mu)
 }
