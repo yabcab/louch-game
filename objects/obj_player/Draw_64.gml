@@ -25,9 +25,10 @@ if debug
 	draw_text(700,85,"player sprite: " + string(sprite_get_name(sprite_index)) + "[" + string(sprite_index) + "]")
 	
 	draw_set_alpha(0.5)
-	draw_rectangle_color(690,120,1280,185,c_black,c_black,c_black,c_black,0)
+	draw_rectangle_color(690,120,1280,200,c_black,c_black,c_black,c_black,0)
 	draw_set_alpha(1)
 	draw_text(700,130,"GENERAL STAT")
 	draw_text(700,145,"roomname: " + room_get_name(room) + " [" + string(room) + "]; instance count: " + string(instance_count))
 	draw_text(700,160,"FPS: " + string(fps) + "; FPSreal: " + string(fps_real) + "; frame_deltatime: " + string(delta_time))
+	draw_text(700,175,"is_secret: " + string(is_secret) + "; is_trial: " + string(is_trial) + "; level_id: " + string(level) + "; playing music: " + audio_get_name(obj_music.mu) + " [" + string(obj_music.mu) + "]")
 }
