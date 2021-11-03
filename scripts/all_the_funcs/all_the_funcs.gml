@@ -100,18 +100,6 @@ function pal_swap_init_system() {
 	    global.Pal_Map = ds_map_create()
 }
 	
-function metronome_reset(beats_per_minute,mu)
-{
-	if instance_exists(obj_metronome)
-		instance_destroy(obj_metronome)
-	
-	with instance_create_depth(0,0,0,obj_metronome)
-	{
-		play = 1
-		bpm = beats_per_minute
-		beat_ms = (60000000/(beats_per_minute*4))
-	} 
-}
 function metronome_set(beats_per_minute,mu)
 {
 	with obj_metronome

@@ -14,7 +14,7 @@ globalvar is_trial; is_trial = 0
 globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
 globalvar level; level = 0
-globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"01234567890",0,0)
+globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:",0,0)
 
 ini_open("savedata.lmao")
 globalvar cont_left; cont_left = ini_read_real("settings","bind_left",vk_left)
@@ -39,5 +39,7 @@ bpm_map[mu_hub] = 100
 bpm_map[mu_secret] = 120
 bpm_map[mu_timetrial] = 160
 bpm_map[mu_escapesecret] = 160
+bpm_map[mu_jungle] = 135
+bpm_map[mu_space] = 420 //placeholder
 
 room_goto(rm_title)

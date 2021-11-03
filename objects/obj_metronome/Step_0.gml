@@ -3,12 +3,21 @@ s_note_dtime += delta_time //add deltatime passed between steps
 t_note_dtime += delta_time //add deltatime passed between steps
 
 if is_trial
+{
 	note_count = round(t_note_dtime div beat_ms) mod 16  //count notes
+	pnote_count = round(t_note_dtime div previous_ms) mod 16
+}
 else
 	if is_secret
+	{
 		note_count = round(s_note_dtime div beat_ms) mod 16  //count notes
+		pnote_count = round(s_note_dtime div previous_ms) mod 16
+	}
 	else
+	{
 		note_count = round(note_dtime div beat_ms) mod 16  //count notes
+		pnote_count = round(note_dtime div previous_ms) mod 16
+	}
 
 //trigger the 16th notes
 if (note_count != note_prev) {
@@ -50,7 +59,8 @@ if (note_count != note_prev) {
       note_16 = true;
     break;
     }
-  note_prev = note_count;
+	if previous_ms >= beat_ms
+		note_prev = note_count;
 }
 
 //debug

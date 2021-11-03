@@ -9,7 +9,7 @@ with other
 	else if vspeed > 0
 	{
 		with instance_create_depth(x,y,1,obj_circletransition)
-			targetroom = rm_levelcomplete
+			targetroom = rm_hub1
 		state = playerstate.none
 	}
 }
