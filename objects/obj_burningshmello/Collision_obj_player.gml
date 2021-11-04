@@ -10,6 +10,7 @@ if other.state = playerstate.boost
 			hspeed = obj_player.hspeed + h
 			effect = 1
 			rot_speed = 15
+			image_xscale = other.xs
 		}
 	
 	audio_play_sound(sfx_hitwall3,1,0)

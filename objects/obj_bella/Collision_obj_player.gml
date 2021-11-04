@@ -1,4 +1,4 @@
-if other.vspeed > 0.5 && y + 5 > other.y && !(instance_place(other.x,other.y + abs(other.hspeed) + 1,obj_slope) || instance_place(other.x,other.y + 1,obj_solid))
+if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 {
 	/*if state = 1 && wait > 25
 	{
@@ -47,16 +47,19 @@ else if other.state != 11 && other.inv = 0
 		if !audio_is_playing(sound)
 			sound = audio_play_sound(sfx_pain,1,0)
 		
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
 			
-		if other.hp < 1
+		if other.hp <= 0
 			with other {
 				state = 11
 				hspeed = random_range(10,15) * (facing * -1)

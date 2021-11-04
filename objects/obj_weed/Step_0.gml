@@ -1,7 +1,7 @@
-if instance_place(x,y+1,obj_solid) || instance_place(x,y+1,obj_slope)
-	var onground = 1
+if instance_place(x,y+1,obj_solid) || instance_place(x,y + hspeed + 1,obj_slope) || instance_place(x,y+1,obj_platform)
+	onground = 1
 else
-	var onground = 0
+	onground = 0
 
 while place_meeting(x + hspeed, y + 0.1, obj_slope)
 {

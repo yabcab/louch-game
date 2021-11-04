@@ -11,6 +11,7 @@ if other.state = playerstate.boost
 			hspeed = obj_player.hspeed + h
 			effect = 1
 			rot_speed = 15
+			image_yscale = other.xs
 		}
 	
 	audio_play_sound(sfx_hitwall3,1,0)
@@ -27,6 +28,8 @@ else if other.state != playerstate.dying
 		{
 			sprite_index = s
 			vspeed = random_range(-3,-5)
+			image_xscale = other.xs
+			hspeed = random_range(other.hspeed - 2,other.hspeed + 2)
 		}
 	
 		if keyboard_check(cont_jump)
@@ -66,14 +69,17 @@ else if other.state != playerstate.dying
 			if !audio_is_playing(sound)
 				sound = audio_play_sound(sfx_pain,1,0)
 		
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-			instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+			instance_create_depth(other.x,other.y,-1,obj_eatenapple)
 			
 			if other.hp <= 0
 				with other {
