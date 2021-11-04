@@ -11,3 +11,4 @@ x_off = 0
 y_off = 0
 x *= 2
 y *= 2
+alarm[0] = 1
