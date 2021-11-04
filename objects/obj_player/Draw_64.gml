@@ -30,5 +30,6 @@ if debug
 	draw_text(700,130,"GENERAL STAT")
 	draw_text(700,145,"roomname: " + room_get_name(room) + " [" + string(room) + "]; instance count: " + string(instance_count))
 	draw_text(700,160,"FPS: " + string(fps) + "; FPSreal: " + string(fps_real) + "; frame_deltatime: " + string(delta_time))
-	draw_text(700,175,"is_secret: " + string(is_secret) + "; is_trial: " + string(is_trial) + "; level_id: " + string(level) + "; playing music: " + audio_get_name(obj_music.mu) + " [" + string(obj_music.mu) + "]")
+	draw_text(700,175,"is_secret: " + string(is_secret) + "; is_trial: " + string(is_trial) + "; level_id: " + string(level) + "; main music: " + audio_get_name(obj_music.mu) + " [" + string(obj_music.mu) + "]")
+	
 }
