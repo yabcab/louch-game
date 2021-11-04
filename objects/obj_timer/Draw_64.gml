@@ -20,6 +20,7 @@ else
 
 draw_set_font(score_font)
 draw_sprite_ext(sprite_index,image_index,525 - (string_width(str) / 2) + range,80,2 * image_xscale,2 * image_yscale,0,c_white,1)
+draw_text_transformed_color((572 - (string_width(str) / 2)) + range,12,str,2,2,0,col_3,col_3,col_3,col_3,1)
 draw_text_transformed_color((570 - (string_width(str) / 2)) + range,10,str,2,2,0,col_1,col_1,col_2,col_2,1)
 draw_sprite_ext(sprite_index,image_index,700 + (string_width(str) / 2) + range,80,2 * image_xscale,2 * image_yscale,0,c_white,1)
 draw_set_font(fnt_text)

@@ -5,7 +5,18 @@ if pause_state != pausestate.playerpause
 	if collected
 	{
 		if !instance_exists(following)
-			following = obj_player
+			if instance_exists(obj_player)
+				following = obj_player
+			else
+			{
+				instance_destroy()
+				with instance_create_depth(x,y,-5,obj_eatenapple)
+				{
+					sprite_index = spr_key
+					rot_speed = 5
+				}
+				exit;
+			}
 		var x_diff = (following.x - x)
 		var y_diff = (following.y - y)
 		x += (x_diff + (32 * -obj_player.facing)) / 10
