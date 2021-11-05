@@ -1,7 +1,7 @@
 var str = ""
+var range = random_range(-2,2)
 if minutes > -1
 {
-	var range = random_range(-2,2)
 	if seconds > 9
 	{
 		str = string(minutes) + ":" + string(seconds)

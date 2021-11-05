@@ -105,7 +105,7 @@ function metronome_set(beats_per_minute,mu)
 	with obj_metronome
 	{
 		bpm = beats_per_minute
-		beat_ms = (60000000/(beats_per_minute*4)) / audio_sound_get_pitch(mu)
+		beat_ms = (60000000/(beats_per_minute*4))// / audio_sound_get_pitch(mu)
 	}
 }
 
