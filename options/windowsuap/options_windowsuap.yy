@@ -38,7 +38,7 @@
   "option_windowsuap_targetdevicefamily_desktop": true,
   "option_windowsuap_desktop_family_platform_version": "10.0.14393.0",
   "option_windowsuap_desktop_family_platform_min_version": "10.0.14393.0",
-  "option_windowsuap_targetdevicefamily_xbox": false,
+  "option_windowsuap_targetdevicefamily_xbox": true,
   "option_windowsuap_xbox_family_platform_version": "10.0.14393.0",
   "option_windowsuap_xbox_family_platform_min_version": "10.0.14393.0",
   "option_windowsuap_targetdevicefamily_mobile": false,
