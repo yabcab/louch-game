@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_enemyturn",
-    "path": "sprites/spr_enemyturn/spr_enemyturn.yy",
+    "name": "spr_airjump_2",
+    "path": "sprites/spr_airjump_2/spr_airjump_2.yy",
   },
-  "solid": true,
-  "visible": false,
+  "solid": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "solid",
-    "path": "folders/Objects/geometry/solid.yy",
+    "name": "geometry",
+    "path": "folders/Objects/geometry.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemyturn",
+  "name": "obj_swimwater",
   "tags": [],
   "resourceType": "GMObject",
 }

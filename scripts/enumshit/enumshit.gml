@@ -19,6 +19,7 @@ function enumshit(){
 		level_end,
 		lava_hurt,
 		cart,
+		swim,
 	}
 
 enum pausestate {

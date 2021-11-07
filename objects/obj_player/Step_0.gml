@@ -1050,6 +1050,86 @@ switch state { // normal
 		y = bound_obj.y
 	}
 	break;
+	
+	case playerstate.swim:
+	{
+		var hsp, vsp
+		
+		if key_right
+		{
+			hsp = 4
+			facing = 1
+		}
+		else if key_left
+		{
+			hsp = -4
+			facing = -1
+		}
+		else
+			hsp = 0
+			
+		if key_down
+			vsp = 4
+		else if key_up
+			vsp = -4
+		else
+			vsp = 0
+		
+		hspeed = lerp(hspeed,hsp,0.05)
+		vspeed = lerp(vspeed,vsp,0.05)
+		
+		if !instance_place(x,y,obj_swimwater)
+		{
+			state = idlestate
+			if key_jump
+				vspeed = -9
+			else
+				vspeed = -6
+		}
+		
+		if key_attack_press || key_jump_press
+		{
+			if key_right
+				if hspeed < 4
+					hspeed = 5
+				else
+					hspeed += 1
+			else if key_left
+				if hspeed > -4
+					hspeed = -5
+				else
+					hspeed -= 1
+			
+			
+			if key_down
+				if vspeed < 4
+					vspeed = 5
+				else
+					vspeed += 1
+			else if key_up
+				if vspeed > -4
+					vspeed = -5
+				else
+					vspeed -= 1
+			vspeed = clamp(vspeed,-7,7)
+		}
+		
+		if abs(hspeed) > 4.5 || abs(vspeed) > 4.5
+		{
+			instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
+			trailspawntime++
+			if trailspawntime > 5
+			{
+				trailspawntime = 0
+				with instance_create_depth(x,y,depth + 1,obj_trail)
+				{
+					image_alpha = 0.5
+					flash = 0
+				}
+			}
+		}
+	}
+	break;
 }
 
 if taunt_qualify && key_taunt_press
