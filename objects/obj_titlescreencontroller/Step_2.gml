@@ -18,25 +18,26 @@ if disp_state = 0
 	
 	if selector_targetheight = 350
 	{
-		if keyboard_check_pressed(cont_jump)
+		if obj_player.key_jump_press
 			room_goto(rm_hub1)
 		selector_target_x = 430
 	}
 	if selector_targetheight = 475
 	{
-		if keyboard_check_pressed(cont_jump)
+		if obj_player.key_jump_press
 		{
 			selector_target_x = 125
 			disp_state = 1
 			selector_targetheight = 75
 			display_logo = 0
 			keyboard_clear(cont_jump)
+			obj_player.key_jump_press = 0
 		}
 		selector_target_x = 280
 	}
 	if selector_targetheight = 600
 	{
-		if keyboard_check_pressed(cont_jump)
+		if obj_player.key_jump_press
 			game_end()
 		selector_target_x = 430
 	}
@@ -48,22 +49,23 @@ if disp_state = 1
 	if selector_targetheight > 575
 		selector_targetheight = 75
 	
-	if selector_targetheight = 75 && keyboard_check_pressed(cont_jump)
+	if selector_targetheight = 75 && obj_player.key_jump_press
 	{
 		selector_target_x = 450
 		disp_state = 0
 		selector_targetheight = 475
 		display_logo = 1
 		keyboard_clear(cont_jump)
+		obj_player.key_jump_press = 0
 	}
 	if selector_targetheight = 200
 	{
-		if keyboard_check(cont_left)
+		if obj_player.key_left
 			if sfx_vol > 0
 				sfx_vol -= 0.01
 			else
 				sfx_vol = 0
-		if keyboard_check(cont_right)
+		if obj_player.key_right
 			if sfx_vol < 1
 				sfx_vol += 0.01
 			else
@@ -73,12 +75,12 @@ if disp_state = 1
 	}
 	if selector_targetheight = 325
 	{
-		if keyboard_check(cont_left)
+		if obj_player.key_left
 			if mu_vol > 0
 				mu_vol -= 0.01
 			else
 				mu_vol = 0
-		if keyboard_check(cont_right)
+		if obj_player.key_right
 			if mu_vol < 1
 				mu_vol += 0.01
 			else
@@ -87,7 +89,7 @@ if disp_state = 1
 		audio_group_set_gain(audio_mu,mu_vol,0)
 		audio_stop_sound(mu_secret)
 	}
-	if selector_targetheight = 450 && keyboard_check_pressed(cont_jump)
+	if selector_targetheight = 450 && obj_player.key_jump_press
 	{
 		keyboard_clear(keyboard_key)
 		disp_state = 2
@@ -95,7 +97,7 @@ if disp_state = 1
 		binding = 1
 		bind_pos = 0
 	}
-	if selector_targetheight = 575 && keyboard_check_pressed(cont_jump)
+	if selector_targetheight = 575 && obj_player.key_jump_press
 	{
 		if window_get_fullscreen()
 			window_set_fullscreen(0)
@@ -138,7 +140,7 @@ if disp_state = 2
 	}
 }
 
-if keyboard_check_pressed(cont_up)
+if obj_player.key_up_press
 	selector_targetheight -= 125
-if keyboard_check_pressed(cont_down)
+if obj_player.key_down_press
 	selector_targetheight += 125

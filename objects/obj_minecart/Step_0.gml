@@ -1,6 +1,6 @@
 if active
 {
-	if keyboard_check_pressed(cont_jump) && (instance_place(x,y+5,obj_cartrail) || instance_place(x,y+5,obj_cartrailslope))
+	if key_jump_press && (instance_place(x,y+5,obj_cartrail) || instance_place(x,y+5,obj_cartrailslope))
 	{
 		vspeed = -9
 		jumping = 1

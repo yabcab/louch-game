@@ -13,7 +13,7 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 		state = 1
 		vspeed = -3
 	
-		if keyboard_check(cont_jump)
+		if other.key_jump
 		{
 			other.vspeed = -9
 			other.jumping = 1

@@ -32,7 +32,7 @@ else if other.state != playerstate.dying
 			hspeed = random_range(other.hspeed - 2,other.hspeed + 2)
 		}
 	
-		if keyboard_check(cont_jump)
+		if other.key_jump
 		{
 			other.vspeed = -9
 			other.jumping = 1

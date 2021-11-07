@@ -1,4 +1,4 @@
-if keyboard_check(cont_up) && instance_place(x,y+1,obj_solid) && state != playerstate.dying && !recently_entered_room
+if key_up && instance_place(x,y+1,obj_solid) && state != playerstate.dying && !recently_entered_room
 {
 	statesave = state
 	state = playerstate.none

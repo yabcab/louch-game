@@ -1,6 +1,7 @@
 audio_stop_sound(mu_disclaimer)
 pal_swap_init_system(shd_pal_swapper)
 draw_set_font(fnt_text)
+gamepad_set_axis_deadzone(0,0.35)
 
 globalvar campaign; campaign = 0
 globalvar playerspr; playerspr = spr_player

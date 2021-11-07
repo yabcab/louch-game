@@ -71,3 +71,10 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 {
 	y += 0.1
 }
+
+//if using_gamepad && !gamepad_is_connected(0)
+//{
+//	pause_state = pausestate.playerpause
+//	using_gamepad = 0
+//}
+//using_gamepad = gamepad_is_connected(0)
