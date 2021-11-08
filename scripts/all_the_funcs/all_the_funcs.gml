@@ -125,55 +125,63 @@ function player_taunt()
 
 function get_inputs(controllerbind)
 {
-	key_left = 0
+	
 	key_left_press = 0
-	key_right = 0
 	key_right_press = 0
-	key_up = 0
 	key_up_press = 0
-	key_down = 0
 	key_down_press = 0
-	key_jump = 0
 	key_jump_press = 0
-	key_attack = 0
 	key_attack_press = 0
-	key_taunt = 0
 	key_taunt_press = 0
 	
 	if keyboard_check_pressed(cont_left) || gamepad_button_check_pressed(controllerbind,gp_padl) || (gamepad_axis_value(controllerbind,gp_axislh) < 0 && key_left = 0)
 		key_left_press = 1
 	if keyboard_check(cont_left) || gamepad_button_check(controllerbind,gp_padl) || gamepad_axis_value(controllerbind,gp_axislh) < 0
 		key_left = 1
+	else
+		key_left = 0
 	
 	if keyboard_check_pressed(cont_right) || gamepad_button_check_pressed(controllerbind,gp_padr) || (gamepad_axis_value(controllerbind,gp_axislh) > 0 && key_right = 0)
 		key_right_press = 1
 	if keyboard_check(cont_right) || gamepad_button_check(controllerbind,gp_padr) || gamepad_axis_value(controllerbind,gp_axislh) > 0
 		key_right = 1
+	else
+		key_right = 0
 		
 	if keyboard_check_pressed(cont_up) || gamepad_button_check_pressed(controllerbind,gp_padu) || (gamepad_axis_value(controllerbind,gp_axislv) < 0 && key_up = 0)
 		key_up_press = 1
 	if keyboard_check(cont_up) || gamepad_button_check(controllerbind,gp_padu) || gamepad_axis_value(controllerbind,gp_axislv) < 0 || gamepad_button_check(controllerbind,gp_shoulderlb) || gamepad_button_check(controllerbind,gp_shoulderrb)
 		key_up = 1
+	else
+		key_up = 0
 		
 	if keyboard_check_pressed(cont_down) || gamepad_button_check_pressed(controllerbind,gp_padd) || (gamepad_axis_value(controllerbind,gp_axislv) > 0 && key_down = 0)
 		key_down_press = 1
 	if keyboard_check(cont_down) || gamepad_button_check(controllerbind,gp_padd) || gamepad_axis_value(controllerbind,gp_axislv) > 0
 		key_down = 1
+	else
+		key_down = 0
 		
 	if keyboard_check_pressed(cont_jump) || gamepad_button_check_pressed(controllerbind,gp_face1)
 		key_jump_press = 1
 	if keyboard_check(cont_jump) || gamepad_button_check(controllerbind,gp_face1)
 		key_jump = 1
+	else 
+		key_jump = 0
 		
 	if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3)
 		key_attack_press = 1
 	if keyboard_check(cont_attack) || gamepad_button_check(controllerbind,gp_face3)
 		key_attack = 1
+	else
+		key_attack = 0
 		
 	if keyboard_check_pressed(cont_taunt) || gamepad_button_check_pressed(controllerbind,gp_face4)
 		key_taunt_press = 1
 	if keyboard_check(cont_taunt) || gamepad_button_check(controllerbind,gp_face4)
 		key_taunt = 1
+	else
+		key_taunt = 0
 }
 
 #endregion
