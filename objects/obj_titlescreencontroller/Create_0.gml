@@ -14,3 +14,7 @@ sfxvol = ini_read_real("settings","sfx_vol",1)
 muvol = ini_read_real("settings","mu_vol",1)
 binding = 1
 bind_pos = 0
+bg_set = 0
+prev_bg_set = 0
+
+hspeed = 3

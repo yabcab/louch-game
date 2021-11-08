@@ -32,14 +32,14 @@ else if other.state != playerstate.dying && other.inv = 0
 		if !audio_is_playing(sound)
 			sound = audio_play_sound(sfx_pain,1,0)
 		
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
-		instance_create_depth(other.x,other.y,-1,obj_physicsdrop)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
+		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
 			
 		if other.hp <= 0
 			with other {

@@ -44,3 +44,4 @@ bpm_map[mu_jungle] = 135
 bpm_map[mu_space] = 420 //placeholder
 
 room_goto(rm_title)
+randomize()

@@ -144,3 +144,26 @@ if obj_player.key_up_press
 	selector_targetheight -= 125
 if obj_player.key_down_press
 	selector_targetheight += 125
+
+var lay_id = layer_get_id("Background")
+var bg_id = layer_background_get_id(lay_id)
+switch bg_set
+{
+	case 0: { layer_background_blend(bg_id,make_color_rgb(99,155,255)) } break;
+	case 1: { layer_background_blend(bg_id,make_color_rgb(88,161,147)) } break;
+	case 2: { layer_background_blend(bg_id,make_color_rgb(22,24,76)) } break;
+}
+
+if x > room_width - 500
+{
+	x = xstart
+	while prev_bg_set = bg_set
+		bg_set = choose(0,1,2)
+	prev_bg_set = bg_set
+	switch bg_set
+	{
+		case 0: { y = 160 } break;
+		case 1: { y = 564 } break;
+		case 2: { y = 948 } break;
+	}
+}
