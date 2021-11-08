@@ -3,7 +3,7 @@
     "name": "spr_enemyturn",
     "path": "sprites/spr_enemyturn/spr_enemyturn.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,

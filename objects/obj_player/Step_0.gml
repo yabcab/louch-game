@@ -45,7 +45,8 @@ if fade = 1
 	fade_amount += 0.05
 	if fade_amount > 1
 	{
-		room_goto(targetroom)
+		if room != rm_title
+			room_goto(targetroom)
 		fade = 2
 	}
 }

@@ -156,14 +156,20 @@ switch bg_set
 
 if x > room_width - 500
 {
-	x = xstart
-	while prev_bg_set = bg_set
-		bg_set = choose(0,1,2)
-	prev_bg_set = bg_set
-	switch bg_set
+	if obj_player.fade = 0
+		obj_player.fade = 1
+	if obj_player.fade_amount > 1
 	{
-		case 0: { y = 160 } break;
-		case 1: { y = 564 } break;
-		case 2: { y = 948 } break;
+		x = xstart
+		obj_player.fade = 2
+		while prev_bg_set = bg_set
+		bg_set = choose(0,1,2)
+		prev_bg_set = bg_set
+		switch bg_set
+		{
+			case 0: { y = 160 } break;
+			case 1: { y = 564 } break;
+			case 2: { y = 948 } break;
+		}
 	}
 }
