@@ -8,6 +8,10 @@ if abs(selector_x - selector_target_x) > 1
 	selector_x += (selector_target_x - selector_x) / 5
 else
 	selector_x = selector_target_x
+if abs(scroll_disp - scroll) > 1
+	scroll_disp += (scroll - scroll_disp) / 5
+else
+	scroll_disp = scroll
 
 if disp_state = 0
 {
@@ -88,14 +92,19 @@ if disp_state = 1
 		ini_write_real("settings","mu_vol",mu_vol)
 		audio_group_set_gain(audio_mu,mu_vol,0)
 		audio_stop_sound(mu_secret)
+		scroll = 0
 	}
-	if selector_targetheight = 450 && obj_player.key_jump_press
+	if selector_targetheight = 450
 	{
-		keyboard_clear(keyboard_key)
-		disp_state = 2
-		selector_target_x = -100
-		binding = 1
-		bind_pos = 0
+		scroll = 250
+		if obj_player.key_jump_press
+		{
+			keyboard_clear(keyboard_key)
+			disp_state = 2
+			selector_target_x = -100
+			binding = 1
+			bind_pos = 0
+		}
 	}
 	if selector_targetheight = 575 && obj_player.key_jump_press
 	{
