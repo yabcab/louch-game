@@ -30,6 +30,7 @@ ini_close()
 globalvar use_dash; use_dash = 0
 globalvar use_gp; use_gp = 0
 globalvar use_varjump; use_varjump = 1;
+globalvar debug; debug = 0
 campaign = 3
 playerspr = spr_player_ls
 globalvar destroy_list;

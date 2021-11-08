@@ -942,7 +942,7 @@ switch state { // normal
 		
 				
 		//dashin
-		if key_attack_press && dash_charge = 1
+		if key_attack_press && dash_charge = 1 && (key_left || key_right)
 		{
 			if key_right
 				if hspeed < 8
@@ -955,8 +955,6 @@ switch state { // normal
 					hspeed = -9
 				else
 					hspeed += -1.5
-			else
-			hspeed = 0
 			
 			vspeed = -2
 			dashing = 1

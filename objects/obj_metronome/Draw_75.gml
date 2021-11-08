@@ -1,5 +1,5 @@
 if instance_exists(obj_player)
-	if obj_player.debug
+	if debug
 	{
 		draw_text(50,50,string(note_1))
 		draw_text(50,65,string(note_2))
