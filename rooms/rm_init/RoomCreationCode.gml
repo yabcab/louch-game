@@ -25,12 +25,12 @@ globalvar cont_down; cont_down = ini_read_real("settings","bind_down",vk_down)
 globalvar cont_jump; cont_jump = ini_read_real("settings","bind_jump",ord("Z"))
 globalvar cont_attack; cont_attack = ini_read_real("settings","bind_attack",ord("X"))
 globalvar cont_taunt; cont_taunt = ini_read_real("settings","bind_taunt",ord("C"))
-ini_close()
 
 globalvar use_dash; use_dash = 0
 globalvar use_gp; use_gp = 0
-globalvar use_varjump; use_varjump = 1;
+globalvar use_varjump; use_varjump = ini_read_real("settings","varjump",1)
 globalvar debug; debug = 0
+globalvar hitstun_enable; hitstun_enable = ini_read_real("settings","hitstun",1)
 campaign = 3
 playerspr = spr_player_ls
 globalvar destroy_list;
@@ -43,7 +43,8 @@ bpm_map[mu_secret] = 120
 bpm_map[mu_timetrial] = 160
 bpm_map[mu_escapesecret] = 160
 bpm_map[mu_jungle] = 135
-bpm_map[mu_space] = 420 //placeholder
+bpm_map[mu_space] = random_range(80,360) //placeholder
 
 room_goto(rm_title)
 randomize()
+ini_close()

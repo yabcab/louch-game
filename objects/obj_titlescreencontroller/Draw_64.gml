@@ -17,7 +17,9 @@ if disp_state = 1
 	draw_sprite_with_wave(400,150 - scroll_disp,spr_sfxvolicon,0,1,0,3,_time,30,image_blend)
 	draw_sprite_with_wave(400,275 - scroll_disp,spr_muvolicon,0,1,0,3,_time,30,image_blend)
 	draw_sprite_with_wave(640,400 - scroll_disp,spr_rebindkeysicon,0,1,0,3,_time,30,image_blend)
-	draw_sprite_with_wave(640,525 - scroll_disp,spr_fullscreenicon,0,1,0,3,_time,30,image_blend)
+	draw_sprite_with_wave(640,525 - scroll_disp,spr_fullscreenicon,window_get_fullscreen(),1,0,3,_time,30,image_blend)
+	draw_sprite_with_wave(640,700 - scroll_disp,spr_dynamicjumpicon,use_varjump,1,0,3,_time,30,image_blend)
+	draw_sprite_with_wave(640,825 - scroll_disp,spr_hitstunicon,hitstun_enable,1,0,3,_time,30,image_blend)
 }
 if disp_state = 2
 {

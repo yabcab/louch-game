@@ -49,21 +49,27 @@ if disp_state = 0
 if disp_state = 1
 {
 	if selector_targetheight < 75
-		selector_targetheight = 575
-	if selector_targetheight > 575
+		selector_targetheight = 825
+	if selector_targetheight > 825
 		selector_targetheight = 75
 	
-	if selector_targetheight = 75 && obj_player.key_jump_press
+	if selector_targetheight = 75
 	{
 		selector_target_x = 450
-		disp_state = 0
-		selector_targetheight = 475
-		display_logo = 1
-		keyboard_clear(cont_jump)
-		obj_player.key_jump_press = 0
+		scroll = 0
+		if obj_player.key_jump_press
+		{
+			selector_target_x = 450
+			disp_state = 0
+			selector_targetheight = 475
+			display_logo = 1
+			keyboard_clear(cont_jump)
+			obj_player.key_jump_press = 0
+		}
 	}
 	if selector_targetheight = 200
 	{
+		selector_target_x = 240
 		if obj_player.key_left
 			if sfx_vol > 0
 				sfx_vol -= 0.01
@@ -79,6 +85,7 @@ if disp_state = 1
 	}
 	if selector_targetheight = 325
 	{
+		selector_target_x = 240
 		if obj_player.key_left
 			if mu_vol > 0
 				mu_vol -= 0.01
@@ -96,6 +103,7 @@ if disp_state = 1
 	}
 	if selector_targetheight = 450
 	{
+		selector_target_x = 240
 		scroll = 250
 		if obj_player.key_jump_press
 		{
@@ -106,17 +114,57 @@ if disp_state = 1
 			bind_pos = 0
 		}
 	}
-	if selector_targetheight = 575 && obj_player.key_jump_press
+	if selector_targetheight = 575
 	{
-		if window_get_fullscreen()
-			window_set_fullscreen(0)
-		else
-			window_set_fullscreen(1)
-		ini_write_real("settings","fullscreen",window_get_fullscreen())
+		selector_target_x = 190
+		if obj_player.key_jump_press
+		{
+			if window_get_fullscreen()
+				window_set_fullscreen(0)
+			else
+				window_set_fullscreen(1)
+			ini_write_real("settings","fullscreen",window_get_fullscreen())
+		}
+	}
+	if selector_targetheight = 700
+	{
+		selector_target_x = 140
+		if obj_player.key_jump_press
+		{
+			if use_varjump
+			{
+				ini_write_real("settings","varjump",0)
+				use_varjump = 0
+			}
+			else
+			{
+				ini_write_real("settings","varjump",1)
+				use_varjump = 1
+			}
+		}
+	}
+	if selector_targetheight = 825
+	{
+		selector_target_x = 240
+		scroll = 250
+		if obj_player.key_jump_press
+		{
+			if hitstun_enable
+			{
+				ini_write_real("settings","hitstun",0)
+				hitstun_enable = 0
+			}
+			else
+			{
+				ini_write_real("settings","hitstun",1)
+				hitstun_enable = 1
+			}
+		}
 	}
 }
 if disp_state = 2
 {
+	scroll_disp = 0
 	if binding
 	{
 		if keyboard_check_pressed(keyboard_key) && keyboard_key != vk_nokey
@@ -134,6 +182,7 @@ if disp_state = 2
 			bind_pos++
 			if bind_pos > 6
 			{
+				scroll_disp = 250
 				disp_state = 1
 				selector_target_x = 125
 				binding = 0
