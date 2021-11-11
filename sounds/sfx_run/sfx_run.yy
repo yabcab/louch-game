@@ -1,6 +1,6 @@
 {
   "compression": 1,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_sfx",
   },
   "soundFile": "sfx_run.mp3",
-  "duration": 6.452245,
+  "duration": 2.246531,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

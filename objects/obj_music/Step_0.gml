@@ -67,6 +67,7 @@ if is_secret
 {
 	audio_sound_gain(mu,0,0)
 	audio_sound_gain(mu_secret,mu_vol,0)
+	audio_sound_gain(mu_escapesecret,0,0)
 	audio_sound_gain(mu_timetrial,0,0)
 	metronome_set(bpm_map[mu_secret],mu_secret)
 }
@@ -76,6 +77,7 @@ else
 		audio_stop_sound(mu_timetrial)
 	audio_sound_gain(mu_secret,0,0)
 	audio_sound_gain(mu_timetrial,0,0)
+	audio_sound_gain(mu_escapesecret,0,0)
 	audio_sound_gain(mu,mu_vol,0)
 	metronome_set(bpm_map[mu],mu)
 }

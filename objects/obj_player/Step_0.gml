@@ -15,7 +15,13 @@
 //	}
 //}
 get_inputs(0)
-
+if gamepad_button_check_pressed(0,gp_select)
+{
+	if debug
+		debug = 0
+	else
+		debug = 1
+}
 
 if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 1,obj_slope)
 	onground = 1
@@ -321,6 +327,12 @@ switch state { // normal
 						else
 							sprite_index = spr_playerLS_bjump2
 		
+		//sound
+		if onground && !audio_is_playing(sfx_run)
+			audio_play_sound(sfx_run,1,0)
+		else if !onground
+			audio_stop_sound(sfx_run)
+		
 		// velocity
 		if vspeed < 15
 			vspeed += 0.3
@@ -355,7 +367,10 @@ switch state { // normal
 		if instance_place(x + hspeed,y,obj_solid)
 		{
 			if instance_place(x + hspeed,y - 12,obj_solid)
+			{
 				state = idlestate
+				audio_stop_sound(sfx_run)
+			}
 			else
 				while instance_place(x + hspeed,y - 8,obj_solid)
 					y -= 1

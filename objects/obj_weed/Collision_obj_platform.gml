@@ -16,7 +16,7 @@ if (!place_free(x+hspeed,y+vspeed))
 }
 if (instance_place(x + xs + hspeed * 5,y,obj_solid)) && onground
 {
-	vspeed = -10
+	vspeed = -8
 	hspeed = 0
 	jumpstart = 1
 	image_index = 0

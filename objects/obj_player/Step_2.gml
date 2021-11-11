@@ -1,13 +1,15 @@
-if keyboard_check_pressed(vk_escape)
+if key_pause_press && obj_pausemenucontroller.disp_state != 2
 {
 	if pause_state != pausestate.playerpause
 	{
 		previous_pause = pause_state
 		pause_state = pausestate.playerpause
+		pause = 1
 	}
 	else
 	{
 		pause_state = previous_pause
+		pause = 0
 		if pause_state = pausestate.playerpause && !instance_exists(obj_hitstun)
 			if instance_exists(obj_freezetimer)
 				pause_state = pausestate.nonplayerpause

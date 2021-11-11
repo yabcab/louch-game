@@ -1,9 +1,9 @@
 {
   "compression": 1,
-  "volume": 1.0,
+  "volume": 0.39,
   "preload": false,
-  "bitRate": 128,
-  "sampleRate": 44100,
+  "bitRate": 256,
+  "sampleRate": 48000,
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_space.mp3",
-  "duration": 162.191376,
+  "duration": 228.911026,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

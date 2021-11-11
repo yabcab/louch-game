@@ -16,6 +16,18 @@ globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
 globalvar level; level = 0
 globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:",0,0)
+globalvar combo_font; combo_font = font_add_sprite_ext(spr_combonumbers,"0123456789",0,0)
+
+audio_group_load(audio_sfx)
+audio_group_load(audio_mu)
+ini_open("savedata.lmao")
+globalvar sfx_vol; sfx_vol = ini_read_real("settings","sfx_vol",0.5)
+globalvar mu_vol; mu_vol = ini_read_real("settings","mu_vol",0.2)
+audio_group_set_gain(audio_mu,mu_vol,0)
+audio_group_set_gain(audio_sfx,sfx_vol,0)
+if ini_read_real("settings","fullscreen",1)
+	window_set_fullscreen(1)
+ini_close()
 
 ini_open("savedata.lmao")
 globalvar cont_left; cont_left = ini_read_real("settings","bind_left",vk_left)
@@ -43,8 +55,8 @@ bpm_map[mu_secret] = 120
 bpm_map[mu_timetrial] = 160
 bpm_map[mu_escapesecret] = 160
 bpm_map[mu_jungle] = 135
-bpm_map[mu_space] = random_range(80,360) //placeholder
+bpm_map[mu_space] = 145 //placeholder
 
-room_goto(rm_title)
+room_goto(rm_gameintro)
 randomize()
 ini_close()

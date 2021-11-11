@@ -134,6 +134,7 @@ function get_inputs(controllerbind)
 	key_jump_press = 0
 	key_attack_press = 0
 	key_taunt_press = 0
+	key_pause_press = 0
 	
 	if keyboard_check_pressed(cont_left) || gamepad_button_check_pressed(controllerbind,gp_padl) || (gamepad_axis_value(controllerbind,gp_axislh) < 0 && key_left = 0)
 		key_left_press = 1
@@ -183,6 +184,13 @@ function get_inputs(controllerbind)
 		key_taunt = 1
 	else
 		key_taunt = 0
+	
+	if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(controllerbind,gp_start)
+		key_pause_press = 1
+	if keyboard_check(vk_escape) || gamepad_button_check(controllerbind,gp_start)
+		key_pause = 1
+	else
+		key_pause = 0
 }
 
 #endregion

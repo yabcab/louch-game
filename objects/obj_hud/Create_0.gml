@@ -1,2 +1,12 @@
 hp = 5
 display = 1
+is_combo = 0
+combo_amount = 0
+comboletter_rise[0] = 0
+comboletter_rise[1] = 0
+comboletter_rise[2] = 0
+comboletter_rise[3] = 0
+comboletter_rise[4] = 0
+comboletter_rise[5] = 0
+_time = 0
+comboletter_rise_target = -50

@@ -1,4 +1,4 @@
-if instance_place(x,y+1,obj_solid) || instance_place(x,y + hspeed + 1,obj_slope) || instance_place(x,y+1,obj_platform)
+if instance_place(x,y+1,obj_solid) || instance_place(x,y + 3,obj_slope) || instance_place(x,y+1,obj_platform)
 	onground = 1
 else
 	onground = 0
@@ -44,7 +44,7 @@ switch state {
 		else
 			hspeed = lerp(hspeed,5 * xs,0.05)
 
-		hspeed = clamp(hspeed,-5,5)
+		hspeed = clamp(hspeed,-4,4)
 		
 		if onground
 			sprite_index = spr_dave_run
