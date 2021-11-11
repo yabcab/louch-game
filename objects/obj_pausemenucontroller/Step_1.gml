@@ -5,8 +5,6 @@ else
 
 if obj_player.pause
 {
-	if !ini_open("savedata.lmao")
-		ini_open("savedata.lamo")
 	_time++
 
 	if abs(selector_height - selector_targetheight) > 1
