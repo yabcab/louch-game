@@ -254,4 +254,6 @@ else
 	selector_height = 350
 	selector_target_x = 450
 	selector_x = 450
+	scroll = 0
+	scroll_disp = 0
 }
