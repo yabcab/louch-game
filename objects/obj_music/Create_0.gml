@@ -1,4 +1,4 @@
-mu = mu_hub
+mu = sfx_none
 playing_mu = -6
 audio_pitchchange = 0
 audio_pitchchange_time = 0

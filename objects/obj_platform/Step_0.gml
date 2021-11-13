@@ -1,6 +1,6 @@
 if instance_exists(obj_player)
 {
-	if !instance_exists(obj) && obj_player.y + 32 < y
+	if !instance_exists(obj) && obj_player.bbox_bottom < y
 	{
 		var s = image_xscale
 		obj = instance_create_depth(x,y,depth,obj_solid)

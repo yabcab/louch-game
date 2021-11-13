@@ -1,5 +1,4 @@
 audio_stop_sound(mu_disclaimer)
-pal_swap_init_system(shd_pal_swapper)
 draw_set_font(fnt_text)
 gamepad_set_axis_deadzone(0,0.35)
 
@@ -58,6 +57,7 @@ bpm_map[mu_timetrial] = 160
 bpm_map[mu_escapesecret] = 160
 bpm_map[mu_jungle] = 135
 bpm_map[mu_space] = 145 //placeholder
+bpm_map[sfx_none] = 0
 
 room_goto(rm_gameintro)
 randomize()
