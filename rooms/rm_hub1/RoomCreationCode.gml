@@ -12,3 +12,5 @@ destroy_list = ds_list_create()
 
 score = 0
 obj_hud.display = 1
+
+can_pause = 1

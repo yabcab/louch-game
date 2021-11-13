@@ -24,5 +24,6 @@ if set = 0
 	other.taunt_qualify = 0
 	other.idlestate = 0
 	other.statesave = 0
+	other.spawn = 1
 	other.sprite_index = choose(spr_playerLS_taunt1,spr_playerLS_taunt2,spr_playerLS_taunt3,spr_playerLS_taunt4,spr_playerLS_taunt5,spr_playerLS_taunt6,spr_playerLS_taunt7)
 }

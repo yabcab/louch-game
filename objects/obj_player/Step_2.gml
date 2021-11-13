@@ -1,4 +1,4 @@
-if key_pause_press && obj_pausemenucontroller.disp_state != 2
+if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can_pause
 {
 	if pause_state != pausestate.playerpause
 	{

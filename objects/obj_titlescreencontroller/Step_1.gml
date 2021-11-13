@@ -105,7 +105,6 @@ if disp_state = 1
 			else
 				mu_vol = 1
 		ini_write_real("settings","mu_vol",mu_vol)
-		audio_group_set_gain(audio_mu,mu_vol,0)
 		audio_stop_sound(mu_secret)
 		scroll = 0
 	}

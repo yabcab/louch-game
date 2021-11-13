@@ -66,6 +66,7 @@ if obj_player.pause
 				else
 					room_goto(rm_title)
 				obj_player.key_jump_press = 0
+				obj_player.spawn = 1
 			}
 			selector_target_x = 430
 		}
@@ -123,7 +124,6 @@ if obj_player.pause
 				else
 					mu_vol = 1
 			ini_write_real("settings","mu_vol",mu_vol)
-			audio_group_set_gain(audio_mu,mu_vol,0)
 			scroll = 0
 		}
 		if selector_targetheight = 450
