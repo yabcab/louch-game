@@ -1,2 +1,2 @@
-seconds = 15
+seconds = 20
 minutes = 0
