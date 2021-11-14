@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_secret.mp3",
-  "duration": 118.804909,
+  "duration": 178.2335,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
