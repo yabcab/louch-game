@@ -10,3 +10,4 @@ comboletter_rise[4] = 0
 comboletter_rise[5] = 0
 _time = 0
 comboletter_rise_target = -50
+combotimer = 0

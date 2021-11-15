@@ -50,7 +50,6 @@ if instance_place(x,y+3,obj_slope)
 {
 	dash_charge = 1
 	pounding = 0
-	combo = 0
 }
 if !instance_place(x,y-1,obj_slope)
 	dashing = 0

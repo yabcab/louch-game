@@ -30,6 +30,9 @@ if y > room_height
 		deaths += 1
 		state = idlestate
 	}
+	score -= 250
+	if score < 0
+		score = 0
 }
 
 if pause_state = pausestate.playerpause
@@ -66,7 +69,7 @@ if jump_charged
 	if vspeed > 0
 		jump_charged = 0
 }
-if vspeed > -3 && state != playerstate.taunt && !justhitenemy && !instance_exists(obj_hitstun)
+if vspeed > -3 && state != playerstate.taunt && !justhitenemy && state != -1
 	jumping = 0
 
 while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying

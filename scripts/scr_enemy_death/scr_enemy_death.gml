@@ -1,6 +1,8 @@
 function scr_enemy_death(hurt){
 if other.state = playerstate.boost
 {
+	obj_hud.combotimer = 180
+	other.combo += 1
 	instance_destroy()
 	var h = hspeed
 	var s = spr_dead
@@ -21,6 +23,7 @@ else if other.state != playerstate.dying
 {
 	if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 	{
+		obj_hud.combotimer = 180
 		do_hitstun(3)
 		var s = spr_dead
 		instance_destroy()
@@ -45,17 +48,19 @@ else if other.state != playerstate.dying
 		other.justhitenemy = 1
 		other.alarm[0] = 5
 	
-		var snd = audio_play_sound(sfx_bonk,1,0)
-		audio_sound_pitch(snd,1 + (other.combo / 10))
-		other.combo += 1
-		score += 20 * other.combo
-		ds_list_set(destroy_list,id,1)
+	other.combo += 1
+	var snd = audio_play_sound(sfx_bonk,1,0)
+	audio_sound_pitch(snd,1 + ((other.combo - 1) / 10))
+	score += 20 * other.combo
+	ds_list_set(destroy_list,id,1)
 	}
 	else if hurt && !other.inv
 	{
 		if other.state != playerstate.boost && other.state != playerstate.hurt && !other.justhitenemy
 		{
 			score -= 100
+			obj_hud.combotimer = 0
+			other.combo = 0
 			if score < 0
 				score = 0
 			other.inv = 1

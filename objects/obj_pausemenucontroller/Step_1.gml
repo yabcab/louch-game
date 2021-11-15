@@ -3,7 +3,7 @@ if instance_exists(obj_player)
 else
 	display = 0
 
-if obj_player.pause
+if display
 {
 	_time++
 

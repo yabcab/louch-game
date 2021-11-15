@@ -25,7 +25,7 @@ switch state {
 			xs = -xs
 		}
 		
-		if distance_to_object(obj_player) < 215 && y < obj_player.y + 15 && y > obj_player.y - 15 && chargetime < -60
+		if distance_to_object(obj_player) < 215 && y < obj_player.y + 15 && y > obj_player.y - 15 && chargetime < -60 && obj_player.onground
 		{
 			if x > obj_player.x
 				xs = 1

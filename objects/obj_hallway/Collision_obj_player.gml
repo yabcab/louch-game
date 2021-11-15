@@ -7,4 +7,5 @@ if !used
 	var inst = instance_create_depth(x,y,-500,obj_roomfade)
 	inst.targetroom = targetroom
 	used = 1
+	audio_play_sound(sfx_transition,1,0)
 }

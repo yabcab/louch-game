@@ -173,7 +173,6 @@ switch state { // normal
 			beginjump = 1
 			jumping = 1
 			image_index = 0
-			combo = 0
 		}
 		if jumping && !key_jump && use_varjump
 		{
@@ -358,7 +357,6 @@ switch state { // normal
 			image_index = 0
 			jumping = 1
 			jumps -= 1
-			combo = 0
 		}
 		if jumping && !key_jump && use_varjump
 		{

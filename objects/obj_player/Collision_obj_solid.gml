@@ -50,7 +50,6 @@ if instance_place(x + hspeed,y + 1,obj_solid) && !instance_place(x + hspeed,y - 
 {
 	dash_charge = 1
 	pounding = 0
-	combo = 0
 }
 if !instance_place(x,y-1,obj_solid)
 	dashing = 0

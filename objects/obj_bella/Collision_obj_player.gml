@@ -26,8 +26,7 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 		other.justhitenemy = 1
 		other.alarm[0] = 5
 	
-		var snd = audio_play_sound(sfx_bonk,1,0)
-		audio_sound_pitch(snd,1 + (other.combo / 10))
+		audio_play_sound(sfx_bonk,1,0)
 	}
 }
 else if other.state != 11 && other.inv = 0
@@ -38,6 +37,8 @@ else if other.state != 11 && other.inv = 0
 		if score < 0
 			score = 0
 		other.inv = 1
+		obj_hud.combotimer = 0
+		other.combo = 0
 		other.alarm[1] = 150
 		other.state = 4
 		other.wait = 0

@@ -1,42 +1,23 @@
-if instance_exists(obj_timer)
+//var range = random_range(-2,2)
+var str = ""
+if minutes > -1
 {
-	if minutes > -1
+	if seconds > 9
 	{
-		var range = random_range(-2,2)
-		if seconds > 9
-		{
-			var str = string(minutes) + ":" + string(seconds)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range + 2,692,str,2,2,0,col_3,col_3,col_3,col_3,1)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range,690,str,2,2,0,col_1,col_1,col_2,col_2,1)
-		}
-		else
-		{
-			var str = string(minutes) + ":0" + string(seconds)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range + 2,692,str,2,2,0,col_3,col_3,col_3,col_3,1)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range,690,str,2,2,0,col_1,col_1,col_2,col_2,1)
-		}
+		var str = string(seconds)
 	}
 	else
-		instance_destroy()
+	{
+		var str = "0" + string(seconds)
+	}
 }
 else
-{
-	if minutes > -1
-	{
-		var range = random_range(-2,2)
-		if seconds > 9
-		{
-			var str = string(minutes) + ":" + string(seconds)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range + 2,y + 2,str,2,2,0,col_3,col_3,col_3,col_3,1)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range,y,str,2,2,0,col_1,col_1,col_2,col_2,1)
-		}
-		else
-		{
-			var str = string(minutes) + ":0" + string(seconds)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range + 2,y + 2,str,2,2,0,col_3,col_3,col_3,col_3,1)
-			draw_text_transformed_color((640 - (string_width(str) / 2)) + range,y,str,2,2,0,col_1,col_1,col_2,col_2,1)
-		}
-	}
-	else
-		instance_destroy()
-}
+	instance_destroy()
+
+var prev = draw_get_font()
+draw_set_font(freezetimerfont)
+draw_sprite_ext(spr_freezetimerbg,0,0,720,2,2,0,c_white,1)
+draw_text_transformed(0,555,string(minutes),2,2,0)
+draw_text_transformed(70,555,":",2,2,0)
+draw_text_transformed(130,555,str,2,2,0)
+draw_set_font(prev)

@@ -1,6 +1,8 @@
 if other.state = playerstate.boost
 {
 	instance_destroy()
+	other.combo += 1
+	obj_hud.combotimer = 180
 	var h = hspeed
 	var s = spr_dead
 		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
@@ -23,6 +25,8 @@ else if other.state != playerstate.dying && other.inv = 0
 		if score < 0
 			score = 0
 		other.inv = 1
+		obj_hud.combotimer = 0
+		other.combo = 0
 		other.wait = 0
 		other.alarm[1] = 150
 		other.state = playerstate.hurt
