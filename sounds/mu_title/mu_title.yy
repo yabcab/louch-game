@@ -1,5 +1,5 @@
 {
-  "compression": 1,
+  "compression": 0,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_title.mp3",
-  "duration": 105.000633,
+  "duration": 173.84491,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
