@@ -10,6 +10,7 @@ if instance_exists(obj_freezetimer)
 ds_list_destroy(destroy_list)
 destroy_list = ds_list_create()
 
+health = 7
 score = 0
 obj_hud.display = 1
 

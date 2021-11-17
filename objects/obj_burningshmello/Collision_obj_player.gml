@@ -1,4 +1,4 @@
-if other.state = playerstate.boost
+if other.state = playerstate.boost || other.dashing
 {
 	instance_destroy()
 	other.combo += 1

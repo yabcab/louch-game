@@ -9,7 +9,7 @@ onground = 0
 jumping = 0
 fade = 0
 fade_amount = 0
-state = playerstate.idle
+state = -1
 keys = 0
 dash_charge = 1
 dashing = 0
@@ -47,6 +47,7 @@ taunt_qualify = 0
 justhitenemy = 0
 bound_obj = noone
 previous_pause = 0
+nonstunstate = 0
 
 facing = 1
 xs = 1

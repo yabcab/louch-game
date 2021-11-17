@@ -13,7 +13,9 @@
 //		pause_state = pausestate.none
 //		pause = 0
 //	}
-//}
+
+if state != -1
+	nonstunstate = state
 get_inputs(0)
 if gamepad_button_check_pressed(0,gp_select)
 {
@@ -73,6 +75,15 @@ if instance_exists(obj_timer)
 
 
 switch state { // normal
+	case playerstate.none:
+	{
+		taunt_qualify = 0
+		inv = 1
+		alph = 1
+		alarm[1] = 1
+	}
+	break;
+	
 	case playerstate.idle:
 	{
 		//louchester anims

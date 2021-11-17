@@ -1,5 +1,5 @@
 function scr_enemy_death(hurt){
-if other.state = playerstate.boost
+if other.state = playerstate.boost || other.dashing
 {
 	obj_hud.combotimer = 180
 	other.combo += 1

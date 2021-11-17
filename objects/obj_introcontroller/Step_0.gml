@@ -12,3 +12,4 @@ if start2
 	else
 		scroll = targetscroll
 }
+obj_player.state = -1

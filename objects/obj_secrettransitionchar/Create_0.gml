@@ -1,0 +1,12 @@
+state = 0
+waittimer = 0
+targetroom = rm_hub1
+spawn = 1
+_time = 0
+var cam = view_camera[0]
+var xx = camera_get_view_x(cam)
+var yy = camera_get_view_y(cam)
+targetx = xx + 320
+targety = yy + 180
+depth = -1000000
+startroom = room

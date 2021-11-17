@@ -16,15 +16,16 @@ if spawn = 3 && instance_exists(obj_spawn_c)
 	y = obj_spawn_c.y
 }
 
-state = statesave
-if state = -1
-	if idlestate != -1 && idlestate != playerstate.taunt
-		state = idlestate
-	else
-	{
-		state = 0
-		idlestate = 0
-	}
+if !instance_exists(obj_secrettransitionchar)
+	state = nonstunstate
+//if state = -1
+//	if idlestate != -1 && idlestate != playerstate.taunt
+//		state = idlestate
+//	else
+//	{
+//		state = 0
+//		idlestate = 0
+//	}
 	
 checkpoint_x = x
 checkpoint_y = y

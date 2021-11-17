@@ -68,7 +68,7 @@ else if other.state != 11 && other.inv = 0
 				audio_play_sound(sfx_ricochet,1,0)
 			}
 	}
-	if other.state = 3
+	if other.state = 3 || other.dashing
 	{
 		scr_enemy_death(0)
 	}
