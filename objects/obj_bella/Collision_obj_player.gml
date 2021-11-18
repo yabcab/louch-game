@@ -1,4 +1,9 @@
-if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
+if instance_place(x,y+1,obj_solid) || instance_place(x,y + 5,obj_slope) || instance_place(x,y+1,obj_platform)
+	onground = 1
+else
+	onground = 0
+	
+if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 {
 	/*if state = 1 && wait > 25
 	{

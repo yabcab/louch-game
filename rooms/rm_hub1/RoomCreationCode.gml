@@ -15,3 +15,7 @@ score = 0
 obj_hud.display = 1
 
 can_pause = 1
+obj_player.state = 0
+obj_player.idlestate = 0
+obj_player.statesave = 0
+obj_player.nonstunstate = 0

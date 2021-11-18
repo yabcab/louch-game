@@ -1,6 +1,7 @@
 if pause_state = pausestate.none
 {
-	vspeed += 0.15
+	if vspeed < 9
+		vspeed += 0.15
 	image_angle += 3
 }
 else
@@ -8,3 +9,5 @@ else
 	y -= vspeed
 	x -= hspeed
 }
+if y > room_height
+	instance_destroy()
