@@ -2,7 +2,7 @@ var str = keyboard_string
 
 if string_pos("catsing",str) > 0
 {
-	obj_music.mu = mu_thatcatecansing
+	//obj_music.mu = mu_thatcatecansing
 	campaign = 5
 	keyboard_string = ""
 }
@@ -37,7 +37,7 @@ if string_pos("nolardass",str) > 0
 {
 	campaign = 4
 	keyboard_string = ""
-	obj_music.mu = mu_nolard
+	//obj_music.mu = mu_nolard
 }
 
 if string_pos("lookatme",str) > 0
@@ -48,7 +48,7 @@ if string_pos("lookatme",str) > 0
 		obj_player.statesave = obj_player.state
 		obj_player.sprite_index = spr_playerLS_taunt2
 	}
-	obj_music.mu = mu_disclaimer
+	obj_music.mu = sfx_none
 	keyboard_string = ""
 }
 

@@ -14,7 +14,7 @@
 //		pause = 0
 //	}
 
-if state != -1
+if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 get_inputs(0)
 if gamepad_button_check_pressed(0,gp_select)
@@ -831,7 +831,10 @@ switch state { // normal
 	
 	case playerstate.water_jump:
 	{
-		sprite_index = spr_playerLS_pain
+		if beginjump
+			sprite_index = spr_playerLS_fishlaunchstart
+		else
+			sprite_index = spr_playerLS_fishlaunch
 		
 		if key_right
 			hspeed = 3

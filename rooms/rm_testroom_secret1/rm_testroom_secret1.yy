@@ -226,7 +226,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_popsicle","path":"objects/obj_popsicle/obj_popsicle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":672.0,"resourceVersion":"1.0","name":"inst_2C0C7A66","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_popsicle","path":"objects/obj_popsicle/obj_popsicle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":576.0,"resourceVersion":"1.0","name":"inst_2BF2734D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_popsicle","path":"objects/obj_popsicle/obj_popsicle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":672.0,"resourceVersion":"1.0","name":"inst_1EFA6D4","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_secretdoor","path":"objects/obj_secretdoor/obj_secretdoor.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":512.0,"resourceVersion":"1.0","name":"inst_10C5DCA4","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":672.0,"resourceVersion":"1.0","name":"inst_769A04F2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"ts_secret","path":"tilesets/ts_secret/ts_secret.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":79,"SerialiseHeight":79,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -365,7 +365,7 @@
     {"name":"inst_2C0C7A66","path":"rooms/rm_testroom_secret1/rm_testroom_secret1.yy",},
     {"name":"inst_2BF2734D","path":"rooms/rm_testroom_secret1/rm_testroom_secret1.yy",},
     {"name":"inst_1EFA6D4","path":"rooms/rm_testroom_secret1/rm_testroom_secret1.yy",},
-    {"name":"inst_10C5DCA4","path":"rooms/rm_testroom_secret1/rm_testroom_secret1.yy",},
+    {"name":"inst_769A04F2","path":"rooms/rm_testroom_secret1/rm_testroom_secret1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

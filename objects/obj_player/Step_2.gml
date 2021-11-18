@@ -1,6 +1,6 @@
 if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can_pause
 {
-	if pause_state != pausestate.playerpause
+	if !pause
 	{
 		previous_pause = pause_state
 		pause_state = pausestate.playerpause
@@ -58,7 +58,7 @@ if campaign = 5
 	else
 		sprite_index = spr_cate
 	
-if jump_charged
+if jump_charged && pause_state = pausestate.none
 {
 	with instance_create_depth(x + random_range(-16,16),y + random_range(32,48),depth - 1,obj_explosionparticle)
 	{

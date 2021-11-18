@@ -1,17 +1,17 @@
 {
   "compression": 1,
-  "volume": 0.39,
+  "volume": 0.37,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_mu",
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_danceparty.mp3",
-  "duration": 229.06485,
+  "duration": 60.99592,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

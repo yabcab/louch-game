@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_placeholder_1",
-    "path": "sprites/spr_placeholder_1/spr_placeholder_1.yy",
+    "name": "spr_debugbutton",
+    "path": "sprites/spr_debugbutton/spr_debugbutton.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_solid",
+    "path": "objects/obj_solid/obj_solid.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

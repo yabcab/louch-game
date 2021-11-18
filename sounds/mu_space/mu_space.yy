@@ -4,7 +4,7 @@
   "preload": false,
   "bitRate": 256,
   "sampleRate": 48000,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_mu",

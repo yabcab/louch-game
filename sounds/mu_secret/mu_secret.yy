@@ -1,17 +1,17 @@
 {
   "compression": 1,
-  "volume": 0.2,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_mu",
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_secret.mp3",
-  "duration": 178.2335,
+  "duration": 171.415512,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

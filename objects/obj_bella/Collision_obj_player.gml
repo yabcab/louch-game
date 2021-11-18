@@ -7,8 +7,6 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 		xs = -(other.facing)
 		sprite_index = spr_bella_hit
 	} */
-	if state = 0
-	{
 		do_hitstun(3)
 		state = 1
 		vspeed = -3
@@ -25,9 +23,9 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 		other.image_index = 0
 		other.justhitenemy = 1
 		other.alarm[0] = 5
+		wait = 0
 	
 		audio_play_sound(sfx_bonk,1,0)
-	}
 }
 else if other.state != 11 && other.inv = 0
 {
