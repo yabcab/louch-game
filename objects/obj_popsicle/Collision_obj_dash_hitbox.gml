@@ -13,6 +13,6 @@ audio_play_sound(sfx_schlap,1,0)
 do_hitstun(5)
 instance_create_depth(mean(x,obj_player.x),mean(y,obj_player.y),depth - 1,obj_hitstuneffect)
 obj_hud.combotimer = 180
-score += 20 * obj_player.combo
+score += 20 * (obj_player.combo / 2)
 obj_player.combo += 1
 ds_list_set(destroy_list,id,1)

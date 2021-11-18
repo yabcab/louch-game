@@ -127,70 +127,104 @@ function player_taunt()
 function get_inputs(controllerbind)
 {
 	
-	key_left_press = 0
-	key_right_press = 0
-	key_up_press = 0
-	key_down_press = 0
-	key_jump_press = 0
-	key_attack_press = 0
-	key_taunt_press = 0
-	key_pause_press = 0
+	if instance_exists(obj_hitstun)
+	{
+		if keyboard_check_pressed(cont_left) || gamepad_button_check_pressed(controllerbind,gp_padl) || (gamepad_axis_value(controllerbind,gp_axislh) < 0 && key_left = 0)
+			inputqueue_left = 1
 	
-	if keyboard_check_pressed(cont_left) || gamepad_button_check_pressed(controllerbind,gp_padl) || (gamepad_axis_value(controllerbind,gp_axislh) < 0 && key_left = 0)
-		key_left_press = 1
-	if keyboard_check(cont_left) || gamepad_button_check(controllerbind,gp_padl) || gamepad_axis_value(controllerbind,gp_axislh) < 0
-		key_left = 1
+		if keyboard_check_pressed(cont_right) || gamepad_button_check_pressed(controllerbind,gp_padr) || (gamepad_axis_value(controllerbind,gp_axislh) > 0 && key_right = 0)
+			inputqueue_right = 1
+		
+		if keyboard_check_pressed(cont_up) || gamepad_button_check_pressed(controllerbind,gp_padu) || (gamepad_axis_value(controllerbind,gp_axislv) < 0 && key_up = 0)
+			inputqueue_up = 1
+		
+		if keyboard_check_pressed(cont_down) || gamepad_button_check_pressed(controllerbind,gp_padd) || (gamepad_axis_value(controllerbind,gp_axislv) > 0 && key_down = 0)
+			inputqueue_down = 1
+		
+		if keyboard_check_pressed(cont_jump) || gamepad_button_check_pressed(controllerbind,gp_face1)
+			inputqueue_jump = 1
+		
+		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3)
+			inputqueue_attack = 1
+		
+		if keyboard_check_pressed(cont_taunt) || gamepad_button_check_pressed(controllerbind,gp_face4)
+			inputqueue_taunt = 1
+	}
 	else
-		key_left = 0
+	{
+		key_left_press = 0
+		key_right_press = 0
+		key_up_press = 0
+		key_down_press = 0
+		key_jump_press = 0
+		key_attack_press = 0
+		key_taunt_press = 0
+		key_pause_press = 0
 	
-	if keyboard_check_pressed(cont_right) || gamepad_button_check_pressed(controllerbind,gp_padr) || (gamepad_axis_value(controllerbind,gp_axislh) > 0 && key_right = 0)
-		key_right_press = 1
-	if keyboard_check(cont_right) || gamepad_button_check(controllerbind,gp_padr) || gamepad_axis_value(controllerbind,gp_axislh) > 0
-		key_right = 1
-	else
-		key_right = 0
-		
-	if keyboard_check_pressed(cont_up) || gamepad_button_check_pressed(controllerbind,gp_padu) || (gamepad_axis_value(controllerbind,gp_axislv) < 0 && key_up = 0)
-		key_up_press = 1
-	if keyboard_check(cont_up) || gamepad_button_check(controllerbind,gp_padu) || gamepad_axis_value(controllerbind,gp_axislv) < 0 || gamepad_button_check(controllerbind,gp_shoulderlb) || gamepad_button_check(controllerbind,gp_shoulderrb)
-		key_up = 1
-	else
-		key_up = 0
-		
-	if keyboard_check_pressed(cont_down) || gamepad_button_check_pressed(controllerbind,gp_padd) || (gamepad_axis_value(controllerbind,gp_axislv) > 0 && key_down = 0)
-		key_down_press = 1
-	if keyboard_check(cont_down) || gamepad_button_check(controllerbind,gp_padd) || gamepad_axis_value(controllerbind,gp_axislv) > 0
-		key_down = 1
-	else
-		key_down = 0
-		
-	if keyboard_check_pressed(cont_jump) || gamepad_button_check_pressed(controllerbind,gp_face1)
-		key_jump_press = 1
-	if keyboard_check(cont_jump) || gamepad_button_check(controllerbind,gp_face1)
-		key_jump = 1
-	else 
-		key_jump = 0
-		
-	if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3)
-		key_attack_press = 1
-	if keyboard_check(cont_attack) || gamepad_button_check(controllerbind,gp_face3)
-		key_attack = 1
-	else
-		key_attack = 0
-		
-	if keyboard_check_pressed(cont_taunt) || gamepad_button_check_pressed(controllerbind,gp_face4)
-		key_taunt_press = 1
-	if keyboard_check(cont_taunt) || gamepad_button_check(controllerbind,gp_face4)
-		key_taunt = 1
-	else
-		key_taunt = 0
+		if keyboard_check_pressed(cont_left) || gamepad_button_check_pressed(controllerbind,gp_padl) || (gamepad_axis_value(controllerbind,gp_axislh) < 0 && key_left = 0) || inputqueue_left
+			key_left_press = 1
+		if keyboard_check(cont_left) || gamepad_button_check(controllerbind,gp_padl) || gamepad_axis_value(controllerbind,gp_axislh) < 0 || inputqueue_left
+			key_left = 1
+		else
+			key_left = 0
 	
-	if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(controllerbind,gp_start)
-		key_pause_press = 1
-	if keyboard_check(vk_escape) || gamepad_button_check(controllerbind,gp_start)
-		key_pause = 1
-	else
-		key_pause = 0
+		if keyboard_check_pressed(cont_right) || gamepad_button_check_pressed(controllerbind,gp_padr) || (gamepad_axis_value(controllerbind,gp_axislh) > 0 && key_right = 0) || inputqueue_right
+			key_right_press = 1
+		if keyboard_check(cont_right) || gamepad_button_check(controllerbind,gp_padr) || gamepad_axis_value(controllerbind,gp_axislh) > 0 || inputqueue_right
+			key_right = 1
+		else
+			key_right = 0
+		
+		if keyboard_check_pressed(cont_up) || gamepad_button_check_pressed(controllerbind,gp_padu) || (gamepad_axis_value(controllerbind,gp_axislv) < 0 && key_up = 0) || inputqueue_up
+			key_up_press = 1
+		if keyboard_check(cont_up) || gamepad_button_check(controllerbind,gp_padu) || gamepad_axis_value(controllerbind,gp_axislv) < 0 || gamepad_button_check(controllerbind,gp_shoulderlb) || gamepad_button_check(controllerbind,gp_shoulderrb) || inputqueue_up
+			key_up = 1
+		else
+			key_up = 0
+		
+		if keyboard_check_pressed(cont_down) || gamepad_button_check_pressed(controllerbind,gp_padd) || (gamepad_axis_value(controllerbind,gp_axislv) > 0 && key_down = 0) || inputqueue_down
+			key_down_press = 1
+		if keyboard_check(cont_down) || gamepad_button_check(controllerbind,gp_padd) || gamepad_axis_value(controllerbind,gp_axislv) > 0 || inputqueue_down
+			key_down = 1
+		else
+			key_down = 0
+		
+		if keyboard_check_pressed(cont_jump) || gamepad_button_check_pressed(controllerbind,gp_face1) || inputqueue_jump
+			key_jump_press = 1
+		if keyboard_check(cont_jump) || gamepad_button_check(controllerbind,gp_face1) || inputqueue_jump
+			key_jump = 1
+		else 
+			key_jump = 0
+		
+		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3) || inputqueue_attack
+			key_attack_press = 1
+		if keyboard_check(cont_attack) || gamepad_button_check(controllerbind,gp_face3) || inputqueue_attack
+			key_attack = 1
+		else
+			key_attack = 0
+		
+		if keyboard_check_pressed(cont_taunt) || gamepad_button_check_pressed(controllerbind,gp_face4) || inputqueue_taunt
+			key_taunt_press = 1
+		if keyboard_check(cont_taunt) || gamepad_button_check(controllerbind,gp_face4) || inputqueue_taunt
+			key_taunt = 1
+		else
+			key_taunt = 0
+	
+		if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(controllerbind,gp_start)
+			key_pause_press = 1
+		if keyboard_check(vk_escape) || gamepad_button_check(controllerbind,gp_start)
+			key_pause = 1
+		else
+			key_pause = 0
+		
+		inputqueue_left = 0
+		inputqueue_right = 0
+		inputqueue_up = 0
+		inputqueue_down = 0
+		inputqueue_jump = 0
+		inputqueue_attack = 0
+		inputqueue_taunt = 0
+	}
 }
 
 #endregion

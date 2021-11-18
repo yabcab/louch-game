@@ -3,6 +3,7 @@ if other.state = playerstate.boost || other.dashing
 {
 	obj_hud.combotimer = 180
 	other.combo += 1
+	score += 20 * (other.combo / 2)
 	instance_destroy()
 	var h = hspeed
 	var s = spr_dead
@@ -51,7 +52,7 @@ else if other.state != playerstate.dying
 	other.combo += 1
 	var snd = audio_play_sound(sfx_bonk,1,0)
 	audio_sound_pitch(snd,1 + ((other.combo - 1) / 10))
-	score += 20 * other.combo
+	score += 20 * (other.combo / 2)
 	ds_list_set(destroy_list,id,1)
 	}
 	else if hurt && !other.inv

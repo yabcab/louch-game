@@ -16,7 +16,7 @@
 
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
-get_inputs(0)
+
 if gamepad_button_check_pressed(0,gp_select)
 {
 	if debug

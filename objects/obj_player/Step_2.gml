@@ -69,13 +69,14 @@ if jump_charged && pause_state = pausestate.none
 	if vspeed > 0
 		jump_charged = 0
 }
-if vspeed > -3 && state != playerstate.taunt && !justhitenemy && state != -1
+if vspeed > -3 && state != playerstate.taunt && !justhitenemy && pause_state = pausestate.none
 	jumping = 0
 
 while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying
 {
 	y += 0.1
 }
+get_inputs(0)
 
 //if using_gamepad && !gamepad_is_connected(0)
 //{
