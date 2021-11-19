@@ -1162,3 +1162,5 @@ switch state { // normal
 
 if taunt_qualify && key_taunt_press
 	player_taunt()
+
+get_inputs(0)

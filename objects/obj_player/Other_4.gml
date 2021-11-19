@@ -32,3 +32,4 @@ checkpoint_y = y
 
 recently_entered_room = 1
 alarm[2] = 60
+

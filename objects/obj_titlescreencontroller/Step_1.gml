@@ -27,6 +27,8 @@ if disp_state = 0
 			room_goto(rm_hub1)
 			audio_play_sound(sfx_menupick1,1,0)
 			audio_play_sound(sfx_menupick2,1,0)
+			obj_player.key_jump_press = 0
+			obj_player.key_jump = 0
 		}
 		selector_target_x = 430
 	}

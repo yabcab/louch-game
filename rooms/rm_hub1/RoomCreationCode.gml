@@ -19,3 +19,7 @@ obj_player.state = 0
 obj_player.idlestate = 0
 obj_player.statesave = 0
 obj_player.nonstunstate = 0
+obj_player.hp = 7
+
+audio_stop_sound(mu_timetrial)
+audio_stop_sound(mu_escapesecret)

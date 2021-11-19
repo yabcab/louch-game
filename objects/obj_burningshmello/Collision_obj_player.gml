@@ -3,6 +3,7 @@ if other.state = playerstate.boost || other.dashing
 	instance_destroy()
 	other.combo += 1
 	obj_hud.combotimer = 180
+	score += 20 * (obj_player.combo)
 	var h = hspeed
 	var s = spr_dead
 		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)

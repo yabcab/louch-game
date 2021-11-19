@@ -67,6 +67,8 @@ if display
 					room_goto(rm_title)
 				obj_player.key_jump_press = 0
 				obj_player.spawn = 1
+				obj_player.key_jump_press = 0
+				obj_player.key_jump = 0
 			}
 			selector_target_x = 430
 		}
