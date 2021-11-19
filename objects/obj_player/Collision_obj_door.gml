@@ -1,5 +1,10 @@
 if key_up && instance_place(x,y+1,obj_solid) && state != playerstate.dying && !recently_entered_room
 {
+	if state != playerstate.none
+		if state = playerstate.high
+			sprite_index = spr_playerLS_high_idle
+		else
+			sprite_index = spr_playerLS_still
 	if state != -1
 		audio_play_sound(sfx_transition,1,0)
 	statesave = state
@@ -8,5 +13,6 @@ if key_up && instance_place(x,y+1,obj_solid) && state != playerstate.dying && !r
 	speed = 0
 	spawn = other.spawn
 	targetroom = other.targetroom
-	sprite_index = spr_playerLS_still
+	hspeedsave = 0
+	vspeedsave = 0
 }

@@ -1,6 +1,6 @@
 with other
 {
-	if state != playerstate.level_end
+	if state != playerstate.level_end && state != playerstate.none
 	{
 		state = playerstate.level_end
 		vspeed = -12

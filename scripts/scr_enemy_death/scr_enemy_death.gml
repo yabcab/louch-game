@@ -24,6 +24,8 @@ else if other.state != playerstate.dying
 {
 	if other.vspeed > 0.5 && y - 5 > other.y && !other.onground
 	{
+		if other.state = playerstate.hurt
+			other.state = other.idlestate
 		obj_hud.combotimer = 180
 		do_hitstun(3)
 		var s = spr_dead

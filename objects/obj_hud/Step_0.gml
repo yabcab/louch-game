@@ -16,15 +16,17 @@ if instance_exists(obj_player)
 		is_combo = 0
 		comboletter_rise_target = -50
 		if comboletter_rise[5] < -45
+		{
 			combo_amount = 0
-		obj_player.combo = 0
+			obj_player.combo = 0
+		}
 	}
 }
 else
 {
 	hp = 0
 	is_combo = 0
-	if comboletter_rise_target < -45
+	if comboletter_rise[5] < -45
 		combo_amount = 0
 	comboletter_rise_target = -50
 }

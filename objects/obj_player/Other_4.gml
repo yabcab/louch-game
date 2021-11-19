@@ -29,6 +29,8 @@ if !instance_exists(obj_secrettransitionchar)
 	
 checkpoint_x = x
 checkpoint_y = y
+hspeed = hspeedsave
+vspeed = vspeedsave
 
 recently_entered_room = 1
 alarm[2] = 60
