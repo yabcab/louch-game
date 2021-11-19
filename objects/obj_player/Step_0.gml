@@ -17,14 +17,6 @@
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if gamepad_button_check_pressed(0,gp_select)
-{
-	if debug
-		debug = 0
-	else
-		debug = 1
-}
-
 if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 1,obj_slope)
 	onground = 1
 else
