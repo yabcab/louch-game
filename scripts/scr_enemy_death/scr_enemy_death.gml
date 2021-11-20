@@ -1,4 +1,6 @@
 function scr_enemy_death(hurt){
+if other.state = playerstate.none
+	exit;
 if other.state = playerstate.boost || other.dashing
 {
 	obj_hud.combotimer = 180
@@ -38,13 +40,16 @@ else if other.state != playerstate.dying
 			hspeed = random_range(other.hspeed - 2,other.hspeed + 2)
 		}
 	
-		if other.key_jump
+		if !other.dashing
 		{
-			other.vspeed = -9
-			other.jumping = 1
+			if other.key_jump
+			{
+				other.vspeed = -9
+				other.jumping = 1
+			}
+			else
+				other.vspeed = -6
 		}
-		else
-			other.vspeed = -6
 		
 		other.beginjump = 1
 		other.image_index = 0
@@ -53,7 +58,7 @@ else if other.state != playerstate.dying
 	
 	other.combo += 1
 	var snd = audio_play_sound(sfx_bonk,1,0)
-	audio_sound_pitch(snd,1 + ((other.combo - 1) / 10))
+	audio_sound_pitch(snd,1 + (clamp((other.combo - 1),0,6) / 10))
 	score += 20 * (other.combo)
 	ds_list_set(destroy_list,id,1)
 	}

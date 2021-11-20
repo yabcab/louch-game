@@ -1,5 +1,9 @@
 if !used
 {
+	with other {
+		hspeedsave = hspeed
+		vspeedsave = 0
+	}
 	other.spawn = spawn
 	other.statesave = other.state
 	other.state = -1
@@ -8,8 +12,4 @@ if !used
 	inst.targetroom = targetroom
 	used = 1
 	audio_play_sound(sfx_transition,1,0)
-	with other {
-		hspeedsave = hspeed
-		vspeedsave = vspeed
-	}
 }

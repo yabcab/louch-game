@@ -1,34 +1,23 @@
 _time++
 
-if instance_exists(obj_player)
+hp = obj_player.hp
+if combotimer > 0
 {
-	hp = obj_player.hp
-	if combotimer > 0
-	{
-		is_combo = 1
-		combo_amount = clamp(obj_player.combo,0,10)
-		comboletter_rise_target = 75
-		if pause_state != pausestate.playerpause
-			combotimer--
-	}
-	else
-	{
-		is_combo = 0
-		comboletter_rise_target = -50
-		if comboletter_rise[5] < -45
-		{
-			combo_amount = 0
-			obj_player.combo = 0
-		}
-	}
+	is_combo = 1
+	combo_amount = clamp(obj_player.combo,0,10)
+	comboletter_rise_target = 75
+	if pause_state != pausestate.playerpause
+		combotimer--
 }
 else
 {
-	hp = 0
 	is_combo = 0
-	if comboletter_rise[5] < -45
-		combo_amount = 0
 	comboletter_rise_target = -50
+	if comboletter_rise[5] < -45
+	{
+		combo_amount = 0
+		obj_player.combo = 0
+	}
 }
 
 if abs(comboletter_rise[0] - comboletter_rise_target) > 1

@@ -1,3 +1,9 @@
+if instance_number(obj_hitstun) > 1
+{
+	instance_destroy()
+	exit;
+}
+
 if instance_exists(obj_freezetimer)
 	previous = pausestate.nonplayerpause
 else

@@ -56,6 +56,20 @@ if disp_state = 0
 }
 if disp_state = 1
 {
+	if obj_player.key_attack_press
+	{
+		selector_target_x = 450
+		selector_height -= scroll
+		disp_state = 0
+		selector_targetheight = 475
+		display_logo = 1
+		keyboard_clear(cont_jump)
+		obj_player.key_jump_press = 0
+		audio_play_sound(sfx_menupick1,1,0)
+		scroll = 0
+		scroll_disp = 0
+	}
+	
 	if selector_targetheight < 75
 		selector_targetheight = 825
 	if selector_targetheight > 825
@@ -107,7 +121,6 @@ if disp_state = 1
 			else
 				mu_vol = 1
 		ini_write_real("settings","mu_vol",mu_vol)
-		audio_stop_sound(mu_secret)
 		scroll = 0
 	}
 	if selector_targetheight = 450

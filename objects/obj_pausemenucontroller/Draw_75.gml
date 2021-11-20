@@ -1,4 +1,4 @@
-if display
+if obj_player.pause
 {
 	draw_sprite_ext(spr_fade,0,0,0,2000,2000,0,c_black,0.5)
 	

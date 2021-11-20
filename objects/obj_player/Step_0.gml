@@ -21,6 +21,11 @@ if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 1,obj
 	onground = 1
 else
 	onground = 0
+if onground
+{
+	coyote_time = 1
+	alarm[4] = 10
+}
 
 if inv
 {
@@ -159,13 +164,14 @@ switch state { // normal
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
 				vspeed = -13
 				jumpcharge = 0
 				jump_charged = 1
+				coyote_time = 0
 			}
 			else
 				vspeed = -9
@@ -349,7 +355,7 @@ switch state { // normal
 		
 		hspeed = 7 * facing
 		
-		if key_jump_press && ((instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) || jumps > 0) // ground
+		if key_jump_press && ((instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) || jumps > 0 || coyote_time) // ground
 		{
 			vspeed = -9
 				
@@ -360,6 +366,7 @@ switch state { // normal
 			image_index = 0
 			jumping = 1
 			jumps -= 1
+			coyote_time = 0
 		}
 		if jumping && !key_jump && use_varjump
 		{
@@ -378,6 +385,11 @@ switch state { // normal
 				while instance_place(x + hspeed,y - 8,obj_solid)
 					y -= 1
 		}
+		if coyote_time
+			jumps = 2
+		else
+			if !onground && jumps = 2
+				jumps = 1
 		if instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)
 			jumps = 1
 			
@@ -855,8 +867,27 @@ switch state { // normal
 		
 		rot += abs(hspeed) * (sign(hspeed) * -1)
 		
-		if abs(hspeed) < 3 && abs(vspeed) < 7 && instance_place(x,y+5,obj_solid)
-			instance_destroy()
+		if abs(hspeed) < 3 && abs(vspeed) < 7 && instance_place(x,y+5,obj_solid) && state != -1
+		{
+			state = -1
+			visible = 0
+			rot = 0
+			speed = 0
+			audio_play_sound(sfx_explosion,1,0)
+			var i;
+			for (i = 0; i < 100; i++)
+			{
+				instance_create_depth(x,y,-500,obj_explosionparticle)
+			}
+			with instance_create_depth(x,y,depth - 1,obj_explosionparticle)
+			{
+				speed = 0
+				image_alpha = 5
+				sprite_index = spr_boom
+			}
+
+			obj_music.alarm[0] = 200
+		}
 			
 		var s = sprite_index
 		var _xs = xs * facing
@@ -938,7 +969,7 @@ switch state { // normal
 				hspeed = lerp(hspeed,0,0.025)
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time) // ground
 		{
 			if key_up && jumpcharge > 15
 			{
@@ -954,6 +985,7 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 			jumping = 1
+			coyote_time = 0
 		}
 		if jumping && !key_jump && use_varjump
 		{

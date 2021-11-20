@@ -15,4 +15,7 @@ prev_score = 0
 new_score = 0
 do_shake1 = 0
 do_shake2 = 0
+do_shake3 = 0
 old_hp = 0
+prev_combo = 0
+new_combo = 0

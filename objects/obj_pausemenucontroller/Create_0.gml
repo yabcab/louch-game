@@ -21,3 +21,5 @@ bg_set = 0
 prev_bg_set = 0
 scroll = 0
 scroll_disp = 0
+pause = 0
+previous_pause = 0

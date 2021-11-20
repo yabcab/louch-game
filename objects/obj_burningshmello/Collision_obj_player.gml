@@ -1,3 +1,5 @@
+if other.state = playerstate.none
+	exit;
 if other.state = playerstate.boost || other.dashing
 {
 	instance_destroy()

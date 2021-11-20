@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "engine",
+    "path": "folders/Objects/engine.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_timer",

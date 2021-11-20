@@ -20,6 +20,16 @@ if display
 			alarm[1] = 10
 		do_shake2 = 1
 	}
+	var shake3x = 0
+	var shake3y = 0
+	if new_combo != prev_combo || do_shake3 = 1
+	{
+		shake3x = random_range(-3,3)
+		shake3y = random_range(-3,3)
+		if !do_shake3
+			alarm[2] = 10
+		do_shake3 = 1
+	}
 	draw_set_font(score_font)
 	
 	//hp
@@ -40,7 +50,7 @@ if display
 	draw_sprite_ext(spr_comboletters,3,575,720 - comboletter_rise[3] + (sin((_time - 45) / 10) * 5),1,1,0,c_white,1)
 	draw_sprite_ext(spr_comboletters,4,650,720 - comboletter_rise[4] + (sin((_time - 60) / 10) * 5),1,1,0,c_white,1)
 	draw_sprite_ext(spr_comboletters,5,725,720 - comboletter_rise[5] + (sin((_time - 75) / 10) * 5),1,1,0,c_white,1)
-	draw_sprite_ext(spr_combonumbers,combo_amount,775,720 - comboletter_rise[5] + (sin((_time - 90) / 10) * 5),1,1,0,c_white,1)
+	draw_sprite_ext(spr_combonumbers,combo_amount,775 + shake3x,(720 - comboletter_rise[5] + (sin((_time - 90) / 10) * 5)) + shake3y,1,1,0,c_white,1)
 }
 
 //draw_sprite_ext(spr_cursor,0,selector_x,(selector_height + sin(_time / 10) * 3) - scroll_disp,2,2,0,c_white,1)

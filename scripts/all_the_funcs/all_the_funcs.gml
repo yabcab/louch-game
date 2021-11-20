@@ -144,7 +144,7 @@ function get_inputs(controllerbind)
 		if keyboard_check_pressed(cont_jump) || gamepad_button_check_pressed(controllerbind,gp_face1)
 			inputqueue_jump = 1
 		
-		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3)
+		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3) || gamepad_button_check_pressed(controllerbind,gp_face2)
 			inputqueue_attack = 1
 		
 		if keyboard_check_pressed(cont_taunt) || gamepad_button_check_pressed(controllerbind,gp_face4)
@@ -196,9 +196,9 @@ function get_inputs(controllerbind)
 		else 
 			key_jump = 0
 		
-		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3) || inputqueue_attack
+		if keyboard_check_pressed(cont_attack) || gamepad_button_check_pressed(controllerbind,gp_face3) || gamepad_button_check_pressed(controllerbind,gp_face2) || inputqueue_attack
 			key_attack_press = 1
-		if keyboard_check(cont_attack) || gamepad_button_check(controllerbind,gp_face3) || inputqueue_attack
+		if keyboard_check(cont_attack) || gamepad_button_check(controllerbind,gp_face3) || gamepad_button_check(controllerbind,gp_face2) || inputqueue_attack
 			key_attack = 1
 		else
 			key_attack = 0
@@ -209,13 +209,6 @@ function get_inputs(controllerbind)
 			key_taunt = 1
 		else
 			key_taunt = 0
-	
-		if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(controllerbind,gp_start)
-			key_pause_press = 1
-		if keyboard_check(vk_escape) || gamepad_button_check(controllerbind,gp_start)
-			key_pause = 1
-		else
-			key_pause = 0
 		
 		inputqueue_left = 0
 		inputqueue_right = 0
@@ -225,6 +218,12 @@ function get_inputs(controllerbind)
 		inputqueue_attack = 0
 		inputqueue_taunt = 0
 	}
+	if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(controllerbind,gp_start)
+		key_pause_press = 1
+	if keyboard_check(vk_escape) || gamepad_button_check(controllerbind,gp_start)
+		key_pause = 1
+	else
+		key_pause = 0
 }
 
 #endregion

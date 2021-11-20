@@ -1,9 +1,15 @@
+if other.state = playerstate.none
+	exit;
 if instance_place(x,y+1,obj_solid) || instance_place(x,y + 5,obj_slope) || instance_place(x,y+1,obj_platform)
 	onground = 1
 else
 	onground = 0
-	
-if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
+
+if other.state = 3 || other.dashing
+{
+	scr_enemy_death(0)
+}
+else if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 {
 	/*if state = 1 && wait > 25
 	{
@@ -12,7 +18,6 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 		xs = -(other.facing)
 		sprite_index = spr_bella_hit
 	} */
-		do_hitstun(3)
 		state = 1
 		vspeed = -3
 	
@@ -31,6 +36,7 @@ if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 		wait = 0
 	
 		audio_play_sound(sfx_bonk,1,0)
+		do_hitstun(3)
 }
 else if other.state != 11 && other.inv = 0
 {
@@ -71,8 +77,5 @@ else if other.state != 11 && other.inv = 0
 				audio_play_sound(sfx_ricochet,1,0)
 			}
 	}
-	if other.state = 3 || other.dashing
-	{
-		scr_enemy_death(0)
-	}
+	
 }
