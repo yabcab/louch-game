@@ -1,6 +1,6 @@
 obj_player.state = -1
 
-if y < -1600
+if bbox_bottom < room_height
 {
 	speed = 0
 	if obj_player.key_jump_press

@@ -11,6 +11,12 @@ if string_pos("thevoidisnow",str) > 0
 {
 	if layer_exists("Background")
 		layer_destroy(layer_get_id("Background"))
+	while instance_exists(obj_parallax)
+		instance_destroy(obj_parallax)
+	while instance_exists(obj_parallax_nontiled)
+		instance_destroy(obj_parallax_nontiled)
+	while instance_exists(obj_parallax_title)
+		instance_destroy(obj_parallax_title)
 	keyboard_string = ""
 }
 
@@ -58,14 +64,14 @@ if string_pos("yeahfuckyoutoo",str) > 0
 	keyboard_string = ""
 }
 
-if string_pos("thermonuclearbomb",str) > 0
-{
-	if instance_exists(obj_player)
-	{
-		instance_destroy(obj_player)
-	}
-	keyboard_string = ""
-}
+//if string_pos("thermonuclearbomb",str) > 0
+//{
+//	if instance_exists(obj_player)
+//	{
+//		instance_destroy(obj_player)
+//	}
+//	keyboard_string = ""
+//}
 
 if string_pos("abandonment",str) > 0
 {

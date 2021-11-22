@@ -57,7 +57,10 @@ bpm_map[mu_secret] = 120
 bpm_map[mu_timetrial] = 160
 bpm_map[mu_escapesecret] = 160
 bpm_map[mu_jungle] = 135
-bpm_map[mu_space] = 145 //placeholder
+bpm_map[mu_space] = 145
+bpm_map[mu_icebergs] = 150
+bpm_map[mu_danceparty] = 160
+bpm_map[mu_credits] = 140
 bpm_map[sfx_none] = 0
 
 room_goto(rm_gameintro)

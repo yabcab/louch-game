@@ -10,4 +10,4 @@ with instance_create_depth(x,y,-1,obj_eatenapple)
 }
 audio_play_sound(sfx_applemunch,1,0)
 ds_list_set(destroy_list,id,1)
-score += 10 * clamp((other.combo + 1) / 2,1,9999)
+score += clamp(10 * clamp((other.combo + 1) / 2,1,9999),0,30)

@@ -73,6 +73,7 @@ if jump_charged && pause_state != pausestate.playerpause
 if vspeed > -3 && state != playerstate.taunt && !justhitenemy && pause_state != pausestate.playerpause
 	jumping = 0
 
+
 while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying
 {
 	y += 0.1

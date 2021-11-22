@@ -17,7 +17,7 @@
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 1,obj_slope)
+if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 2,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -1184,7 +1184,7 @@ switch state { // normal
 	break;
 }
 
-if taunt_qualify && key_taunt_press
+if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)
 	player_taunt()
 
 get_inputs(0)

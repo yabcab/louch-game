@@ -11,7 +11,7 @@ switch state {
 	case 0: 
 	{
 		image_speed = 1
-		
+		sprite_index = spr_chocopop_walk
 		chargetime--
 		
 		hspeed = lerp(hspeed,-2 * xs,0.1)
@@ -77,6 +77,7 @@ switch state {
 
 if pause_state != pausestate.none
 {
+	chargetime--
 	if !started_pause
 		pause_player_init()
 	else

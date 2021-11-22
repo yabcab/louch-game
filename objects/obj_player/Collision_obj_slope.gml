@@ -1,14 +1,5 @@
 if state = playerstate.dying
 {
-	if instance_place(x+hspeed,y,obj_slope)
-	{
-		if hspeed < 0
-			hspeed += 2
-		else
-			hspeed -= 2
-		hspeed *= -1
-		audio_play_sound(choose(sfx_bonk,sfx_hitwall1,sfx_hitwall2,sfx_hitwall3,sfx_hitwall4,sfx_hitwall5),1,0)
-	}
 	if instance_place(x,y+vspeed,obj_slope)
 	{
 		if abs(vspeed) > 1
