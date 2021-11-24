@@ -228,8 +228,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "secret",
+    "path": "folders/Tile Sets/secret.yy",
   },
   "resourceVersion": "1.0",
   "name": "ts_secret",

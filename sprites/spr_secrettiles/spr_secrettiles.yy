@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tiles",
-    "path": "folders/Sprites/tiles.yy",
+    "name": "secret",
+    "path": "folders/Sprites/tiles/secret.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_secrettiles",

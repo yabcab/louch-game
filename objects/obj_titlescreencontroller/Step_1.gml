@@ -4,10 +4,12 @@ if abs(selector_height - selector_targetheight) > 1
 	selector_height += (selector_targetheight - selector_height) / 5
 else
 	selector_height = selector_targetheight
+
 if abs(selector_x - selector_target_x) > 1
 	selector_x += (selector_target_x - selector_x) / 5
 else
 	selector_x = selector_target_x
+
 if abs(scroll_disp - scroll) > 1
 	scroll_disp += (scroll - scroll_disp) / 5
 else

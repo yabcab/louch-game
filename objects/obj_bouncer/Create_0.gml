@@ -1,5 +1,5 @@
 state = 0
-hspeed = 2
+hspeed = 3
 xs = -1
 depth = -1
 sound = -1

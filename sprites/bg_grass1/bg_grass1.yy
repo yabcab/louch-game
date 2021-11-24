@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "bg",
-    "path": "folders/Sprites/bg.yy",
+    "name": "grass",
+    "path": "folders/Sprites/bg/grass.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_grass1",
