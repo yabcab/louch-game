@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "LouchGame DevBuild_lmao",
-  "option_windows_executable_name": "LouchGame Development Version lmao.exe",
+  "option_windows_display_name": "LouchGame - The Awesome Demo",
+  "option_windows_executable_name": "LouchGame DEMO.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Jabco Games",
   "option_windows_product_info": "LouchGame",

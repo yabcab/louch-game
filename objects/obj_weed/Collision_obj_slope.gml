@@ -24,7 +24,7 @@ while place_meeting(x + hspeed, y + 0.1, obj_slope)
 	y -= 0.1
 }
 
-if instance_place(x + xs + hspeed * 5,y,obj_solid) && instance_place(x,y+3,obj_slope)
+if (instance_place(x + xs + hspeed * 5,y,obj_solid) && instance_place(x + xs + hspeed * 5,y - 12,obj_solid)) && instance_place(x,y+3,obj_slope)
 {
 	vspeed = -8
 	hspeed = 0

@@ -7,6 +7,6 @@ if instance_exists(obj_player)
 		with obj
 			image_xscale = s
 	}
-	if obj_player.y + 31.5 > y && instance_exists(obj)
+	if obj_player.bbox_bottom > y && instance_exists(obj)
 		instance_destroy(obj)
 }

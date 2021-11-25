@@ -15,4 +15,5 @@ if key_up && onground && state != playerstate.dying && !recently_entered_room &&
 	targetroom = other.targetroom
 	hspeedsave = 0
 	vspeedsave = 0
+	entered_door = 1
 }

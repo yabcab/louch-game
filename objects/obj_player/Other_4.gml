@@ -17,7 +17,14 @@ if spawn = 3 && instance_exists(obj_spawn_c)
 }
 
 if !instance_exists(obj_secrettransitionchar)
-	state = nonstunstate
+{
+	if entered_door
+		state = idlestate
+	else
+		state = nonstunstate
+	
+	entered_door = 0	
+}
 //if state = -1
 //	if idlestate != -1 && idlestate != playerstate.taunt
 //		state = idlestate

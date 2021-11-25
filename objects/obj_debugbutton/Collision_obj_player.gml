@@ -2,8 +2,6 @@ if other.bbox_bottom <= bbox_top && image_index = 0
 {
 	audio_play_sound(sfx_gong,1,0)
 	debug = 1
-	if !instance_exists(obj_console)
-		instance_create_depth(x,y,1,obj_console)
 	solid = 0
 	image_index = 1
 	var crumbs = 0

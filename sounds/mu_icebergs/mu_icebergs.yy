@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_icebergs.mp3",
-  "duration": 184.241653,
+  "duration": 181.28981,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

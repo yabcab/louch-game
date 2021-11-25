@@ -9,7 +9,7 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 switch state {
 	case 0: 
 	{
-		hspeed = -3 * xs
+		hspeed = -2.5 * xs
 		
 		if vspeed < 15
 			vspeed += 0.3

@@ -51,6 +51,7 @@ nonstunstate = 0
 hspeedsave = 0
 vspeedsave = 0
 coyote_time = 0
+entered_door = 0
 
 facing = 1
 xs = 1

@@ -28,7 +28,7 @@ if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12,o
 	while instance_place(x + hspeed,y + vspeed,obj_solid)
 		y -= 1
 }
-if (instance_place(x+hspeed,y,obj_solid))
+if (instance_place(x+hspeed,y,obj_solid)) && (instance_place(x+hspeed,y - 12,obj_solid))
 {
 	if (hspeed<=0){move_contact_solid(180,abs(hspeed));}
 	if (hspeed>0){move_contact_solid(0,abs(hspeed));}
