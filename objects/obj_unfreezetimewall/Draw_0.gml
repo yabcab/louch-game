@@ -9,7 +9,7 @@ for (xx = 0; xx < image_xscale; xx++)
 {
 	for (yy = 0; yy < image_yscale; yy++)
 	{
-		random_set_seed(xx * yy)
+		random_set_seed(xx * yy * x * y)
 		draw_sprite_ext(choose(spr_stars4,spr_stars5,spr_stars6),image_index,x + (xx * 32),y + (yy * 32),1,1,0,c_white,image_alpha)
 	}
 }

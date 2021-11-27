@@ -12,5 +12,6 @@ if other.bbox_bottom <= bbox_top && image_index = 0
 			speed = 2
 			anim_end = 1
 		}
+	instance_create_depth(x,y,1,obj_christmas)
 	instance_destroy()
 }
