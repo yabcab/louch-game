@@ -244,8 +244,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "cave",
-    "path": "folders/Rooms/main/cave.yy",
+    "name": "cave (old)",
+    "path": "folders/Rooms/main/cave (old).yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_cave_1",

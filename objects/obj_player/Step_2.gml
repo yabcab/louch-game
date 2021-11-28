@@ -78,6 +78,7 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 {
 	y += 0.1
 }
+dashtime--
 
 //if using_gamepad && !gamepad_is_connected(0)
 //{

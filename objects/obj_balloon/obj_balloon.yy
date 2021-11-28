@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_levelcomplete_bg",
-    "path": "sprites/spr_levelcomplete_bg/spr_levelcomplete_bg.yy",
+    "name": "spr_popsiclecol",
+    "path": "sprites/spr_popsiclecol/spr_popsiclecol.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,12 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "geometry",
+    "path": "folders/Objects/geometry.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_balloon",

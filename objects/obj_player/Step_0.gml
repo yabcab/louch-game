@@ -809,25 +809,49 @@ switch state { // normal
 	
 	case playerstate.balloon_normal: // balloon
 	{
-		if vspeed != 1
-			vspeed = lerp(vspeed,1,0.1)
-		if key_right && !dashing
-			hspeed = 5
-		else 
-		if key_left && !dashing
-			hspeed = -5
-		else
-			if !dashing
-				hspeed = 0
-		
 		if key_jump
 		{
-			state = idlestate
-			vspeed = -5
+			if vspeed > -4
+				vspeed -= 0.15
 		}
+		else
+		{
+			if vspeed < 4
+				vspeed += 0.1
+		}
+		
+		if key_right
+			hspeed = lerp(hspeed,4,0.1)
+		else 
+		if key_left
+			hspeed = lerp(hspeed,-4,0.1)
+		else
+			hspeed = lerp(hspeed,0,0.2)
 		
 		// taunt
 		taunt_qualify = 1
+		
+		if key_attack && abs(hspeed) <= 5 && dashtime < 0
+		{
+			dashtime = 25
+			if key_right
+				hspeed = 8
+			else if key_left
+				hspeed = -8
+		}
+		if abs(hspeed) > 6
+		{
+			instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
+			with instance_create_depth(x,y,depth + 1,obj_trail)
+			{
+				image_speed = 0
+				startfade = 1
+				sprite_index = other.sprite_index
+				image_index = other.image_index
+				image_xscale = other.xs * other.facing
+				image_angle = other.image_angle
+			}
+		}
 	}
 	break;
 	
@@ -934,7 +958,7 @@ switch state { // normal
 		//louchester anims
 		if campaign = 3
 		{
-			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
+			if onground
 			{
 				if abs(hspeed) < 0.25
 					sprite_index = spr_playerLS_high_idle

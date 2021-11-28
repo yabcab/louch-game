@@ -32,19 +32,19 @@ switch state {
 		{
 			if x > obj_player.x
 			{
-				hspeed -= 0.15
+				if hspeed > (target_hspeed * -1)
+					hspeed -= 0.15
 				xs = -1
 			}
 			else
 			{
-				hspeed += 0.15
+				if hspeed < target_hspeed
+					hspeed += 0.15
 				xs = 1
 			}
 		}
 		else
-			hspeed = lerp(hspeed,5 * xs,0.05)
-
-		hspeed = clamp(hspeed,-4,4)
+			hspeed = lerp(hspeed,4 * xs,0.05)
 		
 		if onground
 			sprite_index = spr_dave_run
