@@ -809,49 +809,179 @@ switch state { // normal
 	
 	case playerstate.balloon_normal: // balloon
 	{
+		//louchester anims
+		if campaign = 3
+		{
+			if onground
+			{
+				if hspeed = 0
+					if jumpcharge > 0
+						if jumpcharge_starting
+							sprite_index = spr_playerLS_chargejumpstart
+						else
+							if jumpcharge > 15
+								sprite_index = spr_playerLS_chargejumpready
+							else
+								sprite_index = spr_playerLS_chargejump
+					else
+						sprite_index = spr_playerLS_still
+				else
+					sprite_index = spr_playerLS_walk
+				
+				beginfall = 1
+				beginfall_start = 1
+			}		
+			else
+			if !dashing
+				if beginjump
+				{
+					if enddash
+						sprite_index = spr_playerLS_airjumpend
+					else
+						sprite_index = spr_playerLS_jumpstart
+					beginfall = 0
+				}
+				else
+					if beginfall = 0
+						sprite_index = spr_playerLS_jumpair
+					else
+					{
+						sprite_index = spr_playerLS_beginfall
+						if beginfall_start
+						{
+							image_index = 0
+							beginfall_start = 0
+						}
+					}
+			else
+				if beginjump
+					sprite_index = spr_playerLS_boostjumpstart
+				else
+					sprite_index = spr_playerLS_boostjumpair
+		}
+		
+		// velocity
 		if key_jump
 		{
-			if vspeed > -4
-				vspeed -= 0.15
+			if vspeed < 1
+				vspeed += 0.2
+			else if vspeed > 1
+				vspeed -= 0.2
 		}
 		else
 		{
-			if vspeed < 4
-				vspeed += 0.1
+			if vspeed < 3
+				vspeed += 0.2
 		}
 		
-		if key_right
-			hspeed = lerp(hspeed,4,0.1)
-		else 
-		if key_left
-			hspeed = lerp(hspeed,-4,0.1)
-		else
-			hspeed = lerp(hspeed,0,0.2)
 		
+		// walkin
+		if key_up && !dashing && onground
+		{
+			if jumpcharge < 1
+			{
+				jumpcharge_starting = 1
+				image_index = 0
+			}
+			jumpcharge += 1
+			hspeed = 0
+		}
+		else
+		{
+			jumpcharge = 0
+			if key_right && !dashing
+				hspeed = 4
+			else 
+			if key_left && !dashing
+				hspeed = -4
+			else
+				if !dashing
+					hspeed = 0
+		}
+			
+		// jumpin
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || jumps > 0) // ground
+		{
+			if key_up && jumpcharge > 30
+			{
+				vspeed = -10
+				jumpcharge = 0
+				jump_charged = 1
+				coyote_time = 0
+			}
+			else
+				vspeed = -7
+				
+			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+				audio_play_sound(sfx_jump,1,0)
+				
+			beginjump = 1
+			jumping = 1
+			image_index = 0
+		}
+		if jumping && !key_jump && use_varjump
+		{
+			vspeed = -3
+			jumping = 0
+		}
+		
+		if coyote_time
+			jumps = 2
+		else
+			if !onground && jumps = 2
+				jumps = 1
+		if instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)
+			jumps = 1
+				
+		// dashin
+		//if keyboard_check_pressed(cont_attack) && dash_charge = 1
+		//{
+		//	if key_right
+		//		hspeed = 9
+		//	else
+		//	if key_left
+		//		hspeed = -9
+		//	else
+		//	hspeed = 0
+			
+		//	vspeed = -2
+		//	dashing = 1
+		//	dash_charge = 0
+		//	beginjump = 1
+		//	image_index = 0
+		//}
+		
+		// dash end
+		if key_left_press || key_right_press
+			dashing = 0
+		
+		// dash hitbox
+		if dashing = 1
+		{
+			if hspeed < 0
+				instance_create_depth(x - 35,y,depth,obj_dash_hitbox)
+			else if hspeed > 0
+				instance_create_depth(x + 35,y,depth,obj_dash_hitbox)
+			
+			if vspeed < -5 && use_dash > 1
+				instance_create_depth(x,y -40,depth,obj_dash_hitbox_u)
+		}
+		
+		// ground pound
+		if use_gp && !pounding && !(instance_place(x,y+5,obj_solid) || instance_place(x,y + 5,obj_slope)) && keyboard_check_pressed(cont_down)
+		{
+			state = playerstate.ground_pound
+			pounding = 1
+			begingp = 1
+		}
+		gp_time = 0
+		
+			if hspeed < 0
+				facing = -1
+			if hspeed > 0
+				facing = 1
 		// taunt
 		taunt_qualify = 1
-		
-		if key_attack && abs(hspeed) <= 5 && dashtime < 0
-		{
-			dashtime = 25
-			if key_right
-				hspeed = 8
-			else if key_left
-				hspeed = -8
-		}
-		if abs(hspeed) > 6
-		{
-			instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
-			with instance_create_depth(x,y,depth + 1,obj_trail)
-			{
-				image_speed = 0
-				startfade = 1
-				sprite_index = other.sprite_index
-				image_index = other.image_index
-				image_xscale = other.xs * other.facing
-				image_angle = other.image_angle
-			}
-		}
 	}
 	break;
 	

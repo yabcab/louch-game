@@ -9,6 +9,14 @@ switch state {
 		
 		_time++
 		y += sin(_time / 20) * 2
+		
+		if can_egg && onscreen
+		{
+			alarm[0] = random_range(300,450)
+			instance_create_depth(x,y,depth,obj_egg)
+			can_egg = 0
+			audio_play_sound(sfx_pop,1,0)
+		}
 	}
 	break;
 }
