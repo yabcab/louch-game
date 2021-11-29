@@ -890,10 +890,16 @@ switch state { // normal
 		{
 			jumpcharge = 0
 			if key_right && !dashing
+			{
 				hspeed = 4
+				facing = 1
+			}
 			else 
 			if key_left && !dashing
+			{
 				hspeed = -4
+				facing = -1
+			}
 			else
 				if !dashing
 					hspeed = 0
@@ -918,6 +924,7 @@ switch state { // normal
 			beginjump = 1
 			jumping = 1
 			image_index = 0
+			jumps--
 		}
 		if jumping && !key_jump && use_varjump
 		{
@@ -968,18 +975,8 @@ switch state { // normal
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !(instance_place(x,y+5,obj_solid) || instance_place(x,y + 5,obj_slope)) && keyboard_check_pressed(cont_down)
-		{
-			state = playerstate.ground_pound
-			pounding = 1
-			begingp = 1
-		}
-		gp_time = 0
-		
-			if hspeed < 0
-				facing = -1
-			if hspeed > 0
-				facing = 1
+		if key_down_press && !onground
+			state = playerstate.balloon_pound
 		// taunt
 		taunt_qualify = 1
 	}
@@ -1354,6 +1351,34 @@ switch state { // normal
 				}
 			}
 		}
+	}
+	break;
+	
+	case playerstate.balloon_pound:
+	{
+		with instance_create_depth(x,y,depth + 1,obj_trail)
+		{
+			image_speed = 0
+			startfade = 1
+			sprite_index = other.sprite_index
+			image_index = other.image_index
+			image_xscale = other.xs * other.facing
+			image_angle = other.image_angle
+		}
+		
+		vspeed = 10
+		
+		if key_right
+			hspeed = 4
+		else if key_left
+			hspeed = -4
+		else
+			hspeed = 0
+			
+		if onground
+			state = playerstate.balloon_normal
+			
+		instance_create_depth(x,y,depth,obj_dash_hitbox_u)
 	}
 	break;
 }

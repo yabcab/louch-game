@@ -20,6 +20,7 @@ function enumshit(){
 		lava_hurt,
 		cart,
 		swim,
+		balloon_pound,
 	}
 
 enum pausestate {

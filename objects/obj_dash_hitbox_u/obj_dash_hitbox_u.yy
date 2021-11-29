@@ -4,7 +4,7 @@
     "path": "sprites/spr_dash_hitbox_u/spr_dash_hitbox_u.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
