@@ -1,2 +1,5 @@
 if state = playerstate.balloon_normal
-	state = idlestate
+{
+	state = 0
+	idlestate = 0
+}

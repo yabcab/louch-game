@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "placeholderhubsigns",
+    "path": "folders/Sprites/levelspecific/placeholderhubsigns.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_underconstruction",
