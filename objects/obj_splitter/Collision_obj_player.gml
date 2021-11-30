@@ -31,15 +31,15 @@ else if other.state != playerstate.dying
 		do_hitstun(3)
 		var s = spr_dead
 		instance_destroy()
-		with instance_create_depth(x,y,depth,obj_weed)
+		with instance_create_depth(x,y,depth,obj_splitter2)
 		{
-			hspeed = -8
+			xs = -1
 			vspeed = -2
-			type = 2
+			type = 1
 		}
-		with instance_create_depth(x,y,depth,obj_weed)
+		with instance_create_depth(x,y,depth,obj_splitter2)
 		{
-			hspeed = 8
+			xs = 1
 			vspeed = -2
 			type = 2
 		}
