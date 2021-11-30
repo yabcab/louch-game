@@ -4,7 +4,7 @@
     "path": "sprites/spr_placeholder_2/spr_placeholder_2.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
