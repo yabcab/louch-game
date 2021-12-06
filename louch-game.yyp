@@ -327,6 +327,7 @@
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":15,},
     {"id":{"name":"rm_jungle_5","path":"rooms/rm_jungle_5/rm_jungle_5.yy",},"order":6,},
     {"id":{"name":"rm_tutorial1","path":"rooms/rm_tutorial1/rm_tutorial1.yy",},"order":0,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":13,},
     {"id":{"name":"rm_testroom7","path":"rooms/rm_testroom7/rm_testroom7.yy",},"order":9,},
     {"id":{"name":"spr_playerLS_pain","path":"sprites/spr_playerLS_pain/spr_playerLS_pain.yy",},"order":16,},
     {"id":{"name":"spr_playerLS_walk","path":"sprites/spr_playerLS_walk/spr_playerLS_walk.yy",},"order":5,},

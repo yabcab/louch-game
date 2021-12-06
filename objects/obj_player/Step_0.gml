@@ -1386,4 +1386,14 @@ switch state { // normal
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)
 	player_taunt()
 
+if pause_state = pausestate.playerpause
+{
+	if !started_pause
+		pause_player_init()
+	else
+		pause_player_keep()
+}
+else
+	if started_pause
+		pause_player_end()
 get_inputs(0)

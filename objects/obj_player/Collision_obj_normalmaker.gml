@@ -8,3 +8,4 @@ if idlestate != playerstate.idle
 }
 idlestate = playerstate.idle
 obj_shaders.drunk = 0
+

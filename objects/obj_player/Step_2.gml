@@ -36,16 +36,7 @@ if y > room_height
 		score = 0
 }
 
-if pause_state = pausestate.playerpause
-{
-	if !started_pause
-		pause_player_init()
-	else
-		pause_player_keep()
-}
-else
-	if started_pause
-		pause_player_end()
+
 		
 if campaign = 1
 	sprite_index = spr_player

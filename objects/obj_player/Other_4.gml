@@ -42,3 +42,12 @@ vspeed = vspeedsave
 recently_entered_room = 1
 alarm[2] = 60
 
+if room = rm_hub1
+{
+	state = 0
+	idlestate = 0
+	statesave = 0
+	nonstunstate = 0
+	vspeed = 0
+	hspeed = 0
+}

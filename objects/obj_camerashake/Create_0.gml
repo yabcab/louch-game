@@ -8,5 +8,5 @@ _time = 0
 cam = view_camera[0]
 following = camera_get_view_target(cam)
 if following = obj_camerashake
-	following = obj_player
+	following = obj_camera
 following_new = id
