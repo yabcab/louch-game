@@ -45,9 +45,11 @@ alarm[2] = 60
 if room = rm_hub1
 {
 	state = 0
-	idlestate = 0
 	statesave = 0
+	idlestate = 0
 	nonstunstate = 0
-	vspeed = 0
 	hspeed = 0
+	vspeed = 0
+	x = obj_spawn_a.x
+	y = obj_spawn_a.y
 }
