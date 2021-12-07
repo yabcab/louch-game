@@ -11,7 +11,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_escapesecret.mp3",
-  "duration": 112.587753,
+  "duration": 209.528183,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
