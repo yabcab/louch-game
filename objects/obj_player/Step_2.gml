@@ -30,6 +30,11 @@ if y > room_height
 		audio_play_sound(sfx_fallout,1,0)
 		deaths += 1
 		state = idlestate
+		with obj_camera
+		{
+			x = other.x
+			y = other.y
+		}
 	}
 	score -= 250
 	if score < 0

@@ -48,8 +48,7 @@ if room = rm_hub1
 	statesave = 0
 	idlestate = 0
 	nonstunstate = 0
+	p_state = 0
 	hspeed = 0
 	vspeed = 0
-	x = obj_spawn_a.x
-	y = obj_spawn_a.y
 }

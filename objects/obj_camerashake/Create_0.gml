@@ -1,3 +1,5 @@
+depth = -100
+
 x_intensity = 1
 y_intensity = 1
 h_res = 640

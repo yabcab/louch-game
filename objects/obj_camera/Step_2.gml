@@ -8,8 +8,8 @@ else
 	var door = 1
 
 target_x = obj_player.x + obj_player.hspeed * 23 + (obj_player.facing * 15) + (boost * 50 * obj_player.facing)
-target_y = obj_player.y //+ obj_player.vspeed * 5
-target_chargescroll = obj_player.key_up * obj_player.onground * -85 * door
+target_y = obj_player.y //+ obj_player.vspeed * 23
+target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (obj_player.key_down * obj_player.onground * 85 * door)
 
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {
@@ -19,7 +19,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 		x = target_x
 
 	//if abs(yy - target_y) > 1
-	//	yy += (target_y - yy) / 10
+	//	yy += (target_y - yy) / 20
 	//else
 	//	yy = target_y
 	yy = target_y
