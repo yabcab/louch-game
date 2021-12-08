@@ -7,7 +7,7 @@ if obj_player.entered_door
 else
 	var door = 1
 
-target_x = obj_player.x + obj_player.hspeed * 23 + (obj_player.facing * 15) + (boost * 50 * obj_player.facing)
+target_x = obj_player.x + (obj_player.facing * 20) + (boost * 50 * obj_player.facing) + obj_player.hspeed * 20
 target_y = obj_player.y //+ obj_player.vspeed * 23
 target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (obj_player.key_down * obj_player.onground * 85 * door)
 
