@@ -5,6 +5,7 @@ if instance_exists(obj_player)
 	image_index = obj_player.image_index
 	sprite_index = obj_player.sprite_index
 	image_xscale = obj_player.facing
+	image_angle = obj_player.rot
 }
 image_alpha = 0.4
 startfade = 0

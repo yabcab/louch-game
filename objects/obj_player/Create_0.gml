@@ -55,6 +55,10 @@ entered_door = 0
 dashtime = 0
 
 facing = 1
+hsp = 0
+hface = 0
+vsp = 0
+vface = 0
 xs = 1
 ys = 1
 alph = 1

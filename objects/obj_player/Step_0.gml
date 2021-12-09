@@ -1276,25 +1276,50 @@ switch state { // normal
 	
 	case playerstate.swim:
 	{
-		var hsp, vsp
+		if campaign = 3
+			if key_left || key_right || key_up || key_down
+				if abs(hspeed) > 4.5 || abs(vspeed) > 4.5
+					sprite_index = spr_playerLS_swimdash
+				else
+					sprite_index = spr_playerLS_swimmove
+			else
+				sprite_index = spr_playerLS_swimstill
+		
+		
 		
 		if key_right
 		{
 			hsp = 4
 			facing = 1
+			if !key_down && !key_up
+				vface = 0
+			hface = 1
 		}
 		else if key_left
 		{
 			hsp = -4
 			facing = -1
+			if !key_down && !key_up
+				vface = 0
+			hface = -1
 		}
 		else
 			hsp = 0
 			
 		if key_down
+		{
 			vsp = 4
+			vface = 1
+			if !key_left && !key_right
+				hface = 0
+		}
 		else if key_up
+		{
 			vsp = -4
+			vface = -1
+			if !key_left && !key_right
+				hface = 0
+		}
 		else
 			vsp = 0
 		
@@ -1303,6 +1328,7 @@ switch state { // normal
 		
 		if !instance_place(x,y,obj_swimwater)
 		{
+			rot = 0
 			state = idlestate
 			if key_jump
 				vspeed = -9
@@ -1310,8 +1336,11 @@ switch state { // normal
 				vspeed = -6
 		}
 		
-		if key_attack_press || key_jump_press
+		dashtime++
+		if key_attack_press || key_jump_press && dashtime > 30
 		{
+			dashtime = 0
+			
 			if key_right
 				if hspeed < 4
 					hspeed = 5
@@ -1337,7 +1366,7 @@ switch state { // normal
 			vspeed = clamp(vspeed,-7,7)
 		}
 		
-		if abs(hspeed) > 4.5 || abs(vspeed) > 4.5
+		if abs(hspeed) > 4.5
 		{
 			instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
 			trailspawntime++
@@ -1351,6 +1380,22 @@ switch state { // normal
 				}
 			}
 		}
+		if abs(vspeed) > 4.5
+		{
+			instance_create_depth(x,y + (40 * sign(vspeed)),-1,obj_dash_hitbox_u)
+			trailspawntime++
+			if trailspawntime > 5
+			{
+				trailspawntime = 0
+				with instance_create_depth(x,y,depth + 1,obj_trail)
+				{
+					image_alpha = 0.5
+					flash = 0
+				}
+			}
+		}
+		
+		rot = point_direction(0,0,abs(hface) * facing,vface) - 90
 	}
 	break;
 	
@@ -1378,7 +1423,7 @@ switch state { // normal
 		if onground
 			state = playerstate.balloon_normal
 			
-		instance_create_depth(x,y,depth,obj_dash_hitbox_u)
+		instance_create_depth(x,y + 40,depth,obj_dash_hitbox_u)
 	}
 	break;
 }
