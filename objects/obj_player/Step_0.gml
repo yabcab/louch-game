@@ -1326,16 +1326,6 @@ switch state { // normal
 		hspeed = lerp(hspeed,hsp,0.05)
 		vspeed = lerp(vspeed,vsp,0.05)
 		
-		if !instance_place(x,y,obj_swimwater)
-		{
-			rot = 0
-			state = idlestate
-			if key_jump
-				vspeed = -9
-			else
-				vspeed = -6
-		}
-		
 		dashtime++
 		if key_attack_press || key_jump_press && dashtime > 30
 		{
@@ -1396,6 +1386,15 @@ switch state { // normal
 		}
 		
 		rot = point_direction(0,0,abs(hface) * facing,vface) - 90
+		if !instance_place(x,y,obj_swimwater)
+		{
+			rot = 0
+			state = idlestate
+			if key_jump
+				vspeed = -9
+			else
+				vspeed = -6
+		}
 	}
 	break;
 	

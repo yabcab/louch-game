@@ -22,7 +22,7 @@
   "option_windowsuap_interpolate_pixels": false,
   "option_windowsuap_display_cursor": true,
   "option_windowsuap_start_fullscreen": false,
-  "option_windowsuap_allow_fullscreen_switching": false,
+  "option_windowsuap_allow_fullscreen_switching": true,
   "option_windowsuap_use_synchronization": true,
   "option_windowsuap_scale": 0,
   "option_windowsuap_texture_page": "2048x2048",

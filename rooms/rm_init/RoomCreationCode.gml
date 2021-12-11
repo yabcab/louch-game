@@ -15,7 +15,7 @@ globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
 globalvar level; level = 0
 globalvar can_pause; can_pause = 0
-globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:",0,0)
+globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.!?/%[]",0,0)
 globalvar combo_font; combo_font = font_add_sprite_ext(spr_combonumbers,"0123456789",0,0)
 globalvar freezetimerfont; freezetimerfont = font_add_sprite_ext(spr_freezetimernumbers,"0123456789:",0,0)
 
