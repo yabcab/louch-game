@@ -9,6 +9,17 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 switch state {
 	case 0: 
 	{
+		if stepping
+			if stepstate = 1
+				sprite_index = spr_marcher_step1
+			else
+				sprite_index = spr_marcher_step2
+		else
+			if stepstate = 1
+				sprite_index = spr_marcher_sit1
+			else
+				sprite_index = spr_marcher_sit2
+		
 		if vspeed < 15
 			vspeed += 0.3
 			

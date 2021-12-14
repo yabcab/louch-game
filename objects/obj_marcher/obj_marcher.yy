@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_gonk_idle",
-    "path": "sprites/spr_gonk_idle/spr_gonk_idle.yy",
+    "name": "spr_marcher_step1",
+    "path": "sprites/spr_marcher_step1/spr_marcher_step1.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_marcher_step1",
+    "path": "sprites/spr_marcher_step1/spr_marcher_step1.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -30,6 +33,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_dash_hitbox","path":"objects/obj_dash_hitbox/obj_dash_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
