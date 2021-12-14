@@ -22,6 +22,13 @@ if pause_state = pausestate.none
 			image_angle = ia
 		}
 	}
+	
+	if fadeout
+	{
+		fadetime++
+		if fadetime > 10
+			image_alpha -= 0.05
+	}
 }
 else
 {

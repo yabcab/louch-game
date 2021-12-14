@@ -25,10 +25,18 @@ else if other.state != playerstate.dying && other.inv = 0
 		other.inv = 1
 		other.wait = 0
 		other.alarm[1] = 150
-		other.state = playerstate.hurt
+		if other.state != playerstate.swim
+		{
+			other.state = playerstate.hurt
+			other.vspeed = -7
+			other.hspeed = 4 * -(other.facing)
+		}
+		else
+		{
+			other.hspeed *= -1
+			other.vspeed *= -1
+		}
 		other.hp -= 1
-		other.vspeed = -7
-		other.hspeed = 4 * -(other.facing)
 		if !audio_is_playing(sound)
 			sound = audio_play_sound(sfx_pain,1,0)
 		

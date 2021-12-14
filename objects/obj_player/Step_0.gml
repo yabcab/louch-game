@@ -1033,12 +1033,14 @@ switch state { // normal
 	{
 		if vspeed < 15
 			vspeed += 0.3
+		if instance_place(x,y,obj_swimwater) && vspeed > -7
+			vspeed -= 0.45
 		
 		//hspeed = lerp(hspeed,0,0.015)
 		
 		rot += abs(hspeed) * (sign(hspeed) * -1)
 		
-		if abs(hspeed) < 3 && abs(vspeed) < 7 && instance_place(x,y+5,obj_solid) && state != -1
+		if abs(hspeed) < 3 && abs(vspeed) < 7 && (instance_place(x,y+5,obj_solid) || instance_place(x,y,obj_swimwater)) && state != -1
 		{
 			state = -1
 			visible = 0
@@ -1388,6 +1390,14 @@ switch state { // normal
 		rot = point_direction(0,0,abs(hface) * facing,vface) - 90
 		if !instance_place(x,y,obj_swimwater)
 		{
+			var i;
+			for (i = 0; i < 20; i++)
+				with instance_create_depth(random_range(bbox_left,bbox_right),bbox_bottom - 16,depth + 1,obj_eatenapple)
+				{
+					fadeout = 1
+					vspeed = random_range(-3,-5)
+					hspeed = random_range(-1.5,1.5)
+				}
 			rot = 0
 			state = idlestate
 			if key_jump || key_attack
@@ -1440,4 +1450,5 @@ if pause_state = pausestate.playerpause
 else
 	if started_pause
 		pause_player_end()
+
 get_inputs(0)
