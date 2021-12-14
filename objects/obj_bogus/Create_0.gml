@@ -13,6 +13,7 @@ enum nolanstate {
 	none = -1,
 	idle_at_place,
 	runaround,
+	sit,
 }
 
 enum nolanattacks {
@@ -24,7 +25,7 @@ enum nolanlocation {
 	centerarena = 448,
 	leftarena = 160,
 	rightarena = 736,
-	leftoffscreen = -200,
+	leftoffscreen = -64,
 	rightoffscreen = 992,
 }
 

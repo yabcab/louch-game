@@ -38,4 +38,10 @@ switch state {
 			vspeed = -1
 	}
 	break;
+	
+	case nolanstate.sit:
+	{
+		hspeed = 0
+	}
+	break;
 }

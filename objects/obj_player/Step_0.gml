@@ -21,7 +21,7 @@ if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 2,obj
 	onground = 1
 else
 	onground = 0
-if onground
+if onground && vspeed > -1
 {
 	coyote_time = 1
 	alarm[4] = 10
@@ -191,7 +191,6 @@ switch state { // normal
 				vspeed = -13
 				jumpcharge = 0
 				jump_charged = 1
-				coyote_time = 0
 			}
 			else
 				vspeed = -9
@@ -202,6 +201,7 @@ switch state { // normal
 			beginjump = 1
 			jumping = 1
 			image_index = 0
+			coyote_time = 0
 		}
 		if jumping && !key_jump && use_varjump
 		{
@@ -913,7 +913,6 @@ switch state { // normal
 				vspeed = -10
 				jumpcharge = 0
 				jump_charged = 1
-				coyote_time = 0
 			}
 			else
 				vspeed = -7
@@ -924,6 +923,7 @@ switch state { // normal
 			beginjump = 1
 			jumping = 1
 			image_index = 0
+			coyote_time = 0
 			jumps--
 		}
 		if jumping && !key_jump && use_varjump
@@ -1327,7 +1327,7 @@ switch state { // normal
 		vspeed = lerp(vspeed,vsp,0.05)
 		
 		dashtime++
-		if key_attack_press || key_jump_press && dashtime > 30
+		if key_attack_press || key_jump_press && dashtime > 45
 		{
 			dashtime = 0
 			
@@ -1390,7 +1390,7 @@ switch state { // normal
 		{
 			rot = 0
 			state = idlestate
-			if key_jump
+			if key_jump || key_attack
 				vspeed = -9
 			else
 				vspeed = -6

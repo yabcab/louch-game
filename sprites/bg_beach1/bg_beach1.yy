@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 447,
+  "bbox_right": 639,
   "bbox_top": 0,
-  "bbox_bottom": 991,
+  "bbox_bottom": 359,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 450,
-  "height": 1000,
+  "width": 640,
+  "height": 360,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eb12f53f-d631-4623-92a0-73509ccba71c","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eb12f53f-d631-4623-92a0-73509ccba71c","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},"LayerId":{"name":"627f2b2a-6be3-407e-80fe-520ba7aab4f9","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_icebergs_tiles","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},"resourceVersion":"1.0","name":"eb12f53f-d631-4623-92a0-73509ccba71c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7a6a1392-5c59-43ec-be81-f0d83e817b41","path":"sprites/bg_beach1/bg_beach1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7a6a1392-5c59-43ec-be81-f0d83e817b41","path":"sprites/bg_beach1/bg_beach1.yy",},"LayerId":{"name":"733107eb-03df-4c21-9f04-2d6de4e0f1dc","path":"sprites/bg_beach1/bg_beach1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_beach1","path":"sprites/bg_beach1/bg_beach1.yy",},"resourceVersion":"1.0","name":"7a6a1392-5c59-43ec-be81-f0d83e817b41","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_icebergs_tiles","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},
+    "spriteId": {"name":"bg_beach1","path":"sprites/bg_beach1/bg_beach1.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4f9c984e-d084-45ed-aae2-bb9455cd6706","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb12f53f-d631-4623-92a0-73509ccba71c","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a614ee54-ecec-49fd-a63c-9285615890ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a6a1392-5c59-43ec-be81-f0d83e817b41","path":"sprites/bg_beach1/bg_beach1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_icebergs_tiles","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},
+    "parent": {"name":"bg_beach1","path":"sprites/bg_beach1/bg_beach1.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_icebergs_tiles",
+    "name": "bg_beach1",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"627f2b2a-6be3-407e-80fe-520ba7aab4f9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"733107eb-03df-4c21-9f04-2d6de4e0f1dc","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tiles",
-    "path": "folders/Sprites/tiles.yy",
+    "name": "beach",
+    "path": "folders/Sprites/bg/beach.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_icebergs_tiles",
+  "name": "bg_beach1",
   "tags": [],
   "resourceType": "GMSprite",
 }

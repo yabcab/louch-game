@@ -8,4 +8,31 @@ switch hp {
 		hitable = 1
 	}
 	break;
+	
+	case 4:
+	{
+		attackstate = nolanattacks.bogusbox
+		state = nolanstate.runaround
+		hitable = 1
+		diff = 1
+	}
+	break;
+	
+	case 3:
+	{
+		
+	}
+	break;
+	
+	case 2:
+	{
+		
+	}
+	break;
+	
+	case 1:
+	{
+		
+	}
+	break;
 }

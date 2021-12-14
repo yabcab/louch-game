@@ -59,11 +59,15 @@ if hitable
 			other.justhitenemy = 1
 			other.alarm[0] = 5
 	
-		other.combo += 1
-		var snd = audio_play_sound(sfx_bonk,1,0)
-		audio_sound_pitch(snd,1 + (clamp((other.combo - 1),0,6) / 10))
-		score += 20 * (other.combo)
-		ds_list_set(destroy_list,id,1)
+			other.combo += 1
+			var snd = audio_play_sound(sfx_bonk,1,0)
+			audio_sound_pitch(snd,1 + (clamp((other.combo - 1),0,6) / 10))
+			score += 20 * (other.combo)
+			ds_list_set(destroy_list,id,1)
+			
+			vspeed = -2
+			alarm[2] = 100
+			state = nolanstate.sit
 		}
 		else if !other.inv && canhurtplayer
 		{
