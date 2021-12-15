@@ -50,11 +50,11 @@ function do_hitstun(length)
 
 function do_camerashake(x_int,y_int,__time)
 {
-	with instance_create_depth(x,y,depth,obj_camerashake)
+	with obj_camera
 	{
-		x_intensity = x_int
-		y_intensity = y_int
-		max_time = __time
+		shakex = x_int
+		shakey = y_int
+		alarm[0] = __time
 	}
 }
 

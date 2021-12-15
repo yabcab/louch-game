@@ -1,3 +1,13 @@
+var sx,sy
+if shakex > 0
+	sx = random_range(shakex * -1,shakex)
+else
+	sx = 0
+if shakey > 0
+	sy = random_range(shakey * -1,shakey)
+else
+	sy = 0
+
 if obj_player.nonstunstate = playerstate.boost
 	var boost = 1
 else
@@ -13,10 +23,12 @@ target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (
 
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {
-	if abs(x - target_x) > 1
-		x += (target_x - x) / 20
+	if abs(xx - target_x) > 1
+		xx += (target_x - xx) / 20
 	else
-		x = target_x
+		xx = target_x
+		
+	x = clamp(xx,320,room_width - 320) + sx
 
 	//if abs(yy - target_y) > 1
 	//	yy += (target_y - yy) / 20
@@ -29,5 +41,5 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		chargescroll = target_chargescroll
 	
-	y = yy + chargescroll
+	y = clamp(yy + chargescroll,180,room_height - 180) + sy
 }
