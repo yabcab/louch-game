@@ -6,6 +6,7 @@ if secret
 		case level_id.grass: { sprite_index = spr_wallparticles_secret } break;	
 		case level_id.jungle: { sprite_index = spr_wallparticles_secret_jungle } break;
 		case level_id.space: { sprite_index = spr_wallparticles_secret_space } break;
+		case level_id.snow: { sprite_index = spr_wallparticles_secret_snow } break;
 	}
 }
 else
@@ -14,6 +15,7 @@ else
 		case level_id.grass: { sprite_index = spr_wallparticles_grass } break;	
 		case level_id.jungle: { sprite_index = spr_wallparticles_jungle } break;
 		case level_id.space: { sprite_index = spr_wallparticles_space } break;
+		case level_id.snow: { sprite_index = spr_wallparticles_snow } break;
 	}
 }
 

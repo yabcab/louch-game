@@ -34,6 +34,8 @@ enum level_id {
 	grass,
 	jungle,
 	space,
+	snow,
+	beach,
 }
 
 }

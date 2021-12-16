@@ -5,6 +5,3 @@ py = 0
 chargescroll = 0
 target_chargescroll = 0
 yy = 0
-xx = 0
-shakex = 0
-shakey = 0

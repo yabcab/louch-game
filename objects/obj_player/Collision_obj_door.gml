@@ -16,4 +16,5 @@ if key_up && onground && state != playerstate.dying && !recently_entered_room &&
 	hspeedsave = 0
 	vspeedsave = 0
 	entered_door = 1
+	audio_stop_sound(sfx_run)
 }

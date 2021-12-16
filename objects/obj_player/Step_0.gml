@@ -1278,6 +1278,8 @@ switch state { // normal
 	
 	case playerstate.swim:
 	{
+		taunt_qualify = 1
+		
 		if campaign = 3
 			if key_left || key_right || key_up || key_down
 				if abs(hspeed) > 4.5 || abs(vspeed) > 4.5
@@ -1394,6 +1396,8 @@ switch state { // normal
 			for (i = 0; i < 20; i++)
 				with instance_create_depth(random_range(bbox_left,bbox_right),bbox_bottom - 16,depth + 1,obj_eatenapple)
 				{
+					sprite_index = spr_waterparticles
+					image_index = irandom_range(0,4)
 					fadeout = 1
 					vspeed = random_range(-3,-5)
 					hspeed = random_range(-1.5,1.5)
@@ -1404,6 +1408,7 @@ switch state { // normal
 				vspeed = -9
 			else
 				vspeed = -6
+			audio_play_sound(sfx_water2,1,0)
 		}
 	}
 	break;

@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5eea398a-4903-4376-8777-0a4893c58d31","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5eea398a-4903-4376-8777-0a4893c58d31","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":{"name":"ef21aa26-341d-4c9b-83e0-0fd46261c848","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"5eea398a-4903-4376-8777-0a4893c58d31","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":{"name":"3fd50295-457b-452a-862b-4895c7157924","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"016817dd-9517-493b-9b1f-29b1108f9175","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f551b903-b170-4c51-a2d2-784f29238589","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5eea398a-4903-4376-8777-0a4893c58d31","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3e2ceccf-2765-47e6-818c-6e39ae728cf1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef21aa26-341d-4c9b-83e0-0fd46261c848","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fd50295-457b-452a-862b-4895c7157924","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

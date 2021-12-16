@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_feesh_swim",
-    "path": "sprites/spr_feesh_swim/spr_feesh_swim.yy",
+    "name": "spr_fatfuck_idle",
+    "path": "sprites/spr_fatfuck_idle/spr_fatfuck_idle.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_fatfuck_idle",
+    "path": "sprites/spr_fatfuck_idle/spr_fatfuck_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

@@ -3,8 +3,11 @@ switch state {
 	{	
 		var hsp, vsp
 		
-		if onscreen
+		
+		if distance_to_object(obj_player < 350) && obj_player.state = playerstate.swim
 		{
+			sprite_index = spr_fatfuck_swim
+			
 			if x < obj_player.x - 64
 				hsp = 2.5
 			else if x > obj_player.x + 64
@@ -23,12 +26,13 @@ switch state {
 		{
 			hsp = 0
 			vsp = 0
+			sprite_index = spr_fatfuck_idle
 		}
 		
 		hspeed = lerp(hspeed,hsp,0.025)
 		vspeed = lerp(vspeed,vsp,0.025)
 		
-		image_angle = direction
+		rot = direction
 	}
 	break;
 }
