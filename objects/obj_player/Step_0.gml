@@ -1331,7 +1331,7 @@ switch state { // normal
 		vspeed = lerp(vspeed,vsp,0.05)
 		
 		dashtime++
-		if key_attack_press || key_jump_press && dashtime > 45
+		if key_attack_press || key_jump_press && dashtime > 100
 		{
 			dashtime = 0
 			

@@ -41,6 +41,7 @@
     {"id":{"name":"sfx_ricochet","path":"sounds/sfx_ricochet/sfx_ricochet.yy",},"order":16,},
     {"id":{"name":"sfx_hitwall5","path":"sounds/sfx_hitwall5/sfx_hitwall5.yy",},"order":21,},
     {"id":{"name":"bg_trailerend","path":"sprites/bg_trailerend/bg_trailerend.yy",},"order":8,},
+    {"id":{"name":"spr_rodent","path":"sprites/spr_rodent/spr_rodent.yy",},"order":41,},
     {"id":{"name":"obj_sadmaker","path":"objects/obj_sadmaker/obj_sadmaker.yy",},"order":1,},
     {"id":{"name":"spr_playerLS_fishlaunch","path":"sprites/spr_playerLS_fishlaunch/spr_playerLS_fishlaunch.yy",},"order":35,},
     {"id":{"name":"spr_gonk","path":"sprites/spr_gonk/spr_gonk.yy",},"order":0,},
@@ -476,6 +477,7 @@
     {"id":{"name":"rm_tutorial_2","path":"rooms/rm_tutorial_2/rm_tutorial_2.yy",},"order":1,},
     {"id":{"name":"sfx_none","path":"sounds/sfx_none/sfx_none.yy",},"order":0,},
     {"id":{"name":"mu_nolard","path":"sounds/mu_nolard/mu_nolard.yy",},"order":18,},
+    {"id":{"name":"obj_xboxlive","path":"objects/obj_xboxlive/obj_xboxlive.yy",},"order":14,},
     {"id":{"name":"spr_cracker_eaten","path":"sprites/spr_cracker_eaten/spr_cracker_eaten.yy",},"order":5,},
     {"id":{"name":"mu_disclaimer","path":"sounds/mu_disclaimer/mu_disclaimer.yy",},"order":0,},
     {"id":{"name":"sfx_applemunch","path":"sounds/sfx_applemunch/sfx_applemunch.yy",},"order":7,},
@@ -520,6 +522,7 @@
     {"id":{"name":"obj_checkpointmarker","path":"objects/obj_checkpointmarker/obj_checkpointmarker.yy",},"order":21,},
     {"id":{"name":"spr_playerLS_chargejumpstart","path":"sprites/spr_playerLS_chargejumpstart/spr_playerLS_chargejumpstart.yy",},"order":27,},
     {"id":{"name":"spr_resumeicon","path":"sprites/spr_resumeicon/spr_resumeicon.yy",},"order":30,},
+    {"id":{"name":"rm_beach_2","path":"rooms/rm_beach_2/rm_beach_2.yy",},"order":1,},
     {"id":{"name":"spr_hub_tiles","path":"sprites/spr_hub_tiles/spr_hub_tiles.yy",},"order":5,},
     {"id":{"name":"spr_dancer_nola","path":"sprites/spr_dancer_nola/spr_dancer_nola.yy",},"order":3,},
     {"id":{"name":"spr_waterparticles","path":"sprites/spr_waterparticles/spr_waterparticles.yy",},"order":8,},
@@ -609,8 +612,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"groupName":"test","children":[
         {"roomId":{"name":"rm_blank","path":"rooms/rm_blank/rm_blank.yy",},},
@@ -746,6 +749,7 @@
     {"roomId":{"name":"rm_beach_1","path":"rooms/rm_beach_1/rm_beach_1.yy",},},
     {"roomId":{"name":"rm_hub2","path":"rooms/rm_hub2/rm_hub2.yy",},},
     {"roomId":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},},
+    {"roomId":{"name":"rm_beach_2","path":"rooms/rm_beach_2/rm_beach_2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

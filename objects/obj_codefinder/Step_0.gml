@@ -64,14 +64,16 @@ if string_pos("yeahfuckyoutoo",str) > 0
 	keyboard_string = ""
 }
 
-//if string_pos("thermonuclearbomb",str) > 0
-//{
-//	if instance_exists(obj_player)
-//	{
-//		instance_destroy(obj_player)
-//	}
-//	keyboard_string = ""
-//}
+if string_pos("thermonuclearbomb",str) > 0
+{
+	with obj_player {
+		state = playerstate.dying
+		hspeed = random_range(10,15) * (facing * -1)
+		vspeed = random_range(-13,-18)
+		audio_play_sound(sfx_ricochet,1,0)
+	}
+	keyboard_string = ""
+}
 
 if string_pos("abandonment",str) > 0
 {
@@ -91,3 +93,11 @@ if string_pos("abandonment",str) > 0
 		instance_destroy(obj_spacefeesh)
 	keyboard_string = ""
 }
+
+if string_pos("rodentmoment",str) > 0
+{
+	with instance_create_depth(x,y,1,obj_thudthing)
+		sprite_index = spr_rodent
+	keyboard_string = ""
+}
+
