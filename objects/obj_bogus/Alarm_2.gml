@@ -11,7 +11,9 @@ switch hp {
 	
 	case 3:
 	{
-		//put minion attack here
+		attackstate = nolanattacks.bogusgun
+		state = nolanstate.flyaround
+		
 	}
 	break;
 	

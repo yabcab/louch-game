@@ -94,7 +94,7 @@ if string_pos("abandonment",str) > 0
 	keyboard_string = ""
 }
 
-if string_pos("rodentmoment",str) > 0
+if string_pos("rodent",str) > 0
 {
 	with instance_create_depth(x,y,1,obj_thudthing)
 		sprite_index = spr_rodent

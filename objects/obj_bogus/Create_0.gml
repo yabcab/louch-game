@@ -14,11 +14,13 @@ enum nolanstate {
 	idle_at_place,
 	runaround,
 	sit,
+	flyaround,
 }
 
 enum nolanattacks {
 	none = -1,
 	bogusbox,
+	bogusgun,
 }
 
 enum nolanlocation {
