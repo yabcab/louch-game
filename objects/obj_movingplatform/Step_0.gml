@@ -1,9 +1,7 @@
 if instance_exists(obj_player)
 {
 	if instance_exists(obj)
-	{
 		instance_destroy(obj)
-	}
 	if !instance_exists(obj) && obj_player.bbox_bottom < y
 	{
 		var s = image_xscale

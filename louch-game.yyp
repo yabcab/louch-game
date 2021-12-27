@@ -182,6 +182,7 @@
     {"id":{"name":"obj_gumdrop_2","path":"objects/obj_gumdrop_2/obj_gumdrop_2.yy",},"order":1,},
     {"id":{"name":"spr_winsign","path":"sprites/spr_winsign/spr_winsign.yy",},"order":21,},
     {"id":{"name":"spr_appleeaten","path":"sprites/spr_appleeaten/spr_appleeaten.yy",},"order":3,},
+    {"id":{"name":"rm_beach_4","path":"rooms/rm_beach_4/rm_beach_4.yy",},"order":3,},
     {"id":{"name":"rm_slopetest","path":"rooms/rm_slopetest/rm_slopetest.yy",},"order":0,},
     {"id":{"name":"obj_splitter","path":"objects/obj_splitter/obj_splitter.yy",},"order":11,},
     {"id":{"name":"rm_tutorial2","path":"rooms/rm_tutorial2/rm_tutorial2.yy",},"order":1,},
@@ -759,6 +760,7 @@
     {"roomId":{"name":"rm_beach_2","path":"rooms/rm_beach_2/rm_beach_2.yy",},},
     {"roomId":{"name":"rm_signin","path":"rooms/rm_signin/rm_signin.yy",},},
     {"roomId":{"name":"rm_beach_3","path":"rooms/rm_beach_3/rm_beach_3.yy",},},
+    {"roomId":{"name":"rm_beach_4","path":"rooms/rm_beach_4/rm_beach_4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
