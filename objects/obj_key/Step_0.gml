@@ -25,6 +25,7 @@ if pause_state != pausestate.playerpause
 		if keys < keynumb
 		{
 			instance_destroy()
+			ds_list_set(destroy_list,id,1)
 			with instance_create_depth(x,y,-5,obj_eatenapple)
 			{
 				sprite_index = spr_key

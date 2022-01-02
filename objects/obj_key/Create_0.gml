@@ -5,3 +5,6 @@ _time = random_range(0,1000)
 keynumb = 0
 
 depth = -1
+
+if ds_list_find_value(destroy_list,id) = 1
+	instance_destroy()
