@@ -226,6 +226,7 @@
     {"id":{"name":"rm_cavetest","path":"rooms/rm_cavetest/rm_cavetest.yy",},"order":1,},
     {"id":{"name":"rm_area2_3","path":"rooms/rm_area2_3/rm_area2_3.yy",},"order":2,},
     {"id":{"name":"obj_codefinder","path":"objects/obj_codefinder/obj_codefinder.yy",},"order":7,},
+    {"id":{"name":"bg_beach2","path":"sprites/bg_beach2/bg_beach2.yy",},"order":1,},
     {"id":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"order":0,},
     {"id":{"name":"mu_icebergs","path":"sounds/mu_icebergs/mu_icebergs.yy",},"order":21,},
     {"id":{"name":"spr_tutorial_tiles","path":"sprites/spr_tutorial_tiles/spr_tutorial_tiles.yy",},"order":6,},
