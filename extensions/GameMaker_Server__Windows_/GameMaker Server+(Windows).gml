@@ -739,240 +739,474 @@ if(!instance_exists(global.__obj))
 #define gms_show_achievements
 if(global.__xas_window == -1)
 {
-    gms_show_replace(wt_achievements, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: preferred;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	min-height: 300;
-	preferred-height: 500;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-info:
-{
-	text-wrapping: true;
-	width: max;
-	height: max;
-}
-
-achievements:
-{
-	container:
-	{
-		width: max;
-		height: max;
-	}
-
-	item:
-	{
-		height: min;
-
-		title:
-		{
-			font: @f_text;
-			horizontal-float: false;
-
-			reached:
-			{
-				color: @c_black_text;
-			}
-
-			notreached:
-			{
-				color: @c_grey_text;
-			}
-		}
-
-		reached:
-		{
-			font: @f_text;
-			horizontal-float: true;
-
-			reached:
-			{
-				color: @c_black_text;
-			}
-
-			notreached:
-			{
-				color: @c_grey_text;
-			}
-		}
-	}
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[titlebar.title]
-					style[titlebar.title]>@txt_achievements</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[achievements.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<scrollbox
-					name[achievements.container]
-					style[achievements.container] />
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_achievements, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: preferred;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	min-height: 300;
+
+	preferred-height: 500;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+info:
+
+{
+
+	text-wrapping: true;
+
+	width: max;
+
+	height: max;
+
+}
+
+
+
+achievements:
+
+{
+
+	container:
+
+	{
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	item:
+
+	{
+
+		height: min;
+
+
+
+		title:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: false;
+
+
+
+			reached:
+
+			{
+
+				color: @c_black_text;
+
+			}
+
+
+
+			notreached:
+
+			{
+
+				color: @c_grey_text;
+
+			}
+
+		}
+
+
+
+		reached:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: true;
+
+
+
+			reached:
+
+			{
+
+				color: @c_black_text;
+
+			}
+
+
+
+			notreached:
+
+			{
+
+				color: @c_grey_text;
+
+			}
+
+		}
+
+	}
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[titlebar.title]
+
+					style[titlebar.title]>@txt_achievements</label>
+
+				<arrow 
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+					hover[titlebar.closearrow.hover]
+
+					unhover[titlebar.closearrow.unhover]
+
+					name[achievements.close] />
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+				<scrollbox
+
+					name[achievements.container]
+
+					style[achievements.container] />
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 var _as_container;
@@ -1013,240 +1247,708 @@ if(_as_container == -1)
 #define gms_show_friends
 if(global.__xfs_window == -1)
 {
-    gms_show_replace(wt_friends, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: preferred;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	min-height: 300;
-	preferred-height: 500;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-info:
-{
-	text-wrapping: true;
-	width: max;
-	height: max;
-}
-
-friends:
-{
-	container:
-	{
-		width: max;
-		height: max;
-	}
-
-	item:
-	{
-		height: min;
-
-		name:
-		{
-			font: @f_text;
-			horizontal-float: false;
-
-			online:
-			{
-				color: @c_good_color;
-			}
-
-			offline:
-			{
-				color: @c_grey_text;
-			}
-		}
-
-		status:
-		{
-			font: @f_text;
-			horizontal-float: true;
-
-			online:
-			{
-				color: @c_good_color;
-			}
-
-			offline:
-			{
-				color: @c_grey_text;
-			}
-		}
-	}
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[titlebar.title]
-					style[titlebar.title]>@txt_friends</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[friends.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<scrollbox
-					name[friends.container]
-					style[friends.container] />
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_friends, @"<constants>
+
+
+</constants>
+
+
+<styles>
+
+
+overlay:
+
+
+{
+
+
+	background: 0;
+
+
+
+
+
+	open:
+
+
+	{
+
+
+		background-alpha: 0.5;
+
+
+	}
+
+
+
+
+
+	close:
+
+
+	{
+
+
+		background-alpha: 0;
+
+
+	}
+
+
+}
+
+
+
+
+
+window:
+
+
+{
+
+
+	width: preferred;
+
+
+	height: preferred;
+
+
+
+
+
+	min-width: 200;
+
+
+	preferred-width: 640;
+
+
+
+
+
+	min-height: 300;
+
+
+	preferred-height: 500;
+
+
+
+
+
+	center: true;
+
+
+
+
+
+	drop-shadow: 2;
+
+
+	drop-shadow-intensity: 0.04;
+
+
+	drop-shadow-spread: 10;
+
+
+
+
+
+	open:
+
+
+	{
+
+
+		y-offset: 0;
+
+
+		tween-speed: 0.3;
+
+
+	}
+
+
+
+
+
+	close:
+
+
+	{
+
+
+		y-offset: 1;
+
+
+		tween-speed: 0.3;
+
+
+	}
+
+
+
+
+
+	extrawindow:
+
+
+	{
+
+
+		y-offset: -1;
+
+
+	}
+
+
+
+
+
+	unextrawindow:
+
+
+	{
+
+
+		y-offset: 0;
+
+
+	}
+
+
+
+
+
+	error:
+
+
+	{
+
+
+		x-offset: 0.005;
+
+
+		tween-type: shake;
+
+
+		tween-speed: 1;
+
+
+	}
+
+
+}
+
+
+
+
+
+contents:
+
+
+{
+
+
+	width: max;
+
+
+	height: max;
+
+
+	padding: 20;	
+
+
+}
+
+
+
+
+
+titlebar:
+
+
+{
+
+
+	width: max;
+
+
+	height: 52;
+
+
+
+
+
+	title:
+
+
+	{
+
+
+		color: @c_text;
+
+
+		font: @f_title;
+
+
+		width: max;
+
+
+		height: max;
+
+
+	}
+
+
+
+
+
+	closearrow:
+
+
+	{
+
+
+		height: max;
+
+
+		color: @c_text;
+
+
+		width: 32;
+
+
+
+
+
+		hover:
+
+
+		{
+
+
+			arrow-size: 15;
+
+
+			arrow-length: 34;
+
+
+			alpha: 1.0;
+
+
+			tween-speed: 0.2;
+
+
+		}
+
+
+
+
+
+		unhover:
+
+
+		{
+
+
+			arrow-size: 10;
+
+
+			arrow-length: 20;
+
+
+			alpha: 0.5;
+
+
+			tween-speed: 0.2;
+
+
+		}
+
+
+	}
+
+
+}
+
+
+
+
+
+backgrounds:
+
+
+{
+
+
+	normal:
+
+
+	{
+
+
+		background-1: @c_background1;
+
+
+		background-2: @c_background1;
+
+
+		background-3: @c_background2;
+
+
+		background-4: @c_background2;
+
+
+	}
+
+
+
+
+
+	highlight:
+
+
+	{
+
+
+		background-1: @c_button1;
+
+
+		background-2: @c_button1;
+
+
+		background-3: @c_button2;
+
+
+		background-4: @c_button2;
+
+
+	}
+
+
+
+
+
+	hover:
+
+
+	{
+
+
+		background-1: @c_buttonhover1;
+
+
+		background-2: @c_buttonhover1;
+
+
+		background-3: @c_buttonhover2;
+
+
+		background-4: @c_buttonhover2;
+
+
+	}
+
+
+}
+
+
+
+
+
+border:
+
+
+{
+
+
+	border-size: 1;
+
+
+	border-color: @c_border;
+
+
+}
+
+
+
+
+
+info:
+
+
+{
+
+
+	text-wrapping: true;
+
+
+	width: max;
+
+
+	height: max;
+
+
+}
+
+
+
+
+
+friends:
+
+
+{
+
+
+	container:
+
+
+	{
+
+
+		width: max;
+
+
+		height: max;
+
+
+	}
+
+
+
+
+
+	item:
+
+
+	{
+
+
+		height: min;
+
+
+
+
+
+		name:
+
+
+		{
+
+
+			font: @f_text;
+
+
+			horizontal-float: false;
+
+
+
+
+
+			online:
+
+
+			{
+
+
+				color: @c_good_color;
+
+
+			}
+
+
+
+
+
+			offline:
+
+
+			{
+
+
+				color: @c_grey_text;
+
+
+			}
+
+
+		}
+
+
+
+
+
+		status:
+
+
+		{
+
+
+			font: @f_text;
+
+
+			horizontal-float: true;
+
+
+
+
+
+			online:
+
+
+			{
+
+
+				color: @c_good_color;
+
+
+			}
+
+
+
+
+
+			offline:
+
+
+			{
+
+
+				color: @c_grey_text;
+
+
+			}
+
+
+		}
+
+
+	}
+
+
+}
+
+
+</styles>
+
+
+<layout>
+
+
+	<canvas
+
+
+		name[overlay]
+
+
+		style[overlay, overlay.close]
+
+
+		open[overlay.open]
+
+
+		close[overlay.close]
+
+
+		extrawindow[overlay.close]
+
+
+		unextrawindow[overlay.open]>
+
+
+		
+
+
+		<canvas
+
+
+			name[window]
+
+
+			style[window, window.close, backgrounds.normal, border] 
+
+
+			open[window.open] 
+
+
+			close[window.close]
+
+
+			extrawindow[window.extrawindow] 
+
+
+			unextrawindow[window.unextrawindow]
+
+
+			error[window.error]>
+
+
+			<multielement
+
+
+				name[titlebar]
+
+
+				style[titlebar, backgrounds.highlight]>
+
+
+				<label
+
+
+					name[titlebar.title]
+
+
+					style[titlebar.title]>@txt_friends</label>
+
+
+				<arrow 
+
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+
+					hover[titlebar.closearrow.hover]
+
+
+					unhover[titlebar.closearrow.unhover]
+
+
+					name[friends.close] />
+
+
+			</multielement>
+
+
+
+
+
+			<canvas 
+
+
+				style[contents]
+
+
+				name[contents]>
+
+
+				<scrollbox
+
+
+					name[friends.container]
+
+
+					style[friends.container] />
+
+
+			</canvas>
+
+
+		</canvas>
+
+
+	</canvas>
+
+
 </layout>");
 }
 var _fs_container;
@@ -1287,221 +1989,436 @@ if(_fs_container == -1)
 #define gms_show_highscore
 if(global.__xhs_window == -1)
 {
-    gms_show_replace(wt_highscores, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: preferred;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	min-height: 300;
-	preferred-height: 500;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-info:
-{
-	text-wrapping: true;
-	width: max;
-	height: max;
-}
-
-highscores:
-{
-	container:
-	{
-		width: max;
-		height: max;
-	}
-
-	item:
-	{
-		height: min;
-		color: @c_black_text;
-
-		name:
-		{
-			font: @f_text;
-			horizontal-float: false;
-		}
-
-		score:
-		{
-			font: @f_text;
-			horizontal-float: true;
-		}
-	}
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[highscores.title]
-					style[titlebar.title]>Titlebar</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[highscores.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<scrollbox
-					name[highscores.container]
-					style[highscores.container] />
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_highscores, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: preferred;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	min-height: 300;
+
+	preferred-height: 500;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+info:
+
+{
+
+	text-wrapping: true;
+
+	width: max;
+
+	height: max;
+
+}
+
+
+
+highscores:
+
+{
+
+	container:
+
+	{
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	item:
+
+	{
+
+		height: min;
+
+		color: @c_black_text;
+
+
+
+		name:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: false;
+
+		}
+
+
+
+		score:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: true;
+
+		}
+
+	}
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[highscores.title]
+
+					style[titlebar.title]>Titlebar</label>
+
+				<arrow 
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+					hover[titlebar.closearrow.hover]
+
+					unhover[titlebar.closearrow.unhover]
+
+					name[highscores.close] />
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+				<scrollbox
+
+					name[highscores.container]
+
+					style[highscores.container] />
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 if(!gms_highscore_list_exists(argument0))
@@ -1539,344 +2456,682 @@ if(!gms_highscore_list_exists(argument0))
 #define gms_show_login
 if(global.__xls_window == -1)
 {
-    gms_show_replace(wt_login, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: min;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-		center: 1;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-		horizontal-float: 1;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-		tween-speed: 0.1;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-tos:
-{
-	font: @f_small;
-	text-wrapping: true;
-	width: max;
-	height: 50;
-	margin-bottom: -20;
-		color: @c_text;
-}
-
-bottom:
-{
-	width: max;
-	height: min;
-	vertical-float: true;
-}
-
-button:
-{
-	width: max;
-	height: 52;
-	font: @f_text;
-	color: @c_text;
-	margin: 5;
-}
-
-buttonrow:
-{
-	width: max;
-}
-
-textbox:
-{
-	width: max;
-	font: @f_text;
-	color: @c_text;
-	tip-color: @c_grey_text;
-
-	margin:
-	{
-		margin: 8;
-	}
-
-	show:
-	{
-		height: 40;
-		alpha: 1;
-	}
-
-	hide:
-	{
-		height: 0;
-		alpha: 0;
-	}
-}
-
-guest:
-{
-	width: min;
-	height: max;
-	font: @f_text;
-	color: @c_text;
-
-	show:
-	{
-		width: min;
-		alpha: 1;
-		tween-speed: 0.3;
-		padding-left: 40;
-		padding-right: 40;
-	}
-
-	hide:
-	{
-		width: 0;
-		alpha: 0;
-		padding-left: 0;
-		padding-right: 0;
-		tween-speed: 0.3;
-	}
-}
-
-error:
-{
-	font: @f_small;
-	color: @c_fault_color;
-	text-wrapping: true;
-	width: max;
-
-	error:
-	{
-		alpha: 1;
-		height: min;
-		padding-top: 10;
-		padding-bottom: 10;
-		tween-speed: 0.5;
-	}
-
-	unerror:
-	{
-		alpha: 0;
-		height: 0;
-		tween-speed: 0.5;
-	}
-}
-
-textboxes:
-{
-	height: min;
-	margin-bottom: 5;
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[title]
-					style[titlebar.title]>@txt_login</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[login.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<container 
-					style[textboxes]
-					name[textboxes]>
-					<multielement style[textbox, textbox.margin, backgrounds.normal, border]>
-						<label 
-							style[backgrounds.highlight, guest, guest.show]
-							name[login.guest]
-							special[guest.show] 
-							unspecial[guest.hide]>@txt_guest</label>
-						<textbox 
-							name[login.username]
-							style[textbox, textbox.show] 
-							property[tip-text = @txt_username]/>
-					</multielement>
-					<textbox 
-						name[login.password]
-						style[textbox, backgrounds.normal, textbox.margin, textbox.hide, border]
-						property[tip-text = @txt_password, password = true]
-						special[textbox.hide] 
-						unspecial[textbox.show]/>
-				</container>
-
-				<label 
-					name[login.error] 
-					style[error, error.unerror]
-					error[error.error]
-					unerror[error.unerror]/>
-
-				<canvas style[bottom] name[bottom]>
-					<multielement style[buttonrow]>
-						<button 
-							name[login.login]
-							style[button, backgrounds.highlight, border]
-							hover[backgrounds.hover]
-							unhover[backgrounds.highlight]>@txt_login</button>
-						<button 
-							name[login.register]
-							style[button, backgrounds.highlight, border]
-							hover[backgrounds.hover]
-							unhover[backgrounds.highlight]>@txt_register</button>
-						<button 
-							name[login.close]
-							style[button, backgrounds.highlight, border]
-							hover[backgrounds.hover]
-							unhover[backgrounds.highlight]>@txt_cancel</button>
-					</multielement>
-					<label style[tos]>@txt_tos</label>
-				</canvas>
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_login, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: min;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+		center: 1;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+		horizontal-float: 1;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+		tween-speed: 0.1;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+tos:
+
+{
+
+	font: @f_small;
+
+	text-wrapping: true;
+
+	width: max;
+
+	height: 50;
+
+	margin-bottom: -20;
+
+		color: @c_text;
+
+}
+
+
+
+bottom:
+
+{
+
+	width: max;
+
+	height: min;
+
+	vertical-float: true;
+
+}
+
+
+
+button:
+
+{
+
+	width: max;
+
+	height: 52;
+
+	font: @f_text;
+
+	color: @c_text;
+
+	margin: 5;
+
+}
+
+
+
+buttonrow:
+
+{
+
+	width: max;
+
+}
+
+
+
+textbox:
+
+{
+
+	width: max;
+
+	font: @f_text;
+
+	color: @c_text;
+
+	tip-color: @c_grey_text;
+
+
+
+	margin:
+
+	{
+
+		margin: 8;
+
+	}
+
+
+
+	show:
+
+	{
+
+		height: 40;
+
+		alpha: 1;
+
+	}
+
+
+
+	hide:
+
+	{
+
+		height: 0;
+
+		alpha: 0;
+
+	}
+
+}
+
+
+
+guest:
+
+{
+
+	width: min;
+
+	height: max;
+
+	font: @f_text;
+
+	color: @c_text;
+
+
+
+	show:
+
+	{
+
+		width: min;
+
+		alpha: 1;
+
+		tween-speed: 0.3;
+
+		padding-left: 40;
+
+		padding-right: 40;
+
+	}
+
+
+
+	hide:
+
+	{
+
+		width: 0;
+
+		alpha: 0;
+
+		padding-left: 0;
+
+		padding-right: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+}
+
+
+
+error:
+
+{
+
+	font: @f_small;
+
+	color: @c_fault_color;
+
+	text-wrapping: true;
+
+	width: max;
+
+
+
+	error:
+
+	{
+
+		alpha: 1;
+
+		height: min;
+
+		padding-top: 10;
+
+		padding-bottom: 10;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	unerror:
+
+	{
+
+		alpha: 0;
+
+		height: 0;
+
+		tween-speed: 0.5;
+
+	}
+
+}
+
+
+
+textboxes:
+
+{
+
+	height: min;
+
+	margin-bottom: 5;
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[title]
+
+					style[titlebar.title]>@txt_login</label>
+
+				<arrow 
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+					hover[titlebar.closearrow.hover]
+
+					unhover[titlebar.closearrow.unhover]
+
+					name[login.close] />
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+				<container 
+
+					style[textboxes]
+
+					name[textboxes]>
+
+					<multielement style[textbox, textbox.margin, backgrounds.normal, border]>
+
+						<label 
+
+							style[backgrounds.highlight, guest, guest.show]
+
+							name[login.guest]
+
+							special[guest.show] 
+
+							unspecial[guest.hide]>@txt_guest</label>
+
+						<textbox 
+
+							name[login.username]
+
+							style[textbox, textbox.show] 
+
+							property[tip-text = @txt_username]/>
+
+					</multielement>
+
+					<textbox 
+
+						name[login.password]
+
+						style[textbox, backgrounds.normal, textbox.margin, textbox.hide, border]
+
+						property[tip-text = @txt_password, password = true]
+
+						special[textbox.hide] 
+
+						unspecial[textbox.show]/>
+
+				</container>
+
+
+
+				<label 
+
+					name[login.error] 
+
+					style[error, error.unerror]
+
+					error[error.error]
+
+					unerror[error.unerror]/>
+
+
+
+				<canvas style[bottom] name[bottom]>
+
+					<multielement style[buttonrow]>
+
+						<button 
+
+							name[login.login]
+
+							style[button, backgrounds.highlight, border]
+
+							hover[backgrounds.hover]
+
+							unhover[backgrounds.highlight]>@txt_login</button>
+
+						<button 
+
+							name[login.register]
+
+							style[button, backgrounds.highlight, border]
+
+							hover[backgrounds.hover]
+
+							unhover[backgrounds.highlight]>@txt_register</button>
+
+						<button 
+
+							name[login.close]
+
+							style[button, backgrounds.highlight, border]
+
+							hover[backgrounds.hover]
+
+							unhover[backgrounds.highlight]>@txt_cancel</button>
+
+					</multielement>
+
+					<label style[tos]>@txt_tos</label>
+
+				</canvas>
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 wle_show(global.__xls_window);
@@ -1888,143 +3143,280 @@ global.__xls_open = true
 //text
 if(global.__xms_window == -1)
 {
-    gms_show_replace(wt_message, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-}
-
-window:
-{
-	width: min;
-	height: min;
-
-	margin-left: 20;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 3;
-
-	open:
-	{
-		x-offset: 0;
-		tween-speed: 0.5;
-	}
-
-	close:
-	{
-		x-offset: -1;
-		tween-speed: 0.5;
-	}
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_text;
-		width: max;
-		height: max;
-		padding-left: 20;
-		padding-right: 20;
-	}
-
-	closecontainer:
-	{
-		width: min;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: -34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: -20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay]
-		onopen[overlay]
-		onclose[overlay]>
-		
-		<canvas
-			name[window]
-			style[window, backgrounds.normal, border, window.close] 
-			open[window.open] 
-			close[window.close]>
-			<multielement
-				name[titlebar]
-				style[titlebar]>
-				<label
-					name[message.title]
-					style[titlebar.title]>Size43 logged in</label>
-				<canvas
-					style[backgrounds.highlight, titlebar.closecontainer]>
-					<arrow 
-						style[titlebar.closearrow, titlebar.closearrow.unhover]
-						hover[titlebar.closearrow.hover]
-						unhover[titlebar.closearrow.unhover]
-						name[message.close] />
-				</canvas>
-			</multielement>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_message, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+}
+
+
+
+window:
+
+{
+
+	width: min;
+
+	height: min;
+
+
+
+	margin-left: 20;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 3;
+
+
+
+	open:
+
+	{
+
+		x-offset: 0;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		x-offset: -1;
+
+		tween-speed: 0.5;
+
+	}
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_text;
+
+		width: max;
+
+		height: max;
+
+		padding-left: 20;
+
+		padding-right: 20;
+
+	}
+
+
+
+	closecontainer:
+
+	{
+
+		width: min;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: -34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: -20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay]
+
+		onopen[overlay]
+
+		onclose[overlay]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, backgrounds.normal, border, window.close] 
+
+			open[window.open] 
+
+			close[window.close]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar]>
+
+				<label
+
+					name[message.title]
+
+					style[titlebar.title]>Size43 logged in</label>
+
+				<canvas
+
+					style[backgrounds.highlight, titlebar.closecontainer]>
+
+					<arrow 
+
+						style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+						hover[titlebar.closearrow.hover]
+
+						unhover[titlebar.closearrow.unhover]
+
+						name[message.close] />
+
+				</canvas>
+
+			</multielement>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 if ds_queue_size(global.__xmessage_queue) == 0 && (global.__xms_waittime <= 0 || !global.__xms_open)
@@ -2047,293 +3439,580 @@ if ds_queue_size(global.__xmessage_queue) == 0 && (global.__xms_waittime <= 0 ||
 #define gms_show_register
 if(global.__xrs_window == -1)
 {
-    gms_show_replace(wt_register, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: min;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-bottom:
-{
-	width: max;
-	height: min;
-	vertical-float: true;
-}
-
-button:
-{
-	width: max;
-	height: 52;
-	font: @f_text;
-	color: @c_text;
-	margin: 5;
-}
-
-buttonrow:
-{
-	width: max;
-}
-
-error:
-{
-	font: @f_small;
-	color: @c_fault_color;
-	text-wrapping: true;
-	width: max;
-
-	error:
-	{
-		alpha: 1;
-		height: min;
-		padding-top: 10;
-		padding-bottom: 10;
-		tween-speed: 0.5;
-	}
-
-	unerror:
-	{
-		alpha: 0;
-		height: 0;
-		tween-speed: 0.5;
-	}
-}
-
-textbox:
-{
-	width: max;
-	font: @f_text;
-	color: @c_text;
-	tip-color: @c_grey_text;
-
-	margin:
-	{
-		margin: 8;
-	}
-
-	show:
-	{
-		height: 40;
-		alpha: 1;
-	}
-}
-
-textboxes:
-{
-	height: min;
-	margin-bottom: 5;
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[title]
-					style[titlebar.title]>@txt_register</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[register.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-
-				<container 
-					style[textboxes]
-					name[textboxes]>
-					<textbox 
-							name[register.username]
-							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
-							property[tip-text = @txt_username]/>
-					<textbox 
-							name[register.mail]
-							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
-							property[tip-text = @txt_email]/>
-					<textbox 
-							name[register.password]
-							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
-							property[tip-text = @txt_password, password = true]/>
-					<textbox 
-							name[register.password-again]
-							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
-						property[tip-text = @txt_repeat_password, password = true]/>
-				</container>
-
-				<label 
-					name[register.error] 
-					style[error, error.unerror]
-					error[error.error]
-					unerror[error.unerror]/>
-
-				<canvas style[bottom] name[bottom]>
-					<multielement style[buttonrow]>
-						<button 
-							name[register.register]
-							style[button, backgrounds.highlight, border]
-							hover[backgrounds.hover]
-							unhover[backgrounds.highlight]>@txt_register</button>
-						<button 
-							name[register.close]
-							style[button, backgrounds.highlight, border]
-							hover[backgrounds.hover]
-							unhover[backgrounds.highlight]>@txt_cancel</button>
-					</multielement>
-				</canvas>
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_register, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: min;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+bottom:
+
+{
+
+	width: max;
+
+	height: min;
+
+	vertical-float: true;
+
+}
+
+
+
+button:
+
+{
+
+	width: max;
+
+	height: 52;
+
+	font: @f_text;
+
+	color: @c_text;
+
+	margin: 5;
+
+}
+
+
+
+buttonrow:
+
+{
+
+	width: max;
+
+}
+
+
+
+error:
+
+{
+
+	font: @f_small;
+
+	color: @c_fault_color;
+
+	text-wrapping: true;
+
+	width: max;
+
+
+
+	error:
+
+	{
+
+		alpha: 1;
+
+		height: min;
+
+		padding-top: 10;
+
+		padding-bottom: 10;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	unerror:
+
+	{
+
+		alpha: 0;
+
+		height: 0;
+
+		tween-speed: 0.5;
+
+	}
+
+}
+
+
+
+textbox:
+
+{
+
+	width: max;
+
+	font: @f_text;
+
+	color: @c_text;
+
+	tip-color: @c_grey_text;
+
+
+
+	margin:
+
+	{
+
+		margin: 8;
+
+	}
+
+
+
+	show:
+
+	{
+
+		height: 40;
+
+		alpha: 1;
+
+	}
+
+}
+
+
+
+textboxes:
+
+{
+
+	height: min;
+
+	margin-bottom: 5;
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[title]
+
+					style[titlebar.title]>@txt_register</label>
+
+				<arrow 
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+					hover[titlebar.closearrow.hover]
+
+					unhover[titlebar.closearrow.unhover]
+
+					name[register.close] />
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+
+
+				<container 
+
+					style[textboxes]
+
+					name[textboxes]>
+
+					<textbox 
+
+							name[register.username]
+
+							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
+
+							property[tip-text = @txt_username]/>
+
+					<textbox 
+
+							name[register.mail]
+
+							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
+
+							property[tip-text = @txt_email]/>
+
+					<textbox 
+
+							name[register.password]
+
+							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
+
+							property[tip-text = @txt_password, password = true]/>
+
+					<textbox 
+
+							name[register.password-again]
+
+							style[textbox, backgrounds.normal, textbox.margin, textbox.show, border]
+
+						property[tip-text = @txt_repeat_password, password = true]/>
+
+				</container>
+
+
+
+				<label 
+
+					name[register.error] 
+
+					style[error, error.unerror]
+
+					error[error.error]
+
+					unerror[error.unerror]/>
+
+
+
+				<canvas style[bottom] name[bottom]>
+
+					<multielement style[buttonrow]>
+
+						<button 
+
+							name[register.register]
+
+							style[button, backgrounds.highlight, border]
+
+							hover[backgrounds.hover]
+
+							unhover[backgrounds.highlight]>@txt_register</button>
+
+						<button 
+
+							name[register.close]
+
+							style[button, backgrounds.highlight, border]
+
+							hover[backgrounds.hover]
+
+							unhover[backgrounds.highlight]>@txt_cancel</button>
+
+					</multielement>
+
+				</canvas>
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 wle_show(global.__xrs_window);
@@ -2351,221 +4030,436 @@ if !is_real(argument0)
 #define gms_show_statistics
 if(global.__xss_window == -1)
 {
-    gms_show_replace(wt_statistics, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: preferred;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	min-height: 300;
-	preferred-height: 500;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-info:
-{
-	text-wrapping: true;
-	width: max;
-	height: max;
-}
-
-statistics:
-{
-	container:
-	{
-		width: max;
-		height: max;
-	}
-
-	item:
-	{
-		height: min;
-		color: @c_black_text;
-
-		title:
-		{
-			font: @f_text;
-			horizontal-float: false;
-		}
-
-		value:
-		{
-			font: @f_text;
-			horizontal-float: true;
-		}
-	}
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[titlebar.title]
-					style[titlebar.title]>@txt_statistics</label>
-				<arrow 
-					style[titlebar.closearrow, titlebar.closearrow.unhover]
-					hover[titlebar.closearrow.hover]
-					unhover[titlebar.closearrow.unhover]
-					name[statistics.close] />
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<scrollbox
-					name[statistics.container]
-					style[statistics.container] />
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_statistics, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: preferred;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	min-height: 300;
+
+	preferred-height: 500;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+info:
+
+{
+
+	text-wrapping: true;
+
+	width: max;
+
+	height: max;
+
+}
+
+
+
+statistics:
+
+{
+
+	container:
+
+	{
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	item:
+
+	{
+
+		height: min;
+
+		color: @c_black_text;
+
+
+
+		title:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: false;
+
+		}
+
+
+
+		value:
+
+		{
+
+			font: @f_text;
+
+			horizontal-float: true;
+
+		}
+
+	}
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[titlebar.title]
+
+					style[titlebar.title]>@txt_statistics</label>
+
+				<arrow 
+
+					style[titlebar.closearrow, titlebar.closearrow.unhover]
+
+					hover[titlebar.closearrow.hover]
+
+					unhover[titlebar.closearrow.unhover]
+
+					name[statistics.close] />
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+				<scrollbox
+
+					name[statistics.container]
+
+					style[statistics.container] />
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 var _ss_container;
@@ -2597,203 +4491,400 @@ if(gms_update_check())
 {
     if(global.__xus_window == -1)
     {
-        gms_show_replace(wt_update, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-	background: 0;
-
-	open:
-	{
-		background-alpha: 0.5;
-	}
-
-	close:
-	{
-		background-alpha: 0;
-	}
-}
-
-window:
-{
-	width: preferred;
-	height: min;
-
-	min-width: 200;
-	preferred-width: 640;
-
-	center: true;
-
-	drop-shadow: 2;
-	drop-shadow-intensity: 0.04;
-	drop-shadow-spread: 10;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-
-	extrawindow:
-	{
-		y-offset: -1;
-	}
-
-	unextrawindow:
-	{
-		y-offset: 0;
-	}
-
-	error:
-	{
-		x-offset: 0.005;
-		tween-type: shake;
-		tween-speed: 1;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 20;	
-}
-
-titlebar:
-{
-	width: max;
-	height: 52;
-
-	title:
-	{
-		color: @c_text;
-		font: @f_title;
-		width: max;
-		height: max;
-	}
-
-	closearrow:
-	{
-		height: max;
-		color: @c_text;
-		width: 32;
-
-		hover:
-		{
-			arrow-size: 15;
-			arrow-length: 34;
-			alpha: 1.0;
-			tween-speed: 0.2;
-		}
-
-		unhover:
-		{
-			arrow-size: 10;
-			arrow-length: 20;
-			alpha: 0.5;
-			tween-speed: 0.2;
-		}
-	}
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-progressbar:
-{
-	width: max;
-	height: 52;
-	outside:
-	{
-		border-size: 1;
-		border-color: @c_border;
-	}
-
-	inside:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-		width: 0;
-	}
-}
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay, overlay.close]
-		open[overlay.open]
-		close[overlay.close]
-		extrawindow[overlay.close]
-		unextrawindow[overlay.open]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.normal, border] 
-			open[window.open] 
-			close[window.close]
-			extrawindow[window.extrawindow] 
-			unextrawindow[window.unextrawindow]
-			error[window.error]>
-			<multielement
-				name[titlebar]
-				style[titlebar, backgrounds.highlight]>
-				<label
-					name[title]
-					style[titlebar.title]>@txt_updating_game</label>
-			</multielement>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-				<canvas 
-					name[update.progressbox]
-					style[progressbar, progressbar.outside]>
-					<canvas
-						name[update.progress] 
-						style[progressbar, progressbar.inside]/>
-				</canvas>
-			</canvas>
-		</canvas>
-	</canvas>
+        gms_show_replace(wt_update, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+	background: 0;
+
+
+
+	open:
+
+	{
+
+		background-alpha: 0.5;
+
+	}
+
+
+
+	close:
+
+	{
+
+		background-alpha: 0;
+
+	}
+
+}
+
+
+
+window:
+
+{
+
+	width: preferred;
+
+	height: min;
+
+
+
+	min-width: 200;
+
+	preferred-width: 640;
+
+
+
+	center: true;
+
+
+
+	drop-shadow: 2;
+
+	drop-shadow-intensity: 0.04;
+
+	drop-shadow-spread: 10;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	extrawindow:
+
+	{
+
+		y-offset: -1;
+
+	}
+
+
+
+	unextrawindow:
+
+	{
+
+		y-offset: 0;
+
+	}
+
+
+
+	error:
+
+	{
+
+		x-offset: 0.005;
+
+		tween-type: shake;
+
+		tween-speed: 1;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 20;	
+
+}
+
+
+
+titlebar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+
+
+	title:
+
+	{
+
+		color: @c_text;
+
+		font: @f_title;
+
+		width: max;
+
+		height: max;
+
+	}
+
+
+
+	closearrow:
+
+	{
+
+		height: max;
+
+		color: @c_text;
+
+		width: 32;
+
+
+
+		hover:
+
+		{
+
+			arrow-size: 15;
+
+			arrow-length: 34;
+
+			alpha: 1.0;
+
+			tween-speed: 0.2;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			arrow-size: 10;
+
+			arrow-length: 20;
+
+			alpha: 0.5;
+
+			tween-speed: 0.2;
+
+		}
+
+	}
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+progressbar:
+
+{
+
+	width: max;
+
+	height: 52;
+
+	outside:
+
+	{
+
+		border-size: 1;
+
+		border-color: @c_border;
+
+	}
+
+
+
+	inside:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+		width: 0;
+
+	}
+
+}
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay, overlay.close]
+
+		open[overlay.open]
+
+		close[overlay.close]
+
+		extrawindow[overlay.close]
+
+		unextrawindow[overlay.open]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.normal, border] 
+
+			open[window.open] 
+
+			close[window.close]
+
+			extrawindow[window.extrawindow] 
+
+			unextrawindow[window.unextrawindow]
+
+			error[window.error]>
+
+			<multielement
+
+				name[titlebar]
+
+				style[titlebar, backgrounds.highlight]>
+
+				<label
+
+					name[title]
+
+					style[titlebar.title]>@txt_updating_game</label>
+
+			</multielement>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+				<canvas 
+
+					name[update.progressbox]
+
+					style[progressbar, progressbar.outside]>
+
+					<canvas
+
+						name[update.progress] 
+
+						style[progressbar, progressbar.inside]/>
+
+				</canvas>
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
     }
     
@@ -2805,310 +4896,614 @@ progressbar:
 #define gms_show_keyboard
 if(global.__xkb_window == -1)
 {
-    gms_show_replace(wt_keyboard, @"<constants>
-</constants>
-<styles>
-overlay:
-{
-}
-
-window:
-{
-	width: max;
-	height: min;
-
-	vertical-float: true;
-
-	open:
-	{
-		y-offset: 0;
-		tween-speed: 0.3;
-	}
-
-	close:
-	{
-		y-offset: 1;
-		tween-speed: 0.3;
-	}
-}
-
-contents:
-{
-	width: max;
-	height: max;
-	padding: 5;	
-	overlapping: true;
-}
-
-backgrounds:
-{
-	normal:
-	{
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-	}
-
-	highlight:
-	{
-		background-1: @c_button1;
-		background-2: @c_button1;
-		background-3: @c_button2;
-		background-4: @c_button2;
-	}
-
-	hover:
-	{
-		background-1: @c_buttonhover1;
-		background-2: @c_buttonhover1;
-		background-3: @c_buttonhover2;
-		background-4: @c_buttonhover2;
-	}
-}
-
-border:
-{
-	border-size: 1;
-	border-color: @c_border;
-}
-
-keyrow:
-{
-	width: max;
-}
-
-keyboard:
-{
-	key:
-	{
-		width: max;
-		height: 52;
-		font: @f_title;
-		color: @c_text;
-		margin: 2;
-
-		background-1: @c_background1;
-		background-2: @c_background1;
-		background-3: @c_background2;
-		background-4: @c_background2;
-		tween-speed: 0.3;
-
-		hover:
-		{
-			background-1: @c_buttonhover1;
-			background-2: @c_buttonhover1;
-			background-3: @c_buttonhover2;
-			background-4: @c_buttonhover2;
-			tween-speed: 0.05;
-		}
-	}
-
-	x-offset: 0;
-	shiftleft:
-	{
-		x-offset: -1;
-		alpha: 0;
-		tween-speed: 0.5;
-	}
-
-	shift0:
-	{
-		x-offset: 0;
-		alpha: 1;
-		tween-speed: 0.5;
-	}
-
-	shiftright:
-	{
-		x-offset: 1;
-		alpha: 0;
-		tween-speed: 0.5;
-	}
-
-	normalkeys:
-	{
-		width: max;
-		height: max;
-		x-offset: 0;
-	}
-
-	numkeys:
-	{
-		width: max;
-		height: max;
-		x-offset: 1;
-		alpha: 0;
-	}
-
-	extrakeys:
-	{
-		width: max;
-		height: max;
-		x-offset: 1;
-		alpha: 0;
-		tween-affects-position: true;
-	}
-
-	close:
-	{
-		height: 52;
-		color: @c_text;
-		alpha: 0.5;
-		margin-right: 5;
-		arrow-size: 10;
-		arrow-length: 20;
-		width: max;
-		height: 52;
-
-		hover:
-		{
-			alpha: 1;
-			arrow-length: 40;
-			arrow-size: 20;
-		}
-
-		unhover:
-		{
-			alpha: 0.5;
-			arrow-length: 20;
-			arrow-size: 10;
-		}
-	}
-}
-
-</styles>
-<layout>
-	<canvas
-		name[overlay]
-		style[overlay]
-		open[overlay]
-		close[overlay]>
-		
-		<canvas
-			name[window]
-			style[window, window.close, backgrounds.highlight, border] 
-			open[window.open] 
-			close[window.close]>
-
-			<canvas 
-				style[contents]
-				name[contents]>
-
-				<container name[normal-keys] style[keyboard.normalkeys] extrawindow[keyboard.shiftleft] unextrawindow[keyboard.shift0]>
-					<multielement style[keyrow]>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Q</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>W</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>E</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>R</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>T</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Y</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>U</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>I</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>O</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>P</button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.numkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0..9</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>A</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>S</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>D</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>F</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>G</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>H</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>J</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>K</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>L</button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.shiftkey] style[keyboard.key] onspecial[keyboard.key.hover] onunspecial[keyboard.key]>Shift</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Z</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>X</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>C</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>V</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>B</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>N</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>M</button>
-						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
-						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
-					</multielement>
-				</container>
-					
-				<container name[num-keys] style[keyboard.numkeys] extrawindow[keyboard.shift0] unextrawindow[keyboard.shiftright] onspecial[keyboard.shiftleft] onunspecial[keyboard.shift0]>
-					<multielement style[keyrow]>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>1</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>2</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>3</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>4</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>5</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>6</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>7</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>8</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>9</button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.normalkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>a..z</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>-</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\/</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>:</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>;</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>(</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>)</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>$</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>&</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\@</button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.extrakey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\#+=</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>.</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\,</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>?</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>!</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>"+"'"+@"</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>"+"\""+@"</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>_</button>
-						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
-						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
-					</multielement>
-				</container>
-					
-				<container name[extra-keys] style[keyboard.extrakeys] onspecial[keyboard.shift0] onunspecial[keyboard.shiftright]>
-					<multielement style[keyrow]>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\[</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\]</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>{</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>}</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>#</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>%</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>^</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>*</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>+</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>=</button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.numkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0..9</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\\</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>|</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>~</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<</button>
-						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\></button>
-					</multielement>
-
-					<multielement style[keyrow]>
-						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
-						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
-					</multielement>
-				</container>
-
-			</canvas>
-		</canvas>
-	</canvas>
+    gms_show_replace(wt_keyboard, @"<constants>
+
+</constants>
+
+<styles>
+
+overlay:
+
+{
+
+}
+
+
+
+window:
+
+{
+
+	width: max;
+
+	height: min;
+
+
+
+	vertical-float: true;
+
+
+
+	open:
+
+	{
+
+		y-offset: 0;
+
+		tween-speed: 0.3;
+
+	}
+
+
+
+	close:
+
+	{
+
+		y-offset: 1;
+
+		tween-speed: 0.3;
+
+	}
+
+}
+
+
+
+contents:
+
+{
+
+	width: max;
+
+	height: max;
+
+	padding: 5;	
+
+	overlapping: true;
+
+}
+
+
+
+backgrounds:
+
+{
+
+	normal:
+
+	{
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+	}
+
+
+
+	highlight:
+
+	{
+
+		background-1: @c_button1;
+
+		background-2: @c_button1;
+
+		background-3: @c_button2;
+
+		background-4: @c_button2;
+
+	}
+
+
+
+	hover:
+
+	{
+
+		background-1: @c_buttonhover1;
+
+		background-2: @c_buttonhover1;
+
+		background-3: @c_buttonhover2;
+
+		background-4: @c_buttonhover2;
+
+	}
+
+}
+
+
+
+border:
+
+{
+
+	border-size: 1;
+
+	border-color: @c_border;
+
+}
+
+
+
+keyrow:
+
+{
+
+	width: max;
+
+}
+
+
+
+keyboard:
+
+{
+
+	key:
+
+	{
+
+		width: max;
+
+		height: 52;
+
+		font: @f_title;
+
+		color: @c_text;
+
+		margin: 2;
+
+
+
+		background-1: @c_background1;
+
+		background-2: @c_background1;
+
+		background-3: @c_background2;
+
+		background-4: @c_background2;
+
+		tween-speed: 0.3;
+
+
+
+		hover:
+
+		{
+
+			background-1: @c_buttonhover1;
+
+			background-2: @c_buttonhover1;
+
+			background-3: @c_buttonhover2;
+
+			background-4: @c_buttonhover2;
+
+			tween-speed: 0.05;
+
+		}
+
+	}
+
+
+
+	x-offset: 0;
+
+	shiftleft:
+
+	{
+
+		x-offset: -1;
+
+		alpha: 0;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	shift0:
+
+	{
+
+		x-offset: 0;
+
+		alpha: 1;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	shiftright:
+
+	{
+
+		x-offset: 1;
+
+		alpha: 0;
+
+		tween-speed: 0.5;
+
+	}
+
+
+
+	normalkeys:
+
+	{
+
+		width: max;
+
+		height: max;
+
+		x-offset: 0;
+
+	}
+
+
+
+	numkeys:
+
+	{
+
+		width: max;
+
+		height: max;
+
+		x-offset: 1;
+
+		alpha: 0;
+
+	}
+
+
+
+	extrakeys:
+
+	{
+
+		width: max;
+
+		height: max;
+
+		x-offset: 1;
+
+		alpha: 0;
+
+		tween-affects-position: true;
+
+	}
+
+
+
+	close:
+
+	{
+
+		height: 52;
+
+		color: @c_text;
+
+		alpha: 0.5;
+
+		margin-right: 5;
+
+		arrow-size: 10;
+
+		arrow-length: 20;
+
+		width: max;
+
+		height: 52;
+
+
+
+		hover:
+
+		{
+
+			alpha: 1;
+
+			arrow-length: 40;
+
+			arrow-size: 20;
+
+		}
+
+
+
+		unhover:
+
+		{
+
+			alpha: 0.5;
+
+			arrow-length: 20;
+
+			arrow-size: 10;
+
+		}
+
+	}
+
+}
+
+
+
+</styles>
+
+<layout>
+
+	<canvas
+
+		name[overlay]
+
+		style[overlay]
+
+		open[overlay]
+
+		close[overlay]>
+
+		
+
+		<canvas
+
+			name[window]
+
+			style[window, window.close, backgrounds.highlight, border] 
+
+			open[window.open] 
+
+			close[window.close]>
+
+
+
+			<canvas 
+
+				style[contents]
+
+				name[contents]>
+
+
+
+				<container name[normal-keys] style[keyboard.normalkeys] extrawindow[keyboard.shiftleft] unextrawindow[keyboard.shift0]>
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Q</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>W</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>E</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>R</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>T</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Y</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>U</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>I</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>O</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>P</button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.numkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0..9</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>A</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>S</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>D</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>F</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>G</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>H</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>J</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>K</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>L</button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.shiftkey] style[keyboard.key] onspecial[keyboard.key.hover] onunspecial[keyboard.key]>Shift</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>Z</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>X</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>C</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>V</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>B</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>N</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>M</button>
+
+						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
+
+						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
+
+					</multielement>
+
+				</container>
+
+					
+
+				<container name[num-keys] style[keyboard.numkeys] extrawindow[keyboard.shift0] unextrawindow[keyboard.shiftright] onspecial[keyboard.shiftleft] onunspecial[keyboard.shift0]>
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>1</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>2</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>3</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>4</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>5</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>6</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>7</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>8</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>9</button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.normalkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>a..z</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>-</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\/</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>:</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>;</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>(</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>)</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>$</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>&</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\@</button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.extrakey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\#+=</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>.</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\,</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>?</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>!</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>"+"'"+@"</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>"+"\""+@"</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>_</button>
+
+						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
+
+						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
+
+					</multielement>
+
+				</container>
+
+					
+
+				<container name[extra-keys] style[keyboard.extrakeys] onspecial[keyboard.shift0] onunspecial[keyboard.shiftright]>
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\[</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\]</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>{</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>}</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>#</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>%</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>^</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>*</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>+</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>=</button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.numkey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>0..9</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\\</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>|</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>~</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<</button>
+
+						<button name[keyboard.key] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\></button>
+
+					</multielement>
+
+
+
+					<multielement style[keyrow]>
+
+						<button name[keyboard.backspacekey] style[keyboard.key] hover[keyboard.key.hover] unhover[keyboard.key]>\<-</button>
+
+						<arrow name[keyboard.closekey] style[keyboard.key, keyboard.close] hover[keyboard.close.hover] unhover[keyboard.close.unhover] />
+
+					</multielement>
+
+				</container>
+
+
+
+			</canvas>
+
+		</canvas>
+
+	</canvas>
+
 </layout>");
 }
 wle_show(global.__xkb_window);
@@ -7994,7 +10389,7 @@ return is_undefined(argument0);
 //()
 XServer_init_gml();
 //Init DLL
-XServer_init(window_handle(), game_id);
+XServer_init(window_handle(), 7462);
 global.__obj              = argument0;
 if(object_exists(argument0))
 {

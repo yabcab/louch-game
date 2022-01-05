@@ -89,3 +89,4 @@ inputqueue_down = 0
 inputqueue_jump = 0
 inputqueue_attack = 0
 inputqueue_taunt = 0
+

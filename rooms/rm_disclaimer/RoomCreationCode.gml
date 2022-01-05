@@ -1,6 +1,1 @@
-globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.!?/%[]",0,0)
-audio_group_load(audio_sfx)
-audio_group_load(audio_mu)
-ini_open("savedata.lmao")
-window_set_fullscreen(ini_read_real("settings","fullscreen",1))
-ini_close()
+room_goto(rm_login)
