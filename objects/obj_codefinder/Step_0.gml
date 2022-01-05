@@ -101,3 +101,9 @@ if string_pos("rodent",str) > 0
 	keyboard_string = ""
 }
 
+if string_pos("showmethematrix",str) > 0
+{
+	colview = 1
+	audio_play_sound(sfx_thud,1,0)
+	keyboard_string = ""
+}

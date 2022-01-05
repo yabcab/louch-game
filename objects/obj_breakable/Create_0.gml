@@ -7,3 +7,5 @@ silent = 0
 alarm[0] = 1
 
 depth = -999
+
+alarm[1] = 1
