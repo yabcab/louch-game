@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "LouchGame - TV2 Playtest 2",
-  "option_windows_executable_name": "LouchGame TV2-playtest2.exe",
+  "option_windows_display_name": "LouchGame - ONLINE TEST",
+  "option_windows_executable_name": "LouchGame ONLINE TEST.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Jabco Games",
   "option_windows_product_info": "LouchGame",

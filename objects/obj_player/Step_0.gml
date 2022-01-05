@@ -1461,3 +1461,7 @@ else
 get_inputs(0)
 
 gms_self_set("xs",xs);
+gms_self_set("facing",facing);
+gms_self_set("alph",alph);
+gms_self_set("ys",ys);
+gms_self_set("rot",rot);

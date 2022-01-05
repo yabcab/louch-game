@@ -1,1 +1,5 @@
 draw_sprite_ext(sprite_index,image_index,x,y,xs * facing,ys,rot,image_blend,alph)
+draw_set_font(fnt_text)
+draw_set_color(c_black)
+draw_text(x - (string_width(name) / 2),y - 48,name)
+draw_set_color(c_white)

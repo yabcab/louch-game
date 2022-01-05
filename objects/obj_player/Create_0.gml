@@ -53,6 +53,7 @@ vspeedsave = 0
 coyote_time = 0
 entered_door = 0
 dashtime = 0
+name = "You"
 
 facing = 1
 hsp = 0
