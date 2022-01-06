@@ -58,6 +58,25 @@ function do_camerashake(x_int,y_int,__time)
 	}
 }
 
+function draw_text_outlined(xx,yy,outline_col,string_col,str){
+    //draw_text_outlined(x, y, outline color, string color, string)   
+  
+    //Outline  
+    draw_set_color(outline_col);  
+    draw_text(xx+1, yy+1, str);  
+    draw_text(xx-1, yy-1, str);  
+    draw_text(xx,   yy+1, str);  
+    draw_text(xx+1,   yy, str);  
+    draw_text(xx,   yy-1, str);  
+    draw_text(xx-1,   yy, str);  
+    draw_text(xx-1, yy+1, str);  
+    draw_text(xx+1, yy-1, str);  
+  
+    //Text  
+    draw_set_color(string_col);  
+    draw_text(xx, yy, str);  
+}
+
 //function pal_swap_set() {
 //	shader_set(global.Pal_Shader)
 //	var _pal_sprite = argument[0]

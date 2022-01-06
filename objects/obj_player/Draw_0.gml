@@ -8,6 +8,5 @@ if debug
 	draw_text(x - 50, y - 64,string(state) + "  " + string(idlestate) + "  " + string(statesave))
 	
 draw_set_font(fnt_text)
-draw_set_color(c_black)
-draw_text(x - (string_width(name) / 2),y - 48,name)
+draw_text_outlined(x - (string_width(name) / 2),y - 48,c_white,c_black,name)
 draw_set_color(c_white)

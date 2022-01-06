@@ -91,3 +91,4 @@ inputqueue_jump = 0
 inputqueue_attack = 0
 inputqueue_taunt = 0
 
+is_typing = 0

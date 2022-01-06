@@ -1465,3 +1465,4 @@ gms_self_set("facing",facing);
 gms_self_set("alph",alph);
 gms_self_set("ys",ys);
 gms_self_set("rot",rot);
+//gms_self_set("typing",gms_chat_istyping())
