@@ -10389,7 +10389,7 @@ return is_undefined(argument0);
 //()
 XServer_init_gml();
 //Init DLL
-XServer_init(window_handle(), 7462);
+XServer_init(window_handle(), 7945);
 global.__obj              = argument0;
 if(object_exists(argument0))
 {
