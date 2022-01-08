@@ -61,6 +61,7 @@ bpm_map[mu_space] = 145
 bpm_map[mu_icebergs] = 150
 bpm_map[mu_danceparty] = 160
 bpm_map[mu_credits] = 140
+bpm_map[mu_playground] = 120
 bpm_map[sfx_none] = 0
 
 room_goto(rm_gameintro)

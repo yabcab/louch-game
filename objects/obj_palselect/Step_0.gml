@@ -1,5 +1,6 @@
 if opened
 {
+	can_pause = 0
 	if obj_player.key_left_press && obj_player.paletteselect > 0
 	{
 		offset = -75
@@ -41,3 +42,5 @@ if opened
 		}
 	}
 }
+else
+	can_pause = 1

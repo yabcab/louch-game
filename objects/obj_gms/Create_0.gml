@@ -1,3 +1,4 @@
+
 gms_init(obj_gms)
 gms_settings(1,1,obj_player,obj_other_player)
 //gms_chat_keys(ord("T"),vk_enter,vk_f11)
