@@ -594,7 +594,7 @@
         {"externalName":"gms_settings_declare_syncable_object","kind":12,"help":"gms_settings_declare_syncable_object(object_index)","hidden":false,"returnType":2,"argCount":1,"args":[
             2,
           ],"resourceVersion":"1.0","name":"gms_settings_declare_syncable_object","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":3035461389054378222,"order":[
         {"name":"gms_achievement_count","path":"extensions/GameMaker_Server__Windows_/GameMaker_Server__Windows_.yy",},
         {"name":"gms_achievement_description","path":"extensions/GameMaker_Server__Windows_/GameMaker_Server__Windows_.yy",},
         {"name":"gms_achievement_find","path":"extensions/GameMaker_Server__Windows_/GameMaker_Server__Windows_.yy",},

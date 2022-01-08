@@ -38,4 +38,22 @@ enum level_id {
 	beach,
 }
 
+enum palette {
+	normal,
+	diablo,
+	smurf,
+	silver,
+	gold,
+	gb,
+	void,
+	sketch,
+	glass,
+	bluehairandpronouns,
+	aidan,
+	outline,
+	whathaveyoudone,
+	lowdetail,
+	classic
+}
+
 }
