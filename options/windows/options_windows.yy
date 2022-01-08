@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "LouchGame - ONLINE TEST",
-  "option_windows_executable_name": "LouchGame ONLINE TEST.exe",
+  "option_windows_display_name": "LouchGame Demo + ONLINE",
+  "option_windows_executable_name": "LouchGame Demo + ONLINE.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Jabco Games",
   "option_windows_product_info": "LouchGame",
