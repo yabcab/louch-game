@@ -63,14 +63,14 @@ function draw_text_outlined(xx,yy,outline_col,string_col,str,xs,ys){
   
     //Outline  
     draw_set_color(outline_col);  
-    draw_text_transformed(xx+1, yy+1, str,xs,ys,0);  
-    draw_text_transformed(xx-1, yy-1, str,xs,ys,0);    
+   // draw_text_transformed(xx+1, yy+1, str,xs,ys,0);  
+  //  draw_text_transformed(xx-1, yy-1, str,xs,ys,0);    
     draw_text_transformed(xx,   yy+1, str,xs,ys,0);    
     draw_text_transformed(xx+1,   yy, str,xs,ys,0);   
     draw_text_transformed(xx,   yy-1, str,xs,ys,0);   
     draw_text_transformed(xx-1,   yy, str,xs,ys,0);    
-    draw_text_transformed(xx-1, yy+1, str,xs,ys,0);   
-    draw_text_transformed(xx+1, yy-1, str,xs,ys,0);    
+   // draw_text_transformed(xx-1, yy+1, str,xs,ys,0);   
+   // draw_text_transformed(xx+1, yy-1, str,xs,ys,0);    
   
     //Text  
     draw_set_color(string_col);  

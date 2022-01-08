@@ -309,6 +309,7 @@
     {"id":{"name":"spr_marcher_step1","path":"sprites/spr_marcher_step1/spr_marcher_step1.yy",},"order":20,},
     {"id":{"name":"spr_select3","path":"sprites/spr_select3/spr_select3.yy",},"order":3,},
     {"id":{"name":"spr_playerLS_taunt2","path":"sprites/spr_playerLS_taunt2/spr_playerLS_taunt2.yy",},"order":18,},
+    {"id":{"name":"rm_playground","path":"rooms/rm_playground/rm_playground.yy",},"order":18,},
     {"id":{"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},"order":9,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":15,},
     {"id":{"name":"rm_jungle_5","path":"rooms/rm_jungle_5/rm_jungle_5.yy",},"order":6,},
@@ -638,6 +639,7 @@
     {"roomId":{"name":"rm_tutorial4","path":"rooms/rm_tutorial4/rm_tutorial4.yy",},},
     {"roomId":{"name":"rm_danceparty","path":"rooms/rm_danceparty/rm_danceparty.yy",},},
     {"roomId":{"name":"rm_login","path":"rooms/rm_login/rm_login.yy",},},
+    {"roomId":{"name":"rm_playground","path":"rooms/rm_playground/rm_playground.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
