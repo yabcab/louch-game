@@ -11,5 +11,5 @@ draw_set_font(fnt_text)
 draw_text_outlined(x - (string_width(name) / 2),y - 48,c_white,c_black,name,1,1)
 draw_set_color(c_white)
 
-if instance_place(x,y,obj_palselect) 
+if instance_place(x,y,obj_palselect) || instance_place(x,y,obj_door)
 	draw_sprite_ext(spr_uparrow,0,x,y - 64,1,1,0,c_white,1)
