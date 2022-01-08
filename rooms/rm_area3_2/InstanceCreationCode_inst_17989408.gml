@@ -1,1 +1,0 @@
-levelname = "Meteor Academy: where sauce packets can burn up in the atmosphere apon entry!"

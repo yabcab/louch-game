@@ -1,1 +1,0 @@
-levelname = "Basic level pattern because screw you"

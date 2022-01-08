@@ -1,1 +1,0 @@
-targetroom = rm_beach_3

@@ -1,1 +1,0 @@
-levelname = "Remember: unfair difficulty is a great way to prolong a game!"

@@ -1,1 +1,0 @@
-levelname = "Jumping disabilities"
