@@ -313,6 +313,7 @@
     {"id":{"name":"scr_enemy_death","path":"scripts/scr_enemy_death/scr_enemy_death.yy",},"order":3,},
     {"id":{"name":"spr_marcher_step1","path":"sprites/spr_marcher_step1/spr_marcher_step1.yy",},"order":20,},
     {"id":{"name":"spr_select3","path":"sprites/spr_select3/spr_select3.yy",},"order":3,},
+    {"id":{"name":"spr_dancer_gabi2","path":"sprites/spr_dancer_gabi2/spr_dancer_gabi2.yy",},"order":24,},
     {"id":{"name":"spr_playerLS_taunt2","path":"sprites/spr_playerLS_taunt2/spr_playerLS_taunt2.yy",},"order":18,},
     {"id":{"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},"order":9,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":15,},

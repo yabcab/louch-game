@@ -11,7 +11,8 @@ gms_chat_colors(c_black,c_white,0.4)
 
 alarm[0] = 1
 
-if gms_version() < 0 //version check
-	room_goto(rm_outdated)
-else
+//if gms_update_check()
+//	room_goto(rm_outdated)
+//else
 	room_goto(rm_login)
+
