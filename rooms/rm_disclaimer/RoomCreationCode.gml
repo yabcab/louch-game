@@ -1,1 +1,5 @@
 pal_swap_init_system(shd_pal_swapper)
+ini_open("savedata.lmao")
+if ini_read_real("settings","fullscreen",1)
+	window_set_fullscreen(1)
+ini_close()
