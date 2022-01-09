@@ -67,3 +67,4 @@ bpm_map[sfx_none] = 0
 room_goto(rm_gameintro)
 randomize()
 ini_close()
+gms_chat_toggle(1)

@@ -27,6 +27,12 @@ if string_pos("thevoidisnow",str) > 0
 	keyboard_string = ""
 }
 
+if string_pos("normality",str) > 0
+{
+	campaign = 3
+	keyboard_string = ""
+}
+
 if string_pos("diablosauce",str) > 0
 {
 	campaign = 1
