@@ -33,6 +33,7 @@ if display
 	draw_set_font(score_font)
 	
 	//hp
+	draw_set_color(c_white)
 	draw_sprite_ext(spr_hud_hpbar,1,5 + shake2x,5 + shake2y,2,2,0,c_white,1)
 	draw_sprite_part_ext(spr_hud_hpbar,2,0,0,157 - ((7 - hp) * 22),sprite_get_height(spr_hud_hpbar),5 + shake2x,5 + shake2y,2,2,c_white,1)
 	draw_sprite_ext(spr_hud_hpbar,0,5 + shake2x,5 + shake2y,2,2,0,c_white,1)
