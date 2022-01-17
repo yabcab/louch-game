@@ -67,3 +67,5 @@ bpm_map[sfx_none] = 0
 room_goto(rm_gameintro)
 randomize()
 ini_close()
+
+pal_swap_init_system(shd_pal_swapper)

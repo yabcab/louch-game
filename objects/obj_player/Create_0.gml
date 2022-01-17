@@ -91,5 +91,9 @@ inputqueue_down = 0
 inputqueue_jump = 0
 inputqueue_attack = 0
 inputqueue_taunt = 0
+arrowsin = 0
+_time = 0
 
 is_typing = 0
+admincol = make_color_rgb(192,244,255)
+grousecol = make_color_rgb(236,185,255)

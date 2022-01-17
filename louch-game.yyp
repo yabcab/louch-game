@@ -664,8 +664,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"groupName":"test","children":[
         {"roomId":{"name":"rm_blank","path":"rooms/rm_blank/rm_blank.yy",},},

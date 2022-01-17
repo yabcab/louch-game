@@ -52,3 +52,4 @@ if room = rm_hub1
 	hspeed = 0
 	vspeed = 0
 }
+_time = 0
