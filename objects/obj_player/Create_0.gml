@@ -53,6 +53,8 @@ vspeedsave = 0
 coyote_time = 0
 entered_door = 0
 dashtime = 0
+name = "You"
+paletteselect = 0
 
 facing = 1
 hsp = 0
@@ -89,3 +91,9 @@ inputqueue_down = 0
 inputqueue_jump = 0
 inputqueue_attack = 0
 inputqueue_taunt = 0
+arrowsin = 0
+_time = 0
+
+is_typing = 0
+admincol = make_color_rgb(192,244,255)
+grousecol = make_color_rgb(236,185,255)

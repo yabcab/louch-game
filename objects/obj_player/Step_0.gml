@@ -1,3 +1,5 @@
+
+
 //if mouse_check_button_pressed(mb_left) || (mouse_check_button(mb_left) && keyboard_check(vk_shift))
 //	instance_create_depth(random_range(x - 200,x + 200),y - 360,-1,obj_enemywallhitter)
 
@@ -1457,3 +1459,15 @@ else
 		pause_player_end()
 
 get_inputs(0)
+
+if instance_exists(obj_gms)
+{
+	gms_self_set("xs",xs);
+	gms_self_set("facing",facing);
+	gms_self_set("alph",alph);
+	gms_self_set("ys",ys);
+	gms_self_set("rot",rot);
+	gms_self_set("pal",paletteselect)
+}
+_time++
+arrowsin = sin(_time / 10) * 2

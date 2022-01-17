@@ -1,4 +1,5 @@
 //var range = random_range(-2,2)
+draw_set_color(c_white)
 var str = ""
 if minutes > -1
 {
