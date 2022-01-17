@@ -579,6 +579,7 @@
     {"id":{"name":"rm_levelcomplete","path":"rooms/rm_levelcomplete/rm_levelcomplete.yy",},"order":7,},
     {"id":{"name":"bg_space_3","path":"sprites/bg_space_3/bg_space_3.yy",},"order":2,},
     {"id":{"name":"spr_secrettiles","path":"sprites/spr_secrettiles/spr_secrettiles.yy",},"order":0,},
+    {"id":{"name":"GameMaker_Server__Windows_","path":"extensions/GameMaker_Server__Windows_/GameMaker_Server__Windows_.yy",},"order":0,},
     {"id":{"name":"__global_object_depths","path":"scripts/__global_object_depths/__global_object_depths.yy",},"order":7,},
     {"id":{"name":"rm_area1_4","path":"rooms/rm_area1_4/rm_area1_4.yy",},"order":3,},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":29,},
@@ -871,7 +872,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"GameMaker Server 2.5 - GameMaker Studio (All).gex","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.6.595",
   },
