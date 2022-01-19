@@ -53,6 +53,7 @@
     {"id":{"name":"spr_playerLS_high_jumpstart","path":"sprites/spr_playerLS_high_jumpstart/spr_playerLS_high_jumpstart.yy",},"order":32,},
     {"id":{"name":"sfx_claps","path":"sounds/sfx_claps/sfx_claps.yy",},"order":27,},
     {"id":{"name":"spr_seconddash","path":"sprites/spr_seconddash/spr_seconddash.yy",},"order":21,},
+    {"id":{"name":"rm_beach_7","path":"rooms/rm_beach_7/rm_beach_7.yy",},"order":6,},
     {"id":{"name":"spr_scorenumbers","path":"sprites/spr_scorenumbers/spr_scorenumbers.yy",},"order":2,},
     {"id":{"name":"sfx_hitwall3","path":"sounds/sfx_hitwall3/sfx_hitwall3.yy",},"order":19,},
     {"id":{"name":"spr_playerLS_boost","path":"sprites/spr_playerLS_boost/spr_playerLS_boost.yy",},"order":10,},
@@ -810,6 +811,7 @@
     {"roomId":{"name":"rm_login","path":"rooms/rm_login/rm_login.yy",},},
     {"roomId":{"name":"rm_playground","path":"rooms/rm_playground/rm_playground.yy",},},
     {"roomId":{"name":"rm_beach_6","path":"rooms/rm_beach_6/rm_beach_6.yy",},},
+    {"roomId":{"name":"rm_beach_7","path":"rooms/rm_beach_7/rm_beach_7.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
