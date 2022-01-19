@@ -36,7 +36,7 @@ if debug
 		draw_rectangle_color(690,210,1280,300,c_black,c_black,c_black,c_black,0)
 		draw_set_alpha(1)
 		draw_text(700,220,"ONLINE STAT")
-		draw_text(700,245,"ping: " + room_get_name(room) + " [" + string(gms_info_ping()) + "]; user_id: " + string(gms_self_playerid()) + "]; user_name: [" + gms_self_name() + "]")
+		draw_text(700,245,"ping: [" + string(gms_info_ping()) + "]; user_id: " + string(gms_self_playerid()) + "]; user_name: [" + gms_self_name() + "]")
 		draw_text(700,260,"players_online: [" + string(gms_info_login_count()) + "]; players_in_room: [" + string(instance_number(obj_other_player)) + "]")
 		draw_text(700,275,"is_loggedin: [" + string(gms_info_isloggedin()) + "]; is_connected: [" + string(gms_info_isconnected()) + "]; is_responding: [" + string(gms_info_isresponding()) + "]")
 	}

@@ -533,6 +533,7 @@
     {"id":{"name":"obj_titlescreencontroller","path":"objects/obj_titlescreencontroller/obj_titlescreencontroller.yy",},"order":11,},
     {"id":{"name":"ts_hub","path":"tilesets/ts_hub/ts_hub.yy",},"order":8,},
     {"id":{"name":"ts_jungle","path":"tilesets/ts_jungle/ts_jungle.yy",},"order":3,},
+    {"id":{"name":"rm_beach_6","path":"rooms/rm_beach_6/rm_beach_6.yy",},"order":5,},
     {"id":{"name":"obj_shaders","path":"objects/obj_shaders/obj_shaders.yy",},"order":3,},
     {"id":{"name":"obj_homingfish","path":"objects/obj_homingfish/obj_homingfish.yy",},"order":9,},
     {"id":{"name":"mu_danceparty","path":"sounds/mu_danceparty/mu_danceparty.yy",},"order":19,},
@@ -808,6 +809,7 @@
     {"roomId":{"name":"rm_beach_5","path":"rooms/rm_beach_5/rm_beach_5.yy",},},
     {"roomId":{"name":"rm_login","path":"rooms/rm_login/rm_login.yy",},},
     {"roomId":{"name":"rm_playground","path":"rooms/rm_playground/rm_playground.yy",},},
+    {"roomId":{"name":"rm_beach_6","path":"rooms/rm_beach_6/rm_beach_6.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
