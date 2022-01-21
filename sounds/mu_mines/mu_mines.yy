@@ -1,17 +1,17 @@
 {
-  "compression": 0,
-  "volume": 1.0,
+  "compression": 1,
+  "volume": 0.49,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audio_mu",
+    "path": "audiogroups/audio_mu",
   },
-  "soundFile": "mu_mines",
-  "duration": 0.0,
+  "soundFile": "mu_mines.mp3",
+  "duration": 205.139618,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
