@@ -1,2 +1,2 @@
-targetroom = rm_beach_5
+targetroom = rm_beach_6
 spawn = 1
