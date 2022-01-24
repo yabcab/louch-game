@@ -127,6 +127,7 @@
     {"id":{"name":"spr_rightdraft","path":"sprites/spr_rightdraft/spr_rightdraft.yy",},"order":20,},
     {"id":{"name":"rm_area1_2","path":"rooms/rm_area1_2/rm_area1_2.yy",},"order":1,},
     {"id":{"name":"rm_area3_1","path":"rooms/rm_area3_1/rm_area3_1.yy",},"order":0,},
+    {"id":{"name":"rm_skytest","path":"rooms/rm_skytest/rm_skytest.yy",},"order":4,},
     {"id":{"name":"obj_signin_xuwp","path":"objects/obj_signin_xuwp/obj_signin_xuwp.yy",},"order":15,},
     {"id":{"name":"sfx_bonk","path":"sounds/sfx_bonk/sfx_bonk.yy",},"order":8,},
     {"id":{"name":"rm_cave_2","path":"rooms/rm_cave_2/rm_cave_2.yy",},"order":1,},
@@ -674,6 +675,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
+    {"roomId":{"name":"rm_greenscreen","path":"rooms/rm_greenscreen/rm_greenscreen.yy",},},
     {"roomId":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"groupName":"test","children":[
         {"roomId":{"name":"rm_blank","path":"rooms/rm_blank/rm_blank.yy",},},
@@ -784,7 +786,6 @@
     {"roomId":{"name":"rm_cave_1","path":"rooms/rm_cave_1/rm_cave_1.yy",},},
     {"roomId":{"name":"rm_cave_2","path":"rooms/rm_cave_2/rm_cave_2.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
-    {"roomId":{"name":"rm_greenscreen","path":"rooms/rm_greenscreen/rm_greenscreen.yy",},},
     {"roomId":{"name":"rm_effectholder","path":"rooms/rm_effectholder/rm_effectholder.yy",},},
     {"roomId":{"name":"rm_icebergstest","path":"rooms/rm_icebergstest/rm_icebergstest.yy",},},
     {"roomId":{"name":"rm_icebergs_1","path":"rooms/rm_icebergs_1/rm_icebergs_1.yy",},},
@@ -822,6 +823,7 @@
     {"roomId":{"name":"rm_beach_secret2","path":"rooms/rm_beach_secret2/rm_beach_secret2.yy",},},
     {"roomId":{"name":"rm_beach_secret3","path":"rooms/rm_beach_secret3/rm_beach_secret3.yy",},},
     {"roomId":{"name":"rm_beach_secret4","path":"rooms/rm_beach_secret4/rm_beach_secret4.yy",},},
+    {"roomId":{"name":"rm_skytest","path":"rooms/rm_skytest/rm_skytest.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

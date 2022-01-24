@@ -2,9 +2,9 @@
   "compression": 1,
   "volume": 0.25,
   "preload": false,
-  "bitRate": 128,
-  "sampleRate": 44100,
-  "type": 0,
+  "bitRate": 256,
+  "sampleRate": 48000,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_mu",
