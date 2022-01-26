@@ -270,7 +270,7 @@ if obj_player.pause
 		audio_play_sound(sfx_menuselect,1,0)
 	}
 }
-else
+else if leftoffset > 350
 {
 	_time = 0
 
@@ -282,4 +282,36 @@ else
 	scroll_disp = 0
 	selector_target_x = 375
 	selector_x = 375
+}
+
+if abs(upperoffset - upperoffset_t) > 1
+	upperoffset += (upperoffset_t - upperoffset) / 5
+else
+	upperoffset = upperoffset_t
+if abs(loweroffset - loweroffset_t) > 1
+	loweroffset += (loweroffset_t - loweroffset) / 5
+else
+	loweroffset = loweroffset_t
+if abs(leftoffset - leftoffset_t) > 1
+	leftoffset += (leftoffset_t - leftoffset) / 5
+else
+	leftoffset = leftoffset_t
+if abs(rightoffset - rightoffset_t) > 1
+	rightoffset += (rightoffset_t - rightoffset) / 5
+else
+	rightoffset = rightoffset_t
+if obj_player.pause
+{
+	loweroffset_t = 0
+	upperoffset_t = 0
+	leftoffset_t = 0
+	rightoffset_t = 0
+}
+else
+{
+	loweroffset_t = 750
+	upperoffset_t = 750
+	leftoffset_t = 750
+	rightoffset_t = 750
+	selector_target_x = -100
 }

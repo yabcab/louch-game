@@ -391,6 +391,7 @@
     {"id":{"name":"spr_feesh_dead","path":"sprites/spr_feesh_dead/spr_feesh_dead.yy",},"order":15,},
     {"id":{"name":"obj_secretdoor","path":"objects/obj_secretdoor/obj_secretdoor.yy",},"order":17,},
     {"id":{"name":"obj_terriginoexculsivesolid","path":"objects/obj_terriginoexculsivesolid/obj_terriginoexculsivesolid.yy",},"order":15,},
+    {"id":{"name":"bg_beach4","path":"sprites/bg_beach4/bg_beach4.yy",},"order":3,},
     {"id":{"name":"obj_wallcrumbs","path":"objects/obj_wallcrumbs/obj_wallcrumbs.yy",},"order":7,},
     {"id":{"name":"__background_get_colour","path":"scripts/__background_get_colour/__background_get_colour.yy",},"order":1,},
     {"id":{"name":"obj_spacefeesh","path":"objects/obj_spacefeesh/obj_spacefeesh.yy",},"order":6,},
