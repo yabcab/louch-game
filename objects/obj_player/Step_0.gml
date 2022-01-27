@@ -1437,7 +1437,7 @@ switch state { // normal
 			hspeed = 0
 			
 		if onground
-			state = playerstate.balloon_normal
+			state = idlestate
 			
 		instance_create_depth(x,y + 40,depth,obj_dash_hitbox_u)
 	}

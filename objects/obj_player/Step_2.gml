@@ -101,3 +101,8 @@ dashtime--
 //	using_gamepad = 0
 //}
 //using_gamepad = gamepad_is_connected(0)
+
+if state = playerstate.balloon_normal || state = playerstate.balloon_pound
+	image_blend = c_blue
+else
+	image_blend = c_white
