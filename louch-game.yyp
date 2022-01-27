@@ -91,6 +91,7 @@
     {"id":{"name":"spr_playerLS_swimmove","path":"sprites/spr_playerLS_swimmove/spr_playerLS_swimmove.yy",},"order":38,},
     {"id":{"name":"rm_beach_1","path":"rooms/rm_beach_1/rm_beach_1.yy",},"order":0,},
     {"id":{"name":"obj_boostpad","path":"objects/obj_boostpad/obj_boostpad.yy",},"order":8,},
+    {"id":{"name":"spr_secrettiles_beach","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"order":4,},
     {"id":{"name":"rm_icebergs_7","path":"rooms/rm_icebergs_7/rm_icebergs_7.yy",},"order":9,},
     {"id":{"name":"rm_area1_3","path":"rooms/rm_area1_3/rm_area1_3.yy",},"order":2,},
     {"id":{"name":"rm_t_area1_5","path":"rooms/rm_t_area1_5/rm_t_area1_5.yy",},"order":8,},
