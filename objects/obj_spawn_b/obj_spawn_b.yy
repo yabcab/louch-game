@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "geometry",
-    "path": "folders/Objects/geometry.yy",
+    "name": "spawnpoints",
+    "path": "folders/Objects/geometry/spawnpoints.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spawn_b",

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,8 +11,8 @@
     "name": "audio_sfx",
     "path": "audiogroups/audio_sfx",
   },
-  "soundFile": "sfx_none",
-  "duration": 0.0,
+  "soundFile": "sfx_none.mp3",
+  "duration": 1.352,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

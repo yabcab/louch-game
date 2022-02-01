@@ -15,6 +15,18 @@ if spawn = 3 && instance_exists(obj_spawn_c)
 	x = obj_spawn_c.x
 	y = obj_spawn_c.y
 }
+else
+if spawn = 4 && instance_exists(obj_spawn_d)
+{
+	x = obj_spawn_d.x
+	y = obj_spawn_d.y
+}
+else
+if spawn = 5 && instance_exists(obj_spawn_e)
+{
+	x = obj_spawn_e.x
+	y = obj_spawn_e.y
+}
 
 if !instance_exists(obj_secrettransitionchar)
 {

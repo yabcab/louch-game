@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "geometry",
-    "path": "folders/Objects/geometry.yy",
+    "name": "old",
+    "path": "folders/Objects/old.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_goalflag",

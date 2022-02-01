@@ -1,2 +1,2 @@
-targetroom = rm_arena
+targetroom = rm_sky_1
 spawn = 1
