@@ -1,1 +1,1 @@
-//obj_hud.display = 0
+obj_hud.display = 0

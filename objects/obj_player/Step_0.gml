@@ -1440,8 +1440,27 @@ switch state { // normal
 			state = idlestate
 			
 		instance_create_depth(x,y + 40,depth,obj_dash_hitbox_u)
+		taunt_qualify = 1
 	}
 	break;
+	
+	case playerstate.keyfly:
+	{
+		hspeed = 0
+		if vspeed > -15
+			vspeed -= 0.1
+		inv = 1
+		invtime = 1
+		with instance_create_depth(x + random_range(-16,16),y + random_range(32,48),depth - 1,obj_explosionparticle)
+		{
+			sprite_index = spr_highjumppart
+			speed = 2
+			anim_end = 1
+		}
+		idlestate = playerstate.idle
+		statesave = playerstate.idle
+		taunt_qualify = 1
+	}
 }
 
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)

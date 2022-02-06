@@ -21,6 +21,7 @@ function enumshit(){
 		cart,
 		swim,
 		balloon_pound,
+		keyfly,
 	}
 
 enum pausestate {
