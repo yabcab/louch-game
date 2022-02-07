@@ -4,6 +4,7 @@ if other.state != playerstate.boost && other.state != playerstate.hurt && !other
 	if score < 0
 		score = 0
 	other.inv = 1
+	other.inv_frames = 1
 	obj_hud.combotimer = 0
 	other.combo = 0
 	other.wait = 0

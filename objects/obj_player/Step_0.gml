@@ -29,7 +29,7 @@ if onground && vspeed > -1
 	alarm[4] = 10
 }
 
-if inv
+if inv_frames
 {
 	invtime += 1
 	if alph != 0
@@ -97,6 +97,7 @@ switch state { // normal
 	case playerstate.none:
 	{
 		taunt_qualify = 0
+		inv_frames = 0
 		inv = 1
 		alph = 1
 		alarm[1] = 1
@@ -1450,7 +1451,8 @@ switch state { // normal
 		if vspeed > -15
 			vspeed -= 0.1
 		inv = 1
-		invtime = 1
+		inv_frames = 0
+		invtime = 0
 		with instance_create_depth(x + random_range(-16,16),y + random_range(32,48),depth - 1,obj_explosionparticle)
 		{
 			sprite_index = spr_highjumppart

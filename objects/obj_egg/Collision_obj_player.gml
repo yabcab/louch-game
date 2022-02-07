@@ -28,6 +28,7 @@ else if other.state != playerstate.dying && other.inv = 0
 		if score < 0
 			score = 0
 		other.inv = 1
+		other.inv_frames = 1
 		obj_hud.combotimer = 0
 		other.combo = 0
 		other.wait = 0

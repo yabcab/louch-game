@@ -79,6 +79,7 @@ if hitable
 				if score < 0
 					score = 0
 				other.inv = 1
+				other.inv_frames = q
 				other.alarm[1] = 150
 				other.state = playerstate.hurt
 				other.hp -= 1

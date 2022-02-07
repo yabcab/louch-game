@@ -214,6 +214,7 @@
     {"id":{"name":"obj_cartrailslope","path":"objects/obj_cartrailslope/obj_cartrailslope.yy",},"order":10,},
     {"id":{"name":"rm_tutorial3","path":"rooms/rm_tutorial3/rm_tutorial3.yy",},"order":2,},
     {"id":{"name":"spr_playerLS_dive","path":"sprites/spr_playerLS_dive/spr_playerLS_dive.yy",},"order":15,},
+    {"id":{"name":"obj_keyflyend","path":"objects/obj_keyflyend/obj_keyflyend.yy",},"order":32,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":0,},
     {"id":{"name":"spr_highjumppart","path":"sprites/spr_highjumppart/spr_highjumppart.yy",},"order":30,},
     {"id":{"name":"spr_playerLS_still","path":"sprites/spr_playerLS_still/spr_playerLS_still.yy",},"order":0,},

@@ -1,2 +1,2 @@
 targetroom = rm_sky_1
-spawn = 1
+spawn = 5
