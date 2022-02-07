@@ -5,5 +5,5 @@ if !collected
 	//keys++
 	//keynumb = keys
 	obj_keyfragcontroller.frag[fragnumb] = id
+	other.state = playerstate.keyfly
 }
-other.state = playerstate.keyfly
