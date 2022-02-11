@@ -37,3 +37,5 @@ if disp_state = 2
 }
 //draw_text(10,500,string(selector_targetheight))
 draw_sprite_ext(spr_cursor,0,selector_x,(selector_height + sin(_time / 10) * 3) - scroll_disp,2,2,0,c_white,1)
+
+draw_text_outlined(5,700,c_white,c_black,"Version: " + string(date_datetime_string(GM_build_date)) + " - " + string(GM_runtime_version) + " - " + string(GM_version),1,1)
