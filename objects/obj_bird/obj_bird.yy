@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_feesh_swim",
-    "path": "sprites/spr_feesh_swim/spr_feesh_swim.yy",
+    "name": "spr_beer_fly",
+    "path": "sprites/spr_beer_fly/spr_beer_fly.yy",
   },
   "solid": false,
   "visible": true,

@@ -52,9 +52,10 @@ function do_camerashake(x_int,y_int,__time)
 {
 	with obj_camera
 	{
-		shakex = x_int
-		shakey = y_int
+		shake_x_int = x_int
+		shake_y_int = y_int
 		alarm[0] = __time
+		camerashake = 1
 	}
 }
 
@@ -127,6 +128,12 @@ function metronome_set(beats_per_minute,mu)
 		bpm = beats_per_minute
 		beat_ms = (60000000/(beats_per_minute*4))// / audio_sound_get_pitch(mu)
 	}
+}
+
+function do_chancehit(chance) {
+	var c = irandom_range(1,chance)
+	if c = chance
+		audio_play_sound(choose(sfx_chancehit1,sfx_chancehit2,sfx_chancehit3,sfx_chancehit4,sfx_chancehit5,sfx_chancehit6,sfx_chancehit7),1,0)
 }
 
 #endregion

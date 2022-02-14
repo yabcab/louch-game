@@ -102,7 +102,9 @@ dashtime--
 //}
 //using_gamepad = gamepad_is_connected(0)
 
-if state = playerstate.balloon_normal || state = playerstate.balloon_pound
-	image_blend = c_blue
+if idlestate = playerstate.balloon_normal
+	drawballoon = 1
 else
-	image_blend = c_white
+	drawballoon = 0
+	
+image_index_prev = floor(image_index)

@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "particle",
-    "path": "folders/Sprites/particle.yy",
+    "name": "wall",
+    "path": "folders/Sprites/particle/wall.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_wallparticles_snow",

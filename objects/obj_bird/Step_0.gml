@@ -5,10 +5,10 @@ switch state {
 			hspeed = -hspeed
 
 		if hspeed != 0
-			xs = -sign(hspeed)
+			xs = sign(hspeed)
 		
 		_time++
-		y += sin(_time / 20) * 2
+		y += sin(_time / 20)
 		
 		if can_egg && onscreen
 		{

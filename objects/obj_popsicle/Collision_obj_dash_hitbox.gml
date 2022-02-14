@@ -1,4 +1,5 @@
 instance_destroy()
+do_chancehit(5)
 var h = hspeed
 var s = spr_dead
 	with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)

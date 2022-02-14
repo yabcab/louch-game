@@ -9,6 +9,7 @@ if other.state = playerstate.boost || other.dashing
 	instance_destroy()
 	var h = hspeed
 	var s = spr_dead
+	do_chancehit(5)
 		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
 		{
 			sprite_index = s
@@ -32,6 +33,7 @@ else if other.state != playerstate.dying
 		do_hitstun(3)
 		var s = spr_dead
 		instance_destroy()
+		do_chancehit(5)
 		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
 		{
 			sprite_index = s

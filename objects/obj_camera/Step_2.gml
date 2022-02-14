@@ -14,9 +14,9 @@ target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {
 	if abs(x - target_x) > 1
-		x += (target_x - x) / 20
+		x += (target_x - x) / 20 + shake_x
 	else
-		x = target_x
+		x = target_x + shake_x
 
 	//if abs(yy - target_y) > 1
 	//	yy += (target_y - yy) / 20
@@ -29,5 +29,16 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		chargescroll = target_chargescroll
 	
-	y = yy + chargescroll
+	y = yy + chargescroll + shake_y
+}
+
+if camerashake
+{
+	shake_x = random_range(-shake_x_int,shake_x_int)
+	shake_y = random_range(-shake_y_int,shake_y_int)
+}
+else
+{
+	shake_x = 0
+	shake_y = 0
 }

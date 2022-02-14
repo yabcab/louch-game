@@ -55,6 +55,8 @@ entered_door = 0
 dashtime = 0
 name = "You"
 paletteselect = 0
+drawballoon = 0
+image_index_prev = 0
 
 facing = 1
 hsp = 0

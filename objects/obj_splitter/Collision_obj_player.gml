@@ -2,6 +2,7 @@ if other.state = playerstate.none
 	exit;
 if other.state = playerstate.boost || other.dashing
 {
+	do_chancehit(5)
 	obj_hud.combotimer = 180
 	other.combo += 1
 	score += 20 * (other.combo / 2)
@@ -31,6 +32,7 @@ else if other.state != playerstate.dying
 		do_hitstun(3)
 		var s = spr_dead
 		instance_destroy()
+		do_chancehit(5)
 		with instance_create_depth(x,y,depth,obj_splitter2)
 		{
 			xs = -1
