@@ -38,7 +38,7 @@
     "spriteId": {"name":"bg_grass2","path":"sprites/bg_grass2/bg_grass2.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
