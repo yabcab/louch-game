@@ -841,15 +841,15 @@ switch state { // normal
 					if enddash
 						sprite_index = spr_playerLS_airjumpend
 					else
-						sprite_index = spr_playerLS_jumpstart
+						sprite_index = spr_playerLS_balloonjump
 					beginfall = 0
 				}
 				else
 					if beginfall = 0
-						sprite_index = spr_playerLS_jumpair
+						sprite_index = spr_playerLS_balloonfly
 					else
 					{
-						sprite_index = spr_playerLS_beginfall
+						sprite_index = spr_playerLS_balloonfall
 						if beginfall_start
 						{
 							image_index = 0
