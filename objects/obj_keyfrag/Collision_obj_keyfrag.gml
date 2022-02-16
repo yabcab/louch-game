@@ -1,2 +1,2 @@
-if keynumb < other.keynumb
+if fragnumb < other.fragnumb
 	following = other.id
