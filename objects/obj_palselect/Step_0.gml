@@ -8,7 +8,7 @@ if opened
 		obj_player.paletteselect -= 1
 		audio_play_sound(sfx_menuselect,1,0)
 	}
-	if obj_player.key_right_press && obj_player.paletteselect < 14
+	if obj_player.key_right_press && obj_player.paletteselect < 15
 	{
 		offset = 75
 		offset2 = 0

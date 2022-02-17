@@ -28,6 +28,7 @@ if opened
 		case palette.whathaveyoudone: { title = "stop"; desc = "what have you done" } break;
 		case palette.lowdetail: { title = "Low Graphics Settings"; desc = "Shadows: [OFF]" } break;
 		case palette.classic: { title = "Classic"; desc = "Louch HATES this style! Learn how I don't care!" } break;
+		case palette.realistic: { title = "Real Grouse"; desc = "Real hair!?!? On MY Grouse!?!? NEVER!!!" } break;
 	}
 	
 	draw_text_outlined(650 - string_width(title),460,c_white,c_black,title,2,2)

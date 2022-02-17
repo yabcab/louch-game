@@ -54,7 +54,8 @@ enum palette {
 	outline,
 	whathaveyoudone,
 	lowdetail,
-	classic
+	classic,
+	realistic,
 }
 
 }
