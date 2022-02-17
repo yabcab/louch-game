@@ -1,2 +1,2 @@
 targetroom = rm_hub2
-spawn = 3
+spawn = 1
