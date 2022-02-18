@@ -979,7 +979,11 @@ switch state { // normal
 		
 		// ground pound
 		if key_down_press && !onground
+		{
 			state = playerstate.balloon_pound
+			sprite_index = spr_playerLS_balloonpoundstart
+			image_index = 0
+		}
 		// taunt
 		taunt_qualify = 1
 	}
@@ -1461,7 +1465,7 @@ switch state { // normal
 		}
 		idlestate = playerstate.idle
 		statesave = playerstate.idle
-		taunt_qualify = 1
+		taunt_qualify = 0
 	}
 }
 
