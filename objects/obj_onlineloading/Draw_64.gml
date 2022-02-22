@@ -1,0 +1,1 @@
+draw_text_outlined(5,700,c_white,c_black,"Loading GameMaker Server Extension...",1,1)

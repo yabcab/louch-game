@@ -133,7 +133,7 @@ function metronome_set(beats_per_minute,mu)
 function do_chancehit(chance) {
 	var c = irandom_range(1,chance)
 	if c = chance
-		audio_play_sound(choose(sfx_chancehit1,sfx_chancehit2,sfx_chancehit3,sfx_chancehit4,sfx_chancehit5,sfx_chancehit6,sfx_chancehit7),1,0)
+		audio_play_sound(choose(sfx_chancehit1,sfx_chancehit2,sfx_chancehit3,sfx_chancehit4,sfx_chancehit5,sfx_chancehit6,sfx_chancehit7,sfx_chancehit8),1,0)
 }
 
 #endregion
