@@ -12,5 +12,6 @@ startfade = 0
 flash = 0
 flashtime = 0
 alph = 1
+fromplayer = 0
 if pause_state = pausestate.playerpause
 	instance_destroy()

@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 1,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audio_sfx",
   },
   "soundFile": "sfx_thud.mp3",
-  "duration": 2.873469,
+  "duration": 2.821224,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

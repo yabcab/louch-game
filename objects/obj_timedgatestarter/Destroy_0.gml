@@ -26,4 +26,8 @@ if set
 		minutes = m
 		seconds = s
 	}
+	
+	instance_create_depth(x,y,depth,obj_whiteout)
+	do_camerashake(2,2,20)
+	do_zoomfx(-3,0)
 }

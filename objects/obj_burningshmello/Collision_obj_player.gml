@@ -5,6 +5,7 @@ if other.state = playerstate.boost || other.dashing
 	instance_destroy()
 	other.combo += 1
 	obj_hud.combotimer = 180
+	do_hitstun(5)
 	score += 20 * (obj_player.combo)
 	var h = hspeed
 	var s = spr_dead

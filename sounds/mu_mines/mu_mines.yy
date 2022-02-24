@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.12,
+  "volume": 0.24,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_mines.mp3",
-  "duration": 205.139618,
+  "duration": 222.955124,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

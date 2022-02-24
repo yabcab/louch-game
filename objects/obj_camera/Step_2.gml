@@ -13,6 +13,7 @@ target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (
 
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {
+	#region pos
 	if abs(x - target_x) > 1
 		x += (target_x - x) / 20 + shake_x
 	else
@@ -30,6 +31,22 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 		chargescroll = target_chargescroll
 	
 	y = yy + chargescroll + shake_y
+	#endregion
+	
+	#region zooms
+	if abs(zoomx - zoomx_target) > 1
+		zoomx += (zoomx_target - zoomx) / 20
+	else
+		zoomx = zoomx_target
+		
+	if abs(zoomy - zoomy_target) > 1
+		zoomy += (zoomy_target - zoomy) / 20
+	else
+		zoomy = zoomy_target
+	
+	if camera_get_view_target(view_camera[0]) = self
+		camera_set_view_size(view_camera[0],zoomx,zoomy)
+	#endregion
 }
 
 if camerashake

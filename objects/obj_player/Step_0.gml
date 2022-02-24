@@ -425,6 +425,7 @@ switch state { // normal
 			{
 				image_alpha = 0.5
 				flash = 0
+				fromplayer = 1
 			}
 		}
 		
@@ -997,7 +998,8 @@ switch state { // normal
 			
 		instance_create_depth(x + 40,y,-1,obj_dash_hitbox)
 		if !instance_place(x,y,obj_trail)
-			instance_create_depth(x,y,depth + 1,obj_trail)
+			with instance_create_depth(x,y,depth + 1,obj_trail)
+				fromplayer = 1
 		
 		// taunt
 		taunt_qualify = 1
@@ -1081,6 +1083,7 @@ switch state { // normal
 			image_index = i
 			image_xscale = _xs
 			image_angle = ia
+			fromplayer = 1
 		}
 		
 		sprite_index = spr_playerLS_pain
@@ -1211,6 +1214,7 @@ switch state { // normal
 				image_index = other.image_index
 				image_xscale = other.xs * other.facing
 				image_angle = other.image_angle
+				fromplayer = 1
 			}
 			if hspeed < 0
 				instance_create_depth(x - 35,y,depth,obj_dash_hitbox)
@@ -1378,6 +1382,7 @@ switch state { // normal
 				{
 					image_alpha = 0.5
 					flash = 0
+					fromplayer = 1
 				}
 			}
 		}
@@ -1392,6 +1397,7 @@ switch state { // normal
 				{
 					image_alpha = 0.5
 					flash = 0
+					fromplayer = 1
 				}
 			}
 		}
@@ -1430,6 +1436,7 @@ switch state { // normal
 			image_index = other.image_index
 			image_xscale = other.xs * other.facing
 			image_angle = other.image_angle
+			fromplayer = 1
 		}
 		
 		vspeed = 10

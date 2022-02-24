@@ -59,6 +59,22 @@ function do_camerashake(x_int,y_int,__time)
 	}
 }
 
+function do_zoomfx(intensity,do_target)
+{
+	with obj_camera {
+		if do_target
+		{
+			zoomx_target = 640 + (intensity * 16)
+			zoomy_target = 360 + (intensity * 9)
+		}
+		else
+		{
+			zoomx = 640 + (intensity * 16)
+			zoomy = 360 + (intensity * 9)
+		}
+	}
+}
+
 function draw_text_outlined(xx,yy,outline_col,string_col,str,xs,ys){
     //draw_text_outlined(x, y, outline color, string color, string)   
   
