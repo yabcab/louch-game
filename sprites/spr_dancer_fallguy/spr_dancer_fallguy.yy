@@ -167,7 +167,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_fallguy","path":"sprites/spr_dancer_fallguy/spr_dancer_fallguy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_fallguy",
     "tags": [],
     "resourceType": "GMSequence",

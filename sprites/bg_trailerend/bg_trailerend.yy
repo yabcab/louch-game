@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_trailerend","path":"sprites/bg_trailerend/bg_trailerend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_trailerend",
     "tags": [],
     "resourceType": "GMSequence",

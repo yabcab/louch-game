@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_jungle_tiles","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_jungle_tiles",
     "tags": [],
     "resourceType": "GMSequence",

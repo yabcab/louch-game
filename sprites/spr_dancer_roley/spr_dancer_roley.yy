@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_roley","path":"sprites/spr_dancer_roley/spr_dancer_roley.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_roley",
     "tags": [],
     "resourceType": "GMSequence",

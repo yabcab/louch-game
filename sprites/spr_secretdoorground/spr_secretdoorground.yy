@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secretdoorground","path":"sprites/spr_secretdoorground/spr_secretdoorground.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secretdoorground",
     "tags": [],
     "resourceType": "GMSequence",

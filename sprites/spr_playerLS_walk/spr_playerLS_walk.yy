@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_walk","path":"sprites/spr_playerLS_walk/spr_playerLS_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_walk",
     "tags": [],
     "resourceType": "GMSequence",

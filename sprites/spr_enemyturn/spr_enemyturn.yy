@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemyturn","path":"sprites/spr_enemyturn/spr_enemyturn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemyturn",
     "tags": [],
     "resourceType": "GMSequence",

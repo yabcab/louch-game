@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_balloonfly","path":"sprites/spr_playerLS_balloonfly/spr_playerLS_balloonfly.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_balloonfly",
     "tags": [],
     "resourceType": "GMSequence",

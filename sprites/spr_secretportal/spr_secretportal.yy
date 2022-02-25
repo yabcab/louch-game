@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secretportal","path":"sprites/spr_secretportal/spr_secretportal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secretportal",
     "tags": [],
     "resourceType": "GMSequence",

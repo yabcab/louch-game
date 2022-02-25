@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sfxvolicon","path":"sprites/spr_sfxvolicon/spr_sfxvolicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sfxvolicon",
     "tags": [],
     "resourceType": "GMSequence",

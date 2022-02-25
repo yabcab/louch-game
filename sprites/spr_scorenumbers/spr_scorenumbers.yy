@@ -335,7 +335,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scorenumbers","path":"sprites/spr_scorenumbers/spr_scorenumbers.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scorenumbers",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_bjump2","path":"sprites/spr_playerLS_bjump2/spr_playerLS_bjump2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_bjump2",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_swimmove","path":"sprites/spr_playerLS_swimmove/spr_playerLS_swimmove.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_swimmove",
     "tags": [],
     "resourceType": "GMSequence",

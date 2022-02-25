@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_popsiclecol","path":"sprites/spr_popsiclecol/spr_popsiclecol.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_popsiclecol",
     "tags": [],
     "resourceType": "GMSequence",

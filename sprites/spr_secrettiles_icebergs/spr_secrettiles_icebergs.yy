@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secrettiles_icebergs",
     "tags": [],
     "resourceType": "GMSequence",

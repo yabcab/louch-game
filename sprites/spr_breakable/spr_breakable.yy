@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_breakable","path":"sprites/spr_breakable/spr_breakable.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_breakable",
     "tags": [],
     "resourceType": "GMSequence",

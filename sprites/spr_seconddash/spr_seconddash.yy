@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_seconddash","path":"sprites/spr_seconddash/spr_seconddash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_seconddash",
     "tags": [],
     "resourceType": "GMSequence",

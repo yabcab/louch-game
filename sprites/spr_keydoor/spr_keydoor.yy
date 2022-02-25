@@ -146,7 +146,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_keydoor",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_secret1_beach","path":"sprites/bg_secret1_beach/bg_secret1_beach.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_secret1_beach",
     "tags": [],
     "resourceType": "GMSequence",

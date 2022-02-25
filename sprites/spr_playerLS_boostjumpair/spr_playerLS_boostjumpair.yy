@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_boostjumpair","path":"sprites/spr_playerLS_boostjumpair/spr_playerLS_boostjumpair.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_boostjumpair",
     "tags": [],
     "resourceType": "GMSequence",

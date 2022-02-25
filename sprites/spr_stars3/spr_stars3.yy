@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stars3","path":"sprites/spr_stars3/spr_stars3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stars3",
     "tags": [],
     "resourceType": "GMSequence",

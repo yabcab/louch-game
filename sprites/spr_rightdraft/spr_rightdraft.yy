@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rightdraft","path":"sprites/spr_rightdraft/spr_rightdraft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rightdraft",
     "tags": [],
     "resourceType": "GMSequence",

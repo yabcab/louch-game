@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stopwatch","path":"sprites/spr_stopwatch/spr_stopwatch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stopwatch",
     "tags": [],
     "resourceType": "GMSequence",

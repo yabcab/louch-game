@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chocopop_walk","path":"sprites/spr_chocopop_walk/spr_chocopop_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_chocopop_walk",
     "tags": [],
     "resourceType": "GMSequence",

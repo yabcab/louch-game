@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_eli","path":"sprites/spr_dancer_eli/spr_dancer_eli.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_eli",
     "tags": [],
     "resourceType": "GMSequence",

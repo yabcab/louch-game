@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cracker","path":"sprites/spr_cracker/spr_cracker.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cracker",
     "tags": [],
     "resourceType": "GMSequence",

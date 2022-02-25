@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gonk_idle","path":"sprites/spr_gonk_idle/spr_gonk_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gonk_idle",
     "tags": [],
     "resourceType": "GMSequence",

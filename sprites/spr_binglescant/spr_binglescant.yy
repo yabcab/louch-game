@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_binglescant","path":"sprites/spr_binglescant/spr_binglescant.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_binglescant",
     "tags": [],
     "resourceType": "GMSequence",

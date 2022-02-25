@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_secret3","path":"sprites/bg_secret3/bg_secret3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_secret3",
     "tags": [],
     "resourceType": "GMSequence",

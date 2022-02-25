@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_high_ledgefall",
     "tags": [],
     "resourceType": "GMSequence",

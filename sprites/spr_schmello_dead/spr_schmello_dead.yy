@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_schmello_dead","path":"sprites/spr_schmello_dead/spr_schmello_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_schmello_dead",
     "tags": [],
     "resourceType": "GMSequence",

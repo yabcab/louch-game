@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chocopop_dead","path":"sprites/spr_chocopop_dead/spr_chocopop_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_chocopop_dead",
     "tags": [],
     "resourceType": "GMSequence",

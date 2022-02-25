@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cartrailslope","path":"sprites/spr_cartrailslope/spr_cartrailslope.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cartrailslope",
     "tags": [],
     "resourceType": "GMSequence",

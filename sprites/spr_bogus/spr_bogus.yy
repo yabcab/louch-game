@@ -25,7 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c66c560f-b90d-4f34-97a4-6e5f03aedb63","path":"sprites/spr_bogus/spr_bogus.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c66c560f-b90d-4f34-97a4-6e5f03aedb63","path":"sprites/spr_bogus/spr_bogus.yy",},"LayerId":{"name":"45998b6c-a297-440a-b961-e770d4f033c2","path":"sprites/spr_bogus/spr_bogus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"c66c560f-b90d-4f34-97a4-6e5f03aedb63","path":"sprites/spr_bogus/spr_bogus.yy",},"LayerId":{"name":"4732dd3e-a79d-4809-909b-9a0becdcaa04","path":"sprites/spr_bogus/spr_bogus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_bogus","path":"sprites/spr_bogus/spr_bogus.yy",},"resourceVersion":"1.0","name":"c66c560f-b90d-4f34-97a4-6e5f03aedb63","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -60,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bogus","path":"sprites/spr_bogus/spr_bogus.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bogus",
     "tags": [],
     "resourceType": "GMSequence",

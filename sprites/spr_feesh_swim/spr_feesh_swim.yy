@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_feesh_swim","path":"sprites/spr_feesh_swim/spr_feesh_swim.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_feesh_swim",
     "tags": [],
     "resourceType": "GMSequence",

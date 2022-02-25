@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secrettiles_beach","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secrettiles_beach",
     "tags": [],
     "resourceType": "GMSequence",

@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_jinjo","path":"sprites/spr_dancer_jinjo/spr_dancer_jinjo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_jinjo",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_quiticon","path":"sprites/spr_quiticon/spr_quiticon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_quiticon",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secretdoorair","path":"sprites/spr_secretdoorair/spr_secretdoorair.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secretdoorair",
     "tags": [],
     "resourceType": "GMSequence",

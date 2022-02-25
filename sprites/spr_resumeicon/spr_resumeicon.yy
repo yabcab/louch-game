@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_resumeicon","path":"sprites/spr_resumeicon/spr_resumeicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_resumeicon",
     "tags": [],
     "resourceType": "GMSequence",

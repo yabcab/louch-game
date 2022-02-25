@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cartrail","path":"sprites/spr_cartrail/spr_cartrail.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cartrail",
     "tags": [],
     "resourceType": "GMSequence",

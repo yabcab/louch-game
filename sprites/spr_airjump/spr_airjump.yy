@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_airjump","path":"sprites/spr_airjump/spr_airjump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_airjump",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fatfuck_dead","path":"sprites/spr_fatfuck_dead/spr_fatfuck_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fatfuck_dead",
     "tags": [],
     "resourceType": "GMSequence",

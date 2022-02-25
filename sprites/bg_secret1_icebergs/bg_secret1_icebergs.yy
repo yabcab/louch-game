@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_secret1_icebergs","path":"sprites/bg_secret1_icebergs/bg_secret1_icebergs.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_secret1_icebergs",
     "tags": [],
     "resourceType": "GMSequence",

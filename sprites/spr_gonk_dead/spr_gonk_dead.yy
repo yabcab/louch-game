@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gonk_dead","path":"sprites/spr_gonk_dead/spr_gonk_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gonk_dead",
     "tags": [],
     "resourceType": "GMSequence",

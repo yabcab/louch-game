@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_beach4","path":"sprites/bg_beach4/bg_beach4.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_beach4",
     "tags": [],
     "resourceType": "GMSequence",

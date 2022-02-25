@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dave_jump","path":"sprites/spr_dave_jump/spr_dave_jump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dave_jump",
     "tags": [],
     "resourceType": "GMSequence",

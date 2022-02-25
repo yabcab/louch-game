@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_marcher_dead","path":"sprites/spr_marcher_dead/spr_marcher_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_marcher_dead",
     "tags": [],
     "resourceType": "GMSequence",

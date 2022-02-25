@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shroom2_eaten","path":"sprites/spr_shroom2_eaten/spr_shroom2_eaten.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shroom2_eaten",
     "tags": [],
     "resourceType": "GMSequence",

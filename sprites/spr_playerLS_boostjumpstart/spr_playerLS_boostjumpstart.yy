@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_boostjumpstart","path":"sprites/spr_playerLS_boostjumpstart/spr_playerLS_boostjumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_boostjumpstart",
     "tags": [],
     "resourceType": "GMSequence",

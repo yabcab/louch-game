@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rodent","path":"sprites/spr_rodent/spr_rodent.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rodent",
     "tags": [],
     "resourceType": "GMSequence",

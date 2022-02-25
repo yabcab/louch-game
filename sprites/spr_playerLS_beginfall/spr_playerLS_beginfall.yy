@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_beginfall","path":"sprites/spr_playerLS_beginfall/spr_playerLS_beginfall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_beginfall",
     "tags": [],
     "resourceType": "GMSequence",

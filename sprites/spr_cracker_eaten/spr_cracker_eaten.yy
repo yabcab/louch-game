@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cracker_eaten","path":"sprites/spr_cracker_eaten/spr_cracker_eaten.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cracker_eaten",
     "tags": [],
     "resourceType": "GMSequence",

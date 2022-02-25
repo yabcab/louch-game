@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_freezetimerbg","path":"sprites/spr_freezetimerbg/spr_freezetimerbg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_freezetimerbg",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_hub","path":"sprites/bg_hub/bg_hub.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_hub",
     "tags": [],
     "resourceType": "GMSequence",

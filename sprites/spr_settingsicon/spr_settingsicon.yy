@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_settingsicon","path":"sprites/spr_settingsicon/spr_settingsicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_settingsicon",
     "tags": [],
     "resourceType": "GMSequence",

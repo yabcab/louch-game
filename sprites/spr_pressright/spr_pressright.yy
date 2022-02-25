@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pressright","path":"sprites/spr_pressright/spr_pressright.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pressright",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_high_jump","path":"sprites/spr_playerLS_high_jump/spr_playerLS_high_jump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_high_jump",
     "tags": [],
     "resourceType": "GMSequence",

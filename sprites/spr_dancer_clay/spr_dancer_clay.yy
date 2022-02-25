@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_clay","path":"sprites/spr_dancer_clay/spr_dancer_clay.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_clay",
     "tags": [],
     "resourceType": "GMSequence",

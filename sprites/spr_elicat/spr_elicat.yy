@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_elicat","path":"sprites/spr_elicat/spr_elicat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_elicat",
     "tags": [],
     "resourceType": "GMSequence",

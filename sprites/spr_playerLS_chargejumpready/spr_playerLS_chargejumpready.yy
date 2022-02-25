@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_chargejumpready","path":"sprites/spr_playerLS_chargejumpready/spr_playerLS_chargejumpready.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_chargejumpready",
     "tags": [],
     "resourceType": "GMSequence",

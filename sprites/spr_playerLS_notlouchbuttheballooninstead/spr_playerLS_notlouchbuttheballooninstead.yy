@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_notlouchbuttheballooninstead","path":"sprites/spr_playerLS_notlouchbuttheballooninstead/spr_playerLS_notlouchbuttheballooninstead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_notlouchbuttheballooninstead",
     "tags": [],
     "resourceType": "GMSequence",

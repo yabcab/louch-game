@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_dorinx","path":"sprites/spr_dancer_dorinx/spr_dancer_dorinx.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_dorinx",
     "tags": [],
     "resourceType": "GMSequence",

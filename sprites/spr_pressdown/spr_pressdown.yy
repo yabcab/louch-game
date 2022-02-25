@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pressdown","path":"sprites/spr_pressdown/spr_pressdown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pressdown",
     "tags": [],
     "resourceType": "GMSequence",

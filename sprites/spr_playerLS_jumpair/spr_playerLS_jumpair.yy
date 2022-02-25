@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_jumpair","path":"sprites/spr_playerLS_jumpair/spr_playerLS_jumpair.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_jumpair",
     "tags": [],
     "resourceType": "GMSequence",

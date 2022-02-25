@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_keydoorparticles","path":"sprites/spr_keydoorparticles/spr_keydoorparticles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_keydoorparticles",
     "tags": [],
     "resourceType": "GMSequence",

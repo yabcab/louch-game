@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_popsicle_idle","path":"sprites/spr_popsicle_idle/spr_popsicle_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_popsicle_idle",
     "tags": [],
     "resourceType": "GMSequence",

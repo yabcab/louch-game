@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_timewall2_border","path":"sprites/spr_timewall2_border/spr_timewall2_border.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_timewall2_border",
     "tags": [],
     "resourceType": "GMSequence",

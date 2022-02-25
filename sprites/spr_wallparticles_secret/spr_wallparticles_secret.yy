@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wallparticles_secret","path":"sprites/spr_wallparticles_secret/spr_wallparticles_secret.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wallparticles_secret",
     "tags": [],
     "resourceType": "GMSequence",

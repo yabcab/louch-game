@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_marcher_step2","path":"sprites/spr_marcher_step2/spr_marcher_step2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_marcher_step2",
     "tags": [],
     "resourceType": "GMSequence",

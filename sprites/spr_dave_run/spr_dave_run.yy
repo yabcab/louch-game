@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dave_run","path":"sprites/spr_dave_run/spr_dave_run.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dave_run",
     "tags": [],
     "resourceType": "GMSequence",

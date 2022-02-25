@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_kelp","path":"sprites/spr_dancer_kelp/spr_dancer_kelp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_kelp",
     "tags": [],
     "resourceType": "GMSequence",

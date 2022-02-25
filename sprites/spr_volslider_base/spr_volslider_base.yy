@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_volslider_base","path":"sprites/spr_volslider_base/spr_volslider_base.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_volslider_base",
     "tags": [],
     "resourceType": "GMSequence",

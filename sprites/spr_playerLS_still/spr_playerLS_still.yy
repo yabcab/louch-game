@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_still","path":"sprites/spr_playerLS_still/spr_playerLS_still.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_still",
     "tags": [],
     "resourceType": "GMSequence",

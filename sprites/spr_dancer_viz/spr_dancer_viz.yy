@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_viz","path":"sprites/spr_dancer_viz/spr_dancer_viz.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_viz",
     "tags": [],
     "resourceType": "GMSequence",

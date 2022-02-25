@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beer_dead","path":"sprites/spr_beer_dead/spr_beer_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beer_dead",
     "tags": [],
     "resourceType": "GMSequence",

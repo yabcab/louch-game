@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_walksmoke","path":"sprites/spr_walksmoke/spr_walksmoke.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_walksmoke",
     "tags": [],
     "resourceType": "GMSequence",

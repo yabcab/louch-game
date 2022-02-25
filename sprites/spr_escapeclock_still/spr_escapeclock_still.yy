@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_escapeclock_still","path":"sprites/spr_escapeclock_still/spr_escapeclock_still.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_escapeclock_still",
     "tags": [],
     "resourceType": "GMSequence",

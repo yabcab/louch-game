@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerpalette","path":"sprites/spr_playerpalette/spr_playerpalette.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerpalette",
     "tags": [],
     "resourceType": "GMSequence",

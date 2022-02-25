@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_gp","path":"sprites/spr_playerLS_gp/spr_playerLS_gp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_gp",
     "tags": [],
     "resourceType": "GMSequence",

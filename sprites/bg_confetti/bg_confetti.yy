@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_confetti","path":"sprites/bg_confetti/bg_confetti.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_confetti",
     "tags": [],
     "resourceType": "GMSequence",

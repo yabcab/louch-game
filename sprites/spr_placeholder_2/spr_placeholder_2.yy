@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_placeholder_2","path":"sprites/spr_placeholder_2/spr_placeholder_2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_placeholder_2",
     "tags": [],
     "resourceType": "GMSequence",

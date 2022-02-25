@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chocopop_lunge","path":"sprites/spr_chocopop_lunge/spr_chocopop_lunge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_chocopop_lunge",
     "tags": [],
     "resourceType": "GMSequence",

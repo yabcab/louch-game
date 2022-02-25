@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_dive","path":"sprites/spr_playerLS_dive/spr_playerLS_dive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_dive",
     "tags": [],
     "resourceType": "GMSequence",

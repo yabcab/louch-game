@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ralseichuffingafatdart","path":"sprites/spr_ralseichuffingafatdart/spr_ralseichuffingafatdart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ralseichuffingafatdart",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scruffcat","path":"sprites/spr_scruffcat/spr_scruffcat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scruffcat",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_balloonfall","path":"sprites/spr_playerLS_balloonfall/spr_playerLS_balloonfall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_balloonfall",
     "tags": [],
     "resourceType": "GMSequence",

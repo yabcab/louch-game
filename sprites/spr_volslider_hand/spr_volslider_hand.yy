@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_volslider_hand","path":"sprites/spr_volslider_hand/spr_volslider_hand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_volslider_hand",
     "tags": [],
     "resourceType": "GMSequence",

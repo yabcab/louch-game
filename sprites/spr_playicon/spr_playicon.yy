@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playicon","path":"sprites/spr_playicon/spr_playicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playicon",
     "tags": [],
     "resourceType": "GMSequence",

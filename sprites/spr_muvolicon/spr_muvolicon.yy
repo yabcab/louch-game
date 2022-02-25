@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_muvolicon","path":"sprites/spr_muvolicon/spr_muvolicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_muvolicon",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_gonk","path":"sprites/spr_dancer_gonk/spr_dancer_gonk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_gonk",
     "tags": [],
     "resourceType": "GMSequence",

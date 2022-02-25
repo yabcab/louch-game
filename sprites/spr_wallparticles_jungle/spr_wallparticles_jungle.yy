@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wallparticles_jungle","path":"sprites/spr_wallparticles_jungle/spr_wallparticles_jungle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wallparticles_jungle",
     "tags": [],
     "resourceType": "GMSequence",

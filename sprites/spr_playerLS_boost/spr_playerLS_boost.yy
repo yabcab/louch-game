@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_boost","path":"sprites/spr_playerLS_boost/spr_playerLS_boost.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_boost",
     "tags": [],
     "resourceType": "GMSequence",

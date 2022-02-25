@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pez","path":"sprites/spr_pez/spr_pez.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pez",
     "tags": [],
     "resourceType": "GMSequence",

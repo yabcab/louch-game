@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_halloweenbuckey","path":"sprites/spr_halloweenbuckey/spr_halloweenbuckey.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_halloweenbuckey",
     "tags": [],
     "resourceType": "GMSequence",

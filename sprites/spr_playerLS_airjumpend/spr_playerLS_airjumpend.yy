@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_airjumpend","path":"sprites/spr_playerLS_airjumpend/spr_playerLS_airjumpend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_airjumpend",
     "tags": [],
     "resourceType": "GMSequence",

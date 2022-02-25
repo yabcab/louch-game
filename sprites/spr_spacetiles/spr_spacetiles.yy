@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_spacetiles","path":"sprites/spr_spacetiles/spr_spacetiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_spacetiles",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_pain","path":"sprites/spr_playerLS_pain/spr_playerLS_pain.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_pain",
     "tags": [],
     "resourceType": "GMSequence",

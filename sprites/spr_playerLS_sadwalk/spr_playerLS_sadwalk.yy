@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_sadwalk","path":"sprites/spr_playerLS_sadwalk/spr_playerLS_sadwalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_sadwalk",
     "tags": [],
     "resourceType": "GMSequence",

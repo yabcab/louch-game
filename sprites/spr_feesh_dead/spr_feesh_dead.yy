@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_feesh_dead","path":"sprites/spr_feesh_dead/spr_feesh_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_feesh_dead",
     "tags": [],
     "resourceType": "GMSequence",

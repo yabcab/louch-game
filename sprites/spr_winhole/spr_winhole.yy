@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_winhole","path":"sprites/spr_winhole/spr_winhole.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_winhole",
     "tags": [],
     "resourceType": "GMSequence",

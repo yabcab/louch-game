@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bella_dead","path":"sprites/spr_bella_dead/spr_bella_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bella_dead",
     "tags": [],
     "resourceType": "GMSequence",

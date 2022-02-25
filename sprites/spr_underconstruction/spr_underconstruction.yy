@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_underconstruction","path":"sprites/spr_underconstruction/spr_underconstruction.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_underconstruction",
     "tags": [],
     "resourceType": "GMSequence",

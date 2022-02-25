@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_backfromsettings","path":"sprites/spr_backfromsettings/spr_backfromsettings.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_backfromsettings",
     "tags": [],
     "resourceType": "GMSequence",

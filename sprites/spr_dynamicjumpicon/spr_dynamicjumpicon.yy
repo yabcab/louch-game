@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dynamicjumpicon","path":"sprites/spr_dynamicjumpicon/spr_dynamicjumpicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dynamicjumpicon",
     "tags": [],
     "resourceType": "GMSequence",

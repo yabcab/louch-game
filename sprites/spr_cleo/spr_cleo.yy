@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cleo","path":"sprites/spr_cleo/spr_cleo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cleo",
     "tags": [],
     "resourceType": "GMSequence",

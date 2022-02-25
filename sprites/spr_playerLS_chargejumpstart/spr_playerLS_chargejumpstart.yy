@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_chargejumpstart","path":"sprites/spr_playerLS_chargejumpstart/spr_playerLS_chargejumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_chargejumpstart",
     "tags": [],
     "resourceType": "GMSequence",

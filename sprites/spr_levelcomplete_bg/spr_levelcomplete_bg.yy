@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_levelcomplete_bg","path":"sprites/spr_levelcomplete_bg/spr_levelcomplete_bg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_levelcomplete_bg",
     "tags": [],
     "resourceType": "GMSequence",

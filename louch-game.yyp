@@ -970,9 +970,9 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"GameMaker Server 2.5 - GameMaker Studio (All).gex","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.1.0.609",
+    "IDEVersion": "2022.2.0.614",
   },
-  "resourceVersion": "1.4",
+  "resourceVersion": "1.5",
   "name": "louch-game",
   "tags": [],
   "resourceType": "GMProject",

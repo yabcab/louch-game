@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_scruff","path":"sprites/spr_dancer_scruff/spr_dancer_scruff.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_scruff",
     "tags": [],
     "resourceType": "GMSequence",

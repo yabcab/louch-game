@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hitstunicon","path":"sprites/spr_hitstunicon/spr_hitstunicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hitstunicon",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gonk","path":"sprites/spr_gonk/spr_gonk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gonk",
     "tags": [],
     "resourceType": "GMSequence",

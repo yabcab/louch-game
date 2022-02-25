@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cartplaceholder","path":"sprites/spr_cartplaceholder/spr_cartplaceholder.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cartplaceholder",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wallparticles_grass","path":"sprites/spr_wallparticles_grass/spr_wallparticles_grass.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wallparticles_grass",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_newhubsigns","path":"sprites/spr_newhubsigns/spr_newhubsigns.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_newhubsigns",
     "tags": [],
     "resourceType": "GMSequence",

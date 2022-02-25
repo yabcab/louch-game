@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_debugbutton","path":"sprites/spr_debugbutton/spr_debugbutton.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_debugbutton",
     "tags": [],
     "resourceType": "GMSequence",

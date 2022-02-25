@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_keydooricon","path":"sprites/spr_keydooricon/spr_keydooricon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_keydooricon",
     "tags": [],
     "resourceType": "GMSequence",

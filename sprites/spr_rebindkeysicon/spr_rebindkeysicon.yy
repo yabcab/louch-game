@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rebindkeysicon","path":"sprites/spr_rebindkeysicon/spr_rebindkeysicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rebindkeysicon",
     "tags": [],
     "resourceType": "GMSequence",

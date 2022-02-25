@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_appleeaten","path":"sprites/spr_appleeaten/spr_appleeaten.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_appleeaten",
     "tags": [],
     "resourceType": "GMSequence",

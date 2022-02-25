@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_combonumbers","path":"sprites/spr_combonumbers/spr_combonumbers.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_combonumbers",
     "tags": [],
     "resourceType": "GMSequence",

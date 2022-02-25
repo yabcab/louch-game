@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_xuwp_signin","path":"sprites/spr_xuwp_signin/spr_xuwp_signin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_xuwp_signin",
     "tags": [],
     "resourceType": "GMSequence",

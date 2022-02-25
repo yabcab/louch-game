@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_swimdash","path":"sprites/spr_playerLS_swimdash/spr_playerLS_swimdash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_swimdash",
     "tags": [],
     "resourceType": "GMSequence",

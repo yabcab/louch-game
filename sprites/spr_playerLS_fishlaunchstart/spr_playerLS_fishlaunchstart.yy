@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_fishlaunchstart","path":"sprites/spr_playerLS_fishlaunchstart/spr_playerLS_fishlaunchstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_fishlaunchstart",
     "tags": [],
     "resourceType": "GMSequence",

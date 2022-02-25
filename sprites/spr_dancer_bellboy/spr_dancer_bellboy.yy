@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_bellboy",
     "tags": [],
     "resourceType": "GMSequence",

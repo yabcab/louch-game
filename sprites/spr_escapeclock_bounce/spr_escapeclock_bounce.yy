@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_escapeclock_bounce","path":"sprites/spr_escapeclock_bounce/spr_escapeclock_bounce.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_escapeclock_bounce",
     "tags": [],
     "resourceType": "GMSequence",

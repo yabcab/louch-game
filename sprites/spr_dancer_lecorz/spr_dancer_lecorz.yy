@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_lecorz","path":"sprites/spr_dancer_lecorz/spr_dancer_lecorz.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_lecorz",
     "tags": [],
     "resourceType": "GMSequence",

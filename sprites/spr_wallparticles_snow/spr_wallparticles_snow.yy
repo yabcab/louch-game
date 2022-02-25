@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wallparticles_snow","path":"sprites/spr_wallparticles_snow/spr_wallparticles_snow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wallparticles_snow",
     "tags": [],
     "resourceType": "GMSequence",

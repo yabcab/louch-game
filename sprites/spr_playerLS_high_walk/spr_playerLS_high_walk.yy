@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_high_walk","path":"sprites/spr_playerLS_high_walk/spr_playerLS_high_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_high_walk",
     "tags": [],
     "resourceType": "GMSequence",

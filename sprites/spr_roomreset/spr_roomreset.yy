@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_roomreset","path":"sprites/spr_roomreset/spr_roomreset.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_roomreset",
     "tags": [],
     "resourceType": "GMSequence",

@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boom","path":"sprites/spr_boom/spr_boom.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boom",
     "tags": [],
     "resourceType": "GMSequence",

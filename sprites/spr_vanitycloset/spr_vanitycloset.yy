@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_vanitycloset",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_gpstart","path":"sprites/spr_playerLS_gpstart/spr_playerLS_gpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_gpstart",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_nola","path":"sprites/spr_dancer_nola/spr_dancer_nola.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_nola",
     "tags": [],
     "resourceType": "GMSequence",

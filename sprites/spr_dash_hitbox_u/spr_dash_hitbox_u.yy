@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dash_hitbox_u","path":"sprites/spr_dash_hitbox_u/spr_dash_hitbox_u.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dash_hitbox_u",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_sadidle","path":"sprites/spr_playerLS_sadidle/spr_playerLS_sadidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_sadidle",
     "tags": [],
     "resourceType": "GMSequence",

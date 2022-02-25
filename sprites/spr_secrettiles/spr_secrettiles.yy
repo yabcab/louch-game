@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secrettiles","path":"sprites/spr_secrettiles/spr_secrettiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secrettiles",
     "tags": [],
     "resourceType": "GMSequence",

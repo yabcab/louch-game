@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_duhvan","path":"sprites/spr_dancer_duhvan/spr_dancer_duhvan.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_duhvan",
     "tags": [],
     "resourceType": "GMSequence",

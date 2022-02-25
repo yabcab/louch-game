@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secret","path":"sprites/spr_secret/spr_secret.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secret",
     "tags": [],
     "resourceType": "GMSequence",

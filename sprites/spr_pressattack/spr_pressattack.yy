@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pressattack","path":"sprites/spr_pressattack/spr_pressattack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pressattack",
     "tags": [],
     "resourceType": "GMSequence",

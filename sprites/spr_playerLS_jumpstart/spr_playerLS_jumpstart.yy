@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_jumpstart","path":"sprites/spr_playerLS_jumpstart/spr_playerLS_jumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_jumpstart",
     "tags": [],
     "resourceType": "GMSequence",

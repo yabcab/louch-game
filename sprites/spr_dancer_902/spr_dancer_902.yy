@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_902","path":"sprites/spr_dancer_902/spr_dancer_902.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_902",
     "tags": [],
     "resourceType": "GMSequence",

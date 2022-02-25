@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_comboletters","path":"sprites/spr_comboletters/spr_comboletters.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_comboletters",
     "tags": [],
     "resourceType": "GMSequence",

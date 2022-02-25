@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigdoor","path":"sprites/spr_bigdoor/spr_bigdoor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigdoor",
     "tags": [],
     "resourceType": "GMSequence",

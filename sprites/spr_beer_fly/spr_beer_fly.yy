@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beer_fly","path":"sprites/spr_beer_fly/spr_beer_fly.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beer_fly",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_ice_3","path":"sprites/bg_ice_3/bg_ice_3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_ice_3",
     "tags": [],
     "resourceType": "GMSequence",

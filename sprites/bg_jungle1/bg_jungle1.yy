@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_jungle1","path":"sprites/bg_jungle1/bg_jungle1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_jungle1",
     "tags": [],
     "resourceType": "GMSequence",

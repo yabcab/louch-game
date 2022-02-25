@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_gilberlotos","path":"sprites/spr_dancer_gilberlotos/spr_dancer_gilberlotos.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_gilberlotos",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_schmello_walk","path":"sprites/spr_schmello_walk/spr_schmello_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_schmello_walk",
     "tags": [],
     "resourceType": "GMSequence",

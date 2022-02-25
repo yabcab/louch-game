@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fatfuck_swim",
     "tags": [],
     "resourceType": "GMSequence",

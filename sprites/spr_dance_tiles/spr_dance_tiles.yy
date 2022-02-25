@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dance_tiles","path":"sprites/spr_dance_tiles/spr_dance_tiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dance_tiles",
     "tags": [],
     "resourceType": "GMSequence",

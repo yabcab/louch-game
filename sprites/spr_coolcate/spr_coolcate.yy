@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_coolcate","path":"sprites/spr_coolcate/spr_coolcate.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_coolcate",
     "tags": [],
     "resourceType": "GMSequence",

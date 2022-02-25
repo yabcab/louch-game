@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_balloonpoundstart","path":"sprites/spr_playerLS_balloonpoundstart/spr_playerLS_balloonpoundstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_balloonpoundstart",
     "tags": [],
     "resourceType": "GMSequence",

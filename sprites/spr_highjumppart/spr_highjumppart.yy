@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_highjumppart","path":"sprites/spr_highjumppart/spr_highjumppart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_highjumppart",
     "tags": [],
     "resourceType": "GMSequence",

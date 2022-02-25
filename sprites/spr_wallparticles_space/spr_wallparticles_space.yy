@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wallparticles_space","path":"sprites/spr_wallparticles_space/spr_wallparticles_space.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wallparticles_space",
     "tags": [],
     "resourceType": "GMSequence",

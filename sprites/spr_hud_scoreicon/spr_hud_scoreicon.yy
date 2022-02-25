@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hud_scoreicon","path":"sprites/spr_hud_scoreicon/spr_hud_scoreicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hud_scoreicon",
     "tags": [],
     "resourceType": "GMSequence",

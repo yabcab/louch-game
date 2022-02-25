@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerLS_balloonpound","path":"sprites/spr_playerLS_balloonpound/spr_playerLS_balloonpound.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerLS_balloonpound",
     "tags": [],
     "resourceType": "GMSequence",

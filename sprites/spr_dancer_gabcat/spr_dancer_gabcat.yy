@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_gabcat","path":"sprites/spr_dancer_gabcat/spr_dancer_gabcat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_gabcat",
     "tags": [],
     "resourceType": "GMSequence",

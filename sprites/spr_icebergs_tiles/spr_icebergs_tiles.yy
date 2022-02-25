@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_icebergs_tiles","path":"sprites/spr_icebergs_tiles/spr_icebergs_tiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_icebergs_tiles",
     "tags": [],
     "resourceType": "GMSequence",

@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dancer_aret","path":"sprites/spr_dancer_aret/spr_dancer_aret.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dancer_aret",
     "tags": [],
     "resourceType": "GMSequence",

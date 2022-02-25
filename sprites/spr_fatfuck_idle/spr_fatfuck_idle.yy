@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fatfuck_idle","path":"sprites/spr_fatfuck_idle/spr_fatfuck_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fatfuck_idle",
     "tags": [],
     "resourceType": "GMSequence",
