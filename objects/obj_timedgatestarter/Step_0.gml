@@ -26,3 +26,10 @@ else
 		if started
 			image_angle -= 15	
 	}
+
+if pause_state != pausestate.playerpause
+	_time++
+if bopeffect
+	bop = sin(_time / 20) * 4
+else
+	bop = 0

@@ -44,7 +44,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		zoomy = zoomy_target
 	
-	if camera_get_view_target(view_camera[0]) = self
+	if room != rm_login
 		camera_set_view_size(view_camera[0],zoomx,zoomy)
 	#endregion
 }

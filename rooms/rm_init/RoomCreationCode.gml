@@ -11,6 +11,7 @@ globalvar keys; keys = 0
 globalvar levelmusic; levelmusic = mu_hub
 globalvar is_secret; is_secret = 0
 globalvar is_trial; is_trial = 0
+globalvar is_timetrial; is_timetrial = 0
 globalvar pause_state; pause_state = pausestate.none
 globalvar level_complete; level_complete = 0
 globalvar level; level = 0
