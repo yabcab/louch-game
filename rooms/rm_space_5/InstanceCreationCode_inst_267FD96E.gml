@@ -1,3 +1,3 @@
-seconds = 10
+seconds = 45
 minutes = 0
 trialdependant = 1
