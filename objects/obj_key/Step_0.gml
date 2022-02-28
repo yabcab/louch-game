@@ -34,3 +34,6 @@ if pause_state != pausestate.playerpause
 		}
 	}
 }
+
+if trialdependant
+	visible = is_timetrial

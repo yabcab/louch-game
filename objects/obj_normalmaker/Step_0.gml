@@ -9,3 +9,6 @@ if pause_state = pausestate.none && instance_exists(obj_player)
 	image_speed = 1
 else
 	image_speed = 0
+	
+if trialdependant
+	visible = is_timetrial

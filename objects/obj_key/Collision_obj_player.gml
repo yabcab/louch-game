@@ -1,7 +1,10 @@
-if !collected
+if !trialdependant || is_trial
 {
-	collected = 1
-	following = other.id
-	keys++
-	keynumb = keys
+	if !collected
+	{
+		collected = 1
+		following = other.id
+		keys++
+		keynumb = keys
+	}
 }
