@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_roomreset",
-    "path": "sprites/spr_roomreset/spr_roomreset.yy",
+    "name": "spr_trialwall",
+    "path": "sprites/spr_trialwall/spr_trialwall.yy",
   },
   "solid": false,
   "visible": true,

@@ -5,6 +5,9 @@ else
 
 visible = is_timetrial
 
+if !instance_exists(obj_timedgatestarter) && !is_timetrial
+	instance_destroy()
+
 if collected
 {
 	image_alpha -= 0.15

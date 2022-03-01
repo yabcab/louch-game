@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_cartrail",
-    "path": "sprites/spr_cartrail/spr_cartrail.yy",
+    "name": "spr_trialplat",
+    "path": "sprites/spr_trialplat/spr_trialplat.yy",
   },
   "solid": false,
   "visible": true,
