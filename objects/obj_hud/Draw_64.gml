@@ -1,3 +1,4 @@
+
 if display
 {
 	var shake1x = 0

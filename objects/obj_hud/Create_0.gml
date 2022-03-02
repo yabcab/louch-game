@@ -19,3 +19,5 @@ do_shake3 = 0
 old_hp = 0
 prev_combo = 0
 new_combo = 0
+
+display_set_gui_size(1280,720)
