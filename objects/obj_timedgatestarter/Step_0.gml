@@ -8,7 +8,9 @@ if started
 	vspeed += 0.2
 	if vspeed > 2
 		instance_destroy()
-	image_angle += 15
+		
+	if pause_state = pausestate.none
+		image_angle += 15
 }
 
 
