@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_gonk_idle",
-    "path": "sprites/spr_gonk_idle/spr_gonk_idle.yy",
+    "name": "spr_margarita_idle",
+    "path": "sprites/spr_margarita_idle/spr_margarita_idle.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_popsiclecol",
-    "path": "sprites/spr_popsiclecol/spr_popsiclecol.yy",
+    "name": "spr_balloonbundle",
+    "path": "sprites/spr_balloonbundle/spr_balloonbundle.yy",
   },
   "solid": false,
   "visible": true,
