@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.15,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_sky2.mp3",
-  "duration": 200.156,
+  "duration": 178.2335,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

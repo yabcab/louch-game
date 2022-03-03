@@ -9,8 +9,9 @@ if string_pos("catsing",str) > 0
 
 if string_pos("thevoidisnow",str) > 0
 {
-	if layer_exists("Background")
-		layer_destroy(layer_get_id("Background"))
+	void = 1
+	//if layer_exists("Background")
+	//	layer_destroy(layer_get_id("Background"))
 	while instance_exists(obj_parallax)
 		instance_destroy(obj_parallax)
 	while instance_exists(obj_parallax_nontiled)
@@ -20,12 +21,12 @@ if string_pos("thevoidisnow",str) > 0
 	keyboard_string = ""
 }
 
-if string_pos("thevoidisnow",str) > 0
-{
-	if layer_exists("Background")
-		layer_destroy(layer_get_id("Background"))
-	keyboard_string = ""
-}
+//if string_pos("thevoidisnow",str) > 0
+//{
+//	if layer_exists("Background")
+//		layer_destroy(layer_get_id("Background"))
+//	keyboard_string = ""
+//}
 
 if string_pos("diablosauce",str) > 0
 {
