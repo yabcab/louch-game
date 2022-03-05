@@ -986,7 +986,7 @@ switch state { // normal
 			image_index = 0
 		}
 		// taunt
-		taunt_qualify = 1
+		taunt_qualify = 0
 	}
 	break;
 	
@@ -1452,7 +1452,7 @@ switch state { // normal
 			state = idlestate
 			
 		instance_create_depth(x,y + 40,depth,obj_dash_hitbox_u)
-		taunt_qualify = 1
+		taunt_qualify = 0
 	}
 	break;
 	

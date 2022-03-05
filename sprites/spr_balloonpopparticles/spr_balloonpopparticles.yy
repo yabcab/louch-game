@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "wall",
-    "path": "folders/Sprites/particle/wall.yy",
+    "name": "particle",
+    "path": "folders/Sprites/particle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_balloonpopparticles",

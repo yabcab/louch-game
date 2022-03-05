@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "spr_dave_run",
-    "path": "sprites/spr_dave_run/spr_dave_run.yy",
+    "name": "spr_cherries_idle",
+    "path": "sprites/spr_cherries_idle/spr_cherries_idle.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_dave_run",
-    "path": "sprites/spr_dave_run/spr_dave_run.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

@@ -9,6 +9,8 @@ if pause_state = pausestate.none
 
 	if image_alpha < 0
 		instance_destroy()
+		
+	image_angle += rot
 }
 else
 {

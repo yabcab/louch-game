@@ -35,14 +35,22 @@ else if other.state != playerstate.dying
 		do_chancehit(5)
 		with instance_create_depth(x,y,depth,obj_splitter2)
 		{
-			xs = -1
+			spr_idle = spr_cherries_run2
+			spr_detach = spr_cherries_split1
+			spr_dead = spr_cherries_dead1
+			xs = 1
+			image_index = 0
 			vspeed = -2
 			type = 1
 		}
 		with instance_create_depth(x,y,depth,obj_splitter2)
 		{
-			xs = 1
+			spr_idle = spr_cherries_run1
+			spr_detach = spr_cherries_split2
+			spr_dead = spr_cherries_dead2
+			xs = -1
 			vspeed = -2
+			image_index = 0
 			type = 2
 		}
 	

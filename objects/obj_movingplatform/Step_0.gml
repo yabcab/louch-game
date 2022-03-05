@@ -7,7 +7,7 @@ if instance_exists(obj_player)
 		var s = image_xscale
 		obj = instance_create_depth(x,y,depth,obj_platsolid)
 		with obj
-			image_xscale = s
+			image_xscale = s * 4
 	}
 }
 

@@ -8,7 +8,6 @@ facing = 0
 jumpstart = 0
 onground = 0
 image_index = random_range(0,sprite_get_number(sprite_index))
-image_blend = c_red
 hurt = 1
 
 if ds_list_find_value(destroy_list,id) = 1

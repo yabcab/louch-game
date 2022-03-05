@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_cracker",
-    "path": "sprites/spr_cracker/spr_cracker.yy",
+    "name": "spr_beerdrop",
+    "path": "sprites/spr_beerdrop/spr_beerdrop.yy",
   },
   "solid": false,
   "visible": true,

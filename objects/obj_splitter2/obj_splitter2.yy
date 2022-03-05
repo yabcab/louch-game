@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_dave_run",
-    "path": "sprites/spr_dave_run/spr_dave_run.yy",
+    "name": "spr_cherries_run2",
+    "path": "sprites/spr_cherries_run2/spr_cherries_run2.yy",
   },
   "persistent": false,
   "parentObjectId": null,

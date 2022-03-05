@@ -1,6 +1,11 @@
 var i;
 for (i = 0; i < 25; i++)
 {
-	instance_create_depth(x,y,-500,obj_explosionparticle)
+	with instance_create_depth(x,y,-500,obj_explosionparticle)
+	{
+		sprite_index = spr_beerparts
+		image_index = random_range(0,4)
+		rot = choose(5,-5)
+	}
 }
 audio_play_sound(sfx_fard,1,0)

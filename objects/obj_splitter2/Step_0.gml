@@ -9,7 +9,12 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 switch state {
 	case 0: 
 	{
-		hspeed = -3.5 * xs
+		if splitting
+			sprite_index = spr_detach
+		else
+			sprite_index = spr_idle
+		
+		hspeed = -3.5 * -xs
 		
 		if vspeed < 15
 			vspeed += 0.3

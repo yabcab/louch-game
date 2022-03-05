@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_platform",
-    "path": "sprites/spr_platform/spr_platform.yy",
+    "name": "spr_trialplat",
+    "path": "sprites/spr_trialplat/spr_trialplat.yy",
   },
   "solid": true,
   "visible": true,
