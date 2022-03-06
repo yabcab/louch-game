@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_key1_tiles",
-    "path": "sprites/spr_key1_tiles/spr_key1_tiles.yy",
+    "name": "spr_sky1_tiles",
+    "path": "sprites/spr_sky1_tiles/spr_sky1_tiles.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,

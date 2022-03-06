@@ -1,3 +1,5 @@
+_time++
+
 if obj_player.nonstunstate = playerstate.boost
 	var boost = 1
 else
@@ -14,10 +16,20 @@ target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {
 	#region pos
+	if camboby
+		ybob = sin(_time / 50) * 10
+	else
+		ybob = 0
+	
+	if cambobx
+		xbob = sin(_time / 50) * 10
+	else
+		xbob = 0
+	
 	if abs(x - target_x) > 1
 		x += (target_x - x) / 20 + shake_x
 	else
-		x = target_x + shake_x
+		x = target_x + shake_x + xbob
 
 	//if abs(yy - target_y) > 1
 	//	yy += (target_y - yy) / 20
@@ -30,7 +42,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		chargescroll = target_chargescroll
 	
-	y = yy + chargescroll + shake_y
+	y = yy + chargescroll + shake_y + ybob
 	#endregion
 	
 	#region zooms

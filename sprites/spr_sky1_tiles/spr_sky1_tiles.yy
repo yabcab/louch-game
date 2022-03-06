@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18c5bcf1-6a46-409d-994a-a50ff1a41a6e","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18c5bcf1-6a46-409d-994a-a50ff1a41a6e","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},"LayerId":{"name":"3ef555e9-f80f-4adf-b787-213b698ce8f5","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_key1_tiles","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},"resourceVersion":"1.0","name":"18c5bcf1-6a46-409d-994a-a50ff1a41a6e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b217cdcd-0016-48f1-8728-f1b049a22caa","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b217cdcd-0016-48f1-8728-f1b049a22caa","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"LayerId":{"name":"58ad9e1f-1cd7-403d-bf95-d1718361517e","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_sky1_tiles","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"resourceVersion":"1.0","name":"b217cdcd-0016-48f1-8728-f1b049a22caa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_key1_tiles","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},
+    "spriteId": {"name":"spr_sky1_tiles","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"75f5f2a6-42e2-4a77-a519-694bc13bcbab","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18c5bcf1-6a46-409d-994a-a50ff1a41a6e","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e9c3cc7d-c313-4836-af88-5698a2d7801a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b217cdcd-0016-48f1-8728-f1b049a22caa","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_key1_tiles","path":"sprites/spr_key1_tiles/spr_key1_tiles.yy",},
+    "parent": {"name":"spr_sky1_tiles","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_key1_tiles",
+    "name": "spr_sky1_tiles",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ef555e9-f80f-4adf-b787-213b698ce8f5","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"58ad9e1f-1cd7-403d-bf95-d1718361517e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_key1_tiles",
+  "name": "spr_sky1_tiles",
   "tags": [],
   "resourceType": "GMSprite",
 }

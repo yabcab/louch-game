@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_feesh_swim",
-    "path": "sprites/spr_feesh_swim/spr_feesh_swim.yy",
+    "name": "spr_eye_idle",
+    "path": "sprites/spr_eye_idle/spr_eye_idle.yy",
   },
   "solid": false,
   "visible": true,

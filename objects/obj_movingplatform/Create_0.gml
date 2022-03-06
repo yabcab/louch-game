@@ -1,3 +1,3 @@
 obj = -100
-depth = -999
+depth = -3
 hspeed = 2

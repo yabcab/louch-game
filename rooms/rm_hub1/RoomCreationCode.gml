@@ -1,4 +1,5 @@
 obj_music.mu = mu_hub
+obj_camera.camboby = 0
 is_secret = 0
 is_trial = 0
 is_timetrial = 0
