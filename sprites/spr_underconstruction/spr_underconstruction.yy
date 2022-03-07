@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "placeholderhubsigns",
-    "path": "folders/Sprites/levelspecific/placeholderhubsigns.yy",
+    "path": "folders/Sprites/stuffs/placeholderhubsigns.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_underconstruction",

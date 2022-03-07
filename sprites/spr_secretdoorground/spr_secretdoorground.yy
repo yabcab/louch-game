@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "secretdoor",
-    "path": "folders/Sprites/levelspecific/secretdoor.yy",
+    "path": "folders/Sprites/stuffs/secretdoor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_secretdoorground",

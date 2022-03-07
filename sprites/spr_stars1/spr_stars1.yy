@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "timewall",
-    "path": "folders/Sprites/levelspecific/timewall.yy",
+    "path": "folders/Sprites/stuffs/timewall.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_stars1",

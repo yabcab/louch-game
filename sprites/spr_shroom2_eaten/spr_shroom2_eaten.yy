@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "shroom",
-    "path": "folders/Sprites/levelspecific/shroom.yy",
+    "path": "folders/Sprites/stuffs/shroom.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shroom2_eaten",

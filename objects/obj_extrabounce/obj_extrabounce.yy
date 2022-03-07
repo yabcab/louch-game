@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite89",
-    "path": "sprites/Sprite89/Sprite89.yy",
+    "name": "spr_bigballoon",
+    "path": "sprites/spr_bigballoon/spr_bigballoon.yy",
   },
   "solid": false,
   "visible": true,

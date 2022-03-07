@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "stopwatch",
-    "path": "folders/Sprites/levelspecific/stopwatch.yy",
+    "path": "folders/Sprites/stuffs/stopwatch.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_stopwatch",

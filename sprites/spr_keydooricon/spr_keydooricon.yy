@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "levelspecific",
-    "path": "folders/Sprites/levelspecific.yy",
+    "name": "stuffs",
+    "path": "folders/Sprites/stuffs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_keydooricon",

@@ -90,7 +90,7 @@
   "nineSlice": null,
   "parent": {
     "name": "dancers",
-    "path": "folders/Sprites/levelspecific/dancers.yy",
+    "path": "folders/Sprites/stuffs/dancers.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dancer_dorinx",

@@ -22,16 +22,13 @@ globalvar freezetimerfont; freezetimerfont = font_add_sprite_ext(spr_freezetimer
 
 audio_group_load(audio_sfx)
 audio_group_load(audio_mu)
+
 ini_open("savedata.lmao")
 globalvar sfx_vol; sfx_vol = ini_read_real("settings","sfx_vol",0.2)
 globalvar mu_vol; mu_vol = ini_read_real("settings","mu_vol",0.2)
 audio_group_set_gain(audio_mu,mu_vol,0)
 audio_group_set_gain(audio_sfx,sfx_vol,0)
-if ini_read_real("settings","fullscreen",1)
-	window_set_fullscreen(1)
-ini_close()
 
-ini_open("savedata.lmao")
 globalvar cont_left; cont_left = ini_read_real("settings","bind_left",vk_left)
 globalvar cont_right; cont_right = ini_read_real("settings","bind_right",vk_right)
 globalvar cont_up; cont_up = ini_read_real("settings","bind_up",vk_up)
@@ -45,6 +42,10 @@ globalvar use_gp; use_gp = 0
 globalvar use_varjump; use_varjump = ini_read_real("settings","varjump",1)
 globalvar debug; debug = 0
 globalvar hitstun_enable; hitstun_enable = ini_read_real("settings","hitstun",1)
+
+if ini_read_real("settings","fullscreen",1)
+	window_set_fullscreen(1)
+
 campaign = 3
 playerspr = spr_player_ls
 globalvar destroy_list;
