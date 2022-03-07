@@ -41,7 +41,7 @@ else if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 }
 else if other.state != 11 && other.inv = 0
 {
-	if other.state != 3 && other.state != 4 && state != 1
+	if other.state != 3 && other.state != 4 && state != 1 && !other.justhitenemy
 	{
 		score -= 100
 		if score < 0

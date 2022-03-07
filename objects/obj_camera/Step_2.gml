@@ -26,10 +26,11 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		xbob = 0
 	
-	if abs(x - target_x) > 1
-		x += (target_x - x) / 20 + shake_x
+	if abs(xx - target_x) > 1
+		xx += (target_x - x) / 20 + shake_x
 	else
-		x = target_x + shake_x + xbob
+		xx = target_x + shake_x
+	x = xx + xbob
 
 	//if abs(yy - target_y) > 1
 	//	yy += (target_y - yy) / 20

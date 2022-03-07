@@ -23,10 +23,11 @@ if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 2,obj
 	onground = 1
 else
 	onground = 0
-if onground && vspeed > -1
+if onground
 {
 	coyote_time = 1
 	alarm[4] = 10
+	balloonjumping = 0
 }
 
 if inv_frames
@@ -206,7 +207,7 @@ switch state { // normal
 			image_index = 0
 			coyote_time = 0
 		}
-		if jumping && !key_jump && use_varjump
+		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
 			vspeed = -3
 			jumping = 0
@@ -391,7 +392,7 @@ switch state { // normal
 			jumps -= 1
 			coyote_time = 0
 		}
-		if jumping && !key_jump && use_varjump
+		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
 			vspeed = -3
 			jumping = 0
@@ -930,7 +931,7 @@ switch state { // normal
 			coyote_time = 0
 			jumps--
 		}
-		if jumping && !key_jump && use_varjump
+		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
 			vspeed = -3
 			jumping = 0
@@ -1170,7 +1171,7 @@ switch state { // normal
 			jumping = 1
 			coyote_time = 0
 		}
-		if jumping && !key_jump && use_varjump
+		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
 			vspeed = -3
 			jumping = 0

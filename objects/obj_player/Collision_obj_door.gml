@@ -1,4 +1,4 @@
-if key_up && onground && state != playerstate.dying && !recently_entered_room && onground && pause_state != pausestate.playerpause
+if key_up && state != playerstate.dying && !recently_entered_room && onground && pause_state != pausestate.playerpause
 {
 	if state != playerstate.none
 		if state = playerstate.high

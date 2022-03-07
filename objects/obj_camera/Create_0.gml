@@ -4,6 +4,7 @@ px = 0
 py = 0
 chargescroll = 0
 target_chargescroll = 0
+xx = 0
 yy = 0
 shake_x = 0
 shake_y = 0

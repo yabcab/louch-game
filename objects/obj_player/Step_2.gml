@@ -52,6 +52,7 @@ if y > room_height + 64
 		with obj_camera
 		{
 			x = other.x
+			xx = other.x
 			y = other.y
 		}
 	}

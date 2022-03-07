@@ -1,4 +1,4 @@
-if waiting > -1
+if waiting > -1 && pause_state != pausestate.playerpause
 	waiting--
 
 if waiting = 0

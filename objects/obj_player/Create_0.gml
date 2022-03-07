@@ -4,6 +4,7 @@ x += 32
 alarm[0] = 30
 alarm[3] = 1
 
+balloonjumping = 0
 recently_entered_room = 0
 onground = 0
 jumping = 0
