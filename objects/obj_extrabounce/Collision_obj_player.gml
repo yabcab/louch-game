@@ -14,4 +14,5 @@ with other {
 	beginjump = 1
 	image_index = 0
 	jumping = 1
+	jumps = 1
 }

@@ -19,7 +19,7 @@ if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can
 	}
 }
 
-if y > room_height
+if y > room_height + 64
 {
 	if state = playerstate.dying
 	{
