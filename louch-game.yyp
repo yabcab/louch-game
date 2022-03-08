@@ -592,6 +592,7 @@
     {"id":{"name":"obj_movingplatform","path":"objects/obj_movingplatform/obj_movingplatform.yy",},"order":16,},
     {"id":{"name":"obj_egg","path":"objects/obj_egg/obj_egg.yy",},"order":14,},
     {"id":{"name":"sfx_water2","path":"sounds/sfx_water2/sfx_water2.yy",},"order":39,},
+    {"id":{"name":"rm_sky_7","path":"rooms/rm_sky_7/rm_sky_7.yy",},"order":8,},
     {"id":{"name":"bg_secret2","path":"sprites/bg_secret2/bg_secret2.yy",},"order":6,},
     {"id":{"name":"mu_hub3","path":"sounds/mu_hub3/mu_hub3.yy",},"order":23,},
     {"id":{"name":"rm_tutorial_2","path":"rooms/rm_tutorial_2/rm_tutorial_2.yy",},"order":1,},
@@ -931,6 +932,7 @@
     {"roomId":{"name":"rm_sky_secret1","path":"rooms/rm_sky_secret1/rm_sky_secret1.yy",},},
     {"roomId":{"name":"rm_sky_secret2","path":"rooms/rm_sky_secret2/rm_sky_secret2.yy",},},
     {"roomId":{"name":"rm_sky_6","path":"rooms/rm_sky_6/rm_sky_6.yy",},},
+    {"roomId":{"name":"rm_sky_7","path":"rooms/rm_sky_7/rm_sky_7.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
