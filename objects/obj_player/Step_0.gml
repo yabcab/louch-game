@@ -1,25 +1,15 @@
-
-
-//if mouse_check_button_pressed(mb_left) || (mouse_check_button(mb_left) && keyboard_check(vk_shift))
-//	instance_create_depth(random_range(x - 200,x + 200),y - 360,-1,obj_enemywallhitter)
-
-//if keyboard_check_pressed(vk_escape)
-//{
-//	if pause_state = pausestate.none
-//	{
-//		pause_state = pausestate.playerpause
-//		pause = 1
-//	}
-//	else
-//	{
-//		pause_state = pausestate.none
-//		pause = 0
-//	}
+if grav = -1
+	obj_camera.targetangle = 180
+else
+	obj_camera.targetangle = 0
+	
+image_yscale = grav
+ys = grav
 
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 1,obj_solid) || instance_place(x,y + abs(hspeed) + 2,obj_slope)
+if instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + abs(hspeed) + 2 * grav,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -158,13 +148,10 @@ switch state { // normal
 					sprite_index = spr_playerLS_boostjumpair
 		}
 		
-		// velocity
-		if vspeed < 15
-			vspeed += 0.3
-		
+		player_velocity()
 		
 		// walkin
-		if key_up && !dashing && (instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope))
+		if key_up && !dashing && (instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + 1 * grav,obj_slope))
 		{
 			if jumpcharge < 1
 			{
@@ -178,10 +165,10 @@ switch state { // normal
 		{
 			jumpcharge = 0
 			if key_right && !dashing
-				hspeed = 4
+				hspeed = grav * 4
 			else 
 			if key_left && !dashing
-				hspeed = -4
+				hspeed = grav * -4
 			else
 				if !dashing
 					hspeed = 0
@@ -192,12 +179,12 @@ switch state { // normal
 		{
 			if key_up && jumpcharge > 30
 			{
-				vspeed = -13
+				vspeed = grav * -13
 				jumpcharge = 0
 				jump_charged = 1
 			}
 			else
-				vspeed = -9
+				vspeed = grav * -9
 				
 			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
@@ -334,7 +321,7 @@ switch state { // normal
 	{
 		// anims
 		if campaign = 3
-			if instance_place(x,y+1,obj_solid) || instance_place(x,y + 1,obj_slope)
+			if instance_place(x,y+1 * grav ,obj_solid) || instance_place(x,y + 1 * grav,obj_slope)
 				sprite_index = spr_playerLS_boost
 			else
 				if beginjump
@@ -367,11 +354,10 @@ switch state { // normal
 			audio_stop_sound(sfx_run)
 		
 		// velocity
-		if vspeed < 15
-			vspeed += 0.3
+		player_velocity()
 		if key_down
 		{
-			vspeed = 10
+			vspeed = 10 * grav
 			diving = 1
 		}
 		else
@@ -379,11 +365,11 @@ switch state { // normal
 		
 		hspeed = 7 * facing
 		
-		if key_jump_press && ((instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) || jumps > 0 || coyote_time) // ground
+		if key_jump_press && ((instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)) || jumps > 0 || coyote_time) // ground
 		{
-			vspeed = -9
+			vspeed = -9 * grav
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(instance_place(x,y + 10 * grav,obj_airjump) || instance_place(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
@@ -394,30 +380,30 @@ switch state { // normal
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
-			vspeed = -3
+			vspeed = -3 * grav
 			jumping = 0
 		}
 		
-		if instance_place(x + hspeed,y,obj_solid)
+		if instance_place(x + hspeed * grav,y,obj_solid)
 		{
-			if instance_place(x + hspeed,y - 12,obj_solid)
+			if instance_place(x + hspeed,y - 12 * grav,obj_solid)
 			{
 				state = idlestate
 				audio_stop_sound(sfx_run)
 			}
 			else
-				while instance_place(x + hspeed,y - 8,obj_solid)
-					y -= 1
+				while instance_place(x + hspeed * grav,y - 8 * grav,obj_solid)
+					y -= 1 * grav
 		}
 		if coyote_time
 			jumps = 2
 		else
 			if !onground && jumps = 2
 				jumps = 1
-		if instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)
+		if instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)
 			jumps = 1
 			
-		instance_create_depth(x + (40 * facing),y,-1,obj_dash_hitbox)
+		instance_create_depth(x + (40 * facing) * grav,y,-1,obj_dash_hitbox)
 		trailspawntime++
 		if trailspawntime > 5
 		{
@@ -439,10 +425,9 @@ switch state { // normal
 	case playerstate.hurt: // hurt
 	{
 		// velocity
-		if vspeed < 15
-			vspeed += 0.3
+		player_velocity()
 			
-		hspeed = 4 * -facing
+		hspeed = 4 * -facing * grav
 		
 		sprite_index = spr_playerLS_pain
 		
@@ -1475,6 +1460,171 @@ switch state { // normal
 		statesave = playerstate.idle
 		taunt_qualify = 0
 	}
+	break;
+	
+	case playerstate.antigrav:
+	{
+		obj_camera.targetangle = 180
+		image_yscale = -1
+		ys = -1
+		
+		//louchester anims
+		if campaign = 3
+		{
+			if instance_place(x,y-1,obj_solid) || instance_place(x,y-5,obj_slope)
+			{
+				if hspeed = 0
+					if jumpcharge > 0
+						if jumpcharge_starting
+							sprite_index = spr_playerLS_chargejumpstart
+						else
+							if jumpcharge > 15
+								sprite_index = spr_playerLS_chargejumpready
+							else
+								sprite_index = spr_playerLS_chargejump
+					else
+						sprite_index = spr_playerLS_still
+				else
+					sprite_index = spr_playerLS_walk
+				
+				beginfall = 1
+				beginfall_start = 1
+			}		
+			else
+			if !dashing
+				if beginjump
+				{
+					if enddash
+						sprite_index = spr_playerLS_airjumpend
+					else
+						sprite_index = spr_playerLS_jumpstart
+					beginfall = 0
+				}
+				else
+					if beginfall = 0
+						sprite_index = spr_playerLS_jumpair
+					else
+					{
+						sprite_index = spr_playerLS_beginfall
+						if beginfall_start
+						{
+							image_index = 0
+							beginfall_start = 0
+						}
+					}
+			else
+				if beginjump
+					sprite_index = spr_playerLS_boostjumpstart
+				else
+					sprite_index = spr_playerLS_boostjumpair
+		}
+		
+		// velocity
+		if vspeed > -15
+			vspeed -= 0.3
+		
+		
+		// walkin
+		if key_up && !dashing && (instance_place(x,y - 1,obj_solid) || instance_place(x,y - 1,obj_slope))
+		{
+			if jumpcharge < 1
+			{
+				jumpcharge_starting = 1
+				image_index = 0
+			}
+			jumpcharge += 1
+			hspeed = 0
+		}
+		else
+		{
+			jumpcharge = 0
+			if key_left && !dashing
+				hspeed = 4
+			else 
+			if key_right && !dashing
+				hspeed = -4
+			else
+				if !dashing
+					hspeed = 0
+		}
+			
+		// jumpin
+		if key_jump_press && (instance_place(x,y - 5,obj_solid) || instance_place(x,y - 5,obj_slope) || coyote_time) // ground
+		{
+			if key_up && jumpcharge > 30
+			{
+				vspeed = 13
+				jumpcharge = 0
+				jump_charged = 1
+			}
+			else
+				vspeed = 9
+				
+			if !(instance_place(x,y - 10,obj_airjump) || instance_place(x,y,obj_airjump))
+				audio_play_sound(sfx_jump,1,0)
+				
+			beginjump = 1
+			jumping = 1
+			image_index = 0
+			coyote_time = 0
+		}
+		if jumping && !key_jump && use_varjump && !balloonjumping
+		{
+			vspeed = 3
+			jumping = 0
+		}
+				
+		// dashin
+		//if keyboard_check_pressed(cont_attack) && dash_charge = 1
+		//{
+		//	if key_right
+		//		hspeed = 9
+		//	else
+		//	if key_left
+		//		hspeed = -9
+		//	else
+		//	hspeed = 0
+			
+		//	vspeed = -2
+		//	dashing = 1
+		//	dash_charge = 0
+		//	beginjump = 1
+		//	image_index = 0
+		//}
+		
+		// dash end
+		if key_left_press || key_right_press
+			dashing = 0
+		
+		// dash hitbox
+		if dashing = 1
+		{
+			if hspeed < 0
+				instance_create_depth(x - 35,y,depth,obj_dash_hitbox)
+			else if hspeed > 0
+				instance_create_depth(x + 35,y,depth,obj_dash_hitbox)
+			
+			if vspeed < -5 && use_dash > 1
+				instance_create_depth(x,y -40,depth,obj_dash_hitbox_u)
+		}
+		
+		// ground pound
+		if use_gp && !pounding && !(instance_place(x,y-5,obj_solid) || instance_place(x,y - 5,obj_slope)) && keyboard_check_pressed(cont_down)
+		{
+			state = playerstate.ground_pound
+			pounding = 1
+			begingp = 1
+		}
+		gp_time = 0
+		
+			if hspeed < 0
+				facing = -1
+			if hspeed > 0
+				facing = 1
+		// taunt
+		taunt_qualify = 1
+	}
+	break;
 }
 
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)

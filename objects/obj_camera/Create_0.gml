@@ -20,3 +20,5 @@ ybob = 0
 cambobx = 0
 camboby = 0
 _time = 0
+angle = 0
+targetangle = 0

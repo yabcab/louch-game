@@ -1,4 +1,5 @@
 _time++
+var cam = view_camera[0]
 
 if obj_player.nonstunstate = playerstate.boost
 	var boost = 1
@@ -58,17 +59,29 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 		zoomy = zoomy_target
 	
 	if room != rm_login
-		camera_set_view_size(view_camera[0],zoomx,zoomy)
+		camera_set_view_size(cam,zoomx,zoomy)
+	#endregion
+	
+	#region angle
+	if abs(angle - targetangle) > 0.01
+		angle += (targetangle - angle) / 20
+	else
+		angle = targetangle
+		
+	camera_set_view_angle(cam,angle)
+	#endregion
+	
+	#region shake
+	if camerashake
+	{
+		shake_x = random_range(-shake_x_int,shake_x_int)
+		shake_y = random_range(-shake_y_int,shake_y_int)
+	}
+	else
+	{
+		shake_x = 0
+		shake_y = 0
+	}
 	#endregion
 }
 
-if camerashake
-{
-	shake_x = random_range(-shake_x_int,shake_x_int)
-	shake_y = random_range(-shake_y_int,shake_y_int)
-}
-else
-{
-	shake_x = 0
-	shake_y = 0
-}

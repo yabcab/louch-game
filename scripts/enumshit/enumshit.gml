@@ -20,6 +20,7 @@ function enumshit(){
 		swim,
 		balloon_pound,
 		keyfly,
+		antigrav,
 	}
 
 enum pausestate {

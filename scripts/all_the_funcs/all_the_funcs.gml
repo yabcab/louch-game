@@ -268,6 +268,20 @@ function get_inputs(controllerbind)
 		key_pause = 0
 }
 
+function player_velocity()
+{
+	if grav = 1
+	{
+		if vspeed < 15
+			vspeed += 0.3
+	}
+	else
+	{
+		if vspeed > -15
+			vspeed -= 0.3
+	}
+}
+
 #endregion
 
 #region compatability
