@@ -1,7 +1,7 @@
-if grav = -1
-	obj_camera.targetangle = 180
-else
-	obj_camera.targetangle = 0
+//if grav = -1
+//	obj_camera.targetangle = 180
+//else
+//	obj_camera.targetangle = 0
 	
 image_yscale = grav
 ys = grav
@@ -9,7 +9,7 @@ ys = grav
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + abs(hspeed) + 2 * grav,obj_slope)
+if instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -165,10 +165,10 @@ switch state { // normal
 		{
 			jumpcharge = 0
 			if key_right && !dashing
-				hspeed = grav * 4
+				hspeed = 4
 			else 
 			if key_left && !dashing
-				hspeed = grav * -4
+				hspeed = -4
 			else
 				if !dashing
 					hspeed = 0
@@ -196,7 +196,7 @@ switch state { // normal
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
-			vspeed = -3
+			vspeed = -3 * grav
 			jumping = 0
 		}
 				

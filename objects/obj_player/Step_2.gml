@@ -86,13 +86,17 @@ if jump_charged && pause_state != pausestate.playerpause
 	if vspeed > 0
 		jump_charged = 0
 }
-if vspeed > -3 && state != playerstate.taunt && !justhitenemy && pause_state != pausestate.playerpause
+if ((vspeed > -3 && grav = 1) || (vspeed < 3 && grav = -1)) && state != playerstate.taunt && !justhitenemy && pause_state != pausestate.playerpause
 	jumping = 0
 
 
-while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying
+while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying && grav = 1
 {
 	y += 0.1
+}
+while place_meeting(x, y - abs(hspeed) - 1, obj_ceilslope) && !place_meeting(x, y - 1, obj_ceilslope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying && grav = -1
+{
+	y -= 0.1
 }
 dashtime--
 

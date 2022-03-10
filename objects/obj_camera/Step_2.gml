@@ -64,7 +64,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	
 	#region angle
 	if abs(angle - targetangle) > 0.01
-		angle += (targetangle - angle) / 20
+		angle += clamp((targetangle - angle) / 10,-5,5)
 	else
 		angle = targetangle
 		

@@ -23,12 +23,12 @@ if state = playerstate.dying
 			vspeed *= -1
 	}
 }
-if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12,obj_solid)
+if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12 * grav,obj_solid)
 {
 	while instance_place(x + hspeed,y + vspeed,obj_solid)
-		y -= 1
+		y -= 1 * grav
 }
-if (instance_place(x+hspeed,y,obj_solid)) && (instance_place(x+hspeed,y - 12,obj_solid))
+if (instance_place(x+hspeed,y,obj_solid)) && (instance_place(x+hspeed,y - 12 * grav,obj_solid))
 {
 	if (hspeed<=0){move_contact_solid(180,abs(hspeed));}
 	if (hspeed>0){move_contact_solid(0,abs(hspeed));}
@@ -46,20 +46,20 @@ if (instance_place(x+hspeed,y+vspeed,obj_solid))
 }
 
 // dash
-if instance_place(x + hspeed,y + 1,obj_solid) && !instance_place(x + hspeed,y - 12,obj_solid)
+if instance_place(x + hspeed,y + 1 * grav,obj_solid) && !instance_place(x + hspeed,y - 12 * grav,obj_solid)
 {
 	dash_charge = 1
 	pounding = 0
 }
-if !instance_place(x,y-1,obj_solid)
+if !instance_place(x,y-1 * grav,obj_solid)
 	dashing = 0
 	
-if state = playerstate.hurt && (instance_place(x,y+1,obj_solid) || instance_place(x+1,y,obj_solid) || instance_place(x-1,y,obj_solid)) && hurttime > 10
+if state = playerstate.hurt && (instance_place(x,y+1 * grav,obj_solid) || instance_place(x+1 * grav,y,obj_solid) || instance_place(x-1 * grav,y,obj_solid)) && hurttime > 10
 {
 	state = idlestate
 	hurttime = 0
 }
 	
-if state = playerstate.balloon_dash && instance_place(x,y+1,obj_solid)
+if state = playerstate.balloon_dash && instance_place(x,y+1 * grav,obj_solid)
 	state = idlestate
 	
