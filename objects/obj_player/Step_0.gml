@@ -1,7 +1,7 @@
-//if grav = -1
-//	obj_camera.targetangle = 180
-//else
-//	obj_camera.targetangle = 0
+if grav = -1
+	obj_camera.targetangle = 180
+else
+	obj_camera.targetangle = 0
 	
 image_yscale = grav
 ys = grav

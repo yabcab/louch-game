@@ -1,9 +1,11 @@
-audio_stop_sound(mu_disclaimer)
 draw_set_font(fnt_text)
 gamepad_set_axis_deadzone(0,0.45)
+pal_swap_init_system(shd_pal_swapper)
+randomize()
 
-globalvar campaign; campaign = 0
-globalvar playerspr; playerspr = spr_player
+//globalinits
+globalvar campaign; campaign = 3
+globalvar playerspr; playerspr = spr_player_ls
 globalvar gotsecret; gotsecret = 0
 globalvar time; time = 0
 globalvar deaths; deaths = 0
@@ -19,16 +21,19 @@ globalvar can_pause; can_pause = 0
 globalvar score_font; score_font = font_add_sprite_ext(spr_scorenumbers,"0123456789:AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.!?/%[]",0,0)
 globalvar combo_font; combo_font = font_add_sprite_ext(spr_combonumbers,"0123456789",0,0)
 globalvar freezetimerfont; freezetimerfont = font_add_sprite_ext(spr_freezetimernumbers,"0123456789:",0,0)
+globalvar dwidth; dwidth = 1920
+globalvar dheight; dheight = 1080
 
+//loading
 audio_group_load(audio_sfx)
 audio_group_load(audio_mu)
 
+//savedata
 ini_open("savedata.lmao")
 globalvar sfx_vol; sfx_vol = ini_read_real("settings","sfx_vol",0.2)
 globalvar mu_vol; mu_vol = ini_read_real("settings","mu_vol",0.2)
 audio_group_set_gain(audio_mu,mu_vol,0)
 audio_group_set_gain(audio_sfx,sfx_vol,0)
-
 globalvar cont_left; cont_left = ini_read_real("settings","bind_left",vk_left)
 globalvar cont_right; cont_right = ini_read_real("settings","bind_right",vk_right)
 globalvar cont_up; cont_up = ini_read_real("settings","bind_up",vk_up)
@@ -36,21 +41,21 @@ globalvar cont_down; cont_down = ini_read_real("settings","bind_down",vk_down)
 globalvar cont_jump; cont_jump = ini_read_real("settings","bind_jump",ord("Z"))
 globalvar cont_attack; cont_attack = ini_read_real("settings","bind_attack",ord("X"))
 globalvar cont_taunt; cont_taunt = ini_read_real("settings","bind_taunt",ord("C"))
-
 globalvar use_dash; use_dash = 0
 globalvar use_gp; use_gp = 0
 globalvar use_varjump; use_varjump = ini_read_real("settings","varjump",1)
 globalvar debug; debug = 0
 globalvar hitstun_enable; hitstun_enable = ini_read_real("settings","hitstun",1)
-
 if ini_read_real("settings","fullscreen",1)
 	window_set_fullscreen(1)
 
-campaign = 3
-playerspr = spr_player_ls
+ini_close()
+
+//destroylist
 globalvar destroy_list;
 destroy_list = ds_list_create()
 
+//bpm map
 globalvar bpm_map; bpm_map = []
 bpm_map[mu_c3area1] = 145
 bpm_map[mu_tutorial] = 100
@@ -70,7 +75,3 @@ bpm_map[mu_sky1] = 130
 bpm_map[sfx_none] = 0
 
 room_goto(rm_gameintro)
-randomize()
-ini_close()
-
-pal_swap_init_system(shd_pal_swapper)
