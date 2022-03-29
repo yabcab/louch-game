@@ -2,6 +2,7 @@ var str = keyboard_string
 
 if string_pos("catsing",str) > 0
 {
+	cat = 1
 	//obj_music.mu = mu_thatcatecansing
 	campaign = 5
 	keyboard_string = ""
@@ -107,4 +108,15 @@ if string_pos("showmethematrix",str) > 0
 	colview = 1
 	audio_play_sound(sfx_thud,1,0)
 	keyboard_string = ""
+}
+
+if cat
+{
+	with obj_music
+	{	
+		mu = mu_thatcatecansing
+		secretmusic = mu_thatcatecansing
+		secrettrialmusic = mu_thatcatecansing
+		trialmusic = mu_thatcatecansing
+	}
 }
