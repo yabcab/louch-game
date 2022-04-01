@@ -8,4 +8,3 @@
 //		with instance_create_depth(x,y,depth,obj_stillparticle)
 //			sprite_index = spr_walksmoke
 //}
-
