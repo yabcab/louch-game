@@ -747,29 +747,40 @@ switch state { // normal
 			else
 			hspeed = 0
 			
-			if use_dash > 1
-			{
-				if key_up
-					vspeed = -9
-				else
+			if !onground
 				vspeed = -3
-			}
 			else
-				vspeed = -3
+				groundlunge_cooldown = 50
 			
 			dashing = 1
 			dash_charge = 0
 			beginjump = 1
 			image_index = 0
 		}
+		if key_attack_press && dashing && !onground
+		{
+			vspeed = -5
+			jumping = 1
+			dashing = 0
+			lungecancelled = 1
+			hspeed /= 2
+		}
+		if onground
+			lungecancelled = 0
 		
 		// dash end
 		if key_left_press || key_right_press
 			dashing = 0
 		
+		if groundlunge_cooldown > -51
+			groundlunge_cooldown--
+		
 		// dash hitbox
 		if dashing = 1
 		{
+			if groundlunge_cooldown < 0 && onground
+				dashing = 0
+			
 			if hspeed < 0
 				instance_create_depth(x - 35,y,depth,obj_dash_hitbox)
 			else if hspeed > 0
@@ -777,6 +788,11 @@ switch state { // normal
 			
 			if vspeed < -5 && use_dash > 1
 				instance_create_depth(x,y -40,depth,obj_dash_hitbox_u)
+		}
+		else
+		{
+			if groundlunge_cooldown < -50
+				dash_charge = 1
 		}
 		
 		// ground pound
@@ -1129,10 +1145,16 @@ switch state { // normal
 		
 		// walkin
 		if key_right && !dashing
+		{
 			hspeed = lerp(hspeed,6,0.05)
+			facing = 1
+		}
 		else 
 		if key_left && !dashing
+		{
 			hspeed = lerp(hspeed,-6,0.05)
+			facing = -1	
+		}
 		else
 			if !dashing
 				hspeed = lerp(hspeed,0,0.025)
@@ -1184,10 +1206,19 @@ switch state { // normal
 			beginjump = 1
 			image_index = 0
 		}
+		if dashing && groundlunge_cooldown > -51
+			groundlunge_cooldown--
+			
+		if groundlunge_cooldown = -50
+			dash_charge = 1
 		
 		// dash end
 		if (key_left_press && facing = 1) || (key_right_press && facing = -1)
+		{
 			dashing = 0
+			groundlunge_cooldown = -52
+			dash_charge = 1
+		}
 		
 		// dash hitbox
 		if dashing = 1
@@ -1220,10 +1251,10 @@ switch state { // normal
 		}
 		gp_time = 0
 		
-			if hspeed < 0
-				facing = -1
-			if hspeed > 0
-				facing = 1
+			//if hspeed < 0
+			//	facing = -1
+			//if hspeed > 0
+			//	facing = 1
 		// taunt
 		taunt_qualify = 1
 	}

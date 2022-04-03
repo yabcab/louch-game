@@ -1,5 +1,13 @@
 if pause_state = pausestate.none
 {
+	//x -= hspeed
+	//x += hspeed * image_yscale
+	//y -= vspeed
+	//y += vspeed * image_yscale
+	
+	//image_xscale += popout
+	//image_yscale += popout
+	
 	vspeed += 0.15
 	image_angle += rot_speed * rot_dir
 
@@ -19,6 +27,7 @@ if pause_state = pausestate.none
 			sprite_index = s
 			image_index = i
 			image_xscale = _xs
+			image_yscale = other.image_yscale
 			image_angle = ia
 		}
 	}

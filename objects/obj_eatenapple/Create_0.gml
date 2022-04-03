@@ -7,3 +7,4 @@ fadetime = 0
 sprite_index = choose(spr_appleeaten,spr_popsiclecol_eaten)
 rot_speed = 5
 rot_dir = choose(1,-1)
+popout = 0
