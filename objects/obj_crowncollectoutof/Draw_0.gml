@@ -1,0 +1,1 @@
+draw_text_outlined(x - string_width(str) / xs,y,c_white,c_black,str,xs,ys)

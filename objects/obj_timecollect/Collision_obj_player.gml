@@ -4,11 +4,16 @@ if is_timetrial && !collected
 	collected = 1
 	with obj_timer
 	{
-		seconds += 2
-		if seconds > 59
+		//seconds += 2
+		//if seconds > 59
+		//{
+		//	seconds -= 60
+		//	minutes += 1	
+		//}
+		with obj_timer
 		{
-			seconds -= 60
-			minutes += 1	
+			trial_timeleft += 6.5
+			trial_timeleft = clamp(trial_timeleft,0,215)
 		}
 	}
 	//NEW FX LATER

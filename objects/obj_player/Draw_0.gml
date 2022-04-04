@@ -23,4 +23,3 @@ if instance_exists(obj_gms)
 
 if instance_place(x,y,obj_palselect) || instance_place(x,y,obj_door)
 	draw_sprite_ext(spr_uparrow,0,x,y - 54 - (instance_exists(obj_gms) * 10) + arrowsin,1,1,0,c_white,1)
-	

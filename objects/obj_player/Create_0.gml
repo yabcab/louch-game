@@ -60,6 +60,8 @@ drawballoon = 0
 image_index_prev = 0
 groundlunge_cooldown = 0
 lungecancelled = 0
+totalcloud = 0
+clouds = 0
 
 facing = 1
 hsp = 0

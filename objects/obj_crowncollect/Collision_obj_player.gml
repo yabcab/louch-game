@@ -12,7 +12,10 @@
 if !collected
 {
 	collected = 1
-	//audio_play_sound(sfx_applemunch,1,0)
+	var snd = audio_play_sound(sfx_crowncollect,1,0)
+	audio_sound_pitch(snd,1 + ((crowncollects / crowncollecttotal) / 1.5))
+	crowncollects++
 	ds_list_set(destroy_list,id,1)
 	score += 250
+	instance_create_depth(x,y,-10,obj_crowncollectoutof)
 }

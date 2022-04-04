@@ -1,5 +1,8 @@
-if obj_metronome.note_4
+if !is_timetrial
 {
-	image_xscale = 1.7
-	image_yscale = 0.7
+	if obj_metronome.note_4
+	{
+		image_xscale = 1.7
+		image_yscale = 0.7
+	}	
 }

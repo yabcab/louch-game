@@ -59,7 +59,7 @@ else
 
 if instance_exists(obj_timer)
 {
-	if !obj_timer.minutes && !obj_timer.seconds	
+	if (!obj_timer.minutes && !obj_timer.seconds) || obj_timer.trial_timeleft <= 15
 		{
 			instance_destroy(obj_timer)
 			state = -1
@@ -82,7 +82,6 @@ if instance_exists(obj_timer)
 			obj_music.alarm[0] = 200
 		}
 }
-
 
 switch state { // normal
 	case playerstate.none:
@@ -175,7 +174,7 @@ switch state { // normal
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time) // ground
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
@@ -193,6 +192,8 @@ switch state { // normal
 			jumping = 1
 			image_index = 0
 			coyote_time = 0
+			if clouds > 0 && (!onground && !coyote_time)
+				clouds--
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
@@ -1160,7 +1161,7 @@ switch state { // normal
 				hspeed = lerp(hspeed,0,0.025)
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time) // ground
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
 			if key_up && jumpcharge > 15
 			{
@@ -1177,6 +1178,8 @@ switch state { // normal
 			image_index = 0
 			jumping = 1
 			coyote_time = 0
+			if clouds > 0 && (!onground && !coyote_time)
+				clouds--
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{

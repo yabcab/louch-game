@@ -15,7 +15,9 @@ amb2 = sfx_none
 amb3 = sfx_none
 amb4 = sfx_none
 
-pamb1 = 0
-pamb2 = 0 
-pamb3 = 0
-pamb4 = 0
+pamb1 = -6
+pamb2 = -6
+pamb3 = -6
+pamb4 = -6
+
+playambience = 0
