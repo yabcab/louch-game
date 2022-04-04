@@ -10,19 +10,19 @@
   "bbox_left": 0,
   "bbox_right": 447,
   "bbox_top": 0,
-  "bbox_bottom": 607,
+  "bbox_bottom": 699,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 450,
-  "height": 650,
+  "height": 700,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"391cd9d7-ac98-41c2-96b4-8887a05fa4e1","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"391cd9d7-ac98-41c2-96b4-8887a05fa4e1","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},"LayerId":{"name":"1429bc82-467a-45dc-bded-a763ad5302d1","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
