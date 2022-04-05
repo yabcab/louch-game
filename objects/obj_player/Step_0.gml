@@ -1102,7 +1102,7 @@ switch state { // normal
 		{
 			if onground
 			{
-				if abs(hspeed) < 0.25
+				if !key_left && !key_right
 					sprite_index = spr_playerLS_high_idle
 				else
 					sprite_index = spr_playerLS_high_walk
