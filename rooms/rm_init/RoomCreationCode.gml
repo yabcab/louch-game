@@ -23,6 +23,7 @@ globalvar combo_font; combo_font = font_add_sprite_ext(spr_combonumbers,"0123456
 globalvar freezetimerfont; freezetimerfont = font_add_sprite_ext(spr_freezetimernumbers,"0123456789:",0,0)
 globalvar dwidth; dwidth = 1920
 globalvar dheight; dheight = 1080
+
 globalvar crowncollects; crowncollects = 0
 globalvar crowncollecttotal; crowncollecttotal = 0
 globalvar rank_point_req; rank_point_req = 0
@@ -59,6 +60,14 @@ globalvar debug; debug = 0
 globalvar hitstun_enable; hitstun_enable = ini_read_real("settings","hitstun",1)
 if ini_read_real("settings","fullscreen",1)
 	window_set_fullscreen(1)
+
+globalvar sav_beatlevel; sav_beatlevel = []
+sav_beatlevel[level_id.grass] = ini_read_real("level_completion","grass",0)
+sav_beatlevel[level_id.jungle] = ini_read_real("level_completion","jungle",0)
+sav_beatlevel[level_id.space] = ini_read_real("level_completion","space",0)
+sav_beatlevel[level_id.snow] = ini_read_real("level_completion","snow",0)
+sav_beatlevel[level_id.beach] = ini_read_real("level_completion","beach",0)
+sav_beatlevel[level_id.sky1] = ini_read_real("level_completion","sky",0)
 
 ini_close()
 

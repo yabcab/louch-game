@@ -401,6 +401,7 @@
     {"id":{"name":"spr_cracker","path":"sprites/spr_cracker/spr_cracker.yy",},"order":2,},
     {"id":{"name":"obj_wait","path":"objects/obj_wait/obj_wait.yy",},"order":28,},
     {"id":{"name":"Sprite287","path":"sprites/Sprite287/Sprite287.yy",},"order":18,},
+    {"id":{"name":"random_info!!!!","path":"notes/random_info!!!!/random_info!!!!.yy",},"order":0,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":1,},
     {"id":{"name":"spr_playerLS_chargejump","path":"sprites/spr_playerLS_chargejump/spr_playerLS_chargejump.yy",},"order":28,},
     {"id":{"name":"rm_icebergs_8","path":"rooms/rm_icebergs_8/rm_icebergs_8.yy",},"order":11,},
