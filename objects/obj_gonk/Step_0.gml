@@ -11,8 +11,7 @@ switch state {
 	{
 		hspeed = -2 * xs
 		
-		if vspeed < 15
-			vspeed += 0.3
+		player_velocity()
 			
 		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid)) || instance_place(x + hspeed,y,obj_enemyturn)
 		{

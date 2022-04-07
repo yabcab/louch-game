@@ -25,6 +25,15 @@ globalvar dwidth; dwidth = 1920
 globalvar dheight; dheight = 1080
 globalvar crowncollects; crowncollects = 0
 globalvar crowncollecttotal; crowncollecttotal = 0
+globalvar rank_point_req; rank_point_req = 0
+globalvar rank_got_specialgoal; rank_got_specialgoal = 0
+globalvar rank_do_specialgoal; rank_do_specialgoal = 0
+globalvar rank_highestcombo; rank_highestcombo = 0
+globalvar rank_highestcombo_req; rank_highestcombo_req = 0
+globalvar rank_specialgoal_checkfunc; 
+rank_specialgoal_checkfunc = function() {
+	//balls
+}
 
 //loading
 audio_group_load(audio_sfx)
@@ -75,5 +84,6 @@ bpm_map[mu_beach] = 135
 bpm_map[mu_mines] = 110
 bpm_map[mu_sky1] = 130
 bpm_map[sfx_none] = 0
+bpm_map[mu_bigtrial] = 165
 
 room_goto(rm_gameintro)

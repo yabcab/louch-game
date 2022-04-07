@@ -5,7 +5,8 @@ if pause_state = pausestate.none
 	image_angle = sin(_time / 10) * 5
 	yoff = sin((_time + 185) / 15) * 3
 
-	if collected
+}
+if collected
 	{
 		image_xscale += 0.1
 		image_yscale += 0.1
@@ -13,5 +14,3 @@ if pause_state = pausestate.none
 		if image_alpha < 0
 			instance_destroy()
 	}
-}
-	

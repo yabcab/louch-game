@@ -4,7 +4,7 @@ hp = obj_player.hp
 if combotimer > 0
 {
 	is_combo = 1
-	combo_amount = clamp(obj_player.combo,0,10)
+	combo_amount = obj_player.combo
 	comboletter_rise_target = 75
 	if pause_state != pausestate.playerpause
 		combotimer--

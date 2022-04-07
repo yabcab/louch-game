@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 1,
-  "volume": 0.5,
+  "volume": 0.2,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_jungle.mp3",
-  "duration": 178.390213,
+  "duration": 176.901245,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

@@ -12,7 +12,7 @@ if is_timetrial && !collected
 		//}
 		with obj_timer
 		{
-			trial_timeleft += 6.5
+			trial_timeleft += 7.5
 			trial_timeleft = clamp(trial_timeleft,0,215)
 		}
 	}

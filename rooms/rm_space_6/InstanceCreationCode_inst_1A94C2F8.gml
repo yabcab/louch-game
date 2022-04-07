@@ -1,2 +1,2 @@
-seconds = 45
+seconds = 15
 minutes = 2

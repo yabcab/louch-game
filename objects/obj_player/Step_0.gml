@@ -1,8 +1,11 @@
-if grav = -1
-	obj_camera.targetangle = 180
-else
-	obj_camera.targetangle = 0
-	
+//if grav = -1
+//	obj_camera.targetangle = 180
+//else
+//	obj_camera.targetangle = 0
+
+if combo > rank_highestcombo
+	rank_highestcombo = combo
+
 image_yscale = grav
 ys = grav
 
@@ -428,7 +431,7 @@ switch state { // normal
 		// velocity
 		player_velocity()
 			
-		hspeed = 4 * -facing * grav
+		hspeed = -4 * facing * grav
 		
 		sprite_index = spr_playerLS_pain
 		

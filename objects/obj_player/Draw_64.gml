@@ -42,3 +42,6 @@ if debug
 	}
 	
 }
+
+//rank calc
+//draw_text_outlined(100,100,c_white,c_black,"RANKPERC: " + string((((score / rank_point_req) * 0.5) + ((crowncollects / crowncollecttotal) * 0.25) + ((rank_highestcombo / rank_highestcombo_req) * 0.25)) * 100) + "%",1,1)

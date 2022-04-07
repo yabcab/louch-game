@@ -13,14 +13,14 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"name":"Effect_2","visible":true,"hierarchyFrozen":false,"inheritLayerSettings":false,"depth":-200,"userdefinedDepth":false,"inheritLayerDepth":false,"gridX":32,"gridY":32,"layers":[],"effectEnabled":true,"effectType":"_filter_whitenoise","properties":[
+    {"visible":true,"depth":-200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_whitenoise","properties":[
         {"type":0,"name":"g_WhiteNoiseIntensity","value":"0.025",},
         {"type":0,"name":"g_WhiteNoiseAnimation","value":"0",},
         {"type":2,"name":"g_WhiteNoiseTexture","value":"_filter_whitenoise_noise",},
-      ],"resourceVersion":"1.0","tags":[],"resourceType":"GMREffectLayer",},
-    {"name":"Effect_1","visible":true,"hierarchyFrozen":false,"inheritLayerSettings":false,"depth":-100,"userdefinedDepth":true,"inheritLayerDepth":false,"gridX":32,"gridY":32,"layers":[],"effectEnabled":true,"effectType":"_filter_tintfilter","properties":[
+      ],"resourceVersion":"1.0","name":"Effect_2","tags":[],"resourceType":"GMREffectLayer",},
+    {"visible":true,"depth":-100,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_tintfilter","properties":[
         {"type":1,"name":"g_TintCol","value":"#FF997A7E",},
-      ],"resourceVersion":"1.0","tags":[],"resourceType":"GMREffectLayer",},
+      ],"resourceVersion":"1.0","name":"Effect_1","tags":[],"resourceType":"GMREffectLayer",},
     {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":0,"SerialiseHeight":0,"TileSerialiseData":[
 ],},"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Tiles_2","tags":[],"resourceType":"GMRTileLayer",},
     {"tilesetId":{"name":"ts_tutorial","path":"tilesets/ts_tutorial/ts_tutorial.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":79,"SerialiseHeight":24,"TileSerialiseData":[
