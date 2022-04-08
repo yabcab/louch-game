@@ -32,6 +32,7 @@ globalvar rank_do_specialgoal; rank_do_specialgoal = 0
 globalvar rank_highestcombo; rank_highestcombo = 0
 globalvar rank_highestcombo_req; rank_highestcombo_req = 0
 globalvar rank_specialgoal_checkfunc; 
+globalvar nodamage; nodamage = 1
 rank_specialgoal_checkfunc = function() {
 	//balls
 }
@@ -62,12 +63,12 @@ if ini_read_real("settings","fullscreen",1)
 	window_set_fullscreen(1)
 
 globalvar sav_beatlevel; sav_beatlevel = []
-sav_beatlevel[level_id.grass] = ini_read_real("level_completion","grass",0)
-sav_beatlevel[level_id.jungle] = ini_read_real("level_completion","jungle",0)
-sav_beatlevel[level_id.space] = ini_read_real("level_completion","space",0)
-sav_beatlevel[level_id.snow] = ini_read_real("level_completion","snow",0)
-sav_beatlevel[level_id.beach] = ini_read_real("level_completion","beach",0)
-sav_beatlevel[level_id.sky1] = ini_read_real("level_completion","sky",0)
+sav_beatlevel[level_id.grass] = ini_read_real("level_completion",string(level_id.grass),0)
+sav_beatlevel[level_id.jungle] = ini_read_real("level_completion",string(level_id.jungle),0)
+sav_beatlevel[level_id.space] = ini_read_real("level_completion",string(level_id.space),0)
+sav_beatlevel[level_id.snow] = ini_read_real("level_completion",string(level_id.snow),0)
+sav_beatlevel[level_id.beach] = ini_read_real("level_completion",string(level_id.beach),0)
+sav_beatlevel[level_id.sky1] = ini_read_real("level_completion",string(level_id.sky1),0)
 
 ini_close()
 

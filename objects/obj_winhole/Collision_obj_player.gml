@@ -8,11 +8,12 @@ with other
 		vspeed = -12
 		hspeed = 0
 	}
-	else if vspeed >= 0 && !instance_exists(obj_circletransition)
+	else if vspeed >= 0 && !instance_exists(obj_levelend)
 	{
-		with instance_create_depth(x,y,1,obj_circletransition)
-			targetroom = rm_hub1
+		//with instance_create_depth(x,y,1,obj_circletransition)
+		//	targetroom = rm_hub1
 		state = playerstate.none
+		instance_create_depth(x,y,depth,obj_levelend)
 	}
 }
 if set = 0

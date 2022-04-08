@@ -43,6 +43,7 @@ else if other.state != 11 && other.inv = 0
 {
 	if other.state != 3 && other.state != 4 && state != 1 && !other.justhitenemy
 	{
+		nodamage = 0
 		score -= 100
 		if score < 0
 			score = 0

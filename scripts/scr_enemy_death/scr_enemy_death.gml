@@ -68,6 +68,7 @@ else if other.state != playerstate.dying
 	{
 		if other.state != playerstate.boost && other.state != playerstate.hurt && !other.justhitenemy
 		{
+			nodamage = 0
 			score -= 100
 			obj_hud.combotimer = 0
 			other.combo = 0

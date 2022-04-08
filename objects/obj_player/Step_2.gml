@@ -44,6 +44,7 @@ if y > room_height + 64
 	}
 	else if state != -1
 	{
+		nodamage = 0
 		x = checkpoint_x
 		y = checkpoint_y - 1
 		audio_play_sound(sfx_fallout,1,0)
