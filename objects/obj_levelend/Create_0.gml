@@ -35,7 +35,14 @@ final_display = 0
 final_score = floor((((score / rank_point_req) * 100) * 0.5) + (((crowncollects / crowncollecttotal) * 100) * 0.25) + (((rank_highestcombo / rank_highestcombo_req) * 100) * 0.25))
 
 ini_open("savedata.lmao")
-ini_write_real("level_scoredata",string(level),final_score)
+if ini_read_real("level_scoredata",string(level) + "_percent",0) < final_score
+{
+	ini_write_real("level_scoredata",string(level) + "_percent",final_score)
+	ini_write_real("level_scoredata",string(level) + "_points",score)
+	ini_write_real("level_scoredata",string(level) + "_combo",rank_highestcombo)
+	ini_write_real("level_scoredata",string(level) + "_crown",crowncollects)
+}
+ini_write_real("level_scoredata",string(level) + "_nodamage",nodamage)
 ini_write_real("level_completion",string(level),1)
 
 extras_off = 50

@@ -6,3 +6,5 @@ if ds_list_find_value(destroy_list,id) = 1
 _time = irandom_range(0,300)
 yoff = 0
 collected = 0
+cid = 0
+alarm[0] = 1

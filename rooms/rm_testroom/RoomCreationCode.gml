@@ -5,3 +5,5 @@ crowncollecttotal = 10
 rank_point_req = 12000
 rank_highestcombo_req = 12
 rank_highestcombo = 0
+
+

@@ -32,3 +32,5 @@ obj_player.rot = 0
 
 audio_stop_sound(mu_timetrial)
 audio_stop_sound(mu_escapesecret)
+
+crownsseen = 0

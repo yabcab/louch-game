@@ -18,4 +18,7 @@ if !collected
 	ds_list_set(destroy_list,id,1)
 	score += 250
 	instance_create_depth(x,y,-10,obj_crowncollectoutof)
+	ini_open("savedata.lmao")
+	ini_write_real("crowncollects_" + string(level),cid,1)
+	ini_close()
 }
