@@ -1,0 +1,1 @@
+str = "Jump with " + get_control_string(cont_jump) + "."

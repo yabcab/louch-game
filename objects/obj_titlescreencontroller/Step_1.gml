@@ -58,6 +58,7 @@ if disp_state = 0
 }
 if disp_state = 1
 {
+	ini_open("savedata.lmao")
 	if obj_player.key_attack_press
 	{
 		selector_target_x = 450

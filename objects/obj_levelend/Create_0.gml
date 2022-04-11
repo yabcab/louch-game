@@ -42,7 +42,8 @@ if ini_read_real("level_scoredata",string(level) + "_percent",0) < final_score
 	ini_write_real("level_scoredata",string(level) + "_combo",rank_highestcombo)
 	ini_write_real("level_scoredata",string(level) + "_crown",crowncollects)
 }
-ini_write_real("level_scoredata",string(level) + "_nodamage",nodamage)
+if nodamage
+	ini_write_real("level_scoredata",string(level) + "_nodamage",nodamage)
 ini_write_real("level_completion",string(level),1)
 
 extras_off = 50

@@ -37,7 +37,7 @@ enum level_id {
 	snow,
 	beach,
 	sky1,
-	sky2,
+	tutorial,
 }
 
 enum palette {

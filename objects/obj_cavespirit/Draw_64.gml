@@ -1,0 +1,1 @@
+draw_text_outlined(640 - string_width(string_copy(str,0,str_length)),650,c_white,c_black,string_copy(str,0,str_length),2,2)

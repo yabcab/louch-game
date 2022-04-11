@@ -1,0 +1,1 @@
+str = "Holding " + get_control_string(cont_up) + " to charge will net you a higher jump."

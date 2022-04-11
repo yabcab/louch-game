@@ -1,0 +1,1 @@
+str = "Collectables like these can be found around nooks and crannies."

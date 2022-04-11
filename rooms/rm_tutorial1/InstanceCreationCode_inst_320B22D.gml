@@ -1,0 +1,1 @@
+str = "You can also hold " + get_control_string(cont_down) + " to pan the camera down if you ever need to."
