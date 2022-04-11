@@ -1192,15 +1192,15 @@ switch state { // normal
 		
 				
 		//dashin
-		if key_attack_press && dash_charge = 1 && (key_left || key_right)
+		if key_attack_press && dash_charge = 1
 		{
-			if key_right
+			if facing = 1
 				if hspeed < 8
 					hspeed = 9
 				else
 					hspeed += 1.5
 			else
-			if key_left
+			if facing = -1
 				if hspeed > -8
 					hspeed = -9
 				else
@@ -1223,7 +1223,6 @@ switch state { // normal
 		{
 			dashing = 0
 			groundlunge_cooldown = -52
-			dash_charge = 1
 		}
 		
 		// dash hitbox
