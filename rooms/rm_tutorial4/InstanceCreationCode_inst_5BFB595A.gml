@@ -1,0 +1,1 @@
+str = "The exit is just up ahead."
