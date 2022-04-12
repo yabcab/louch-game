@@ -6,6 +6,7 @@ is_trial = 0
 is_timetrial = 0
 keys = 0
 crowncollects = 0
+rank_highestcombo = 0
 
 if instance_exists(obj_timer)
 	instance_destroy(obj_timer)

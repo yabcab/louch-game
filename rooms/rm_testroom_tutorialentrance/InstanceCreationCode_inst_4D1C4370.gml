@@ -1,1 +1,2 @@
-targetroom = rm_tutorial_4
+targetroom = rm_tutorial4
+spawn = 2

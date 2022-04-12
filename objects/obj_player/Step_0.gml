@@ -1661,6 +1661,21 @@ switch state { // normal
 		taunt_qualify = 1
 	}
 	break;
+	
+	case playerstate.level_enter:
+	{
+		if !(0.5 > abs(x - obj_to_hit.x))
+			x -= (x - obj_to_hit.x) / 10
+		else
+			x = obj_to_hit.x
+		vspeed += 0.5
+		hspeed = 0
+		xs = 1 - abs(vspeed / 50)
+		ys = 1 + abs(vspeed / 50)
+		
+		taunt_qualify = 0
+	}
+	break;
 }
 
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)

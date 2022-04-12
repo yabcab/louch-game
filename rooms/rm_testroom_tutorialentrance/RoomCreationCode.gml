@@ -6,4 +6,8 @@
 //rank_highestcombo_req = 10
 //rank_highestcombo = 0
 
-
+obj_ambience.playambience = 1
+obj_ambience.amb1 = amb_forest1
+obj_ambience.amb2 = sfx_none
+obj_music.mu = sfx_none
+crowncollects = 0

@@ -1,8 +1,11 @@
 var shd = shader_current()
 pal_swap_set(spr_playerpalette,paletteselect,0)
-if drawballoon
-	draw_sprite_ext(spr_playerLS_notlouchbuttheballooninstead,obj_3framekeeper.image_index,x,y - 32,xs * facing,ys,rot,image_blend,alph)
-draw_sprite_ext(sprite_index,image_index,x,y,xs * facing,ys,rot,image_blend,alph)
+if !entering_level
+{
+	if drawballoon
+		draw_sprite_ext(spr_playerLS_notlouchbuttheballooninstead,obj_3framekeeper.image_index,x,y - 32,xs * facing,ys,rot,image_blend,alph)
+	draw_sprite_ext(sprite_index,image_index,x,y,xs * facing,ys,rot,image_blend,alph)
+}
 shader_set(shd)
 
 //lol no

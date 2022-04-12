@@ -3,4 +3,3 @@ level = level_id.snow
 crowncollecttotal = 11
 rank_point_req = 12500
 rank_highestcombo_req = 14
-rank_highestcombo = 0

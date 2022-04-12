@@ -21,6 +21,7 @@ function enumshit(){
 		balloon_pound,
 		keyfly,
 		antigrav,
+		level_enter,
 	}
 
 enum pausestate {

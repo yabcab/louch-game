@@ -4,7 +4,7 @@ ysin = sin(_time / 20) * 5
 
 var xx = x
 x = xstart
-if distance_to_object(obj_player) < 150
+if distance_to_object(obj_player) < 100
 {
 	image_alpha = lerp(image_alpha,0.8,0.075)
 	if has_dialogue

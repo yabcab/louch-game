@@ -65,3 +65,16 @@ if room = rm_hub1
 	vspeed = 0
 }
 _time = 0
+
+
+if entering_level
+{
+	y -= 128
+	state = -1
+	speed = 0
+	alph = 0
+	old_alph = 0
+	alarm[5] = 60
+	xs = 1
+	ys = 1
+}

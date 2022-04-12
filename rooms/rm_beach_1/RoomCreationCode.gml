@@ -4,4 +4,3 @@ level = level_id.beach
 crowncollecttotal = 10
 rank_point_req = 14000
 rank_highestcombo_req = 7
-rank_highestcombo = 0

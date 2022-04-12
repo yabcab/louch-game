@@ -62,6 +62,8 @@ groundlunge_cooldown = 0
 lungecancelled = 0
 totalcloud = 0
 clouds = 0
+obj_to_hit = 0
+entering_level = 0
 
 facing = 1
 hsp = 0

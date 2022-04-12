@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 1,
+  "compression": 0,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -8,11 +8,11 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audio_sfx",
-    "path": "audiogroups/audio_sfx",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_none.mp3",
-  "duration": 1.352,
+  "soundFile": "sfx_none",
+  "duration": 0.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

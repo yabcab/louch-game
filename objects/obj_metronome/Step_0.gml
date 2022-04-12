@@ -1,6 +1,6 @@
 note_dtime += delta_time * audio_sound_get_pitch(obj_music.mu) //add deltatime passed between steps
-s_note_dtime += delta_time * audio_sound_get_pitch(mu_secret) //add deltatime passed between steps
-t_note_dtime += delta_time * audio_sound_get_pitch(mu_timetrial) //add deltatime passed between steps
+s_note_dtime += delta_time * audio_sound_get_pitch(obj_music.secretmusic) //add deltatime passed between steps
+t_note_dtime += delta_time * audio_sound_get_pitch(obj_music.trialmusic) //add deltatime passed between steps
 
 if is_trial
 {

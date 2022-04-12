@@ -4,6 +4,5 @@ level = level_id.grass
 crowncollecttotal = 10
 rank_point_req = 11000
 rank_highestcombo_req = 10
-rank_highestcombo = 0
-
+obj_ambience.playambience = 0
 

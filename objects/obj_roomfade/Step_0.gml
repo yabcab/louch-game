@@ -5,7 +5,8 @@ if part = 0
 	{
 		room_goto(targetroom)
 		part = 1
-		obj_player.visible = 1
+		if !obj_player.entering_level
+			obj_player.visible = 1
 	}
 }
 if part = 1
