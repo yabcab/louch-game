@@ -16,6 +16,6 @@ draw_text_transformed_color(850 + final_off,308,string(final_display) + "%",2,2,
 
 draw_set_font(fnt_text)
 if !exit_
-	draw_text_outlined(10,680,c_white,c_black,"[JUMP]: Skip Tallying",2,2)
+	draw_text_outlined(10,680,c_white,c_black,get_control_string(cont_jump) + ": Skip Tallying",2,2)
 else
-	draw_text_outlined(10,680,c_white,c_black,"[JUMP]: Return to Hub",2,2)
+	draw_text_outlined(10,680,c_white,c_black,get_control_string(cont_jump) + ": Return to Hub",2,2)

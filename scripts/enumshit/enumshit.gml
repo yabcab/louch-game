@@ -39,6 +39,8 @@ enum level_id {
 	beach,
 	sky1,
 	tutorial,
+	gaunt_grass,
+	gaunt_jungle,
 }
 
 enum palette {

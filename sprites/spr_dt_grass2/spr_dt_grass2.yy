@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "diorama table",
-    "path": "folders/Sprites/stuffs/levelentry/diorama table.yy",
+    "name": "grass",
+    "path": "folders/Sprites/stuffs/levelentry/diorama table/grass.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dt_grass2",

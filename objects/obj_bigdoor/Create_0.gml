@@ -14,6 +14,11 @@ sin2 = 0
 sin3 = 0
 sin4 = 0
 sin5 = 0
+spr1 = spr_dt_grass1
+spr2 = spr_dt_grass2
+spr3 = spr_dt_grass3
+spr4 = spr_dt_grass4
+spr5 = spr_dt_grass5
 
 set = 0
 spawn = 1

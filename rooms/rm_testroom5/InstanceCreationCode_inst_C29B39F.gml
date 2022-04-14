@@ -1,0 +1,1 @@
+str = "Once you kill Gonk, you may want to run... FAST..."

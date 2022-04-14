@@ -25,6 +25,8 @@ if !exit_
 }
 else
 {
+	titleoff = lerp(titleoff,0,0.05)
+	title_alpha = lerp(title_alpha,1,0.05)
 	score_off = lerp(score_off,-100,0.1)
 	score_alpha = lerp(score_alpha,0,0.1)
 	crown_off = lerp(crown_off,-100,0.1)
@@ -108,6 +110,12 @@ if (combo_display = rank_highestcombo && !exit_set) || obj_player.key_jump_press
 	alarm[6] = 180
 	if obj_player.key_jump_press
 	{
+		alarm[0] = -1
+		alarm[1] = -1
+		alarm[2] = -1
+		alarm[3] = -1
+		alarm[4] = -1
+		alarm[5] = -1
 		bring_title = 1
 		alarm[6] = 60
 		exit_ = 1	
