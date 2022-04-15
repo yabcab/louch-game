@@ -720,6 +720,7 @@
     {"id":{"name":"rm_beach_2","path":"rooms/rm_beach_2/rm_beach_2.yy",},"order":2,},
     {"id":{"name":"spr_hub_tiles","path":"sprites/spr_hub_tiles/spr_hub_tiles.yy",},"order":5,},
     {"id":{"name":"spr_walksmoke","path":"sprites/spr_walksmoke/spr_walksmoke.yy",},"order":1,},
+    {"id":{"name":"rm_gauntlet_space","path":"rooms/rm_gauntlet_space/rm_gauntlet_space.yy",},"order":2,},
     {"id":{"name":"spr_dancer_nola","path":"sprites/spr_dancer_nola/spr_dancer_nola.yy",},"order":3,},
     {"id":{"name":"spr_waterparticles","path":"sprites/spr_waterparticles/spr_waterparticles.yy",},"order":10,},
     {"id":{"name":"rm_t_area1_3","path":"rooms/rm_t_area1_3/rm_t_area1_3.yy",},"order":6,},
@@ -1002,6 +1003,7 @@
     {"roomId":{"name":"rm_testroom_tutorialentrance","path":"rooms/rm_testroom_tutorialentrance/rm_testroom_tutorialentrance.yy",},},
     {"roomId":{"name":"rm_gauntlet_grass_1","path":"rooms/rm_gauntlet_grass_1/rm_gauntlet_grass_1.yy",},},
     {"roomId":{"name":"rm_gauntlet_jungle","path":"rooms/rm_gauntlet_jungle/rm_gauntlet_jungle.yy",},},
+    {"roomId":{"name":"rm_gauntlet_space","path":"rooms/rm_gauntlet_space/rm_gauntlet_space.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

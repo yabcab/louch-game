@@ -110,6 +110,10 @@ if (combo_display = rank_highestcombo && !exit_set) || obj_player.key_jump_press
 	alarm[6] = 180
 	if obj_player.key_jump_press
 	{
+		obj_music.mu = mu_levelcomplete
+		is_trial = 0
+		is_timetrial = 0
+		bring_title = 1
 		alarm[0] = -1
 		alarm[1] = -1
 		alarm[2] = -1
