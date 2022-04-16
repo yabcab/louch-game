@@ -1,2 +1,2 @@
-seconds = 45
+seconds = 0
 minutes = 0

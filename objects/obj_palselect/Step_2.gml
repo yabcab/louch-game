@@ -42,5 +42,5 @@ if opened
 		}
 	}
 }
-else
+else 
 	can_pause = 1

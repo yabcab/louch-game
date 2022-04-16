@@ -35,3 +35,8 @@ audio_stop_sound(mu_timetrial)
 audio_stop_sound(mu_escapesecret)
 
 crownsseen = 0
+var i;
+for (i = 0; i < 99; i++)
+	crownarray[i] = 0
+ini_open("savedata.lmao")
+totalcrowns = ini_read_real("stats","totalcrowns",0)

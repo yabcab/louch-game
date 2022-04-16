@@ -21,3 +21,10 @@ circle_3_col = make_color_rgb(0,63,177)
 
 targetroom = rm_hub1
 pause_state = pausestate.playerpause
+
+ini_open("savedata.lmao")
+var i;
+for (i = 0; i < crowncollecttotal; i++)
+	if ini_read_real("crowncollects_" + string(level),i,0) = 0
+		ini_write_real("crowncollects_" + string(level),i,crownarray[i])
+ini_write_real("stats","totalcrowns",totalcrowns)

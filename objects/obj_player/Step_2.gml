@@ -1,4 +1,4 @@
-if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can_pause && !instance_place(x,y,obj_hallway)
+if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can_pause && !instance_place(x,y,obj_hallway) && state != playerstate.level_enter && !entering_level
 {
 	if !pause
 	{

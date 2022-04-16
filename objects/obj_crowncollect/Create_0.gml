@@ -8,3 +8,4 @@ yoff = 0
 collected = 0
 cid = 0
 alarm[0] = 1
+precollect = 0

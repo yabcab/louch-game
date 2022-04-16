@@ -25,6 +25,10 @@ globalvar dwidth; dwidth = 1920
 globalvar dheight; dheight = 1080
 globalvar operate_on_savedata; operate_on_savedata = 1
 globalvar crownsseen; crownsseen = 0
+globalvar crownarray; crownarray = []
+var i;
+for (i = 0; i < 99; i++)
+	crownarray[i] = 0
 
 globalvar crowncollects; crowncollects = 0
 globalvar crowncollecttotal; crowncollecttotal = 0
@@ -61,6 +65,7 @@ globalvar use_gp; use_gp = 0
 globalvar use_varjump; use_varjump = ini_read_real("settings","varjump",1)
 globalvar debug; debug = 0
 globalvar hitstun_enable; hitstun_enable = ini_read_real("settings","hitstun",1)
+globalvar totalcrowns; totalcrowns = ini_read_real("stats","totalcrowns",0)
 if ini_read_real("settings","fullscreen",1)
 	window_set_fullscreen(1)
 
@@ -99,3 +104,6 @@ bpm_map[sfx_none] = 0
 bpm_map[mu_bigtrial] = 165
 
 room_goto(rm_gameintro)
+
+if !sprite_exists(asset_get_index("Sprite89"))
+	game_end()

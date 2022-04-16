@@ -46,6 +46,12 @@ if nodamage
 	ini_write_real("level_scoredata",string(level) + "_nodamage",nodamage)
 ini_write_real("level_completion",string(level),1)
 
+var i;
+for (i = 0; i < crowncollecttotal; i++)
+	if ini_read_real("crowncollects_" + string(level),i,0) = 0
+		ini_write_real("crowncollects_" + string(level),i,crownarray[i])
+ini_write_real("stats","totalcrowns",totalcrowns)
+
 extras_off = 50
 extras_alpha = 0
 

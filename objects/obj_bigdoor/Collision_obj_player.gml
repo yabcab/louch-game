@@ -25,6 +25,8 @@ if set && other.vspeed > 3
 {
 	with other
 	{
+		can_pause = 0
+		pause = 0
 		entering_level = 1
 		state = -1
 		rot = 0
