@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_margarita_idle",
+    "path": "sprites/spr_margarita_idle/spr_margarita_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

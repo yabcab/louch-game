@@ -11,14 +11,21 @@ if instance_exists(obj_player)
 	}
 }
 
-if distance_to_object(obj_player) < 2 && obj_player.onground && obj_player.vspeed >= 0
-{
-	obj_player.x += hspeed
-	obj_player.vspeed = 0
-	obj_player.y += vspeed
-}
+
 
 if instance_place(x + hspeed,y,obj_enemyturn)
 	hspeed *= -1
 if instance_place(x,y + vspeed + 100,obj_enemyturn) || instance_place(x,y + vspeed,obj_enemyturn)
 	vspeed *= -1
+	
+if pause_state != pausestate.none
+	x -= hspeed
+else
+	if distance_to_object(obj_player) < 2 && obj_player.onground && obj_player.vspeed >= 0
+	{
+		obj_player.x += hspeed
+		obj_player.vspeed = 0
+		obj_player.y += vspeed
+		obj_camera.x += hspeed
+		obj_camera.y += vspeed
+	}	

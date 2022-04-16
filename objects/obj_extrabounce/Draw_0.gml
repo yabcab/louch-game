@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index,image_index,x,y + ysin,1,1,image_angle,c_white,image_alpha)
+draw_sprite_ext(sprite_index,image_index,x,y + ysin,xs,ys,image_angle,c_white,image_alpha)
