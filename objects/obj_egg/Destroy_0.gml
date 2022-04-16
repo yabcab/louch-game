@@ -8,4 +8,4 @@ for (i = 0; i < 25; i++)
 		rot = choose(5,-5)
 	}
 }
-audio_play_sound(sfx_fard,1,0)
+audio_play_sound(sfx_water2,1,0)

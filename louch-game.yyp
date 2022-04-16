@@ -47,6 +47,7 @@
     {"id":{"name":"sfx_menupick1","path":"sounds/sfx_menupick1/sfx_menupick1.yy",},"order":30,},
     {"id":{"name":"ts_secret_beach","path":"tilesets/ts_secret_beach/ts_secret_beach.yy",},"order":4,},
     {"id":{"name":"obj_minecart","path":"objects/obj_minecart/obj_minecart.yy",},"order":21,},
+    {"id":{"name":"rm_gauntlet_ice","path":"rooms/rm_gauntlet_ice/rm_gauntlet_ice.yy",},"order":3,},
     {"id":{"name":"spr_volslider_hand","path":"sprites/spr_volslider_hand/spr_volslider_hand.yy",},"order":11,},
     {"id":{"name":"bg_space_2","path":"sprites/bg_space_2/bg_space_2.yy",},"order":1,},
     {"id":{"name":"sfx_clockbell","path":"sounds/sfx_clockbell/sfx_clockbell.yy",},"order":50,},
@@ -1011,6 +1012,7 @@
     {"roomId":{"name":"rm_gauntlet_grass_1","path":"rooms/rm_gauntlet_grass_1/rm_gauntlet_grass_1.yy",},},
     {"roomId":{"name":"rm_gauntlet_jungle","path":"rooms/rm_gauntlet_jungle/rm_gauntlet_jungle.yy",},},
     {"roomId":{"name":"rm_gauntlet_space","path":"rooms/rm_gauntlet_space/rm_gauntlet_space.yy",},},
+    {"roomId":{"name":"rm_gauntlet_ice","path":"rooms/rm_gauntlet_ice/rm_gauntlet_ice.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

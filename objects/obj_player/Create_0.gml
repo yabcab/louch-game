@@ -64,6 +64,7 @@ totalcloud = 0
 clouds = 0
 obj_to_hit = 0
 entering_level = 0
+swimdashtime = 0
 
 facing = 1
 hsp = 0

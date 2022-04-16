@@ -1363,10 +1363,10 @@ switch state { // normal
 		hspeed = lerp(hspeed,hsp,0.05)
 		vspeed = lerp(vspeed,vsp,0.05)
 		
-		dashtime++
-		if key_attack_press || key_jump_press && dashtime > 100
+		swimdashtime++
+		if (key_attack_press || key_jump_press) && swimdashtime > 35
 		{
-			dashtime = 0
+			swimdashtime = 0
 			
 			if key_right
 				if hspeed < 4
