@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "placeholder and old",
-    "path": "folders/Sprites/placeholder and old.yy",
+    "name": "key",
+    "path": "folders/Sprites/stuffs/key.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_key",

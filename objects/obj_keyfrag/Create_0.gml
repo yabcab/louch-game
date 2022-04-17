@@ -9,5 +9,3 @@ depth = -1
 
 if ds_list_find_value(destroy_list,id) = 1
 	instance_destroy()
-	
-image_blend = c_purple

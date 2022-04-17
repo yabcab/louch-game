@@ -1495,6 +1495,8 @@ switch state { // normal
 		idlestate = playerstate.idle
 		statesave = playerstate.idle
 		taunt_qualify = 0
+		
+		sprite_index = spr_playerLS_fishlaunch
 	}
 	break;
 	

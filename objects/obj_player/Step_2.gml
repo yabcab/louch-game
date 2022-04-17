@@ -19,7 +19,7 @@ if key_pause_press && obj_pausemenucontroller.disp_state != 2 && fade = 0 && can
 	}
 }
 
-if y > room_height + 64
+if (y > room_height + 64 || distance_to_object(obj_room_reset) < 2) && state != playerstate.noclip
 {
 	if state = playerstate.dying
 	{

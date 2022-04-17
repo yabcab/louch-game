@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_key",
-    "path": "sprites/spr_key/spr_key.yy",
+    "name": "spr_keyfrags",
+    "path": "sprites/spr_keyfrags/spr_keyfrags.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_keyfrag","path":"objects/obj_keyfrag/obj_keyfrag.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_specialkey","path":"objects/obj_specialkey/obj_specialkey.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
