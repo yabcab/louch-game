@@ -22,6 +22,7 @@ function enumshit(){
 		keyfly,
 		antigrav,
 		level_enter,
+		noclip,
 	}
 
 enum pausestate {

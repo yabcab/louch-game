@@ -85,3 +85,10 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	#endregion
 }
 
+if !roombounds
+{
+	camera_set_view_pos(view_camera[0],x - 320,y - 180)
+	camera_set_view_target(view_camera[0],noone)
+}
+else
+	camera_set_view_target(view_camera[0],oldtarget)

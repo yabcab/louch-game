@@ -1,2 +1,2 @@
-minutes = 1
+minutes = 2
 seconds = 30

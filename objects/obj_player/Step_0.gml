@@ -1676,6 +1676,26 @@ switch state { // normal
 		taunt_qualify = 0
 	}
 	break;
+	
+	case playerstate.noclip:
+	{
+		if key_right
+			hspeed = 8
+		else if key_left
+			hspeed = -8
+		else
+			hspeed = 0
+			
+		if key_down
+			vspeed = 8
+		else if key_up
+			vspeed = -8
+		else
+			vspeed = 0
+		
+		sprite_index = spr_playerLS_still
+		facing = 1
+	}
 }
 
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)

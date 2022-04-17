@@ -8,3 +8,14 @@
 //		with instance_create_depth(x,y,depth,obj_stillparticle)
 //			sprite_index = spr_walksmoke
 //}
+
+if state = playerstate.noclip
+{
+	mask_index = spr_null
+	//solid = 1
+}
+else
+{
+	mask_index = spr_playerLS_still
+	//solid = 1
+}

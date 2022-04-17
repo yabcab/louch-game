@@ -22,3 +22,4 @@ camboby = 0
 _time = 0
 angle = 0
 targetangle = 0
+oldtarget = 0

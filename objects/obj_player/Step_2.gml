@@ -114,3 +114,5 @@ else
 	drawballoon = 0
 	
 image_index_prev = floor(image_index)
+
+

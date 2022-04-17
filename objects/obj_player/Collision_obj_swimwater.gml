@@ -1,4 +1,4 @@
-if state != playerstate.taunt && state != playerstate.dying && state != playerstate.swim && state != playerstate.none
+if state != playerstate.taunt && state != playerstate.dying && state != playerstate.swim && state != playerstate.none && state != playerstate.noclip
 {
 	audio_play_sound(sfx_water1,1,0)
 	state = playerstate.swim

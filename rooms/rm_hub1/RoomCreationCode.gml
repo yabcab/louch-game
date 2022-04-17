@@ -40,3 +40,4 @@ for (i = 0; i < 99; i++)
 	crownarray[i] = 0
 ini_open("savedata.lmao")
 totalcrowns = ini_read_real("stats","totalcrowns",0)
+
