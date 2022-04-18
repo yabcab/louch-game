@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "particle",
+    "path": "folders/Sprites/particle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_highjumppart",

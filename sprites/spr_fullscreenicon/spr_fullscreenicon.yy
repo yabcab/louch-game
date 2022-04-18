@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "title",
-    "path": "folders/Sprites/title.yy",
+    "name": "settings",
+    "path": "folders/Sprites/title/settings.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fullscreenicon",

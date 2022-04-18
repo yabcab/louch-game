@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "bg",
-    "path": "folders/Sprites/bg.yy",
+    "name": "tutorial",
+    "path": "folders/Sprites/bg/tutorial.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_tutorial3",
