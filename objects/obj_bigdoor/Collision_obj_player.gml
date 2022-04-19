@@ -1,4 +1,4 @@
-if set = 0 && other.key_up_press
+if set = 0 && other.key_up_press && pause_state != pausestate.playerpause
 {
 	other.obj_to_hit = id
 	other.state = playerstate.level_enter

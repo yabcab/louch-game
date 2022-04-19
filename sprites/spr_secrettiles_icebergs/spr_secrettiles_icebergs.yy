@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 32,
-  "bbox_right": 383,
+  "bbox_left": 0,
+  "bbox_right": 447,
   "bbox_top": 32,
-  "bbox_bottom": 415,
+  "bbox_bottom": 735,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 450,
-  "height": 450,
+  "height": 800,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":{"name":"3fd50295-457b-452a-862b-4895c7157924","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"016817dd-9517-493b-9b1f-29b1108f9175","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c599b23b-7ecf-4acc-b176-7216da0f3e94","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c599b23b-7ecf-4acc-b176-7216da0f3e94","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"LayerId":{"name":"94c9bdaa-f95c-407f-9129-89a12135ed9a","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","name":"c599b23b-7ecf-4acc-b176-7216da0f3e94","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_secrettiles_icebergs","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3e2ceccf-2765-47e6-818c-6e39ae728cf1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"016817dd-9517-493b-9b1f-29b1108f9175","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4fb48f09-2dc6-46fe-be37-d658c4b3875e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c599b23b-7ecf-4acc-b176-7216da0f3e94","path":"sprites/spr_secrettiles_icebergs/spr_secrettiles_icebergs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fd50295-457b-452a-862b-4895c7157924","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"94c9bdaa-f95c-407f-9129-89a12135ed9a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
