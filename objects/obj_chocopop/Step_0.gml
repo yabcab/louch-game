@@ -19,13 +19,13 @@ switch state {
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid)) || instance_place(x + hspeed,y,obj_enemyturn)
+		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid)) || instance_place(x + hspeed,y,obj_enemyturn) || (instance_place(x + hspeed,y,obj_freezetimewall) && instance_place(x + hspeed,y - 12,obj_freezetimewall))
 		{
 			hspeed = -hspeed
 			xs = -xs
 		}
 		
-		if distance_to_object(obj_player) < 215 && y < obj_player.y + 15 && y > obj_player.y - 15 && chargetime < -60 && obj_player.onground
+		if distance_to_object(obj_player) < 215 && y < obj_player.y + 15 && y > obj_player.y - 15 && chargetime < -60 && obj_player.onground && !instance_place(obj_player.x,obj_player.y,obj_freezetimewall)
 		{
 			if x > obj_player.x
 				xs = 1

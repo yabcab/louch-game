@@ -1,7 +1,7 @@
 switch state {
 	case 0: 
 	{	
-		if instance_place(x + hspeed,y,obj_solid) || instance_place(x + hspeed,y,obj_slope)
+		if instance_place(x + hspeed,y,obj_solid) || instance_place(x + hspeed,y,obj_slope) || (instance_place(x + hspeed,y,obj_freezetimewall) && instance_place(x + hspeed,y - 12,obj_freezetimewall))
 			hspeed = -hspeed
 
 		if hspeed != 0
