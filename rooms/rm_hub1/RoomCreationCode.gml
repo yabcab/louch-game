@@ -1,4 +1,4 @@
-obj_music.mu = mu_hub
+obj_music.mu = mu_funhouse
 obj_camera.camboby = 0
 obj_ambience.playambience = 0
 is_secret = 0

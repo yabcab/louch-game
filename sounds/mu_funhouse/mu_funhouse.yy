@@ -12,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_funhouse.mp3",
-  "duration": 0.0,
+  "duration": 312.072,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
