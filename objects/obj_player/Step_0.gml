@@ -1055,7 +1055,7 @@ switch state { // normal
 		
 		rot += abs(hspeed) * (sign(hspeed) * -1)
 		
-		if abs(hspeed) < 3 && abs(vspeed) < 7 && (instance_place(x,y+5,obj_solid) || instance_place(x,y,obj_swimwater)) && state != -1
+		if (abs(hspeed) < 3 && abs(vspeed) < 7 && (instance_place(x,y+5,obj_solid) || instance_place(x,y,obj_swimwater)) && state != -1) || speed < 0.5
 		{
 			state = -1
 			visible = 0

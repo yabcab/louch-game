@@ -1,10 +1,5 @@
 if state = playerstate.dying
 {
-	if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12 * grav,obj_solid)
-	{
-		while instance_place(x + hspeed,y + vspeed,obj_solid)
-			y -= 1 * grav
-	}
 	
 	if instance_place(x+hspeed,y,obj_solid)
 	{
