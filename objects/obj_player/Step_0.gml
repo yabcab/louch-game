@@ -1698,6 +1698,78 @@ switch state { // normal
 		sprite_index = spr_playerLS_still
 		facing = 1
 	}
+	break;
+	
+	case playerstate.pipe:
+	{
+		collisionmask = spr_null
+		facing = 1
+		
+		if distance_to_object(obj_pipeleft) < 2
+		{
+			hspeed = -7
+			vspeed = 0
+		}
+		
+		if distance_to_object(obj_piperight) < 2
+		{
+			hspeed = 7
+			vspeed = 0
+		}
+		
+		if distance_to_object(obj_pipeup) < 2
+		{
+			hspeed = 0
+			vspeed = -7
+		}
+		
+		if distance_to_object(obj_pipedown) < 2
+		{
+			hspeed = 0
+			vspeed = 7
+		}
+		
+		if distance_to_object(obj_pipeexit) < 2
+		{
+			state = idlestate
+			collisionmask = spr_playerLS_still
+		}
+	}
+	break;
+	
+	case playerstate.sliding:
+	{
+		hspeed = 5
+		player_velocity()
+		
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
+		{
+			if key_up && jumpcharge > 30
+			{
+				vspeed = grav * -13
+				jumpcharge = 0
+				jump_charged = 1
+			}
+			else
+				vspeed = grav * -9
+				
+			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+				audio_play_sound(sfx_jump,1,0)
+				
+			beginjump = 1
+			jumping = 1
+			image_index = 0
+			coyote_time = 0
+			if clouds > 0 && (!onground && !coyote_time)
+				clouds--
+		}
+		if jumping && !key_jump && use_varjump && !balloonjumping
+		{
+			vspeed = -3 * grav
+			jumping = 0
+		}
+	}
+	break;
 }
 
 if taunt_qualify && key_taunt_press && !instance_exists(obj_hitstun)

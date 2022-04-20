@@ -16,6 +16,6 @@ if state = playerstate.noclip
 }
 else
 {
-	mask_index = spr_playerLS_still
+	mask_index = collisionmask
 	//solid = 1
 }

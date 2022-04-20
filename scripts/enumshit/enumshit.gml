@@ -23,6 +23,8 @@ function enumshit(){
 		antigrav,
 		level_enter,
 		noclip,
+		pipe,
+		sliding,
 	}
 
 enum pausestate {
