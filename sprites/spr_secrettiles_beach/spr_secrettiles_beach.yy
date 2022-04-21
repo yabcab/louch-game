@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 32,
-  "bbox_right": 383,
+  "bbox_left": 0,
+  "bbox_right": 447,
   "bbox_top": 32,
-  "bbox_bottom": 287,
+  "bbox_bottom": 863,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 450,
-  "height": 450,
+  "height": 900,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8957862b-e64c-4ce2-afe0-611b34856a10","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8957862b-e64c-4ce2-afe0-611b34856a10","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"LayerId":{"name":"f29eae92-6c98-46f0-b94d-e234b8688845","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_secrettiles_beach","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","name":"8957862b-e64c-4ce2-afe0-611b34856a10","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7866247e-e0d7-4c88-a92a-3cb88f5ff0a8","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7866247e-e0d7-4c88-a92a-3cb88f5ff0a8","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"LayerId":{"name":"6fc1ec1c-cdf8-4770-8cc3-2ca459bcc64c","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_secrettiles_beach","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","name":"7866247e-e0d7-4c88-a92a-3cb88f5ff0a8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_secrettiles_beach","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d2276176-03b7-4ac6-8254-7462a1f3b179","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8957862b-e64c-4ce2-afe0-611b34856a10","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78462513-89d0-4320-9218-04e8eb13d8e5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7866247e-e0d7-4c88-a92a-3cb88f5ff0a8","path":"sprites/spr_secrettiles_beach/spr_secrettiles_beach.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f29eae92-6c98-46f0-b94d-e234b8688845","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6fc1ec1c-cdf8-4770-8cc3-2ca459bcc64c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -916,25 +916,46 @@ switch state { // normal
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || jumps > 0) // ground
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || jumps > 0 || clouds > 0) // ground
 		{
-			if key_up && jumpcharge > 30
+			var jmp = 0
+			
+			if !onground
 			{
-				vspeed = -10
-				jumpcharge = 0
-				jump_charged = 1
+				if clouds > 0 && (!onground && !coyote_time)
+				{
+					clouds--
+					jumps = 1
+					jmp = 1	
+				}
+				else if jumps > 0
+				{
+					jumps--
+					jmp = 1
+				}		
 			}
 			else
-				vspeed = -7
+				jmp = 1
+			
+			if jmp
+			{
+				if key_up && jumpcharge > 30
+				{
+					vspeed = -10
+					jumpcharge = 0
+					jump_charged = 1
+				}
+				else
+					vspeed = -7
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
-				audio_play_sound(sfx_jump,1,0)
+				if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+					audio_play_sound(sfx_jump,1,0)
 				
-			beginjump = 1
-			jumping = 1
-			image_index = 0
-			coyote_time = 0
-			jumps--
+				beginjump = 1
+				jumping = 1
+				image_index = 0
+				coyote_time = 0
+			}
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{

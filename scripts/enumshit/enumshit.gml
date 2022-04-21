@@ -46,6 +46,7 @@ enum level_id {
 	gaunt_jungle,
 	gaunt_space,
 	gaunt_ice,
+	gaunt_beach,
 }
 
 enum palette {
