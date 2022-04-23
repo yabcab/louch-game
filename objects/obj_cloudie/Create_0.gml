@@ -5,6 +5,8 @@ _time = random_range(0,1000)
 keynumb = 0
 trialdependant = 0
 curr_clouds = 0
+xs = 0
+ys = 0
 
 depth = -1
 

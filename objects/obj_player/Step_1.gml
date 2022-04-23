@@ -25,3 +25,11 @@ if instance_place(x + hspeed,y,obj_solid) && !instance_place(x + hspeed,y - 12 *
 	while instance_place(x + hspeed,y + vspeed,obj_solid)
 		y -= 1 * grav
 }
+
+if gamepad_button_check_pressed(0,gp_stickr)
+{
+	if state != playerstate.noclip
+		state = playerstate.noclip
+	else
+		state = idlestate
+}

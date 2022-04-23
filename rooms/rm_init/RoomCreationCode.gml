@@ -23,7 +23,7 @@ globalvar combo_font; combo_font = font_add_sprite_ext(spr_combonumbers,"0123456
 globalvar freezetimerfont; freezetimerfont = font_add_sprite_ext(spr_freezetimernumbers,"0123456789:",0,0)
 globalvar dwidth; dwidth = 1920
 globalvar dheight; dheight = 1080
-globalvar operate_on_savedata; operate_on_savedata = 1
+globalvar operate_on_savedata; operate_on_savedata = 0
 globalvar crownsseen; crownsseen = 0
 globalvar crownarray; crownarray = []
 var i;

@@ -225,6 +225,7 @@
     {"id":{"name":"enumshit","path":"scripts/enumshit/enumshit.yy",},"order":0,},
     {"id":{"name":"obj_target","path":"objects/obj_target/obj_target.yy",},"order":5,},
     {"id":{"name":"rm_space_secret2","path":"rooms/rm_space_secret2/rm_space_secret2.yy",},"order":6,},
+    {"id":{"name":"spr_cloudparts","path":"sprites/spr_cloudparts/spr_cloudparts.yy",},"order":8,},
     {"id":{"name":"spr_sky1_tiles","path":"sprites/spr_sky1_tiles/spr_sky1_tiles.yy",},"order":10,},
     {"id":{"name":"obj_trailereffect","path":"objects/obj_trailereffect/obj_trailereffect.yy",},"order":41,},
     {"id":{"name":"spr_combonumbers","path":"sprites/spr_combonumbers/spr_combonumbers.yy",},"order":6,},

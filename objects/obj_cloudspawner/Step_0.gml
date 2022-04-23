@@ -1,2 +1,10 @@
 if !instance_exists(obj)
-	obj = instance_create_depth(x,y,depth,obj_cloudie)
+{
+	if !set
+	{
+		alarm[0] = 15
+		set = 1	
+	}
+}
+else
+	set = 0
