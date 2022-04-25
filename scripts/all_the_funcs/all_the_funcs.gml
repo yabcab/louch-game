@@ -141,7 +141,7 @@ function get_control_string(cont)
 {
 	switch cont
 	{
-		default: { return "[invalid input]" } break;
+		default: { return "[unknown]" } break;
 		case vk_escape: { return "Escape" } break; 
 		case vk_f1: { return "F1" } break; 	
 		case vk_f2: { return "F2" } break; 

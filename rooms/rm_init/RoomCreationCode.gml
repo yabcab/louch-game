@@ -30,6 +30,7 @@ var i;
 for (i = 0; i < 99; i++)
 	crownarray[i] = 0
 globalvar roombounds; roombounds = 1
+globalvar performance_mode; performance_mode = 0
 
 globalvar crowncollects; crowncollects = 0
 globalvar crowncollecttotal; crowncollecttotal = 0

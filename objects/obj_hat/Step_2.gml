@@ -1,5 +1,5 @@
 _time++
-ysin = sin(_time / 7) * 2
+
 
 if bound
 {

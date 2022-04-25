@@ -261,15 +261,25 @@ if x > room_width - 500
 		x = xstart
 		obj_player.fade = 2
 		while prev_bg_set = bg_set
-		bg_set = choose(0,1,2)
+			bg_set = choose(0,1,2,3,4,5)
 		prev_bg_set = bg_set
 		switch bg_set
 		{
 			case 0: { y = 160 } break;
 			case 1: { y = 564 } break;
 			case 2: { y = 948 } break;
+			case 3: { y = 1344 } break;
+			case 4: { y = 1728 } break;
+			case 5: { y = 2112 } break;
 		}
+		layer_set_visible(layer_get_id("eff_jungle"),0)
+		layer_set_visible(layer_get_id("eff_beach"),0)
+		if bg_set = 1
+			layer_set_visible(layer_get_id("eff_jungle"),1)
+		if bg_set = 4
+			layer_set_visible(layer_get_id("eff_beach"),1)
 	}
 }
 
 obj_player.state = -1
+

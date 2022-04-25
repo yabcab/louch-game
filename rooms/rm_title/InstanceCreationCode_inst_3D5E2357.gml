@@ -1,0 +1,10 @@
+sprite_index = bg_beach4
+x_intensity = 0.85
+y_intensity = 0.85
+size = 1
+x_scroll = -0.1
+depth = 304
+alpha = 0.6
+x_off = 500
+y_off = 500
+bg_set = 4

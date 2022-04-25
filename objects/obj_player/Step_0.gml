@@ -1804,8 +1804,14 @@ if pause_state = pausestate.playerpause
 		pause_player_keep()
 }
 else
+{
 	if started_pause
 		pause_player_end()
+	
+	_time++
+	arrowsin = sin(_time / 10) * 2
+	hatsin = sin(_time / 7) * 2
+}
 
 get_inputs(0)
 
@@ -1818,5 +1824,3 @@ if instance_exists(obj_gms)
 	gms_self_set("rot",rot);
 	gms_self_set("pal",paletteselect)
 }
-_time++
-arrowsin = sin(_time / 10) * 2

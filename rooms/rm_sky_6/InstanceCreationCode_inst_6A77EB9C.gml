@@ -3,3 +3,4 @@ x_intensity = 0.9
 y_intensity = 1
 size = 1
 depth = 305
+ignore_zoom = 1

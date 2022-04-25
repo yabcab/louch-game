@@ -66,6 +66,8 @@ obj_to_hit = 0
 entering_level = 0
 swimdashtime = 0
 collisionmask = spr_playerLS_still
+hat = 0
+hatsin = 0
 
 facing = 1
 hsp = 0

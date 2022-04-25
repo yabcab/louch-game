@@ -4,4 +4,4 @@ obj_camera.camboby = 1
 crowncollecttotal = 9
 rank_point_req = 12000
 rank_highestcombo_req = 10
-
+level = level_id.sky1

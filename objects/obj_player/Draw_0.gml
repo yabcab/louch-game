@@ -1,16 +1,21 @@
-var shd = shader_current()
-pal_swap_set(spr_playerpalette,paletteselect,0)
 if !entering_level
 {
 	if drawballoon
 		draw_sprite_ext(spr_playerLS_notlouchbuttheballooninstead,obj_3framekeeper.image_index,x,y - 32,xs * facing,ys,rot,image_blend,alph)
+	var shd = shader_current()
+	pal_swap_set(spr_playerpalette,paletteselect,0)
 	draw_sprite_ext(sprite_index,image_index,x,y,xs * facing,ys,rot,image_blend,alph)
+	shader_set(shd)
+	if hat != 0
+		draw_sprite_ext(spt_hats,hat,x,y - 32 + hatsin,1,1,0,c_white,alph)
 }
-shader_set(shd)
+
 
 //lol no
 if debug
 	draw_text(x - 50, y - 64,string(state) + "  " + string(idlestate) + "  " + string(statesave))
+
+
 
 draw_set_font(fnt_text)
 if instance_exists(obj_gms)

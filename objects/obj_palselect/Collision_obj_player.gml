@@ -2,4 +2,5 @@ if instance_place(x,y,obj_player) && obj_player.key_up && pause_state = pausesta
 {
 	opened = 1
 	pause_state = pausestate.playerpause
+	other.key_up_press = 0
 }

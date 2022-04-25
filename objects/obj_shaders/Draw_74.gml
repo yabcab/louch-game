@@ -1,4 +1,4 @@
-if drunk 
+if drunk && !performance_mode
 {
 	display_set_gui_size(dwidth,dheight)
 	shader_set(shader_Heat);

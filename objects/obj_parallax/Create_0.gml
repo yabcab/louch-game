@@ -8,3 +8,4 @@ size = 1
 alpha = 1
 x_off = 0
 y_off = 0
+ignore_zoom = 0
