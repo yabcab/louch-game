@@ -19,7 +19,7 @@ if debug
 
 draw_set_font(fnt_text)
 if instance_exists(obj_gms)
-{S
+{
 	if gms_self_name() = "thejabcoalt" || gms_self_name() = "AtmosphericSire" || gms_self_name() = "DouchebagCat"
 	if hat = 0
 		draw_text_outlined(x - (string_width(gms_self_name()) / 2),y - 48,admincol,c_black,gms_self_name(),1,1)
