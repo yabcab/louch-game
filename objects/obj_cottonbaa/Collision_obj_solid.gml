@@ -19,10 +19,10 @@ if (!place_free(x+hspeed,y+vspeed))
 {
     hspeed=0;
 }
-if state = 2 && (instance_place(x + 1,y,obj_solid) || instance_place(x - 1,y,obj_solid))
-{
-	state = 0
-	vspeed = -3
-	hspeed = 2
-	sprite_index = spr_bella_idle
-}
+//if state = 2 && (instance_place(x + 1,y,obj_solid) || instance_place(x - 1,y,obj_solid))
+//{
+//	state = 0
+//	vspeed = -3
+//	hspeed = 2
+//	sprite_index = spr_bella_idle
+//}

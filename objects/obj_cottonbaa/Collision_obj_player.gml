@@ -18,9 +18,12 @@ else if other.vspeed > 0.5 && y - 5 > other.y && !other.onground && onground
 		xs = -(other.facing)
 		sprite_index = spr_bella_hit
 	} */
-		if state = 0
-			state = 1
-		vspeed = -3
+	if state = 0 && other.state != playerstate.boost && other.state != playerstate.balloon_pound
+	{
+		state = 1
+		image_index = 0
+		waking = 1
+	}
 	
 		if other.key_jump
 		{

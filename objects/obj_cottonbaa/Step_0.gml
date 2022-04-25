@@ -10,6 +10,8 @@ while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 
 switch state {
 	case 0: 
 	{
+		sprite_index = spr_cottonbaa_sleep
+		
 		hspeed = 0
 		
 		if vspeed < 15
@@ -21,25 +23,27 @@ switch state {
 			xs = -xs
 		}
 		wait = 0
-		sprite_index = spr_bella_idle
 	}
 	break;
 	
 	case 1:
 	{
+		sprite_index = spr_cottonbaa_waking
+		
 		if vspeed < 15
 			vspeed += 0.3
 		hspeed = 0
 		wait++
 		if wait > 25
 			state = 2
-		sprite_index = spr_bella_hit
 	}
 	break;
 	
 	case 2: 
 	{
-		hspeed = 4 * -xs
+		sprite_index = spr_cottonbaa_run
+		
+		hspeed = 5 * xs
 		
 		if vspeed < 15
 			vspeed += 0.3
@@ -50,7 +54,16 @@ switch state {
 			xs = -xs
 		}
 		wait = 0
-		sprite_index = spr_bella_idle
+		
+		with instance_create_depth(x,y,depth + 1,obj_trail)
+		{
+			image_speed = 0
+			startfade = 1
+			sprite_index = other.sprite_index
+			image_index = other.image_index
+			image_xscale = other.xs
+			image_angle = other.image_angle
+		}
 	}
 	break;
 }
