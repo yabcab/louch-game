@@ -8,3 +8,7 @@ paletteselect = 0
 admincol = make_color_rgb(192,244,255)
 grousecol = make_color_rgb(236,185,255)
 depth = -2
+_time = 0
+hatsin = 0
+hat = 0
+balloon = 0

@@ -1823,4 +1823,6 @@ if instance_exists(obj_gms)
 	gms_self_set("ys",ys);
 	gms_self_set("rot",rot);
 	gms_self_set("pal",paletteselect)
+	gms_self_set("balloon",drawballoon)
+	gms_self_set("hat",hat)
 }

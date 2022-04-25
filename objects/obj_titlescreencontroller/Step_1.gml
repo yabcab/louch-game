@@ -250,6 +250,9 @@ switch bg_set
 	case 0: { layer_background_blend(bg_id,make_color_rgb(99,155,255)) } break;
 	case 1: { layer_background_blend(bg_id,make_color_rgb(88,161,147)) } break;
 	case 2: { layer_background_blend(bg_id,make_color_rgb(22,24,76)) } break;
+	case 3: { layer_background_blend(bg_id,make_color_rgb(127,170,255)) } break;
+	case 4: { layer_background_blend(bg_id,make_color_rgb(204,131,122)) } break;
+	case 5: { layer_background_blend(bg_id,make_color_rgb(50,187,255)) } break;
 }
 
 if x > room_width - 500
