@@ -1,0 +1,1 @@
+enemy_boost_hit()
