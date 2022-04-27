@@ -14,10 +14,14 @@ if (!place_free(x+hspeed,y+vspeed))
 {
     hspeed=0;
 }
-if (instance_place(x + xs + hspeed * 5,y,obj_solid)) && onground
-{
-	vspeed = -8
-	hspeed = 0
-	jumpstart = 1
-	image_index = 0
-}
+
+//if (instance_place(x + xs + hspeed * 5,y,obj_solid) && instance_place(x + xs + hspeed * 5,y - 12,obj_solid)) && instance_place(x,y+3,obj_solid)
+//{
+//	hspeed *= -1
+//	x -= sign(hspeed) * 5
+//}
+//if (instance_place(x,y + vspeed * 5,obj_solid) && instance_place(x + xs + hspeed * 5,y - 12,obj_solid)) && instance_place(x,y+3,obj_solid)
+//{
+//	vspeed *= -1
+//	y -= sign(vspeed) * 5
+//}
