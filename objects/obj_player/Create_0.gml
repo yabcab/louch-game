@@ -68,6 +68,7 @@ swimdashtime = 0
 collisionmask = spr_playerLS_still
 hat = 0
 hatsin = 0
+live_enter = 0
 
 facing = 1
 hsp = 0

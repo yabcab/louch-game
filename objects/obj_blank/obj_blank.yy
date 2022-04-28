@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_keydoor",
-    "path": "sprites/spr_keydoor/spr_keydoor.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,17 +17,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "solid",
-    "path": "folders/Objects/geometry/solid.yy",
+    "name": "GMLive",
+    "path": "folders/Extensions/GMLive.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_discowall",
+  "name": "obj_blank",
   "tags": [],
   "resourceType": "GMObject",
 }

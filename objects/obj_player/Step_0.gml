@@ -47,7 +47,12 @@ if fade = 1
 	if fade_amount > 1
 	{
 		if room != rm_title
-			room_goto(targetroom)
+		{
+			if live_enabled
+				room_goto_live(targetroom)
+			else
+				room_goto(targetroom)
+		}
 		fade = 2
 	}
 }

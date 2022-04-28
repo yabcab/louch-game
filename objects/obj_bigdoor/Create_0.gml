@@ -23,3 +23,5 @@ spr5 = spr_dt_grass5
 set = 0
 spawn = 1
 targetroom = 0
+
+live = 0

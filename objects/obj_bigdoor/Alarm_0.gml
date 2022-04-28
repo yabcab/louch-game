@@ -17,4 +17,5 @@ with obj_player
 	vspeedsave = 0
 	entered_door = 1
 	audio_stop_sound(sfx_run)
+	live_enter = other.live
 }

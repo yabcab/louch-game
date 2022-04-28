@@ -110,3 +110,8 @@ room_goto(rm_gameintro)
 
 if !sprite_exists(asset_get_index("Sprite89"))
 	game_end()
+	
+room_set_live(rm_funhouse_1,1)
+room_set_live(rm_funhouse_2,1)
+room_set_live(rm_funhouse_3,1)
+room_set_live(rm_funhouse_4,1)

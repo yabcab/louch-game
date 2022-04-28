@@ -8,3 +8,5 @@ spr2 = spr_null
 spr3 = spr_null
 spr4 = spr_null
 spr5 = spr_null
+
+live = 1

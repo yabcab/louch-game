@@ -41,3 +41,4 @@ for (i = 0; i < 99; i++)
 ini_open("savedata.lmao")
 totalcrowns = ini_read_real("stats","totalcrowns",0)
 
+obj_player.live_enter = 0

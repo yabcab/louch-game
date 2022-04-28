@@ -23,3 +23,6 @@ if pause_state = pausestate.none
 	sin4 = sin(_time4 / 25) * 3
 	sin5 = sin(_time5 / 25) * 3
 }
+
+if live
+	image_blend = c_red
