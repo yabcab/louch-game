@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.15,
+  "volume": 0.17,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_gauntlet.mp3",
-  "duration": 289.032,
+  "duration": 214.778778,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

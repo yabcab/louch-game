@@ -104,6 +104,8 @@ bpm_map[mu_mines] = 110
 bpm_map[mu_sky1] = 130
 bpm_map[sfx_none] = 0
 bpm_map[mu_bigtrial] = 165
+bpm_map[mu_gauntlet] = 165
+bpm_map[mu_levelcomplete] = 120
 bpm_map[500] = 0
 
 room_goto(rm_gameintro)
@@ -115,3 +117,5 @@ room_set_live(rm_funhouse_1,1)
 room_set_live(rm_funhouse_2,1)
 room_set_live(rm_funhouse_3,1)
 room_set_live(rm_funhouse_4,1)
+
+room_set_live(rm_sky_8,1)

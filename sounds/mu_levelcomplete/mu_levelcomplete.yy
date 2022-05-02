@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 1.0,
+  "volume": 0.15,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_levelcomplete.mp3",
-  "duration": 33.456,
+  "duration": 40.9077568,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

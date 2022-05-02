@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.77,
+  "volume": 0.24,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audio_mu",
   },
   "soundFile": "mu_timetrial.mp3",
-  "duration": 209.528183,
+  "duration": 191.373062,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

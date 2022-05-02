@@ -14,6 +14,8 @@ if instance_exists(obj_freezetimer)
 	instance_destroy(obj_freezetimer)
 while instance_exists(obj_key)
 	instance_destroy(obj_key)
+	while instance_exists(obj_keyfrag)
+	instance_destroy(obj_keyfrag)
 	
 ds_list_destroy(destroy_list)
 destroy_list = ds_list_create()
@@ -32,6 +34,8 @@ obj_player.vspeed = 0
 obj_player.rot = 0
 
 audio_stop_sound(mu_timetrial)
+audio_stop_sound(mu_bigtrial)
+audio_stop_sound(mu_gauntlet)
 audio_stop_sound(mu_escapesecret)
 
 crownsseen = 0
