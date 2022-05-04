@@ -1,4 +1,1 @@
-if roombounds = 1
-	roombounds = 0
-else
-	roombounds = 1
+audio_play_sound(sfx_soundcheck,1,0)

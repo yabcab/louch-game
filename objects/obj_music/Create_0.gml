@@ -9,3 +9,4 @@ secretmusic = mu_secret
 playing_trialmusic = 0
 playing_trialmusicsecret = 0
 playing_secretmusic = 0
+pausemusic = audio_play_sound(mu_pause,1,1)
