@@ -1,23 +1,20 @@
 var escapeoffset = 0
 if instance_exists(obj_timer)
-	if obj_timer.minutes < 1 && obj_timer.seconds < 51
+if obj_timer.minutes < 1 && obj_timer.seconds < 51
+{
+	escapeoffset = 0.15
+	if obj_timer.seconds < 26
 	{
-		escapeoffset = 0.15
-		if obj_timer.seconds < 26
-		{
-			escapeoffset = 0.3
-			if obj_timer.seconds < 6
-				escapeoffset = 0.5
-		}
+		escapeoffset = 0.3
+		if obj_timer.seconds < 6
+			escapeoffset = 0.5
 	}
+}
 
 if obj_shaders.drunk
 {
 	audio_pitchchange_time += 0.015
-	if pause_state = pausestate.playerpause && !instance_exists(obj_hitstun)
-		audio_pitchchange = lerp(audio_pitchchange,0,0.05)
-	else
-		audio_pitchchange = (sin(audio_pitchchange_time) / 3) + 1
+	audio_pitchchange = (sin(audio_pitchchange_time) / 3) + 1
 	audio_sound_pitch(mu,audio_pitchchange + pitch_offset)
 	audio_sound_pitch(secretmusic,audio_pitchchange + pitch_offset)
 	audio_sound_pitch(trialmusic,audio_pitchchange + escapeoffset + pitch_offset)
@@ -47,7 +44,10 @@ if !audio_is_playing(pausemusic)
 
 if pause_state != pausestate.playerpause
 {
-	pitch_offset = lerp(pitch_offset,0,0.075)
+	if instance_exists(obj_freezetimer)
+		pitch_offset = lerp(pitch_offset,-0.2,0.075)
+	else
+		pitch_offset = lerp(pitch_offset,0,0.075)
 	audio_sound_gain(pausemusic,0,0)
 	if is_trial
 	{
@@ -100,12 +100,13 @@ if pause_state != pausestate.playerpause
 		audio_sound_gain(trialmusic,0,0)
 		audio_sound_gain(trialmusicsecret,0,0)
 		audio_sound_gain(mu,mu_vol,0)
+		audio_sound_gain(mu_pause,mu_vol,0)
 		metronome_set(bpm_map[mu],mu)
 	}
 }
-else if !instance_exists(obj_hitstun)
+else if !instance_exists(obj_hitstun) && !instance_exists(obj_circletransition)
 {
-	pitch_offset = lerp(pitch_offset,-1,0.05)
+	pitch_offset = lerp(pitch_offset,-1 - escapeoffset - audio_pitchchange,0.05)
 	if pitch_offset <= 0
 		audio_sound_gain(pausemusic,mu_vol,60)
 }
