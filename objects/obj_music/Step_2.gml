@@ -16,6 +16,7 @@ if obj_shaders.drunk
 	audio_pitchchange_time += 0.015
 	audio_pitchchange = (sin(audio_pitchchange_time) / 3) + 1
 	audio_sound_pitch(mu,audio_pitchchange + pitch_offset)
+	audio_sound_pitch(mu_combodrum,audio_pitchchange + pitch_offset)
 	audio_sound_pitch(secretmusic,audio_pitchchange + pitch_offset)
 	audio_sound_pitch(trialmusic,audio_pitchchange + escapeoffset + pitch_offset)
 	audio_sound_pitch(trialmusicsecret,audio_pitchchange + escapeoffset + pitch_offset)
@@ -23,6 +24,7 @@ if obj_shaders.drunk
 else
 {
 	audio_sound_pitch(mu,1 + pitch_offset)
+	audio_sound_pitch(mu_combodrum,1 + pitch_offset)
 	audio_sound_pitch(secretmusic,1 + pitch_offset)
 	audio_sound_pitch(trialmusic,1 + escapeoffset + pitch_offset)
 	audio_sound_pitch(trialmusicsecret,1 + escapeoffset + pitch_offset)
@@ -30,7 +32,9 @@ else
 if !audio_is_playing(mu)
 {
 	audio_stop_sound(playing_mu)
+	audio_stop_sound(playing_mu_combodrum)
 	playing_mu = audio_play_sound(mu,1,0)
+	playing_mu_combodrum = audio_play_sound(mu_combodrum,1,0)
 	obj_metronome.note_dtime = 0
 }
 if !audio_is_playing(secretmusic)
@@ -81,12 +85,14 @@ if pause_state != pausestate.playerpause
 			}
 		}
 		audio_sound_gain(mu,0,0)
+		audio_sound_gain(playing_mu_combodrum,0,0)
 		audio_sound_gain(secretmusic,0,0)
 	}
 	else
 	if is_secret
 	{
 		audio_sound_gain(mu,0,0)
+		audio_sound_gain(playing_mu_combodrum,0,0)
 		audio_sound_gain(secretmusic,mu_vol,0)
 		audio_sound_gain(playing_trialmusicsecret,0,0)
 		audio_sound_gain(playing_trialmusic,0,0)
@@ -100,6 +106,10 @@ if pause_state != pausestate.playerpause
 		audio_sound_gain(trialmusic,0,0)
 		audio_sound_gain(trialmusicsecret,0,0)
 		audio_sound_gain(mu,mu_vol,0)
+		if obj_player.combo >= 1//5
+			audio_sound_gain(playing_mu_combodrum,mu_vol,0)
+		else
+			audio_sound_gain(playing_mu_combodrum,0,0)
 		audio_sound_gain(mu_pause,mu_vol,0)
 		metronome_set(bpm_map[mu],mu)
 	}
