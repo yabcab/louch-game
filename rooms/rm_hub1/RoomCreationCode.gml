@@ -46,3 +46,5 @@ ini_open("savedata.lmao")
 totalcrowns = ini_read_real("stats","totalcrowns",0)
 
 obj_player.live_enter = 0
+
+obj_camera.xoff_t = 0

@@ -1794,6 +1794,9 @@ switch state { // normal
 			vspeed = -3 * grav
 			jumping = 0
 		}
+		
+		if !instance_place(x,y,obj_slidewall)
+			hitfromslide = 0
 	}
 	break;
 }

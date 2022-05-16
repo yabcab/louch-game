@@ -23,3 +23,5 @@ _time = 0
 angle = 0
 targetangle = 0
 oldtarget = 0
+xoff = 0
+xoff_t = 0

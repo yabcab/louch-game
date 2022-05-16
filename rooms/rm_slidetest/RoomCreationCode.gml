@@ -3,3 +3,5 @@ obj_camera.targetangle = -10
 obj_player.state = playerstate.sliding
 obj_player.idlestate = playerstate.sliding
 obj_player.statesave = playerstate.sliding
+
+obj_camera.xoff_t = 200
