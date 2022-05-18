@@ -1765,6 +1765,27 @@ switch state { // normal
 	
 	case playerstate.sliding:
 	{
+		facing = 1
+		if key_down
+		{
+			if onground
+			{
+				sprite_index = spr_playerLS_scrunchie
+				mask_index = spr_playerLS_scrunchie
+			}
+			else
+			{
+				sprite_index = spr_playerLS_dive
+				mask_index = spr_playerLS_still
+				vspeed = 10 * grav
+			}
+		}
+		else
+		{
+			sprite_index = spr_playerLS_still
+			mask_index = spr_playerLS_still
+		}
+		
 		hspeed = 5
 		player_velocity()
 		

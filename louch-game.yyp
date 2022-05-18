@@ -625,6 +625,7 @@
     {"id":{"name":"rm_area2_5","path":"rooms/rm_area2_5/rm_area2_5.yy",},"order":4,},
     {"id":{"name":"mu_finish","path":"sounds/mu_finish/mu_finish.yy",},"order":4,},
     {"id":{"name":"spr_jungle_tiles","path":"sprites/spr_jungle_tiles/spr_jungle_tiles.yy",},"order":3,},
+    {"id":{"name":"spr_playerLS_scrunchie","path":"sprites/spr_playerLS_scrunchie/spr_playerLS_scrunchie.yy",},"order":46,},
     {"id":{"name":"spr_slope2","path":"sprites/spr_slope2/spr_slope2.yy",},"order":30,},
     {"id":{"name":"spr_playerLS_boostjumpstart","path":"sprites/spr_playerLS_boostjumpstart/spr_playerLS_boostjumpstart.yy",},"order":3,},
     {"id":{"name":"spr_playerLS_beginfall","path":"sprites/spr_playerLS_beginfall/spr_playerLS_beginfall.yy",},"order":6,},
@@ -1281,7 +1282,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.3.0.624",
+    "IDEVersion": "2022.3.0.625",
   },
   "resourceVersion": "1.5",
   "name": "louch-game",
