@@ -1,6 +1,6 @@
 with other
 {
-	if instance_place(x + hspeed,y - 3,obj_slidewall) && instance_place(x + hspeed,y + 3,obj_slidewall)
+	if instance_place(x,y - vspeed,obj_slidewall) && instance_place(x,y + vspeed,obj_slidewall)
 	{
 		if !inv
 		{

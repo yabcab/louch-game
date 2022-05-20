@@ -1,0 +1,1 @@
+obj_camera.targetangle = angle

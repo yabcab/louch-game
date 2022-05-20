@@ -1766,19 +1766,10 @@ switch state { // normal
 	case playerstate.sliding:
 	{
 		facing = 1
-		if key_down
+		if key_down && onground
 		{
-			if onground
-			{
-				sprite_index = spr_playerLS_scrunchie
-				mask_index = spr_playerLS_scrunchie
-			}
-			else
-			{
-				sprite_index = spr_playerLS_dive
-				mask_index = spr_playerLS_still
-				vspeed = 10 * grav
-			}
+			sprite_index = spr_playerLS_scrunchie
+			mask_index = spr_playerLS_scrunchie
 		}
 		else
 		{
@@ -1786,7 +1777,8 @@ switch state { // normal
 			mask_index = spr_playerLS_still
 		}
 		
-		hspeed = 5
+		hspeed = lerp(hspeed,obj_camera.angle / -2,0.3)
+		obj_camera.xoff_t = 200 * sign(hspeed)
 		player_velocity()
 		
 		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
@@ -1816,7 +1808,7 @@ switch state { // normal
 			jumping = 0
 		}
 		
-		if !instance_place(x,y,obj_slidewall)
+		if onground
 			hitfromslide = 0
 	}
 	break;
