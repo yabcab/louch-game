@@ -124,6 +124,7 @@ if disp_state = 1
 			else
 				mu_vol = 1
 		ini_write_real("settings","mu_vol",mu_vol)
+		audio_sound_gain(mu_pause,mu_vol,0)
 		scroll = 0
 	}
 	if selector_targetheight = 450
