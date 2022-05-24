@@ -1,5 +1,5 @@
 {
-  "option_windows_display_name": "LouchGame TVP May Playtest [dev]",
+  "option_windows_display_name": "LouchGame TVP May Playtest",
   "option_windows_executable_name": "LouchGame.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Jabco Games",

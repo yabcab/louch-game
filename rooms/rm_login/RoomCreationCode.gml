@@ -5,8 +5,6 @@ if instance_exists(obj_freezetimer)
 	instance_destroy(obj_freezetimer)
 while instance_exists(obj_key)
 	instance_destroy(obj_key)
-	
-obj_hud.display = 0
 
 layer_background_xscale(layer_background_get_id(layer_get_id("Background")),2)
 layer_background_xscale(layer_background_get_id(layer_get_id("Backgrounds_2")),2)

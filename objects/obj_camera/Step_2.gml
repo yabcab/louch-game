@@ -37,7 +37,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		xoff = xoff_t
 		
-	x = xx + xbob + xoff + shake_x
+	x = lerp(x,xx + xbob + xoff + shake_x,0.3)
 
 	//if abs(yy - target_y) > 1
 	//	yy += (target_y - yy) / 20
@@ -50,7 +50,7 @@ if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 	else
 		chargescroll = target_chargescroll
 	
-	y = yy + chargescroll + shake_y + ybob
+	y = lerp(y,yy + chargescroll + shake_y + ybob,0.3)
 	#endregion
 	
 	#region zooms

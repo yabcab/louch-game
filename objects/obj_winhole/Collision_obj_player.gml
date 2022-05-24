@@ -10,7 +10,7 @@ with other
 	}
 	else if vspeed >= 0 && !instance_exists(obj_circletransition) && !instance_exists(obj_levelend)
 	{
-		if other.skiptally
+		if other.skiptally || is_timetrial
 			with instance_create_depth(x,y,1,obj_circletransition)
 				targetroom = rm_hub1
 		else
