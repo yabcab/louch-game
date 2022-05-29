@@ -160,7 +160,7 @@ switch state { // normal
 		player_velocity()
 		
 		// walkin
-		if key_up && !dashing && (instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + 1 * grav,obj_slope))
+		if key_up && !dashing && onground
 		{
 			if jumpcharge < 1
 			{
@@ -168,7 +168,7 @@ switch state { // normal
 				image_index = 0
 			}
 			jumpcharge += 1
-			hspeed = 0
+			hspeed = lerp(hspeed,0,0.1 + (onground * 0.2))
 		}
 		else
 		{
