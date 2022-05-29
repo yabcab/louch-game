@@ -70,6 +70,13 @@ hat = 0
 hatsin = 0
 live_enter = 0
 hitfromslide = 0
+arrowsin = 0
+_time = 0
+inv_frames = 0
+slopeinplace = 0
+slopexs = 0
+recentwalljump = 0
+twirled = 0
 
 facing = 1
 hsp = 0
@@ -107,9 +114,7 @@ inputqueue_down = 0
 inputqueue_jump = 0
 inputqueue_attack = 0
 inputqueue_taunt = 0
-arrowsin = 0
-_time = 0
-inv_frames = 0
+
 
 
 is_typing = 0

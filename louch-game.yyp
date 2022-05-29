@@ -845,6 +845,7 @@
     {"id":{"name":"rm_t_area1_3","path":"rooms/rm_t_area1_3/rm_t_area1_3.yy",},"order":6,},
     {"id":{"name":"spr_wallparticles_snow","path":"sprites/spr_wallparticles_snow/spr_wallparticles_snow.yy",},"order":3,},
     {"id":{"name":"sfx_none","path":"sounds/sfx_none/sfx_none.yy",},"order":0,},
+    {"id":{"name":"rm_newmovesettest","path":"rooms/rm_newmovesettest/rm_newmovesettest.yy",},"order":8,},
     {"id":{"name":"spr_pez","path":"sprites/spr_pez/spr_pez.yy",},"order":44,},
     {"id":{"name":"spr_dt_grass5","path":"sprites/spr_dt_grass5/spr_dt_grass5.yy",},"order":4,},
     {"id":{"name":"GMLive_exec","path":"scripts/GMLive_exec/GMLive_exec.yy",},"order":1,},
@@ -967,8 +968,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_disclaimer","path":"rooms/rm_disclaimer/rm_disclaimer.yy",},},
     {"roomId":{"name":"rm_greenscreen","path":"rooms/rm_greenscreen/rm_greenscreen.yy",},},
     {"roomId":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"groupName":"test","children":[
@@ -1144,6 +1145,7 @@
     {"roomId":{"name":"rm_funhouse_2","path":"rooms/rm_funhouse_2/rm_funhouse_2.yy",},},
     {"roomId":{"name":"rm_funhouse_3","path":"rooms/rm_funhouse_3/rm_funhouse_3.yy",},},
     {"roomId":{"name":"rm_funhouse_4","path":"rooms/rm_funhouse_4/rm_funhouse_4.yy",},},
+    {"roomId":{"name":"rm_newmovesettest","path":"rooms/rm_newmovesettest/rm_newmovesettest.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -1284,7 +1286,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.5.0.8",
   },
   "resourceVersion": "1.5",
   "name": "louch-game",

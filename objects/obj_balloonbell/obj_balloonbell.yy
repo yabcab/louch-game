@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_bella_idle",
     "path": "sprites/spr_bella_idle/spr_bella_idle.yy",

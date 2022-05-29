@@ -21,6 +21,8 @@ if onground
 	coyote_time = 1
 	alarm[4] = 10
 	balloonjumping = 0
+	recentwalljump = 0
+	twirled = 0
 }
 
 if inv_frames
@@ -109,7 +111,7 @@ switch state { // normal
 		{
 			if onground
 			{
-				if hspeed = 0
+				if (!key_left && !key_right) || (key_up && onground)
 					if jumpcharge > 0
 						if jumpcharge_starting
 							sprite_index = spr_playerLS_chargejumpstart
@@ -170,15 +172,45 @@ switch state { // normal
 		}
 		else
 		{
-			jumpcharge = 0
-			if key_right && !dashing
-				hspeed = 4
-			else 
-			if key_left && !dashing
-				hspeed = -4
+			if key_down && onground // sliding
+			{
+				if instance_place(x,y + 3,obj_slope)
+					slopeinplace = instance_place(x,y + 5,obj_slope)
+				else
+					slopeinplace = 0
+				
+				if slopeinplace != 0
+					slopexs = -sign(slopeinplace.image_xscale)
+				
+				if slopeinplace
+					hspeed += 0.1 * slopexs
+				else
+					hspeed = lerp(hspeed,0,0.05)
+			}
 			else
-				if !dashing
-					hspeed = 0
+			{
+				var runspeed = 1.25
+				
+				jumpcharge = 0
+				if key_right && !dashing
+				{
+					if hspeed < 4 + (runspeed * keyboard_check(vk_shift))
+						hspeed = lerp(hspeed,4 + (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					else if onground
+						hspeed = lerp(hspeed,4,0.05)
+				}
+				else
+				if key_left && !dashing
+				{
+					if hspeed > -4 - (runspeed * keyboard_check(vk_shift))
+						hspeed = lerp(hspeed,-4 - (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					else if onground
+						hspeed = lerp(hspeed,-4,0.05)
+				}
+				else
+					if !dashing
+						hspeed = lerp(hspeed,0,0.1 + (onground * 0.2))
+			}
 		}
 			
 		// jumpin
@@ -207,6 +239,35 @@ switch state { // normal
 		{
 			vspeed = -3 * grav
 			jumping = 0
+		}
+		
+		//air twirl
+		if !onground && !twirled && vspeed > -3 && key_jump_press
+		{
+			twirled = 1
+			vspeed = -5
+		}
+		
+		//walljumpin
+		if ((instance_place(x + 1,y,obj_solid && key_right)) || (instance_place(x - 1,y,obj_solid && key_left))) && !onground
+		{
+			vspeed = lerp(vspeed,0.5,0.1)
+			
+			if key_jump_press
+			{
+				if recentwalljump != facing
+				{
+					recentwalljump= facing
+					hspeed = -7 * facing
+					vspeed = -8
+				}
+				else
+				{
+					hspeed = -7 * facing
+					vspeed = -5
+				}
+				jumping = 1
+			}
 		}
 				
 		// dashin

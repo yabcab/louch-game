@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_dave_run",
     "path": "sprites/spr_dave_run/spr_dave_run.yy",

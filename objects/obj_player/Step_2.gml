@@ -91,7 +91,7 @@ if ((vspeed > -3 && grav = 1) || (vspeed < 3 && grav = -1)) && state != playerst
 	jumping = 0
 
 
-while place_meeting(x, y + abs(hspeed) + 1, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying && grav = 1
+while place_meeting(x, y + abs(hspeed) + 2, obj_slope) && !place_meeting(x, y + 1, obj_slope) && !jumping && !dashing && state != playerstate.hurt && state != playerstate.dying && grav = 1
 {
 	y += 0.1
 }
@@ -114,5 +114,4 @@ else
 	drawballoon = 0
 	
 image_index_prev = floor(image_index)
-
 
