@@ -3,6 +3,7 @@ if other.state = playerstate.none
 	exit;
 if other.state = playerstate.boost || other.dashing
 {
+	
 	obj_hud.combotimer = 180
 	other.combo += 1
 	score += 20 * (other.combo / 2)
@@ -53,11 +54,11 @@ else if other.state != playerstate.dying
 				other.vspeed = -6
 		}
 		
-		other.beginjump = 1
-		other.image_index = 0
-		other.justhitenemy = 1
-		other.alarm[0] = 5
-	
+	other.beginjump = 1
+	other.image_index = 0
+	other.justhitenemy = 1
+	other.alarm[0] = 5
+	other.twirled = 0
 	other.combo += 1
 	var snd = audio_play_sound(sfx_bonk,1,0)
 	audio_sound_pitch(snd,1 + (clamp((other.combo - 1),0,6) / 10))

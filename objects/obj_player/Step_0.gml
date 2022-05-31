@@ -109,6 +109,8 @@ switch state { // normal
 		//louchester anims
 		if campaign = 3
 		{
+			image_speed = clamp(abs(hspeed) / 4,1,4)
+			
 			if onground
 			{
 				if (!key_left && !key_right) || (key_up && onground)
@@ -140,7 +142,13 @@ switch state { // normal
 				}
 				else
 					if beginfall = 0
-						sprite_index = spr_playerLS_jumpair
+						if twirled
+							if twirlstart
+								sprite_index = spr_playerLS_airtwirlstart
+							else
+								sprite_index = spr_playerLS_airtwirl
+						else
+							sprite_index = spr_playerLS_jumpair
 					else
 					{
 						sprite_index = spr_playerLS_beginfall
@@ -241,13 +249,6 @@ switch state { // normal
 			jumping = 0
 		}
 		
-		//air twirl
-		if !onground && !twirled && vspeed > -3 && key_jump_press
-		{
-			twirled = 1
-			vspeed = -5
-		}
-		
 		//walljumpin
 		if ((instance_place(x + 1,y,obj_solid && key_right)) || (instance_place(x - 1,y,obj_solid && key_left))) && !onground
 		{
@@ -267,7 +268,19 @@ switch state { // normal
 					vspeed = -5
 				}
 				jumping = 1
+				twirled = 0
 			}
+		}
+		else
+		//air twirl
+		if !onground && !twirled && vspeed > -3 && key_jump_press
+		{
+			twirled = 1
+			vspeed = -5
+			twirlstart = 1
+			image_index = 0
+			beginfall = 0
+			beginjump = 0
 		}
 				
 		// dashin

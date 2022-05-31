@@ -77,6 +77,7 @@ slopeinplace = 0
 slopexs = 0
 recentwalljump = 0
 twirled = 0
+twirlstart = 0
 
 facing = 1
 hsp = 0
