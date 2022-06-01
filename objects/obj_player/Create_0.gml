@@ -78,6 +78,9 @@ slopexs = 0
 recentwalljump = 0
 twirled = 0
 twirlstart = 0
+sliding = 0
+create_speedfx = 0
+speedfx_timer = 0
 
 facing = 1
 hsp = 0

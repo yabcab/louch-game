@@ -12,7 +12,7 @@ ys = grav
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
+if instance_place(x,y + 3 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -110,25 +110,35 @@ switch state { // normal
 		if campaign = 3
 		{
 			image_speed = clamp(abs(hspeed) / 4,1,4)
+			if abs(hspeed) > 5
+				create_speedfx = 1
+			else
+				create_speedfx = 0
 			
 			if onground
 			{
-				if (!key_left && !key_right) || (key_up && onground)
-					if jumpcharge > 0
-						if jumpcharge_starting
-							sprite_index = spr_playerLS_chargejumpstart
-						else
-							if jumpcharge > 15
-								sprite_index = spr_playerLS_chargejumpready
-							else
-								sprite_index = spr_playerLS_chargejump
+				if sliding
+					if abs(hspeed) > 2
+						sprite_index = spr_playerLS_slidemove
 					else
-						sprite_index = spr_playerLS_still
+						sprite_index = spr_playerLS_slidestill
 				else
-					sprite_index = spr_playerLS_walk
+					if (!key_left && !key_right) || (key_up && onground)
+						if jumpcharge > 0
+							if jumpcharge_starting
+								sprite_index = spr_playerLS_chargejumpstart
+							else
+								if jumpcharge > 15
+									sprite_index = spr_playerLS_chargejumpready
+								else
+									sprite_index = spr_playerLS_chargejump
+						else
+							sprite_index = spr_playerLS_still
+					else
+						sprite_index = spr_playerLS_walk
 				
-				beginfall = 1
-				beginfall_start = 1
+					beginfall = 1
+					beginfall_start = 1
 			}		
 			else
 			if !dashing
@@ -176,12 +186,14 @@ switch state { // normal
 				image_index = 0
 			}
 			jumpcharge += 1
-			hspeed = lerp(hspeed,0,0.1 + (onground * 0.2))
+			hspeed = lerp(hspeed,0,0.1 + (onground * 0.05))
+			sliding = 0
 		}
 		else
 		{
 			if key_down && onground // sliding
 			{
+				sliding = 1
 				if instance_place(x,y + 3,obj_slope)
 					slopeinplace = instance_place(x,y + 5,obj_slope)
 				else
@@ -199,6 +211,7 @@ switch state { // normal
 			{
 				var runspeed = 1.25
 				
+				sliding = 0
 				jumpcharge = 0
 				if key_right && !dashing
 				{
@@ -250,7 +263,7 @@ switch state { // normal
 		}
 		
 		//walljumpin
-		if ((instance_place(x + 1,y,obj_solid && key_right)) || (instance_place(x - 1,y,obj_solid && key_left))) && !onground
+		if ((instance_place(x + 1,y,obj_solid && key_right)) || (instance_place(x - 1,y,obj_solid && key_left))) && !onground && vspeed > 0
 		{
 			vspeed = lerp(vspeed,0.5,0.1)
 			
@@ -259,16 +272,16 @@ switch state { // normal
 				if recentwalljump != facing
 				{
 					recentwalljump= facing
-					hspeed = -7 * facing
+					hspeed = -5 * facing
 					vspeed = -8
+					twirled = 0
 				}
 				else
 				{
-					hspeed = -7 * facing
-					vspeed = -5
+					hspeed = -5 * facing
+					vspeed = -3
 				}
 				jumping = 1
-				twirled = 0
 			}
 		}
 		else
@@ -1920,4 +1933,17 @@ if instance_exists(obj_gms)
 	gms_self_set("pal",paletteselect)
 	gms_self_set("balloon",drawballoon)
 	gms_self_set("hat",hat)
+}
+
+if create_speedfx
+{
+	speedfx_timer++
+	if speedfx_timer > 5
+	{
+		speedfx_timer = 0
+		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		{
+			hspeed: -4 * other.facing
+		});
+	}
 }
