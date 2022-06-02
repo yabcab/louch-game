@@ -114,6 +114,10 @@ switch state { // normal
 				create_speedfx = 1
 			else
 				create_speedfx = 0
+			if abs(hspeed) > 7.5
+				create_speedfx2 = 1
+			else
+				create_speedfx2 = 0
 			
 			if onground
 			{
@@ -1944,6 +1948,31 @@ if create_speedfx
 		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
 		{
 			hspeed: -4 * other.facing
+		});
+	}
+}
+if create_speedfx2
+{
+	with instance_create_depth(x,y,depth + 1,obj_trail)
+	{
+		image_speed = 0
+		startfade = 1
+		sprite_index = other.sprite_index
+		image_index = other.image_index
+		image_xscale = other.xs * other.facing
+		image_angle = other.image_angle
+		fromplayer = 1
+		image_alpha = 0.3
+	}
+	
+	speedfx2_timer++
+	if speedfx2_timer > 2
+	{
+		speedfx2_timer = 0
+		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		{
+			hspeed: -6 * other.facing,
+			image_xscale: 0.5
 		});
 	}
 }
