@@ -70,27 +70,27 @@ else
 if instance_exists(obj_timer)
 {
 	if (!obj_timer.minutes && !obj_timer.seconds) || obj_timer.trial_timeleft <= 15
+	{
+		instance_destroy(obj_timer)
+		state = -1
+		visible = 0
+		rot = 0
+		speed = 0
+		audio_play_sound(sfx_explosion,1,0)
+		var i;
+		for (i = 0; i < 100; i++)
 		{
-			instance_destroy(obj_timer)
-			state = -1
-			visible = 0
-			rot = 0
-			speed = 0
-			audio_play_sound(sfx_explosion,1,0)
-			var i;
-			for (i = 0; i < 100; i++)
-			{
-				instance_create_depth(x,y,-500,obj_explosionparticle)
-			}
-			with instance_create_depth(x,y,depth - 1,obj_explosionparticle)
-			{
-				speed = 0
-				image_alpha = 5
-				sprite_index = spr_boom
-			}
-
-			obj_music.alarm[0] = 200
+			instance_create_depth(x,y,-500,obj_explosionparticle)
 		}
+		with instance_create_depth(x,y,depth - 1,obj_explosionparticle)
+		{
+			speed = 0
+			image_alpha = 5
+			sprite_index = spr_boom
+		}
+
+		obj_music.alarm[0] = 200
+	}
 }
 
 switch state { // normal
@@ -267,7 +267,7 @@ switch state { // normal
 		}
 		
 		//walljumpin
-		if ((instance_place(x + 1,y,obj_solid && key_right)) || (instance_place(x - 1,y,obj_solid && key_left))) && !onground && vspeed > 0
+		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
 		{
 			vspeed = lerp(vspeed,0.5,0.1)
 			
