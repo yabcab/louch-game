@@ -210,6 +210,9 @@ switch state { // normal
 					hspeed += 0.1 * slopexs
 				else
 					hspeed = lerp(hspeed,0,0.05)
+				
+				if abs(hspeed) > 6
+					instance_create_depth(x + (40 * facing) * grav,y,-1,obj_dash_hitbox)
 			}
 			else
 			{
@@ -269,20 +272,25 @@ switch state { // normal
 		//walljumpin
 		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
 		{
+			var wallface = 0
+			if instance_place(x + 1,y,obj_solid)
+				wallface = 1
+			else
+				wallface = -1
 			vspeed = lerp(vspeed,0.5,0.1)
 			
 			if key_jump_press
 			{
-				if recentwalljump != facing
+				if recentwalljump != wallface
 				{
-					recentwalljump= facing
-					hspeed = -5 * facing
+					recentwalljump= wallface
+					hspeed = -6 * wallface
 					vspeed = -8
 					twirled = 0
 				}
 				else
 				{
-					hspeed = -5 * facing
+					hspeed = -6 * wallface
 					vspeed = -3
 				}
 				jumping = 1
@@ -419,6 +427,13 @@ switch state { // normal
 	
 	case playerstate.boost: // boost
 	{
+		create_speedfx2 = 0
+		image_speed = clamp(abs(hspeed) / 4,1,4)
+		if abs(hspeed) > 5
+			create_speedfx = 1
+		else
+			create_speedfx = 0
+		
 		// anims
 		if campaign = 3
 			if instance_place(x,y+1 * grav ,obj_solid) || instance_place(x,y + 1 * grav,obj_slope)

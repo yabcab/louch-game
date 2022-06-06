@@ -115,6 +115,7 @@ if !sprite_exists(asset_get_index("Sprite89"))
 	
 display_set_gui_size(1280,720)
 
+//grass rooms for live,,,
 room_set_live(rm_testroom,1)
 room_set_live(rm_testroom2,1)
 room_set_live(rm_testroom3,1)
@@ -123,3 +124,6 @@ room_set_live(rm_testroom5,1)
 room_set_live(rm_testroom6,1)
 room_set_live(rm_testroom7,1)
 room_set_live(rm_testroom8,1)
+room_set_live(rm_testroom_secret1,1)
+room_set_live(rm_testroom_secret2,1)
+room_set_live(rm_testroom_secret3,1)
