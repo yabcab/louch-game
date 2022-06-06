@@ -20,7 +20,7 @@ else if other.vspeed > 0.5 && y - 5 > other.y && !other.onground// && onground
 	} */
 		state = 1
 		//vspeed = -3
-	
+		other.twirled = 0
 		if other.key_jump
 		{
 			other.vspeed = -9

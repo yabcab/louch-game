@@ -1,31 +1,31 @@
 if spawn = 1 && instance_exists(obj_spawn_a)
 {
 	x = obj_spawn_a.x
-	y = obj_spawn_a.y
+	y = obj_spawn_a.y - hallydiff
 }
 else
 if spawn = 2 && instance_exists(obj_spawn_b)
 {
 	x = obj_spawn_b.x
-	y = obj_spawn_b.y
+	y = obj_spawn_b.y - hallydiff
 }
 else
 if spawn = 3 && instance_exists(obj_spawn_c)
 {
 	x = obj_spawn_c.x
-	y = obj_spawn_c.y
+	y = obj_spawn_c.y - hallydiff
 }
 else
 if spawn = 4 && instance_exists(obj_spawn_d)
 {
 	x = obj_spawn_d.x
-	y = obj_spawn_d.y
+	y = obj_spawn_d.y - hallydiff
 }
 else
 if spawn = 5 && instance_exists(obj_spawn_e)
 {
 	x = obj_spawn_e.x
-	y = obj_spawn_e.y
+	y = obj_spawn_e.y - hallydiff
 }
 
 if !instance_exists(obj_secrettransitionchar)
@@ -48,6 +48,7 @@ if !instance_exists(obj_secrettransitionchar)
 	
 checkpoint_x = x
 checkpoint_y = y
+hallydiff = 0
 hspeed = hspeedsave
 vspeed = vspeedsave
 

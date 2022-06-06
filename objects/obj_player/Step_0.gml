@@ -12,7 +12,7 @@ ys = grav
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
+if instance_place(x,y + 3 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -21,6 +21,8 @@ if onground
 	coyote_time = 1
 	alarm[4] = 10
 	balloonjumping = 0
+	recentwalljump = 0
+	twirled = 0
 }
 
 if inv_frames
@@ -68,27 +70,27 @@ else
 if instance_exists(obj_timer)
 {
 	if (!obj_timer.minutes && !obj_timer.seconds) || obj_timer.trial_timeleft <= 15
+	{
+		instance_destroy(obj_timer)
+		state = -1
+		visible = 0
+		rot = 0
+		speed = 0
+		audio_play_sound(sfx_explosion,1,0)
+		var i;
+		for (i = 0; i < 100; i++)
 		{
-			instance_destroy(obj_timer)
-			state = -1
-			visible = 0
-			rot = 0
-			speed = 0
-			audio_play_sound(sfx_explosion,1,0)
-			var i;
-			for (i = 0; i < 100; i++)
-			{
-				instance_create_depth(x,y,-500,obj_explosionparticle)
-			}
-			with instance_create_depth(x,y,depth - 1,obj_explosionparticle)
-			{
-				speed = 0
-				image_alpha = 5
-				sprite_index = spr_boom
-			}
-
-			obj_music.alarm[0] = 200
+			instance_create_depth(x,y,-500,obj_explosionparticle)
 		}
+		with instance_create_depth(x,y,depth - 1,obj_explosionparticle)
+		{
+			speed = 0
+			image_alpha = 5
+			sprite_index = spr_boom
+		}
+
+		obj_music.alarm[0] = 200
+	}
 }
 
 switch state { // normal
@@ -107,24 +109,40 @@ switch state { // normal
 		//louchester anims
 		if campaign = 3
 		{
+			image_speed = clamp(abs(hspeed) / 4,1,4)
+			if abs(hspeed) > 5
+				create_speedfx = 1
+			else
+				create_speedfx = 0
+			if abs(hspeed) > 7.5
+				create_speedfx2 = 1
+			else
+				create_speedfx2 = 0
+			
 			if onground
 			{
-				if hspeed = 0
-					if jumpcharge > 0
-						if jumpcharge_starting
-							sprite_index = spr_playerLS_chargejumpstart
-						else
-							if jumpcharge > 15
-								sprite_index = spr_playerLS_chargejumpready
-							else
-								sprite_index = spr_playerLS_chargejump
+				if sliding
+					if abs(hspeed) > 2
+						sprite_index = spr_playerLS_slidemove
 					else
-						sprite_index = spr_playerLS_still
+						sprite_index = spr_playerLS_slidestill
 				else
-					sprite_index = spr_playerLS_walk
+					if (!key_left && !key_right) || (key_up && onground)
+						if jumpcharge > 0
+							if jumpcharge_starting
+								sprite_index = spr_playerLS_chargejumpstart
+							else
+								if jumpcharge > 15
+									sprite_index = spr_playerLS_chargejumpready
+								else
+									sprite_index = spr_playerLS_chargejump
+						else
+							sprite_index = spr_playerLS_still
+					else
+						sprite_index = spr_playerLS_walk
 				
-				beginfall = 1
-				beginfall_start = 1
+					beginfall = 1
+					beginfall_start = 1
 			}		
 			else
 			if !dashing
@@ -138,7 +156,13 @@ switch state { // normal
 				}
 				else
 					if beginfall = 0
-						sprite_index = spr_playerLS_jumpair
+						if twirled
+							if twirlstart
+								sprite_index = spr_playerLS_airtwirlstart
+							else
+								sprite_index = spr_playerLS_airtwirl
+						else
+							sprite_index = spr_playerLS_jumpair
 					else
 					{
 						sprite_index = spr_playerLS_beginfall
@@ -158,7 +182,7 @@ switch state { // normal
 		player_velocity()
 		
 		// walkin
-		if key_up && !dashing && (instance_place(x,y + 1 * grav,obj_solid) || instance_place(x,y + 1 * grav,obj_slope))
+		if key_up && !dashing && onground
 		{
 			if jumpcharge < 1
 			{
@@ -166,19 +190,52 @@ switch state { // normal
 				image_index = 0
 			}
 			jumpcharge += 1
-			hspeed = 0
+			hspeed = lerp(hspeed,0,0.1 + (onground * 0.05))
+			sliding = 0
 		}
 		else
 		{
-			jumpcharge = 0
-			if key_right && !dashing
-				hspeed = 4
-			else 
-			if key_left && !dashing
-				hspeed = -4
+			if key_down && onground // sliding
+			{
+				sliding = 1
+				if instance_place(x,y + 3,obj_slope)
+					slopeinplace = instance_place(x,y + 5,obj_slope)
+				else
+					slopeinplace = 0
+				
+				if slopeinplace != 0
+					slopexs = -sign(slopeinplace.image_xscale)
+				
+				if slopeinplace
+					hspeed += 0.1 * slopexs
+				else
+					hspeed = lerp(hspeed,0,0.05)
+			}
 			else
-				if !dashing
-					hspeed = 0
+			{
+				var runspeed = 1.25
+				
+				sliding = 0
+				jumpcharge = 0
+				if key_right && !dashing
+				{
+					if hspeed < 4 + (runspeed * keyboard_check(vk_shift))
+						hspeed = lerp(hspeed,4 + (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					else if onground
+						hspeed = lerp(hspeed,4,0.05)
+				}
+				else
+				if key_left && !dashing
+				{
+					if hspeed > -4 - (runspeed * keyboard_check(vk_shift))
+						hspeed = lerp(hspeed,-4 - (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					else if onground
+						hspeed = lerp(hspeed,-4,0.05)
+				}
+				else
+					if !dashing
+						hspeed = lerp(hspeed,0,0.1 + (onground * 0.2))
+			}
 		}
 			
 		// jumpin
@@ -207,6 +264,40 @@ switch state { // normal
 		{
 			vspeed = -3 * grav
 			jumping = 0
+		}
+		
+		//walljumpin
+		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
+		{
+			vspeed = lerp(vspeed,0.5,0.1)
+			
+			if key_jump_press
+			{
+				if recentwalljump != facing
+				{
+					recentwalljump= facing
+					hspeed = -5 * facing
+					vspeed = -8
+					twirled = 0
+				}
+				else
+				{
+					hspeed = -5 * facing
+					vspeed = -3
+				}
+				jumping = 1
+			}
+		}
+		else
+		//air twirl
+		if !onground && !twirled && vspeed > -3 && key_jump_press
+		{
+			twirled = 1
+			vspeed = -5
+			twirlstart = 1
+			image_index = 0
+			beginfall = 0
+			beginjump = 0
 		}
 				
 		// dashin
@@ -372,7 +463,7 @@ switch state { // normal
 		else
 			diving = 0
 		
-		hspeed = 7 * facing
+		hspeed = lerp(hspeed,8 * facing - (key_left * 1) + (key_right * 1),0.05)
 		
 		if key_jump_press && ((instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)) || jumps > 0 || coyote_time) // ground
 		{
@@ -1846,4 +1937,42 @@ if instance_exists(obj_gms)
 	gms_self_set("pal",paletteselect)
 	gms_self_set("balloon",drawballoon)
 	gms_self_set("hat",hat)
+}
+
+if create_speedfx
+{
+	speedfx_timer++
+	if speedfx_timer > 5
+	{
+		speedfx_timer = 0
+		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		{
+			hspeed: -4 * other.facing
+		});
+	}
+}
+if create_speedfx2
+{
+	with instance_create_depth(x,y,depth + 1,obj_trail)
+	{
+		image_speed = 0
+		startfade = 1
+		sprite_index = other.sprite_index
+		image_index = other.image_index
+		image_xscale = other.xs * other.facing
+		image_angle = other.image_angle
+		fromplayer = 1
+		image_alpha = 0.3
+	}
+	
+	speedfx2_timer++
+	if speedfx2_timer > 2
+	{
+		speedfx2_timer = 0
+		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		{
+			hspeed: -6 * other.facing,
+			image_xscale: 0.5
+		});
+	}
 }

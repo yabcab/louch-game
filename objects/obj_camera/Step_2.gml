@@ -12,7 +12,7 @@ else
 
 target_x = obj_player.x + (obj_player.facing * 20) + (boost * 50 * obj_player.facing) + obj_player.hspeed * 20
 target_y = obj_player.y //+ obj_player.vspeed * 23
-target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door) + (obj_player.key_down * obj_player.onground * 85 * door)
+target_chargescroll = (obj_player.key_up * obj_player.onground * -85 * door)
 
 if pause_state != pausestate.playerpause && !instance_exists(obj_hitstun)
 {

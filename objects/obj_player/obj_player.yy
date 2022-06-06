@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_playerLS_still",
     "path": "sprites/spr_playerLS_still/spr_playerLS_still.yy",

@@ -1,3 +1,5 @@
+
+
 if state = playerstate.dying
 {
 	if instance_place(x,y+vspeed,obj_slope)
