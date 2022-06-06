@@ -83,6 +83,7 @@ create_speedfx = 0
 speedfx_timer = 0
 create_speedfx2 = 0
 speedfx2_timer = 0
+hallydiff = 0
 
 facing = 1
 hsp = 0

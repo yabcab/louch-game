@@ -463,7 +463,7 @@ switch state { // normal
 		else
 			diving = 0
 		
-		hspeed = 7 * facing
+		hspeed = lerp(hspeed,8 * facing - (key_left * 1) + (key_right * 1),0.05)
 		
 		if key_jump_press && ((instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)) || jumps > 0 || coyote_time) // ground
 		{

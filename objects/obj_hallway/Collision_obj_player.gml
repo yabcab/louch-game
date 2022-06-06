@@ -2,7 +2,8 @@ if !used
 {
 	with other {
 		hspeedsave = hspeed
-		vspeedsave = 0
+		vspeedsave = vspeed
+		hallydiff = other.y - y - 32
 	}
 	other.spawn = spawn
 	other.statesave = other.state
