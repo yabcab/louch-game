@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_chocopop_walk",
     "path": "sprites/spr_chocopop_walk/spr_chocopop_walk.yy",

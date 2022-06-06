@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_fatfuck_idle",
     "path": "sprites/spr_fatfuck_idle/spr_fatfuck_idle.yy",

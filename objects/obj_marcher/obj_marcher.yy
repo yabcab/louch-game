@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_marcher_step1",
     "path": "sprites/spr_marcher_step1/spr_marcher_step1.yy",

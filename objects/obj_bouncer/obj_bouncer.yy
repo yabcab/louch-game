@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_margarita_idle",
     "path": "sprites/spr_margarita_idle/spr_margarita_idle.yy",

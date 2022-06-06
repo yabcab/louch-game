@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_cottonbaa_sleep",
     "path": "sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",
