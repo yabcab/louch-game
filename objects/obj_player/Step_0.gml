@@ -209,7 +209,7 @@ switch state { // normal
 				if slopeinplace
 					hspeed += 0.1 * slopexs
 				else
-					hspeed = lerp(hspeed,0,0.05)
+					hspeed = lerp(hspeed,0,0.035)
 				
 				if abs(hspeed) > 6
 					instance_create_depth(x + (40 * facing) * grav,y,-1,obj_dash_hitbox)
