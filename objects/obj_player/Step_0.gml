@@ -1960,10 +1960,10 @@ if create_speedfx
 	if speedfx_timer > 5
 	{
 		speedfx_timer = 0
-		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		with instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx)
 		{
-			hspeed: -4 * other.facing
-		});
+			hspeed = -4 * other.facing
+		};
 	}
 }
 if create_speedfx2
@@ -1984,10 +1984,10 @@ if create_speedfx2
 	if speedfx2_timer > 2
 	{
 		speedfx2_timer = 0
-		instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx,
+		with instance_create_depth(x - (10 * facing),y + random_range(-20,20),depth + 1,obj_speedfx)
 		{
-			hspeed: -6 * other.facing,
-			image_xscale: 0.5
-		});
+			hspeed = -6 * other.facing,
+			image_xscale = 0.5
+		};
 	}
 }
