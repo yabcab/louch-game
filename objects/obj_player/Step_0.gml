@@ -114,7 +114,7 @@ switch state { // normal
 				create_speedfx = 1
 			else
 				create_speedfx = 0
-			if abs(hspeed) > 7.5
+			if abs(hspeed) > 7
 				create_speedfx2 = 1
 			else
 				create_speedfx2 = 0
