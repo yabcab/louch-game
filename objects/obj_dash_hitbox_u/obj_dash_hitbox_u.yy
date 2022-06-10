@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -27,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "hitbox",
+    "path": "folders/Objects/hitbox.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dash_hitbox_u",

@@ -93,7 +93,7 @@ if instance_exists(obj_timer)
 	}
 }
 
-switch state { // normal
+switch state {
 	case playerstate.none:
 	{
 		taunt_qualify = 0
@@ -146,12 +146,18 @@ switch state { // normal
 			}		
 			else
 			if !dashing
+			if wallsliding
+				sprite_index = spr_playerLS_wallslide
+			else
 				if beginjump
 				{
 					if enddash
 						sprite_index = spr_playerLS_airjumpend
 					else
-						sprite_index = spr_playerLS_jumpstart
+						if walljumpstart
+							sprite_index = spr_playerLS_walljumpstart
+						else
+							sprite_index = spr_playerLS_jumpstart
 					beginfall = 0
 				}
 				else
@@ -272,6 +278,8 @@ switch state { // normal
 		//walljumpin
 		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
 		{
+			wallsliding = 1
+			
 			var wallface = 0
 			if instance_place(x + 1,y,obj_solid)
 				wallface = 1
@@ -294,18 +302,24 @@ switch state { // normal
 					vspeed = -3
 				}
 				jumping = 1
+				walljumpstart = 1
+				beginjump = 1
+				image_index = 0
 			}
 		}
 		else
-		//air twirl
-		if !onground && !twirled && vspeed > -3 && key_jump_press
 		{
-			twirled = 1
-			vspeed = -5
-			twirlstart = 1
-			image_index = 0
-			beginfall = 0
-			beginjump = 0
+			wallsliding = 0
+			//air twirl
+			if !onground && !twirled && vspeed > -3 && key_jump_press
+			{
+				twirled = 1
+				vspeed = -5
+				twirlstart = 1
+				image_index = 0
+				beginfall = 0
+				beginjump = 0
+			}
 		}
 				
 		// dashin
@@ -1968,6 +1982,8 @@ if create_speedfx
 }
 if create_speedfx2
 {
+	instance_create_depth(x + (30 * facing) * grav,y,-1,obj_speedhitbox)
+	
 	with instance_create_depth(x,y,depth + 1,obj_trail)
 	{
 		image_speed = 0

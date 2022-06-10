@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_appleeaten",
-    "path": "sprites/spr_appleeaten/spr_appleeaten.yy",
+    "name": "spr_dash_hitbox",
+    "path": "sprites/spr_dash_hitbox/spr_dash_hitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -23,16 +23,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "hitbox",
+    "path": "folders/Objects/hitbox.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_eatenapple",
+  "name": "obj_speedhitbox",
   "tags": [],
   "resourceType": "GMObject",
 }

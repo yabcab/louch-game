@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 447,
+  "bbox_left": 3,
+  "bbox_right": 575,
   "bbox_top": 0,
-  "bbox_bottom": 831,
+  "bbox_bottom": 575,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 450,
-  "height": 850,
+  "width": 600,
+  "height": 600,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c846534e-10f4-4527-a610-ba6cb934da14","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c846534e-10f4-4527-a610-ba6cb934da14","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"LayerId":{"name":"12bbc48f-f5f7-4784-b48f-a967cc92165a","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_c3area1_tiles","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","name":"c846534e-10f4-4527-a610-ba6cb934da14","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"37f68c85-0683-47c5-a790-70819f55dc92","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"37f68c85-0683-47c5-a790-70819f55dc92","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"LayerId":{"name":"052abeb1-318c-4c2f-8b7d-81dac92efd57","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_c3area1_tiles","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","name":"37f68c85-0683-47c5-a790-70819f55dc92","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_c3area1_tiles","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c5224c83-1bcf-4153-ac6c-f6ac85a6f705","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c846534e-10f4-4527-a610-ba6cb934da14","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ddc2b3be-78fe-4655-abd1-ad03f35d8648","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37f68c85-0683-47c5-a790-70819f55dc92","path":"sprites/spr_c3area1_tiles/spr_c3area1_tiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12bbc48f-f5f7-4784-b48f-a967cc92165a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"052abeb1-318c-4c2f-8b7d-81dac92efd57","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
