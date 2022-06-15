@@ -10,3 +10,8 @@ sprite_index = spr_escapeclock_still
 
 trial_timeleft = 215
 trial_disptarget = 215
+
+timer_mili = 0
+timer_sec = 0
+timer_min = 0
+timer_hr = 0

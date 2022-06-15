@@ -3,7 +3,7 @@ gamepad_set_axis_deadzone(0,0.45)
 pal_swap_init_system(shd_pal_swapper)
 randomize()
 
-//globalinits
+//global inits
 globalvar campaign; campaign = 3
 globalvar playerspr; playerspr = spr_player_ls
 globalvar gotsecret; gotsecret = 0

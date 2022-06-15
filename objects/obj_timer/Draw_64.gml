@@ -32,4 +32,25 @@ else
 	draw_sprite_ext(spr_timetrial_bar,0,340,60,2,2,0,c_white,1)
 	draw_sprite_part_ext(spr_timetrial_bar,1,0,0,trial_disptarget + 36,50,340,-2,2,2,c_white,1)
 	draw_sprite_ext(spr_timetrial_clock,0,386 + (trial_disptarget * 2),60,2,2,0,c_white,1)
+	
+	#region timekeeper
+	var hr = string(timer_hr)
+	if timer_hr < 10
+		hr = "0" + string(timer_hr)
+	var minute = string(timer_min)
+	if timer_min < 10
+		minute = "0" + string(timer_min)
+	var sec = string(timer_sec)
+	if timer_sec < 10
+		sec = "0" + string(timer_sec)
+	var mili = string(timer_mili)
+	if timer_mili < 10
+		mili = "0" + string(timer_mili)
+	draw_set_alpha(0.2)
+	draw_text_outlined(1055,680,c_black,c_black,hr + ":" + minute + ":" + sec + "." + mili,2,2)
+	draw_set_alpha(1)
+	draw_text_outlined(1050,675,c_white,c_black,hr + ":" + minute + ":" + sec + "." + mili,2,2)
+	#endregion
+	
+	
 }

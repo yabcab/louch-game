@@ -4,7 +4,7 @@
     "path": "sprites/spr_breakablesmall/spr_breakablesmall.yy",
   },
   "solid": true,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
