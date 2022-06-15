@@ -20,7 +20,7 @@ if pause_state = pausestate.none
 		var _xs = image_xscale
 		var i = image_index
 		var ia = image_angle
-		with instance_create_depth(x,y,-1,obj_trail)
+		with instance_create_depth(x,y,-11,obj_trail)
 		{
 			image_speed = 0
 			startfade = 1

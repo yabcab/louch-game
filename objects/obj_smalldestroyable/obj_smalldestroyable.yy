@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_breakablesmall",
-    "path": "sprites/spr_breakablesmall/spr_breakablesmall.yy",
+    "name": "spr_grassdestroyables",
+    "path": "sprites/spr_grassdestroyables/spr_grassdestroyables.yy",
   },
   "solid": true,
   "visible": true,

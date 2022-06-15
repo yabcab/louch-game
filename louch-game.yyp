@@ -827,6 +827,7 @@
     {"id":{"name":"ts_jungle","path":"tilesets/ts_jungle/ts_jungle.yy",},"order":3,},
     {"id":{"name":"obj_bouncespawner","path":"objects/obj_bouncespawner/obj_bouncespawner.yy",},"order":27,},
     {"id":{"name":"rm_beach_6","path":"rooms/rm_beach_6/rm_beach_6.yy",},"order":8,},
+    {"id":{"name":"spr_grassdestroyables","path":"sprites/spr_grassdestroyables/spr_grassdestroyables.yy",},"order":10,},
     {"id":{"name":"obj_shaders","path":"objects/obj_shaders/obj_shaders.yy",},"order":3,},
     {"id":{"name":"obj_homingfish","path":"objects/obj_homingfish/obj_homingfish.yy",},"order":10,},
     {"id":{"name":"spr_dt_gauntlet5_5","path":"sprites/spr_dt_gauntlet5_5/spr_dt_gauntlet5_5.yy",},"order":4,},
