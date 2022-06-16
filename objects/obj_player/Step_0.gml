@@ -563,6 +563,9 @@ switch state {
 		hurttime += 1
 		
 		taunt_qualify = 0
+		
+		create_speedfx = 0
+		create_speedfx2 = 0
 	}
 	break;
 	
