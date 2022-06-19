@@ -441,6 +441,16 @@ switch state {
 	
 	case playerstate.boost: // boost
 	{
+		var i = choose(0,1)
+		if onground && !place_meeting(x,y+5,obj_platform) && i
+		{
+			with instance_create_depth(random_range(bbox_left,bbox_right),bbox_bottom,-11,obj_eatenapple)
+			{
+				sprite_index = spr_grassfucks
+				image_index = irandom_range(0,2)
+			}
+		}
+		
 		create_speedfx2 = 0
 		image_speed = clamp(abs(hspeed) / 4,1,4)
 		if abs(hspeed) > 5
