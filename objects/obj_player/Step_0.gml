@@ -228,16 +228,16 @@ switch state {
 				jumpcharge = 0
 				if key_right && !dashing
 				{
-					if hspeed < 4 + (runspeed * keyboard_check(vk_shift))
-						hspeed = lerp(hspeed,4 + (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					if hspeed < 4 + (runspeed * key_run)
+						hspeed = lerp(hspeed,4 + (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
 					else if onground
 						hspeed = lerp(hspeed,4,0.05)
 				}
 				else
 				if key_left && !dashing
 				{
-					if hspeed > -4 - (runspeed * keyboard_check(vk_shift))
-						hspeed = lerp(hspeed,-4 - (runspeed * keyboard_check(vk_shift)),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+					if hspeed > -4 - (runspeed * key_run)
+						hspeed = lerp(hspeed,-4 - (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
 					else if onground
 						hspeed = lerp(hspeed,-4,0.05)
 				}
