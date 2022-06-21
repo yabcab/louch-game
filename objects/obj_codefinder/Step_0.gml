@@ -31,12 +31,14 @@ if string_pos("thevoidisnow",str) > 0
 
 if string_pos("diablosauce",str) > 0
 {
+	cat = 0
 	campaign = 1
 	keyboard_string = ""
 }
 
 if string_pos("louchester",str) > 0
 {
+	cat = 0
 	campaign = 2
 	keyboard_string = ""
 }
@@ -50,6 +52,7 @@ if string_pos("nolardass",str) > 0
 
 if string_pos("lookatme",str) > 0
 {
+	cat = 0
 	if instance_exists(obj_player)
 	{
 		obj_player.state = playerstate.taunt
