@@ -1,1 +1,0 @@
-str = "Press " + get_control_string(cont_attack) + " to lunge."

@@ -1305,48 +1305,140 @@ switch state {
 		if vspeed < 15
 			vspeed += 0.3
 		
+		image_speed = clamp(abs(hspeed) / 5.5,1,4)
+		if abs(hspeed) > 6
+			create_speedfx = 1
+		else
+			create_speedfx = 0
+		if abs(hspeed) > 8
+			create_speedfx2 = 1
+		else
+			create_speedfx2 = 0
 		
 		// walkin
-		if key_right && !dashing
+		if key_down && onground // sliding
 		{
-			hspeed = lerp(hspeed,6,0.05)
-			facing = 1
-		}
-		else 
-		if key_left && !dashing
-		{
-			hspeed = lerp(hspeed,-6,0.05)
-			facing = -1	
+			sliding = 1
+			if instance_place(x,y + 3,obj_slope)
+				slopeinplace = instance_place(x,y + 5,obj_slope)
+			else
+				slopeinplace = 0
+				
+			if slopeinplace != 0
+				slopexs = -sign(slopeinplace.image_xscale)
+				
+			if slopeinplace
+				hspeed += 0.1 * slopexs
+			else
+				hspeed = lerp(hspeed,0,0.035)
+				
+			if abs(hspeed) > 6
+				instance_create_depth(x + (40 * facing) * grav,y,-1,obj_dash_hitbox)
 		}
 		else
-			if !dashing
-				hspeed = lerp(hspeed,0,0.025)
-			
-		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
-			if key_up && jumpcharge > 15
+			var runspeed = 1.75
+				
+			sliding = 0
+			jumpcharge = 0
+			if key_right && !dashing
 			{
-				vspeed = -13
-				jumpcharge = 0
+				facing = 1
+				if hspeed < 5.5 + (runspeed * key_run)
+					hspeed = lerp(hspeed,5.5 + (runspeed * key_run),clamp(0.025 + (onground * 0.025) - (0.025 * key_run * onground) - (1 * abs(recentwalljump)),0.01,1))
+				else if onground
+					hspeed = lerp(hspeed,5.5,0.025)
 			}
 			else
-				vspeed = -9
+			if key_left && !dashing
+			{
+				facing = -1
+				if hspeed > -5.5 - (runspeed * key_run)
+					hspeed = lerp(hspeed,-5.5 - (runspeed * key_run),clamp(0.025 + (onground * 0.025) - (0.025 * key_run * onground) - (1 * abs(recentwalljump)),0.01,1))
+				else if onground
+					hspeed = lerp(hspeed,-5.5,0.025)
+			}
+			else
+				if !dashing
+					hspeed = lerp(hspeed,0,0.1 + (onground * 0.0075))
+		}
+		
+		//jumpin
+		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
+		{
+			if key_up && jumpcharge > 30
+			{
+				vspeed = grav * -13
+				jumpcharge = 0
+				jump_charged = 1
+			}
+			else
+				vspeed = grav * -9
 				
 			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
-			image_index = 0
 			jumping = 1
+			image_index = 0
 			coyote_time = 0
 			if clouds > 0 && (!onground && !coyote_time)
 				clouds--
 		}
 		if jumping && !key_jump && use_varjump && !balloonjumping
 		{
-			vspeed = -3
+			vspeed = -3 * grav
 			jumping = 0
+		}
+		
+		//walljumpin
+		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
+		{
+			wallsliding = 1
+			
+			var wallface = 0
+			if instance_place(x + 1,y,obj_solid)
+				wallface = 1
+			else
+				wallface = -1
+			vspeed = lerp(vspeed,0.5,0.1)
+			
+			if key_jump_press
+			{
+				if recentwalljump != wallface
+				{
+					recentwalljump= wallface
+					hspeed = -6 * wallface
+					vspeed = -8
+					twirled = 0
+					dash_charge = 1
+				}
+				else
+				{
+					hspeed = -6 * wallface
+					vspeed = -3
+				}
+				jumping = 1
+				walljumpstart = 1
+				beginjump = 1
+				dashing = 0
+				image_index = 0
+			}
+		}
+		else
+		{
+			wallsliding = 0
+			//air twirl
+			if !onground && !twirled && vspeed > -3 && key_jump_press
+			{
+				twirled = 1
+				vspeed = -5
+				twirlstart = 1
+				image_index = 0
+				beginfall = 0
+				beginjump = 0
+				dashing = 0
+			}
 		}
 		
 				
