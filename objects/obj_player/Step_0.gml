@@ -1564,9 +1564,11 @@ switch state {
 	{
 		taunt_qualify = 1
 		
+		var runspeed = 1.25 * key_run
+		
 		if campaign = 3
 			if key_left || key_right || key_up || key_down
-				if abs(hspeed) > 4.5 || abs(vspeed) > 4.5
+				if abs(hspeed) > 7 || abs(vspeed) > 7
 					sprite_index = spr_playerLS_swimdash
 				else
 					sprite_index = spr_playerLS_swimmove
@@ -1577,7 +1579,7 @@ switch state {
 		
 		if key_right
 		{
-			hsp = 4
+			hsp = 4 + runspeed
 			facing = 1
 			if !key_down && !key_up
 				vface = 0
@@ -1585,7 +1587,7 @@ switch state {
 		}
 		else if key_left
 		{
-			hsp = -4
+			hsp = -4 - runspeed
 			facing = -1
 			if !key_down && !key_up
 				vface = 0
@@ -1596,14 +1598,14 @@ switch state {
 			
 		if key_down
 		{
-			vsp = 4
+			vsp = 4 + runspeed
 			vface = 1
 			if !key_left && !key_right
 				hface = 0
 		}
 		else if key_up
 		{
-			vsp = -4
+			vsp = -4 - runspeed
 			vface = -1
 			if !key_left && !key_right
 				hface = 0
@@ -1615,33 +1617,33 @@ switch state {
 		vspeed = lerp(vspeed,vsp,0.05)
 		
 		swimdashtime++
-		if (key_attack_press || key_jump_press) && swimdashtime > 35
+		if (key_attack_press || key_jump_press) && swimdashtime > 60
 		{
 			swimdashtime = 0
 			
 			if key_right
-				if hspeed < 4
-					hspeed = 5
+				if hspeed < 7
+					hspeed = 8
 				else
 					hspeed += 1
 			else if key_left
-				if hspeed > -4
-					hspeed = -5
+				if hspeed > -7
+					hspeed = -8
 				else
 					hspeed -= 1
 			
 			
 			if key_down
-				if vspeed < 4
-					vspeed = 5
+				if vspeed < 7
+					vspeed = 8
 				else
 					vspeed += 1
 			else if key_up
-				if vspeed > -4
-					vspeed = -5
+				if vspeed > -7
+					vspeed = -8
 				else
 					vspeed -= 1
-			vspeed = clamp(vspeed,-7,7)
+			vspeed = clamp(vspeed,-8,8)
 		}
 		
 		if abs(hspeed) > 4.5
