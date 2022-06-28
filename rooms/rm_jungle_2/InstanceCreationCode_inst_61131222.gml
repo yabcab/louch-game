@@ -1,1 +1,0 @@
-str = "These clouds can give extra jumps, but only one each."

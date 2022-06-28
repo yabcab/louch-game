@@ -1562,6 +1562,8 @@ switch state {
 	
 	case playerstate.swim:
 	{
+		create_speedfx = 0
+		create_speedfx2 = 0
 		taunt_qualify = 1
 		
 		var runspeed = 1.25 * key_run
@@ -1648,7 +1650,8 @@ switch state {
 		
 		if abs(hspeed) > 4.5
 		{
-			instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
+			if abs(hspeed) > 6
+				instance_create_depth(x + (40 * sign(hspeed)),y,-1,obj_dash_hitbox)
 			trailspawntime++
 			if trailspawntime > 5
 			{
@@ -1663,7 +1666,8 @@ switch state {
 		}
 		if abs(vspeed) > 4.5
 		{
-			instance_create_depth(x,y + (40 * sign(vspeed)),-1,obj_dash_hitbox_u)
+			if abs(vspeed) > 6
+				instance_create_depth(x,y + (40 * sign(vspeed)),-1,obj_dash_hitbox_u)
 			trailspawntime++
 			if trailspawntime > 5
 			{

@@ -33,7 +33,7 @@ if !silent
 
 	audio_play_sound(sfx_wallbreak,1,0)
 	
-	do_camerashake(0,2.5,25)
+	do_camerashake(0,1,10)
 }
 
 ds_list_set(destroy_list,id,1)

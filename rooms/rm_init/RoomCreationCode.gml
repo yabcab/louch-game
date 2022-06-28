@@ -118,3 +118,12 @@ display_set_gui_size(1280,720)
 
 //grass rooms for live,,,
 room_set_live(rm_jungle_1,1)
+room_set_live(rm_jungle_2,1)
+room_set_live(rm_jungle_3,1)
+room_set_live(rm_jungle_4,1)
+room_set_live(rm_jungle_5,1)
+room_set_live(rm_jungle_6,1)
+room_set_live(rm_jungle_7,1)
+room_set_live(rm_jungle_8,1)
+room_set_live(rm_jungle_secret1,1)
+room_set_live(rm_jungle_secret2,1)
