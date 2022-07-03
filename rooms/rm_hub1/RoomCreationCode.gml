@@ -1,12 +1,13 @@
-obj_music.mu = mu_hub
-obj_camera.camboby = 0
-obj_ambience.playambience = 0
+obj_music.mu = mu_placeholderhub
 is_secret = 0
 is_trial = 0
 is_timetrial = 0
 keys = 0
 crowncollects = 0
 rank_highestcombo = 0
+
+obj_camera.camboby = 0
+obj_ambience.playambience = 0
 
 if instance_exists(obj_timer)
 	instance_destroy(obj_timer)

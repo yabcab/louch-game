@@ -12,7 +12,7 @@ ys = grav
 if state != -1 && state != playerstate.taunt && state != playerstate.level_end
 	nonstunstate = state
 
-if instance_place(x,y + 3 * grav,obj_solid) || instance_place(x,y + (abs(hspeed) + 2) * grav,obj_slope)
+if place_meeting(x,y + 3 * grav,obj_solid) || place_meeting(x,y + (abs(hspeed) + 2) * grav,obj_slope)
 	onground = 1
 else
 	onground = 0
@@ -73,7 +73,7 @@ if instance_exists(obj_timer)
 	{
 		instance_destroy(obj_timer)
 		state = -1
-		visible = 0
+		visible = false
 		rot = 0
 		speed = 0
 		audio_play_sound(sfx_explosion,1,0)
@@ -204,8 +204,8 @@ switch state {
 			if key_down && onground // sliding
 			{
 				sliding = 1
-				if instance_place(x,y + 3,obj_slope)
-					slopeinplace = instance_place(x,y + 5,obj_slope)
+				if place_meeting(x,y + 3,obj_slope)
+					slopeinplace = instance_place(x,y + 3,obj_slope)
 				else
 					slopeinplace = 0
 				
@@ -229,7 +229,7 @@ switch state {
 				if key_right && !dashing
 				{
 					if hspeed < 4 + (runspeed * key_run)
-						hspeed = lerp(hspeed,4 + (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+						hspeed = lerp(hspeed,4 + (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * key_run * onground) - (1 * abs(recentwalljump)),0.05,1))
 					else if onground
 						hspeed = lerp(hspeed,4,0.05)
 				}
@@ -237,7 +237,7 @@ switch state {
 				if key_left && !dashing
 				{
 					if hspeed > -4 - (runspeed * key_run)
-						hspeed = lerp(hspeed,-4 - (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * keyboard_check(vk_shift) * onground) - (1 * abs(recentwalljump)),0.05,1))
+						hspeed = lerp(hspeed,-4 - (runspeed * key_run),clamp(0.1 + (onground * 0.2) - (0.2 * key_run * onground) - (1 * abs(recentwalljump)),0.05,1))
 					else if onground
 						hspeed = lerp(hspeed,-4,0.05)
 				}
@@ -248,7 +248,7 @@ switch state {
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
+		if key_jump_press && (place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
@@ -259,7 +259,7 @@ switch state {
 			else
 				vspeed = grav * -9
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
@@ -276,12 +276,12 @@ switch state {
 		}
 		
 		//walljumpin
-		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
+		if ((place_meeting(x + 1,y,obj_solid)) || (place_meeting(x - 1,y,obj_solid))) && !onground && vspeed > 0
 		{
 			wallsliding = 1
 			
 			var wallface = 0
-			if instance_place(x + 1,y,obj_solid)
+			if place_meeting(x + 1,y,obj_solid)
 				wallface = 1
 			else
 				wallface = -1
@@ -357,7 +357,7 @@ switch state {
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !(instance_place(x,y+5,obj_solid) || instance_place(x,y + 5,obj_slope)) && keyboard_check_pressed(cont_down)
+		if use_gp && !pounding && !(place_meeting(x,y+5,obj_solid) || place_meeting(x,y + 5,obj_slope)) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -420,7 +420,7 @@ switch state {
 		
 		instance_create_depth(x,y + 40,depth,obj_dash_hitbox_u)
 		
-		if instance_place(x,y,obj_airjump)
+		if place_meeting(x,y,obj_airjump)
 		{
 			state = playerstate.idle
 			if key_up
@@ -460,7 +460,7 @@ switch state {
 		
 		// anims
 		if campaign = 3
-			if instance_place(x,y+1 * grav ,obj_solid) || instance_place(x,y + 1 * grav,obj_slope)
+			if place_meeting(x,y+1 * grav ,obj_solid) || place_meeting(x,y + 1 * grav,obj_slope)
 				sprite_index = spr_playerLS_boost
 			else
 				if beginjump
@@ -504,11 +504,11 @@ switch state {
 		
 		hspeed = lerp(hspeed,7.5 * facing - (key_left * 1.5) + (key_right * 1.5),0.05)
 		
-		if key_jump_press && ((instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)) || jumps > 0 || coyote_time) // ground
+		if key_jump_press && ((place_meeting(x,y + 5 * grav,obj_solid) || place_meeting(x,y + 5 * grav,obj_slope)) || jumps > 0 || coyote_time) // ground
 		{
 			vspeed = -9 * grav
 				
-			if !(instance_place(x,y + 10 * grav,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10 * grav,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
@@ -523,15 +523,15 @@ switch state {
 			jumping = 0
 		}
 		
-		if instance_place(x + hspeed * grav,y,obj_solid)
+		if place_meeting(x + hspeed * grav,y,obj_solid)
 		{
-			if instance_place(x + hspeed,y - 12 * grav,obj_solid)
+			if place_meeting(x + hspeed,y - 12 * grav,obj_solid)
 			{
 				state = idlestate
 				audio_stop_sound(sfx_run)
 			}
 			else
-				while instance_place(x + hspeed * grav,y - 8 * grav,obj_solid)
+				while place_meeting(x + hspeed * grav,y - 8 * grav,obj_solid)
 					y -= 1 * grav
 		}
 		if coyote_time
@@ -539,7 +539,7 @@ switch state {
 		else
 			if !onground && jumps = 2
 				jumps = 1
-		if instance_place(x,y + 5 * grav,obj_solid) || instance_place(x,y + 5 * grav,obj_slope)
+		if place_meeting(x,y + 5 * grav,obj_solid) || place_meeting(x,y + 5 * grav,obj_slope)
 			jumps = 1
 			
 		instance_create_depth(x + (40 * facing) * grav,y,-1,obj_dash_hitbox)
@@ -604,7 +604,7 @@ switch state {
 		//louchester anims
 		if campaign = 3
 		{
-			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
+			if place_meeting(x,y + 1,obj_solid) || place_meeting(x,y + 1,obj_slope)
 			{
 				if hspeed = 0
 					sprite_index = spr_playerLS_sadidle
@@ -659,20 +659,20 @@ switch state {
 				hspeed = 0
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)) // ground
+		if key_jump_press && (place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope)) // ground
 		{
 			if key_up
 				vspeed = -13
 			else
 				vspeed = -10
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
 			image_index = 0
 		}
-		/*if key_jump_press && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		/*if key_jump_press && (place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
@@ -685,11 +685,11 @@ switch state {
 			beginjump = 1
 			image_index = 0
 		}
-		if key_jump_press && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
+		if key_jump_press && (place_meeting(x,y + 10,obj_rightdraft) || place_meeting(x,y,obj_rightdraft)) && !place_meeting(x,y+2,obj_solid)
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
-			var inst = instance_place(x,y,obj_rightdraft)
+			var inst = place_meeting(x,y,obj_rightdraft)
 			if inst.image_xscale > 0
 			{
 				hspeed = 11
@@ -752,7 +752,7 @@ switch state {
 		}
 		
 		// ground pound
-		if !pounding && !instance_place(x,y+5,obj_solid) && key_down_press
+		if !pounding && !place_meeting(x,y+5,obj_solid) && key_down_press
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -774,7 +774,7 @@ switch state {
 		//louchester anims
 		if campaign = 3
 		{
-			if instance_place(x,y + 1,obj_solid) || instance_place(x,y + 1,obj_slope)
+			if place_meeting(x,y + 1,obj_solid) || place_meeting(x,y + 1,obj_slope)
 			{
 				if hspeed = 0
 					sprite_index = spr_playerLS_still
@@ -829,20 +829,20 @@ switch state {
 				hspeed = 0
 			
 		// jumpin
-		if key_jump_press && instance_place(x,y + 5,obj_solid) // ground
+		if key_jump_press && place_meeting(x,y + 5,obj_solid) // ground
 		{
 			if key_up
 				vspeed = -9
 			else
 				vspeed = -7
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
 			image_index = 0
 		}
-		if key_jump_press && (instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+		if key_jump_press && (place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
@@ -855,11 +855,11 @@ switch state {
 			beginjump = 1
 			image_index = 0
 		}
-		if key_jump_press && (instance_place(x,y + 10,obj_rightdraft) || instance_place(x,y,obj_rightdraft)) && !instance_place(x,y+2,obj_solid)
+		if key_jump_press && (place_meeting(x,y + 10,obj_rightdraft) || place_meeting(x,y,obj_rightdraft)) && !place_meeting(x,y+2,obj_solid)
 		{
 			audio_play_sound(sfx_airjump,1,0)
 			
-			var inst = instance_place(x,y,obj_rightdraft)
+			var inst = place_meeting(x,y,obj_rightdraft)
 			if inst.image_xscale > 0
 			{
 				hspeed = 11
@@ -938,7 +938,7 @@ switch state {
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && key_down_press
+		if use_gp && !pounding && !place_meeting(x,y+5,obj_solid) && key_down_press
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -1054,7 +1054,7 @@ switch state {
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || jumps > 0 || clouds > 0) // ground
+		if key_jump_press && (place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope) || coyote_time || jumps > 0 || clouds > 0) // ground
 		{
 			var jmp = 0
 			
@@ -1086,7 +1086,7 @@ switch state {
 				else
 					vspeed = -7
 				
-				if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+				if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 					audio_play_sound(sfx_jump,1,0)
 				
 				beginjump = 1
@@ -1106,7 +1106,7 @@ switch state {
 		else
 			if !onground && jumps = 2
 				jumps = 1
-		if instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope)
+		if place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope)
 			jumps = 1
 				
 		// dashin
@@ -1162,7 +1162,7 @@ switch state {
 		hspeed = 7 * facing
 			
 		instance_create_depth(x + 40,y,-1,obj_dash_hitbox)
-		if !instance_place(x,y,obj_trail)
+		if !place_meeting(x,y,obj_trail)
 			with instance_create_depth(x,y,depth + 1,obj_trail)
 				fromplayer = 1
 		
@@ -1196,7 +1196,7 @@ switch state {
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if instance_place(x,y+1,obj_solid) || instance_place(x,y+1,obj_slope)
+		if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_slope)
 			state = idlestate
 			
 		taunt_qualify = 0
@@ -1207,14 +1207,14 @@ switch state {
 	{
 		if vspeed < 15
 			vspeed += 0.3
-		if instance_place(x,y,obj_swimwater) && vspeed > -7
+		if place_meeting(x,y,obj_swimwater) && vspeed > -7
 			vspeed -= 0.45
 		
 		//hspeed = lerp(hspeed,0,0.015)
 		
 		rot += abs(hspeed) * (sign(hspeed) * -1)
 		
-		if (abs(hspeed) < 3 && abs(vspeed) < 7 && (instance_place(x,y+5,obj_solid) || instance_place(x,y,obj_swimwater)) && state != -1) || speed < 0.5
+		if (abs(hspeed) < 3 && abs(vspeed) < 7 && (place_meeting(x,y+5,obj_solid) || place_meeting(x,y,obj_swimwater)) && state != -1) || speed < 0.5
 		{
 			state = -1
 			visible = 0
@@ -1319,7 +1319,7 @@ switch state {
 		if key_down && onground // sliding
 		{
 			sliding = 1
-			if instance_place(x,y + 3,obj_slope)
+			if place_meeting(x,y + 3,obj_slope)
 				slopeinplace = instance_place(x,y + 5,obj_slope)
 			else
 				slopeinplace = 0
@@ -1364,7 +1364,7 @@ switch state {
 		}
 		
 		//jumpin
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
+		if key_jump_press && (place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
@@ -1375,7 +1375,7 @@ switch state {
 			else
 				vspeed = grav * -9
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
@@ -1392,12 +1392,12 @@ switch state {
 		}
 		
 		//walljumpin
-		if ((instance_place(x + 1,y,obj_solid)) || (instance_place(x - 1,y,obj_solid))) && !onground && vspeed > 0
+		if ((place_meeting(x + 1,y,obj_solid)) || (place_meeting(x - 1,y,obj_solid))) && !onground && vspeed > 0
 		{
 			wallsliding = 1
 			
 			var wallface = 0
-			if instance_place(x + 1,y,obj_solid)
+			if place_meeting(x + 1,y,obj_solid)
 				wallface = 1
 			else
 				wallface = -1
@@ -1499,7 +1499,7 @@ switch state {
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !instance_place(x,y+5,obj_solid) && key_down_press
+		if use_gp && !pounding && !place_meeting(x,y+5,obj_solid) && key_down_press
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -1546,7 +1546,7 @@ switch state {
 		if vspeed < 15
 			vspeed += 0.3
 			
-		if instance_place(x,y+1,obj_solid) || instance_place(x,y+1,obj_slope)
+		if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_slope)
 			state = idlestate
 			
 		taunt_qualify = 0
@@ -1619,7 +1619,7 @@ switch state {
 		vspeed = lerp(vspeed,vsp,0.05)
 		
 		swimdashtime++
-		if (key_attack_press || key_jump_press) && swimdashtime > 60
+		if (key_attack_press || key_jump_press) && swimdashtime > 45
 		{
 			swimdashtime = 0
 			
@@ -1682,7 +1682,7 @@ switch state {
 		}
 		
 		rot = point_direction(0,0,abs(hface) * facing,vface) - 90
-		if !instance_place(x,y,obj_swimwater)
+		if !place_meeting(x,y,obj_swimwater)
 		{
 			var i;
 			for (i = 0; i < 20; i++)
@@ -1766,7 +1766,7 @@ switch state {
 		//louchester anims
 		if campaign = 3
 		{
-			if instance_place(x,y-1,obj_solid) || instance_place(x,y-5,obj_slope)
+			if place_meeting(x,y-1,obj_solid) || place_meeting(x,y-5,obj_slope)
 			{
 				if hspeed = 0
 					if jumpcharge > 0
@@ -1820,7 +1820,7 @@ switch state {
 		
 		
 		// walkin
-		if key_up && !dashing && (instance_place(x,y - 1,obj_solid) || instance_place(x,y - 1,obj_slope))
+		if key_up && !dashing && (place_meeting(x,y - 1,obj_solid) || place_meeting(x,y - 1,obj_slope))
 		{
 			if jumpcharge < 1
 			{
@@ -1844,7 +1844,7 @@ switch state {
 		}
 			
 		// jumpin
-		if key_jump_press && (instance_place(x,y - 5,obj_solid) || instance_place(x,y - 5,obj_slope) || coyote_time) // ground
+		if key_jump_press && (place_meeting(x,y - 5,obj_solid) || place_meeting(x,y - 5,obj_slope) || coyote_time) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
@@ -1855,7 +1855,7 @@ switch state {
 			else
 				vspeed = 9
 				
-			if !(instance_place(x,y - 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y - 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
@@ -1904,7 +1904,7 @@ switch state {
 		}
 		
 		// ground pound
-		if use_gp && !pounding && !(instance_place(x,y-5,obj_solid) || instance_place(x,y - 5,obj_slope)) && keyboard_check_pressed(cont_down)
+		if use_gp && !pounding && !(place_meeting(x,y-5,obj_solid) || place_meeting(x,y - 5,obj_slope)) && keyboard_check_pressed(cont_down)
 		{
 			state = playerstate.ground_pound
 			pounding = 1
@@ -2012,7 +2012,7 @@ switch state {
 		obj_camera.xoff_t = 200 * sign(hspeed)
 		player_velocity()
 		
-		if key_jump_press && (instance_place(x,y + 5,obj_solid) || instance_place(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
+		if key_jump_press && (place_meeting(x,y + 5,obj_solid) || place_meeting(x,y + 5,obj_slope) || coyote_time || clouds > 0) // ground
 		{
 			if key_up && jumpcharge > 30
 			{
@@ -2023,7 +2023,7 @@ switch state {
 			else
 				vspeed = grav * -9
 				
-			if !(instance_place(x,y + 10,obj_airjump) || instance_place(x,y,obj_airjump))
+			if !(place_meeting(x,y + 10,obj_airjump) || place_meeting(x,y,obj_airjump))
 				audio_play_sound(sfx_jump,1,0)
 				
 			beginjump = 1
