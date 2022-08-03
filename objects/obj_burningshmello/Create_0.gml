@@ -7,6 +7,7 @@ spr_dead = spr_schmello_dead
 started_pause = 0
 facing = 0
 image_index = random_range(0,sprite_get_number(sprite_index))
+grav = 1
 
 if ds_list_find_value(destroy_list,id) = 1
 	instance_destroy()

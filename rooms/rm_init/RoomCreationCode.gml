@@ -41,6 +41,7 @@ globalvar rank_highestcombo; rank_highestcombo = 0
 globalvar rank_highestcombo_req; rank_highestcombo_req = 0
 globalvar rank_specialgoal_checkfunc; 
 globalvar nodamage; nodamage = 1
+globalvar draw_shadowfx; draw_shadowfx = 0
 rank_specialgoal_checkfunc = function() {
 	//balls
 }

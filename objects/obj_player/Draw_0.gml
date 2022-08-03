@@ -4,6 +4,8 @@ if !entering_level
 		draw_sprite_ext(spr_playerLS_notlouchbuttheballooninstead,obj_3framekeeper.image_index,x,y - 32,xs * facing,ys,rot,image_blend,alph)
 	var shd = shader_current()
 	pal_swap_set(spr_playerpalette,paletteselect,0)
+	if draw_shadowfx
+		draw_sprite_ext(sprite_index,image_index,x + 3,y + 3,xs * facing,ys,rot,c_black,alph * 0.4)	
 	draw_sprite_ext(sprite_index,image_index,x,y,xs * facing,ys,rot,image_blend,alph)
 	shader_set(shd)
 	if hat != 0

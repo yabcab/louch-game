@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_cherries_run2",
     "path": "sprites/spr_cherries_run2/spr_cherries_run2.yy",

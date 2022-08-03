@@ -15,7 +15,7 @@ if instance_exists(obj_freezetimer)
 	instance_destroy(obj_freezetimer)
 while instance_exists(obj_key)
 	instance_destroy(obj_key)
-	while instance_exists(obj_keyfrag)
+while instance_exists(obj_keyfrag)
 	instance_destroy(obj_keyfrag)
 	
 ds_list_destroy(destroy_list)
