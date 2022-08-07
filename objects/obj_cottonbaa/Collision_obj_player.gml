@@ -76,12 +76,12 @@ else if other.state != 11 && other.inv = 0
 		instance_create_depth(other.x,other.y,-1,obj_eatenapple)
 			
 		if other.hp <= 0
-			with other {
-				state = 11
-				hspeed = random_range(10,15) * (facing * -1)
-				vspeed = random_range(-13,-18)
-				audio_play_sound(sfx_ricochet,1,0)
-			}
+		with other {
+			state = 11
+			hspeed = random_range(10,15) * (facing * -1)
+			vspeed = random_range(-13,-18)
+			audio_play_sound(sfx_ricochet,1,0)
+		}
 	}
 	
 }
