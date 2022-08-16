@@ -409,15 +409,15 @@ function enemy_boost_hit()
 	do_chancehit(5)
 	var h = hspeed
 	var s = spr_dead
-		with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
-		{
-			popout = 0.02
-			sprite_index = s
-			vspeed = random_range(-5,-7)
-			hspeed = obj_player.hspeed + h
-			effect = 1
-			rot_speed = 15
-		}
+	with instance_create_depth(x,y,other.depth + 1,obj_eatenapple)
+	{
+		popout = 0.02
+		sprite_index = s
+		vspeed = random_range(-5,-7)
+		hspeed = obj_player.hspeed + h
+		effect = 1
+		rot_speed = 15
+	}
 	audio_play_sound(sfx_schlap,1,0)
 	do_hitstun(5)
 	instance_create_depth(mean(x,obj_player.x),mean(y,obj_player.y),depth - 1,obj_hitstuneffect)
@@ -425,6 +425,22 @@ function enemy_boost_hit()
 	score += 20 * (obj_player.combo + 1)
 	obj_player.combo += 1
 	ds_list_set(destroy_list,id,1)
+}
+
+function enemy_wallcheck(act = true)
+{
+	if (!instance_position(bbox_right + 5,bbox_bottom + 1,obj_solidparent) && !instance_position(bbox_right,bbox_bottom + 1 + abs(hspeed),obj_solidparent) && xs = -1) || (!instance_position(bbox_left - 5,bbox_bottom + 1 + abs(hspeed),obj_solidparent) && !instance_position(bbox_left,bbox_bottom + 1,obj_solidparent) && xs = 1) || place_meeting(x + hspeed,y,obj_solid)
+	{
+		if act
+		{
+			x -= hspeed
+			hspeed = -hspeed
+			xs = -xs
+		}
+		return true
+	}
+	else
+		return false
 }
 
 #endregion

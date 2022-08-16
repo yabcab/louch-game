@@ -12,12 +12,7 @@ switch state {
 	{
 		hspeed = -2 * xs
 		player_velocity()
-			
-		if (instance_place(x + hspeed,y,obj_solid) && instance_place(x + hspeed,y - 12,obj_solid)) || instance_place(x + hspeed,y,obj_enemyturn) || (instance_place(x + hspeed,y,obj_freezetimewall) && instance_place(x + hspeed,y - 12,obj_freezetimewall))
-		{
-			hspeed = -hspeed
-			xs = -xs
-		}
+		enemy_wallcheck()
 	}
 	break;
 }

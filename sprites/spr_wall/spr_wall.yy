@@ -144,7 +144,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b6050de-2723-40f1-a614-0ad3047a2d8d","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":75.0,"displayName":"default","resourceVersion":"1.0","name":"5b6050de-2723-40f1-a614-0ad3047a2d8d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 10,
