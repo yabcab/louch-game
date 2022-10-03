@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_margarita_idle",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ff83533d-c43f-45d5-b967-b49a98117d7b","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff83533d-c43f-45d5-b967-b49a98117d7b","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":{"name":"bd1436c8-66a0-4dd0-b076-aaa483dbb5c3","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_margarita_idle","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"ff83533d-c43f-45d5-b967-b49a98117d7b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bc648a0c-bd99-4a17-a04c-b92297a8a32e","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bc648a0c-bd99-4a17-a04c-b92297a8a32e","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":{"name":"bd1436c8-66a0-4dd0-b076-aaa483dbb5c3","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_margarita_idle","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"bc648a0c-bd99-4a17-a04c-b92297a8a32e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"194ab7b0-ed1f-4d46-a2b1-33ccbb7698f6","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"194ab7b0-ed1f-4d46-a2b1-33ccbb7698f6","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"LayerId":{"name":"bd1436c8-66a0-4dd0-b076-aaa483dbb5c3","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_margarita_idle","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","name":"194ab7b0-ed1f-4d46-a2b1-33ccbb7698f6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff83533d-c43f-45d5-b967-b49a98117d7b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc648a0c-bd99-4a17-a04c-b92297a8a32e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"194ab7b0-ed1f-4d46-a2b1-33ccbb7698f6",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_margarita_idle","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_margarita_idle",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"52223074-4d06-43ec-ba71-ba4ce6f5158e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff83533d-c43f-45d5-b967-b49a98117d7b","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"21b7201f-258d-4d27-a1f3-303a86d69eb1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc648a0c-bd99-4a17-a04c-b92297a8a32e","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2edbed67-eef9-4b58-ba6e-3a44355acfc5","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"194ab7b0-ed1f-4d46-a2b1-33ccbb7698f6","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_margarita_idle","path":"sprites/spr_margarita_idle/spr_margarita_idle.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_margarita_idle",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bd1436c8-66a0-4dd0-b076-aaa483dbb5c3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bd1436c8-66a0-4dd0-b076-aaa483dbb5c3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_margarita_idle",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

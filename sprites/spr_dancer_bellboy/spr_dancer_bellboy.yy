@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dancer_bellboy",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"67e68d6a-5fa0-4b58-8684-9dbbbc76c9b2","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"67e68d6a-5fa0-4b58-8684-9dbbbc76c9b2","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":{"name":"56b2790b-990e-4153-b0e6-a08a09d055be","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"67e68d6a-5fa0-4b58-8684-9dbbbc76c9b2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0e43fade-c89e-4d0f-8767-7f68adb817f5","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0e43fade-c89e-4d0f-8767-7f68adb817f5","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":{"name":"56b2790b-990e-4153-b0e6-a08a09d055be","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"0e43fade-c89e-4d0f-8767-7f68adb817f5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f8eb0d4-22da-47a2-a6c1-ce11014aeb02","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f8eb0d4-22da-47a2-a6c1-ce11014aeb02","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":{"name":"56b2790b-990e-4153-b0e6-a08a09d055be","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"6f8eb0d4-22da-47a2-a6c1-ce11014aeb02","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3dae9983-66ab-4e6b-9f6d-c306c1a89389","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3dae9983-66ab-4e6b-9f6d-c306c1a89389","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"LayerId":{"name":"56b2790b-990e-4153-b0e6-a08a09d055be","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","name":"3dae9983-66ab-4e6b-9f6d-c306c1a89389","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"67e68d6a-5fa0-4b58-8684-9dbbbc76c9b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e43fade-c89e-4d0f-8767-7f68adb817f5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f8eb0d4-22da-47a2-a6c1-ce11014aeb02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3dae9983-66ab-4e6b-9f6d-c306c1a89389",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dancer_bellboy",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a9f1d5d4-3157-463d-9d63-4097dfbe59d9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67e68d6a-5fa0-4b58-8684-9dbbbc76c9b2","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3dbdd2bb-ca99-4589-b6f3-eced4c9949fa","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0e43fade-c89e-4d0f-8767-7f68adb817f5","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60777c18-2459-418c-9767-8c7e1d59d86c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f8eb0d4-22da-47a2-a6c1-ce11014aeb02","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c597ab11-44e8-4747-92b4-b317dc55b3ba","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3dae9983-66ab-4e6b-9f6d-c306c1a89389","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 200,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dancer_bellboy","path":"sprites/spr_dancer_bellboy/spr_dancer_bellboy.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dancer_bellboy",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"56b2790b-990e-4153-b0e6-a08a09d055be","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"56b2790b-990e-4153-b0e6-a08a09d055be","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "dancers",
     "path": "folders/Sprites/stuffs/dancers.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dancer_bellboy",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

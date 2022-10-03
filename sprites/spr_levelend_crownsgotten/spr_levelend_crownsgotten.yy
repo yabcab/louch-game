@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_levelend_crownsgotten",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"168796bf-1141-4b11-a46c-d5df4f74b4c8","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"168796bf-1141-4b11-a46c-d5df4f74b4c8","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},"LayerId":{"name":"1ffad9fc-e416-40f5-9c96-5609fc3bb3dc","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_levelend_crownsgotten","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},"resourceVersion":"1.0","name":"168796bf-1141-4b11-a46c-d5df4f74b4c8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"168796bf-1141-4b11-a46c-d5df4f74b4c8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_levelend_crownsgotten","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_levelend_crownsgotten",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"092935f9-00f6-4c86-a591-64815068bad1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"168796bf-1141-4b11-a46c-d5df4f74b4c8","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_levelend_crownsgotten","path":"sprites/spr_levelend_crownsgotten/spr_levelend_crownsgotten.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_levelend_crownsgotten",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1ffad9fc-e416-40f5-9c96-5609fc3bb3dc","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1ffad9fc-e416-40f5-9c96-5609fc3bb3dc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "levelend",
     "path": "folders/Sprites/hud/levelend.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_levelend_crownsgotten",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

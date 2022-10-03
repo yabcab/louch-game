@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_fatfuck_swim",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,33 +27,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b9dd8ccc-eb3c-4d6d-b970-e96de72f5806","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b9dd8ccc-eb3c-4d6d-b970-e96de72f5806","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"b9dd8ccc-eb3c-4d6d-b970-e96de72f5806","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d24a8367-fd19-4a0d-b2a1-cc2ff3c638d2","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d24a8367-fd19-4a0d-b2a1-cc2ff3c638d2","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"d24a8367-fd19-4a0d-b2a1-cc2ff3c638d2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"349b0053-246b-453c-8d3c-a2b7230439d7","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"349b0053-246b-453c-8d3c-a2b7230439d7","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"349b0053-246b-453c-8d3c-a2b7230439d7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2b324e3-e178-4550-a093-2c69264978ce","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2b324e3-e178-4550-a093-2c69264978ce","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"c2b324e3-e178-4550-a093-2c69264978ce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"af81a000-e521-4b5c-bd2d-1e876046f35a","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af81a000-e521-4b5c-bd2d-1e876046f35a","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"af81a000-e521-4b5c-bd2d-1e876046f35a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"861aeba3-65b3-43f9-aa0e-b5d6f299fcc6","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"861aeba3-65b3-43f9-aa0e-b5d6f299fcc6","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"861aeba3-65b3-43f9-aa0e-b5d6f299fcc6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4cfd9297-c595-457a-a07a-90cbacc98f16","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4cfd9297-c595-457a-a07a-90cbacc98f16","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"4cfd9297-c595-457a-a07a-90cbacc98f16","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dfa06ae4-eaee-4e90-a2fa-5991f4fc68a3","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dfa06ae4-eaee-4e90-a2fa-5991f4fc68a3","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"LayerId":{"name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","name":"dfa06ae4-eaee-4e90-a2fa-5991f4fc68a3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9dd8ccc-eb3c-4d6d-b970-e96de72f5806",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d24a8367-fd19-4a0d-b2a1-cc2ff3c638d2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"349b0053-246b-453c-8d3c-a2b7230439d7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2b324e3-e178-4550-a093-2c69264978ce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af81a000-e521-4b5c-bd2d-1e876046f35a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"861aeba3-65b3-43f9-aa0e-b5d6f299fcc6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4cfd9297-c595-457a-a07a-90cbacc98f16",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dfa06ae4-eaee-4e90-a2fa-5991f4fc68a3",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_fatfuck_swim",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -61,7 +50,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5278fba4-3866-474f-a003-f6ab2fe28926","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9dd8ccc-eb3c-4d6d-b970-e96de72f5806","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"49516568-f218-46c3-bce1-5ab5c4a5d1c2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d24a8367-fd19-4a0d-b2a1-cc2ff3c638d2","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"35584730-80a1-4535-9553-f195941d1a4d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"349b0053-246b-453c-8d3c-a2b7230439d7","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +59,7 @@
             {"id":"d36a1bdb-9ebb-4018-aa01-d7c9f43bd437","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"861aeba3-65b3-43f9-aa0e-b5d6f299fcc6","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"64eafd30-1969-4b38-8d83-97a0a2a55746","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cfd9297-c595-457a-a07a-90cbacc98f16","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"946b7a51-84ce-4190-8e99-fc1acdd906eb","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dfa06ae4-eaee-4e90-a2fa-5991f4fc68a3","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -86,22 +75,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_fatfuck_swim","path":"sprites/spr_fatfuck_swim/spr_fatfuck_swim.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_fatfuck_swim",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b72dcb9c-6bf9-45c1-96d5-414565981a52","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_fatfuck_swim",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

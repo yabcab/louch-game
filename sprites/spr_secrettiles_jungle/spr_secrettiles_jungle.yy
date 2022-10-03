@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_secrettiles_jungle",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6f45a0e7-1ed3-4e3b-867c-32a3c2c8df97","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f45a0e7-1ed3-4e3b-867c-32a3c2c8df97","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},"LayerId":{"name":"cb7433ac-b452-4bd7-ac97-3335c5466f66","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_secrettiles_jungle","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},"resourceVersion":"1.0","name":"6f45a0e7-1ed3-4e3b-867c-32a3c2c8df97","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f45a0e7-1ed3-4e3b-867c-32a3c2c8df97",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_secrettiles_jungle","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_secrettiles_jungle",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5ce056d2-7d61-46c7-b25c-97c382ba5667","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f45a0e7-1ed3-4e3b-867c-32a3c2c8df97","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_secrettiles_jungle","path":"sprites/spr_secrettiles_jungle/spr_secrettiles_jungle.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_secrettiles_jungle",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cb7433ac-b452-4bd7-ac97-3335c5466f66","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cb7433ac-b452-4bd7-ac97-3335c5466f66","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "secret",
     "path": "folders/Sprites/tiles/secret.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_secrettiles_jungle",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_keydoor",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -103,18 +106,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"84d069f6-0ffa-4f08-9366-1c1a43c04564","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"84d069f6-0ffa-4f08-9366-1c1a43c04564","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":{"name":"9ba46cd6-e0a9-4c6c-8660-7c921a75f20f","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"84d069f6-0ffa-4f08-9366-1c1a43c04564","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"97f39636-dcb4-42c3-80c0-f262ccca095e","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"97f39636-dcb4-42c3-80c0-f262ccca095e","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":{"name":"9ba46cd6-e0a9-4c6c-8660-7c921a75f20f","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"97f39636-dcb4-42c3-80c0-f262ccca095e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e7051e2e-0e5d-4d76-8413-0f4fe66d2e6c","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e7051e2e-0e5d-4d76-8413-0f4fe66d2e6c","path":"sprites/spr_keydoor/spr_keydoor.yy",},"LayerId":{"name":"9ba46cd6-e0a9-4c6c-8660-7c921a75f20f","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","name":"e7051e2e-0e5d-4d76-8413-0f4fe66d2e6c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84d069f6-0ffa-4f08-9366-1c1a43c04564",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"97f39636-dcb4-42c3-80c0-f262ccca095e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7051e2e-0e5d-4d76-8413-0f4fe66d2e6c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_keydoor",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -125,11 +124,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"997a9d8b-6b26-40ec-9c84-b078755c38a1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84d069f6-0ffa-4f08-9366-1c1a43c04564","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4f5f31ff-8783-438d-94f8-3a8eaa863869","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97f39636-dcb4-42c3-80c0-f262ccca095e","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3fee271c-b39d-4b31-aab5-54ebdc11c35d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7051e2e-0e5d-4d76-8413-0f4fe66d2e6c","path":"sprites/spr_keydoor/spr_keydoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -145,22 +144,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_keydoor","path":"sprites/spr_keydoor/spr_keydoor.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_keydoor",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ba46cd6-e0a9-4c6c-8660-7c921a75f20f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9ba46cd6-e0a9-4c6c-8660-7c921a75f20f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "placeholder and old",
     "path": "folders/Sprites/placeholder and old.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_keydoor",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

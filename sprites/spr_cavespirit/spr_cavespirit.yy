@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cavespirit",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"df690635-253e-4bd2-87a8-dd0700a3ebd4","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df690635-253e-4bd2-87a8-dd0700a3ebd4","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":{"name":"76deef54-2537-4603-8660-fc5c15c3dc6e","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cavespirit","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"df690635-253e-4bd2-87a8-dd0700a3ebd4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b6e5474b-a2fd-4f78-aeb0-db5579c1af39","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b6e5474b-a2fd-4f78-aeb0-db5579c1af39","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":{"name":"76deef54-2537-4603-8660-fc5c15c3dc6e","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cavespirit","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"b6e5474b-a2fd-4f78-aeb0-db5579c1af39","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6d3c78e1-f788-4606-96c6-ce97e61a70dc","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6d3c78e1-f788-4606-96c6-ce97e61a70dc","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"LayerId":{"name":"76deef54-2537-4603-8660-fc5c15c3dc6e","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cavespirit","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","name":"6d3c78e1-f788-4606-96c6-ce97e61a70dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"df690635-253e-4bd2-87a8-dd0700a3ebd4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6e5474b-a2fd-4f78-aeb0-db5579c1af39",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d3c78e1-f788-4606-96c6-ce97e61a70dc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cavespirit","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_cavespirit",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5c1d507f-2f99-4074-a8b2-3d74ac7d39ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df690635-253e-4bd2-87a8-dd0700a3ebd4","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ce3eaf34-1474-4968-b60e-6c5391f6f9db","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6e5474b-a2fd-4f78-aeb0-db5579c1af39","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"95b17bbc-9876-47e1-a3d4-4555bf10d2a6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d3c78e1-f788-4606-96c6-ce97e61a70dc","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cavespirit","path":"sprites/spr_cavespirit/spr_cavespirit.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_cavespirit",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"76deef54-2537-4603-8660-fc5c15c3dc6e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"76deef54-2537-4603-8660-fc5c15c3dc6e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "misc",
     "path": "folders/Sprites/stuffs/misc.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cavespirit",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

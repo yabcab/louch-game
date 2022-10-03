@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_apple",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"416da480-86bc-47bd-94f3-0604acbb3f4a","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"416da480-86bc-47bd-94f3-0604acbb3f4a","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":{"name":"23d1b8ba-73bd-4855-a8db-50c0e12bfd44","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"416da480-86bc-47bd-94f3-0604acbb3f4a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a480c031-7c77-4307-ad75-9878e154f292","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a480c031-7c77-4307-ad75-9878e154f292","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":{"name":"23d1b8ba-73bd-4855-a8db-50c0e12bfd44","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"a480c031-7c77-4307-ad75-9878e154f292","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"933beba1-0bbb-48b8-8a0e-ffd316548568","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"933beba1-0bbb-48b8-8a0e-ffd316548568","path":"sprites/spr_apple/spr_apple.yy",},"LayerId":{"name":"23d1b8ba-73bd-4855-a8db-50c0e12bfd44","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","name":"933beba1-0bbb-48b8-8a0e-ffd316548568","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"416da480-86bc-47bd-94f3-0604acbb3f4a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a480c031-7c77-4307-ad75-9878e154f292",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"933beba1-0bbb-48b8-8a0e-ffd316548568",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_apple",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2c6164d4-7855-41f9-93ba-9f2510c9a556","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"416da480-86bc-47bd-94f3-0604acbb3f4a","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b11e6493-5ff4-4b6e-8c37-6af5c386c540","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a480c031-7c77-4307-ad75-9878e154f292","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f3fbd8e2-db88-49eb-a40d-83c89c353fb9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"933beba1-0bbb-48b8-8a0e-ffd316548568","path":"sprites/spr_apple/spr_apple.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_apple",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"23d1b8ba-73bd-4855-a8db-50c0e12bfd44","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"23d1b8ba-73bd-4855-a8db-50c0e12bfd44","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_apple",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dt_grass4",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4bce2dfe-b431-4098-a01d-e8749fc4f520","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4bce2dfe-b431-4098-a01d-e8749fc4f520","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},"LayerId":{"name":"d2f8be7e-125a-4922-81b3-55bdc681e06f","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dt_grass4","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},"resourceVersion":"1.0","name":"4bce2dfe-b431-4098-a01d-e8749fc4f520","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4bce2dfe-b431-4098-a01d-e8749fc4f520",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dt_grass4","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dt_grass4",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e3c71a83-b74a-4ced-8ce9-8d15a853dc45","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4bce2dfe-b431-4098-a01d-e8749fc4f520","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dt_grass4","path":"sprites/spr_dt_grass4/spr_dt_grass4.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dt_grass4",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d2f8be7e-125a-4922-81b3-55bdc681e06f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d2f8be7e-125a-4922-81b3-55bdc681e06f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "grass",
     "path": "folders/Sprites/stuffs/levelentry/diorama table/grass.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dt_grass4",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

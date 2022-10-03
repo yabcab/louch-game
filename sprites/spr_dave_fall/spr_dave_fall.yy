@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dave_fall",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fd45dd6b-c2d8-424e-a36e-1aa6f18615db","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd45dd6b-c2d8-424e-a36e-1aa6f18615db","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":{"name":"f114ff60-83d0-434f-95b9-93254e8e82b2","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dave_fall","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"fd45dd6b-c2d8-424e-a36e-1aa6f18615db","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f6e9da40-6ffc-4097-8a70-478e32f7e6da","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6e9da40-6ffc-4097-8a70-478e32f7e6da","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":{"name":"f114ff60-83d0-434f-95b9-93254e8e82b2","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dave_fall","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"f6e9da40-6ffc-4097-8a70-478e32f7e6da","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aef82418-f277-464e-bd53-fa2f0ab98ffe","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aef82418-f277-464e-bd53-fa2f0ab98ffe","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"LayerId":{"name":"f114ff60-83d0-434f-95b9-93254e8e82b2","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dave_fall","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","name":"aef82418-f277-464e-bd53-fa2f0ab98ffe","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd45dd6b-c2d8-424e-a36e-1aa6f18615db",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6e9da40-6ffc-4097-8a70-478e32f7e6da",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aef82418-f277-464e-bd53-fa2f0ab98ffe",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dave_fall","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dave_fall",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"128555e9-bb38-4fff-b393-047dfb397fd6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd45dd6b-c2d8-424e-a36e-1aa6f18615db","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2be5a579-1b3a-4882-bcf9-1b28228571d9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6e9da40-6ffc-4097-8a70-478e32f7e6da","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8c11caf2-4c62-46e9-a9d6-b7182ac38236","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aef82418-f277-464e-bd53-fa2f0ab98ffe","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dave_fall","path":"sprites/spr_dave_fall/spr_dave_fall.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dave_fall",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f114ff60-83d0-434f-95b9-93254e8e82b2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f114ff60-83d0-434f-95b9-93254e8e82b2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dave_fall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

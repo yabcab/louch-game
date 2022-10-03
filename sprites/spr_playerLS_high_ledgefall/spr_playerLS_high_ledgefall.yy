@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerLS_high_ledgefall",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"06965ea0-7381-41a2-99f0-5db44e328e4d","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"06965ea0-7381-41a2-99f0-5db44e328e4d","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":{"name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"06965ea0-7381-41a2-99f0-5db44e328e4d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5c14ecaf-fe4a-436e-b834-6c48741e0372","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c14ecaf-fe4a-436e-b834-6c48741e0372","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":{"name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"5c14ecaf-fe4a-436e-b834-6c48741e0372","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d368d54-87f7-4aa1-8643-6ae02557fbba","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d368d54-87f7-4aa1-8643-6ae02557fbba","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":{"name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"0d368d54-87f7-4aa1-8643-6ae02557fbba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5ced0d9a-65a9-4c6b-b80c-90b8fa4a2b32","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5ced0d9a-65a9-4c6b-b80c-90b8fa4a2b32","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"LayerId":{"name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","name":"5ced0d9a-65a9-4c6b-b80c-90b8fa4a2b32","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06965ea0-7381-41a2-99f0-5db44e328e4d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c14ecaf-fe4a-436e-b834-6c48741e0372",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d368d54-87f7-4aa1-8643-6ae02557fbba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ced0d9a-65a9-4c6b-b80c-90b8fa4a2b32",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_playerLS_high_ledgefall",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"eb8b2f61-d911-4408-8b30-70271c668975","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"06965ea0-7381-41a2-99f0-5db44e328e4d","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"36a4f247-0093-43ef-8209-550842c88a8e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c14ecaf-fe4a-436e-b834-6c48741e0372","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2dae7cfd-b317-4ea3-9ed2-1f31cb779eb3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d368d54-87f7-4aa1-8643-6ae02557fbba","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c0ca7dba-0947-4db4-9dfc-88001b8f371e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5ced0d9a-65a9-4c6b-b80c-90b8fa4a2b32","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerLS_high_ledgefall","path":"sprites/spr_playerLS_high_ledgefall/spr_playerLS_high_ledgefall.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_playerLS_high_ledgefall",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f5f45c0d-773d-4d44-a6e5-2e12d13ec17f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "player LS",
     "path": "folders/Sprites/player LS.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerLS_high_ledgefall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

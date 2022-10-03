@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_grassfucks",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d9c86fb2-bbf2-4c17-a375-7f0a783ca686","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9c86fb2-bbf2-4c17-a375-7f0a783ca686","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":{"name":"30e55143-abff-4b11-b156-af9eae59c1d3","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_grassfucks","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"d9c86fb2-bbf2-4c17-a375-7f0a783ca686","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"22fcb956-bfb4-4e20-919e-a1de92bbe984","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22fcb956-bfb4-4e20-919e-a1de92bbe984","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":{"name":"30e55143-abff-4b11-b156-af9eae59c1d3","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_grassfucks","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"22fcb956-bfb4-4e20-919e-a1de92bbe984","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"beb8738b-4a68-49f4-8ad8-1fb870797ef4","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"beb8738b-4a68-49f4-8ad8-1fb870797ef4","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"LayerId":{"name":"30e55143-abff-4b11-b156-af9eae59c1d3","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_grassfucks","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","name":"beb8738b-4a68-49f4-8ad8-1fb870797ef4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9c86fb2-bbf2-4c17-a375-7f0a783ca686",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22fcb956-bfb4-4e20-919e-a1de92bbe984",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"beb8738b-4a68-49f4-8ad8-1fb870797ef4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_grassfucks","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_grassfucks",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bfe72351-97ce-46e3-956f-3850247ed643","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9c86fb2-bbf2-4c17-a375-7f0a783ca686","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"24995054-65d8-445d-acae-103cc51e2cbb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22fcb956-bfb4-4e20-919e-a1de92bbe984","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"44e3a3a1-a197-4556-a4ea-e9acf0e287a7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"beb8738b-4a68-49f4-8ad8-1fb870797ef4","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_grassfucks","path":"sprites/spr_grassfucks/spr_grassfucks.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_grassfucks",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"30e55143-abff-4b11-b156-af9eae59c1d3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"30e55143-abff-4b11-b156-af9eae59c1d3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "particle",
     "path": "folders/Sprites/particle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_grassfucks",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

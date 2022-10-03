@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cottonbaa_sleep",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fad46ae5-0599-4496-803d-47c7a23a2324","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fad46ae5-0599-4496-803d-47c7a23a2324","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":{"name":"4d39f393-7fce-4891-9c59-5b195c4c6a27","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cottonbaa_sleep","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"fad46ae5-0599-4496-803d-47c7a23a2324","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"22781115-9862-4391-92bc-8a01dd2db4b5","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22781115-9862-4391-92bc-8a01dd2db4b5","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":{"name":"4d39f393-7fce-4891-9c59-5b195c4c6a27","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cottonbaa_sleep","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"22781115-9862-4391-92bc-8a01dd2db4b5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8db3d911-1b19-4da3-ac82-5303816a4a60","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8db3d911-1b19-4da3-ac82-5303816a4a60","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"LayerId":{"name":"4d39f393-7fce-4891-9c59-5b195c4c6a27","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cottonbaa_sleep","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","name":"8db3d911-1b19-4da3-ac82-5303816a4a60","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fad46ae5-0599-4496-803d-47c7a23a2324",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22781115-9862-4391-92bc-8a01dd2db4b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8db3d911-1b19-4da3-ac82-5303816a4a60",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cottonbaa_sleep","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_cottonbaa_sleep",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b39e57bb-767e-4d74-8f1d-49df89fc80c1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fad46ae5-0599-4496-803d-47c7a23a2324","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"50fb5cfd-12ff-4b03-a6c6-bf0058f08057","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22781115-9862-4391-92bc-8a01dd2db4b5","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b9ac7753-4dd7-462f-b047-02e6f17eb933","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8db3d911-1b19-4da3-ac82-5303816a4a60","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cottonbaa_sleep","path":"sprites/spr_cottonbaa_sleep/spr_cottonbaa_sleep.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_cottonbaa_sleep",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4d39f393-7fce-4891-9c59-5b195c4c6a27","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4d39f393-7fce-4891-9c59-5b195c4c6a27","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cottonbaa_sleep",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

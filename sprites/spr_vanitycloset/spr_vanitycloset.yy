@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_vanitycloset",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b1b192b1-699a-4677-a450-7eb35f1145c4","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1b192b1-699a-4677-a450-7eb35f1145c4","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":{"name":"8a8334ab-e372-4d9b-8477-a4c49d80b737","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"b1b192b1-699a-4677-a450-7eb35f1145c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bb42488e-c68f-4a51-95b5-83ad53f1f33c","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bb42488e-c68f-4a51-95b5-83ad53f1f33c","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":{"name":"8a8334ab-e372-4d9b-8477-a4c49d80b737","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"bb42488e-c68f-4a51-95b5-83ad53f1f33c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"12ac1c7b-0461-4804-b3c0-9fe96764f2b6","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"12ac1c7b-0461-4804-b3c0-9fe96764f2b6","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"LayerId":{"name":"8a8334ab-e372-4d9b-8477-a4c49d80b737","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","name":"12ac1c7b-0461-4804-b3c0-9fe96764f2b6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1b192b1-699a-4677-a450-7eb35f1145c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb42488e-c68f-4a51-95b5-83ad53f1f33c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12ac1c7b-0461-4804-b3c0-9fe96764f2b6",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_vanitycloset",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"cd54b53f-16a3-48e0-be59-9c7a148027d2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1b192b1-699a-4677-a450-7eb35f1145c4","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4a61f63e-cfc4-4e68-8f5f-7f565d3a81fa","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb42488e-c68f-4a51-95b5-83ad53f1f33c","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"238d6048-9ba3-419e-8f45-74d52d6885b6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12ac1c7b-0461-4804-b3c0-9fe96764f2b6","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_vanitycloset","path":"sprites/spr_vanitycloset/spr_vanitycloset.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_vanitycloset",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8a8334ab-e372-4d9b-8477-a4c49d80b737","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a8334ab-e372-4d9b-8477-a4c49d80b737","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_vanitycloset",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

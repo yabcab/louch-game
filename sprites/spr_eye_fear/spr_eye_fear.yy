@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_eye_fear",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8c61cff9-b94b-46f1-ac3a-ed08e5d21ba5","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8c61cff9-b94b-46f1-ac3a-ed08e5d21ba5","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":{"name":"ceb19f02-8104-49ce-bfb6-8328354eb77c","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_eye_fear","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"8c61cff9-b94b-46f1-ac3a-ed08e5d21ba5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"acbaa3d8-d841-4415-8f6d-147275d1b4b6","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"acbaa3d8-d841-4415-8f6d-147275d1b4b6","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":{"name":"ceb19f02-8104-49ce-bfb6-8328354eb77c","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_eye_fear","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"acbaa3d8-d841-4415-8f6d-147275d1b4b6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"138afbcc-690a-41e9-b1ca-258d916e1900","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"138afbcc-690a-41e9-b1ca-258d916e1900","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"LayerId":{"name":"ceb19f02-8104-49ce-bfb6-8328354eb77c","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_eye_fear","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","name":"138afbcc-690a-41e9-b1ca-258d916e1900","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c61cff9-b94b-46f1-ac3a-ed08e5d21ba5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"acbaa3d8-d841-4415-8f6d-147275d1b4b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"138afbcc-690a-41e9-b1ca-258d916e1900",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_eye_fear","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_eye_fear",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1ede5c34-0050-4252-bdb1-795e48650c4d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c61cff9-b94b-46f1-ac3a-ed08e5d21ba5","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a0f3b6ba-8983-4a16-a0d0-69c2739bf72e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"acbaa3d8-d841-4415-8f6d-147275d1b4b6","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"82b83345-2e1b-46a9-9eed-f809fe81af12","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"138afbcc-690a-41e9-b1ca-258d916e1900","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_eye_fear","path":"sprites/spr_eye_fear/spr_eye_fear.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_eye_fear",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ceb19f02-8104-49ce-bfb6-8328354eb77c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ceb19f02-8104-49ce-bfb6-8328354eb77c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_eye_fear",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

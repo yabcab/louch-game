@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dt_ice3",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dfb954db-6842-4843-966f-c18e3cb637ac","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dfb954db-6842-4843-966f-c18e3cb637ac","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},"LayerId":{"name":"bedd1ae1-b23b-4a7d-81cc-9c4abbd7384f","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dt_ice3","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},"resourceVersion":"1.0","name":"dfb954db-6842-4843-966f-c18e3cb637ac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dfb954db-6842-4843-966f-c18e3cb637ac",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dt_ice3","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dt_ice3",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"810fbbbb-59d3-4593-992b-24fadc3ba6f5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dfb954db-6842-4843-966f-c18e3cb637ac","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dt_ice3","path":"sprites/spr_dt_ice3/spr_dt_ice3.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dt_ice3",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bedd1ae1-b23b-4a7d-81cc-9c4abbd7384f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bedd1ae1-b23b-4a7d-81cc-9c4abbd7384f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ice",
     "path": "folders/Sprites/stuffs/levelentry/diorama table/ice.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dt_ice3",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
