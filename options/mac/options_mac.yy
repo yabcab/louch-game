@@ -1,5 +1,5 @@
 {
-  "option_mac_display_name": "LouchGame",
+  "option_mac_display_name": "LouchGame TVP May Playtest [dev]",
   "option_mac_app_id": "com.company.game",
   "option_mac_version": "1.0.0.0",
   "option_mac_output_dir": "~/gamemakerstudio2",
