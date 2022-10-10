@@ -1,4 +1,4 @@
-obj_music.mu = mu_placeholderhub
+obj_music.mu = mu_hub
 is_secret = 0
 is_trial = 0
 is_timetrial = 0

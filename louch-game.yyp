@@ -1347,6 +1347,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"std.ndll","CopyToMask":-1,"filePath":"datafiles/GMLive",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.8.1.37",
+    "IDEVersion": "2022.8.0.34",
   },
 }
