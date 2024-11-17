@@ -31,7 +31,9 @@ if display
 			alarm[2] = 10
 		do_shake3 = 1
 	}
+	
 	draw_set_font(score_font)
+	draw_set_color(c_white)
 	
 	//hp
 	draw_sprite_ext(spr_hud_hpbar,1,5 + shake2x,5 + shake2y,2,2,0,c_white,1)

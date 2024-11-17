@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Compiler",
-    "path": "folders/Extensions/GMLive/Internal/Compiler.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLive_compiler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_compiler",
+  "parent":{
+    "name":"Compiler",
+    "path":"folders/Extensions/GMLive/Internal/Compiler.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLive_compiler",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

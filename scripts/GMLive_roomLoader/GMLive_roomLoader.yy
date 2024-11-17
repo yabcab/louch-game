@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Misc",
-    "path": "folders/Extensions/GMLive/Internal/Misc.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLive_roomLoader",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_roomLoader",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Extensions/GMLive/Internal/Misc.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLive_roomLoader",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

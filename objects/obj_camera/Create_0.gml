@@ -25,3 +25,4 @@ targetangle = 0
 oldtarget = 0
 xoff = 0
 xoff_t = 0
+newroom = false

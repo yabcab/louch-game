@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Public",
-    "path": "folders/Extensions/GMLive/Public.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLive_tools",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_tools",
+  "parent":{
+    "name":"Public",
+    "path":"folders/Extensions/GMLive/Public.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLive_tools",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

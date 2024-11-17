@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Dissonance",
-    "path": "folders/Scripts/Dissonance.yy",
+  "$GMScript":"v1",
+  "%Name":"rousr_dissonance_set_match_secret",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rousr_dissonance_set_match_secret",
+  "parent":{
+    "name":"Dissonance",
+    "path":"folders/Scripts/Dissonance.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "rousr_dissonance_set_match_secret",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

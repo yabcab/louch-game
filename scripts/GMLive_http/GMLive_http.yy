@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Misc",
-    "path": "folders/Extensions/GMLive/Internal/Misc.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLive_http",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_http",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Extensions/GMLive/Internal/Misc.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLive_http",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

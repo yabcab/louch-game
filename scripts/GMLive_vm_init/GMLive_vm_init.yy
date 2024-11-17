@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Runtime",
-    "path": "folders/Extensions/GMLive/Internal/Runtime.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLive_vm_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_vm_init",
+  "parent":{
+    "name":"Runtime",
+    "path":"folders/Extensions/GMLive/Internal/Runtime.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLive_vm_init",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
